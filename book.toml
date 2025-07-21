@@ -11,7 +11,7 @@ default-theme = "light"
 mathjax-support = true
 additional-css = ["theme/pagetoc.css", "theme/custom.css"]
 additional-js = ["assets/giscus.js","theme/pagetoc.js"]
-site-url = "https://<你的用户名>.github.io/<仓库名>/" # 部署到 GitHub Pages 时填写你的仓库地址
+site-url = "https://hustreliny.github.io/PS4MR_new/" # 部署到 GitHub Pages 时填写你的仓库地址
 git-repository-url = "https://github.com/HustreLiny/PS4MR"
 git-repository-icon = "fa-github"
 
