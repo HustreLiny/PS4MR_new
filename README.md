@@ -9,6 +9,6 @@
 
 3. 合并标题，行尾加空格 完成
 4. 修正公式 完成
-5. 配置giscus
-6. 配置mdbook
-7. 部署workflow
+5. 配置giscus 完成
+6. 配置mdbook 完成
+7. 部署workflow 完成
