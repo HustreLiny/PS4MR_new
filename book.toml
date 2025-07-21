@@ -1,0 +1,29 @@
+[book]
+title = "PS4MR"
+author = "DG ALTMAN"
+description = "基于 mdBook 构建的PS4MR电子书，中英对照。"
+language = "zh-CN"
+multilingual = false
+src = "src"
+
+[output.html]
+default-theme = "light"
+mathjax-support = true
+additional-css = ["theme/pagetoc.css", "theme/custom.css"]
+additional-js = ["assets/giscus.js","theme/pagetoc.js"]
+site-url = "https://<你的用户名>.github.io/<仓库名>/" # 部署到 GitHub Pages 时填写你的仓库地址
+git-repository-url = "https://github.com/HustreLiny/PS4MR"
+git-repository-icon = "fa-github"
+
+[output.html.fold]
+enable = true
+
+
+[output.html.search]
+enable = true
+
+[output.html.playground]
+enable = false
+
+[preprocessor.katex]
+after = ["links"]
