@@ -71,9 +71,8 @@ We saw in section 3.4 that for reasonably symmetric distributions we expect the 
 400 医学研究中的一些常见问题  
 400 Some common problems in medical research  
 
-$$  
--0.24 - 2\times 6.96\mathrm{to} - 0.24 + 2\times 6.96  
--0.24 - 2\times 6.96\mathrm{to} - 0.24 + 2\times 6.96  
+$$
+-0.24 - 2\times 6.96\mathrm{to} - 0.24 + 2\times 6.96
 $$  
 
 即 $- 14.2$ 到 $+13.7 \mathrm{cm}^{3}$。换句话说，对于一个新的受试者，我们预期这两种方法给出的测量值差异小于 $14 \mathrm{cm}^{3}$，且任何差异在两个方向上出现的可能性均等。  
@@ -167,9 +166,8 @@ There is thus agreement for  $54 / 85 = 0.64$ $(64\%)$  of the films. There are 
 我们在第 10.3 节中看到，频数表（在无关联的零假设下）中一个单元格的期望频数是相关列的总计与相关行的总计的乘积除以总计。因此，表 14.2 中对角线上的期望频数是  
 We saw in section 10.3 that the expected frequency in a cell of a frequency table (under the null hypothesis of no association) is the product of the total of the relevant column and the total of the relevant row divided by the grand total. Thus the expected frequencies along the diagonal in Table 14.2 are  
 
-$$  
-\begin{array}{r l} & {\mathrm{Normal}\qquad \mathrm{33\times28 / 85 = 10.87}}\\ & {\mathrm{Benign~disease}\qquad \mathrm{22\times38 / 85 = 9.84}}\\ & {\mathrm{Suspected~cancer}\qquad \mathrm{29\times16 / 85 = 5.46}}\\ & {\mathrm{Cancer}\qquad \mathrm{1\times 3 / 85 = 0.04}} \end{array}  
-\begin{array}{r l} & {\mathrm{Normal}\qquad \mathrm{33\times28 / 85 = 10.87}}\\ & {\mathrm{Benign~disease}\qquad \mathrm{22\times38 / 85 = 9.84}}\\ & {\mathrm{Suspected~cancer}\qquad \mathrm{29\times16 / 85 = 5.46}}\\ & {\mathrm{Cancer}\qquad \mathrm{1\times 3 / 85 = 0.04}} \end{array}  
+$$
+\begin{array}{r l} & {\mathrm{Normal}\qquad \mathrm{33\times28 / 85 = 10.87}}\\ & {\mathrm{Benign~disease}\qquad \mathrm{22\times38 / 85 = 9.84}}\\ & {\mathrm{Suspected~cancer}\qquad \mathrm{29\times16 / 85 = 5.46}}\\ & {\mathrm{Cancer}\qquad \mathrm{1\times 3 / 85 = 0.04}} \end{array}
 $$  
 
 总计  
@@ -181,9 +179,8 @@ Total
 因此，偶然预期的一致性数量是 26.2，占总数的比例是 $26.2 / 85 = 0.31$。因此，问题是放射科医生比 0.31 好多少。最大一致性是 1.00，所以我们可以将放射科医生的一致性表示为超出偶然预期表现的可能范围的比例，即 $1.00 - 0.31$。然后我们计算一致性为  
 So the number of agreements expected just by chance is 26.2, which as a proportion of the total is  $26.2 / 85 = 0.31$ . The question, therefore, is how much better were the radiologists than 0.31. The maximum agreement is 1.00, so we can express the radiologists' agreement as a proportion of the possible scope for doing better than chance, which is  $1.00 - 0.31$ . We then calculate the agreement as  
 
-$$  
-\frac{0.64 - 0.31}{1.00 - 0.31} = 0.47.  
-\frac{0.64 - 0.31}{1.00 - 0.31} = 0.47.  
+$$
+\frac{0.64 - 0.31}{1.00 - 0.31} = 0.47.
 $$  
 
 这种一致性度量的名称是kappa，写作 $\kappa$。当一致性完美时，其最大值为1.00；值为零表示一致性不比随机（chance）好；负值表示一致性比随机差，但这在此情境下不太可能发生。  
@@ -240,49 +237,43 @@ We can build this idea into the calculation of  $\kappa$  to get a quantity call
 Kappa是根据方格频率表中对角线上的观察频率和期望频率计算的。如果 $\pmb{g}$ 个类别中有 $\pmb{n}$ 个观测值，则观察到的比例一致性为  
 Kappa is calculated from the observed and expected frequencies on the diagonal of a square table of frequencies. If there are  $\pmb{n}$  observations in  $\pmb{g}$  categories, then the observed proportional agreement is  
 
-$$  
-p_{o} = \sum_{i = 1}^{g}f_{i i} / n  
-p_{o} = \sum_{i = 1}^{g}f_{i i} / n  
+$$
+p_{o} = \sum_{i = 1}^{g}f_{i i} / n
 $$  
 
 其中 $f_{i i}$ 是类别 i 的一致数量。偶然达成一致的期望比例由下式给出  
 where  $f_{i i}$  is  the  number  of  agreements  for  category  i.  The  expected proportion of agreements by chance is given by  
 
-$$  
-p_{e} = \sum_{i = 1}^{g}r_{i}c_{i} / n^{2}  
-p_{e} = \sum_{i = 1}^{g}r_{i}c_{i} / n^{2}  
+$$
+p_{e} = \sum_{i = 1}^{g}r_{i}c_{i} / n^{2}
 $$  
 
 其中 $\pmb{r_{i}}$ 和 $c_{i}$ 分别是第 i 个类别的行总计和列总计。一致性指数 kappa 的计算公式为  
 where  $\pmb{r_{i}}$  and  $c_{i}$  are the row and column totals for the ith category. The index of agreement, kappa, is given by  
 
-$$  
-\kappa = \frac{p_{o} - p_{e}}{1 - p_{e}}.  
-\kappa = \frac{p_{o} - p_{e}}{1 - p_{e}}.  
+$$
+\kappa = \frac{p_{o} - p_{e}}{1 - p_{e}}.
 $$  
 
 $\kappa$ 的近似标准误为  
 The approximate standard error of  $\kappa$  is  
 
-$$  
-s e(\kappa) = \sqrt{\frac{p_{o}(1 - p_{o})}{n(1 - p_{e})^{2}}}  
-s e(\kappa) = \sqrt{\frac{p_{o}(1 - p_{o})}{n(1 - p_{e})^{2}}}  
+$$
+s e(\kappa) = \sqrt{\frac{p_{o}(1 - p_{o})}{n(1 - p_{e})^{2}}}
 $$  
 
 因此，$\kappa$ 总体值的 $95\%$ 置信区间由以下公式给出  
 so that a  $95\%$  confidence interval for the population value of  $\kappa$  is given by  
 
-$$  
-\kappa - 1.96 s e(\kappa)\qquad \mathrm{to}\qquad \kappa + 1.96 s e(\kappa).  
-\kappa - 1.96 s e(\kappa)\qquad \mathrm{to}\qquad \kappa + 1.96 s e(\kappa).  
+$$
+\kappa - 1.96 s e(\kappa)\qquad \mathrm{to}\qquad \kappa + 1.96 s e(\kappa).
 $$  
 
 加权 kappa 的计算方法是根据表格中每个单元格的频率与表示一致性的对角线的距离赋予权重。对于第 $i$ 行第 $j$ 列的单元格，其观测频率为 $f_{ij}$，权重计算公式为  
 Weighted kappa is obtained by giving weights to the frequencies in each cell of the table according to their distance from the diagonal that indicates agreement. For the cell in row  $i$  and column  $j$ , with observed frequency  $f_{ij}$ , a weight is calculated as  
 
-$$  
-w_{ij} = 1 - \frac{|i - j|}{g - 1}.  
-w_{ij} = 1 - \frac{|i - j|}{g - 1}.  
+$$
+w_{ij} = 1 - \frac{|i - j|}{g - 1}.
 $$  
 
 因此，我们给对角线上的单元格赋予权重 1，而那些差异为一个类别的单元格获得权重 $1 - 1 / (g - 1)$。对于 MAST-RAST 数据，差异为 0、1、2、3 和 4 的权重分别为 1、0.75、0.5、0.25 和 0。  
@@ -291,25 +282,22 @@ Thus we give cells on the diagonal a weight of 1, while those where the differen
 加权观察一致性和加权期望一致性按如下方式获得：  
 The weighted observed and expected proportional agreement are obtained as  
 
-$$  
-p_{o(w)} = \frac{1}{n}\sum_{i = 1}^{g}\sum_{j = 1}^{g}w_{ij}f_{ij}  
-p_{o(w)} = \frac{1}{n}\sum_{i = 1}^{g}\sum_{j = 1}^{g}w_{ij}f_{ij}  
+$$
+p_{o(w)} = \frac{1}{n}\sum_{i = 1}^{g}\sum_{j = 1}^{g}w_{ij}f_{ij}
 $$  
 
 以及  
 and  
 
-$$  
-p_{e(w)} = \frac{1}{n^{2}}\sum_{i = 1}^{g}\sum_{j = 1}^{g}w_{ij}r_{i}c_{j}  
-p_{e(w)} = \frac{1}{n^{2}}\sum_{i = 1}^{g}\sum_{j = 1}^{g}w_{ij}r_{i}c_{j}  
+$$
+p_{e(w)} = \frac{1}{n^{2}}\sum_{i = 1}^{g}\sum_{j = 1}^{g}w_{ij}r_{i}c_{j}
 $$  
 
 加权kappa值由下式给出：  
 and weighted kappa is given by  
 
-$$  
-\kappa_{w} = \frac{p_{o(w)} - p_{e(w)}}{1 - p_{e(w)}}.  
-\kappa_{w} = \frac{p_{o(w)} - p_{e(w)}}{1 - p_{e(w)}}.  
+$$
+\kappa_{w} = \frac{p_{o(w)} - p_{e(w)}}{1 - p_{e(w)}}.
 $$  
 
 Fleiss（1981，第223页）展示了如何计算加权kappa的标准误。  
@@ -577,9 +565,8 @@ Here I consider two further approaches that are more informative than simply loo
 对于任何测试结果，我们可以比较如果患者确实患有所关注的疾病时获得该结果的概率，与如果患者健康时获得相应结果的概率。这些概率的比率称为似然比（LR），其计算公式为  
 For any test result we can compare the probability of getting that result if the patient truly had the condition of interest with the corresponding probability if they were healthy. The ratio of these probabilities is called the likelihood ratio (LR), and it is calculated as  
 
-$$  
-\mathrm{LR} = \frac{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{disease})}{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{no~disease})} = \frac{\mathrm{sensitivity}}{1 - \mathrm{specificity}}  
-\mathrm{LR} = \frac{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{disease})}{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{no~disease})} = \frac{\mathrm{sensitivity}}{1 - \mathrm{specificity}}  
+$$
+\mathrm{LR} = \frac{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{disease})}{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{no~disease})} = \frac{\mathrm{sensitivity}}{1 - \mathrm{specificity}}
 $$  
 
 我们可以将似然比视为指示该测试对于增加阳性诊断确定性的价值。患病率是测试执行前患病的概率。因此，患病的几率表示为患病率/(1 - 患病率)。因此，如果患病率为 $10\%$，则几率为0.11，或者说患病可能性为9比1。我们可以将此数值称为检验前几率，将与阳性预测值对应的几率称为检验后几率。不难从数学上证明  
@@ -662,9 +649,8 @@ There are two basic approaches to the calculation. We can either take the approp
 如果我们能将$\log_{10}\mathrm{IgM}$的分布视为接近正态分布，我们就可以使用标准正态分布来估计所需的百分位数（参见第4.5.2节）。$\log_{10}\mathrm{IgM}$的$95\%$参考区间计算为均值$\pm 1.96\mathrm{SD}$，然后对这些值进行反对数转换，以得到$\mathrm{IgM}$的$95\%$参考区间。因此，我们首先计算  
 If we can consider the distribution of  $\log_{10}\mathrm{IgM}$  as close to Normal we can use the standard Normal distribution to estimate the required centiles (see section 4.5.2). The  $95\%$  reference interval for  $\log_{10}\mathrm{IgM}$  is calculated as mean  $\pm 1.96\mathrm{SD}$ , and the values are antilogged to give the  $95\%$  reference interval for  $\mathrm{IgM}$ . We thus calculate first  
 
-$$  
--0.158 - (1.96 \times 0.238) \text{and} -0.518 + (1.96 \times 0.238)  
--0.158 - (1.96 \times 0.238) \text{and} -0.518 + (1.96 \times 0.238)  
+$$
+-0.158 - (1.96 \times 0.238) \text{and} -0.518 + (1.96 \times 0.238)
 $$  
 
 即$- 0.624$和$0.308$，并将这些值进行反向转换（如第3.4节中所示，使用$10^{1}$），以获得$\mathrm{IgM}$的$95\%$参考区间，范围为$0.24$到$2.03$。对于这些数据，两种方法给出了非常相似的结果。  
@@ -698,9 +684,8 @@ Table 14.12 Reference intervals from 14 studies of fetal scalp blood pH (Lumley 
 正态分布的任何估计百分位数都可以获得标准误。例如，描述 $95\%$ 参考区间的值的标准误为  
 The standard error may be obtained for any estimated centile of the Normal distribution. For example, the values describing a  $95\%$  reference interval have a standard error of  
 
-$$  
-\sqrt{\frac{s^{2}}{N} + \frac{1.96^{2}s^{2}}{2N}}  
-\sqrt{\frac{s^{2}}{N} + \frac{1.96^{2}s^{2}}{2N}}  
+$$
+\sqrt{\frac{s^{2}}{N} + \frac{1.96^{2}s^{2}}{2N}}
 $$  
 
 其中 $s$ 是观测值的标准差。这大约等于 $s \sqrt{3 / N}$。不同样本量下 $95\%$ 参考区间限值的置信区间宽度如图 14.6 所示。对于小于约 50 的样本量，定义参考区间的值本身的置信区间比标准  
@@ -883,9 +868,8 @@ $(t_{2} - t_{1})(y_{1} + y_{2}) / 2$ . This is known as the trapezium rule becau
 如果我们有 $n + 1$ 个在时间 $t_{i}$ $(t = 0, \ldots , n)$ 处的测量值 $y_{i}$，那么 AUC 的计算公式为  
 If we have  $n + 1$  measurements  $y_{i}$  at times  $t_{i}$ $(t = 0, \ldots , n)$  then the AUC is calculated as  
 
-$$  
-\frac{1}{2} \sum_{i = 0}^{n - 1} (t_{i + 1} - t_{i}) (y_{i} + y_{i + 1}).  
-\frac{1}{2} \sum_{i = 0}^{n - 1} (t_{i + 1} - t_{i}) (y_{i} + y_{i + 1}).  
+$$
+\frac{1}{2} \sum_{i = 0}^{n - 1} (t_{i + 1} - t_{i}) (y_{i} + y_{i + 1}).
 $$  
 
 AUC 的单位是 $y_{i}$ 和 $t_{i}$ 单位的乘积，例如 nmol.min/l，并且不容易理解。将 AUC 除以总时间以获得该时间段内的一种加权平均水平可能很有用。  
@@ -894,9 +878,8 @@ The units of the AUC are the product of the units used for  $y_{i}$  and  $t_{i}
 表 14.13 中第一个受试者的计算如下。该受试者有八个观察值，因此要计算七个面积。我们有  
 The calculation for the first subject in Table 14.13 goes as follows. There were eight observations for this subject, so seven areas to calculate. We have  
 
-$$  
-\begin{array}{l}{\mathrm{AUC} = 3\times \left(\frac{1 + 10}{2}\right) + 2\times \left(\frac{10 + 16}{2}\right) + 5\times \left(\frac{16 + 22}{2}\right) + \ldots}\\ {+60\times \left(\frac{18 + 14}{2}\right)}\\ {= 1930\mathrm{nmol.min / l}.} \end{array}  
-\begin{array}{l}{\mathrm{AUC} = 3\times \left(\frac{1 + 10}{2}\right) + 2\times \left(\frac{10 + 16}{2}\right) + 5\times \left(\frac{16 + 22}{2}\right) + \ldots}\\ {+60\times \left(\frac{18 + 14}{2}\right)}\\ {= 1930\mathrm{nmol.min / l}.} \end{array}  
+$$
+\begin{array}{l}{\mathrm{AUC} = 3\times \left(\frac{1 + 10}{2}\right) + 2\times \left(\frac{10 + 16}{2}\right) + 5\times \left(\frac{16 + 22}{2}\right) + \ldots}\\ {+60\times \left(\frac{18 + 14}{2}\right)}\\ {= 1930\mathrm{nmol.min / l}.} \end{array}
 $$  
 
 该值也可以表示为平均水平 $1930 / 120 = 16.1 \mathrm{nmol / l}$。  

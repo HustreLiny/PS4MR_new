@@ -131,17 +131,15 @@ with two or more samples rather than a single sample. Comparing two samples is p
 在来自标准差为 $\sigma$ 的总体的单个样本中，均值抽样分布的方差为 $\sigma^{2} / n$，因此均值的标准误为 $\sigma /\sqrt{n}$。如果我们有两个独立样本，它们均值之差的方差是各自方差之和，因此均值之差的标准误是各自方差之和的平方根。用数学符号表示，如果两个均值分别为 $\bar{x}_{1}$ 和 $\bar{x}_{2}$，则  
 In a single sample from a population with a standard deviation of  $\sigma$  the variance of the sampling distribution of the mean is  $\sigma^{2} / n$ , and so the standard error of the mean is  $\sigma /\sqrt{n}$ . If we have two independent samples the variance of the difference between their means is the sum of the separate variances, so the standard error of the difference in means is the square root of the sum of the separate variances. In mathematical notation, if the two means are  $\bar{x}_{1}$  and  $\bar{x}_{2}$ , then  
 
-$$  
-\begin{array}{r l} & {s e(\bar{x}_{1} - \bar{x}_{2}) = \sqrt{v a r(\bar{x}_{1}) + v a r(\bar{x}_{2})}}\\ & {\qquad = \sqrt{\{s e(\bar{x}_{1})\}^{2} + \{s e(\bar{x}_{2})\}^{2}}}\\ & {\qquad = \sqrt{\frac{s_{1}^{2}}{n_{1}} + \frac{s_{2}^{2}}{n_{2}}}.} \end{array}  
-\begin{array}{r l} & {s e(\bar{x}_{1} - \bar{x}_{2}) = \sqrt{v a r(\bar{x}_{1}) + v a r(\bar{x}_{2})}}\\ & {\qquad = \sqrt{\{s e(\bar{x}_{1})\}^{2} + \{s e(\bar{x}_{2})\}^{2}}}\\ & {\qquad = \sqrt{\frac{s_{1}^{2}}{n_{1}} + \frac{s_{2}^{2}}{n_{2}}}.} \end{array}  
+$$
+\begin{array}{r l} & {s e(\bar{x}_{1} - \bar{x}_{2}) = \sqrt{v a r(\bar{x}_{1}) + v a r(\bar{x}_{2})}}\\ & {\qquad = \sqrt{\{s e(\bar{x}_{1})\}^{2} + \{s e(\bar{x}_{2})\}^{2}}}\\ & {\qquad = \sqrt{\frac{s_{1}^{2}}{n_{1}} + \frac{s_{2}^{2}}{n_{2}}}.} \end{array}
 $$  
 
 例如，一项关于急性心肌功能的大型研究发现，1551名男性的平均血尿素氮为 $23 \mathrm{mg / dl}$ (标准差13)，而538名女性的平均血尿素氮为 $25 \mathrm{mg / dl}$ (标准差15) (Dittrich 等，1988)。差值为 $2 \mathrm{mg / dl}$，其标准误为  
 For example, a large study of acute myocardial function found that 1551 men had a mean blood urea nitrogen of  $23 \mathrm{mg / dl}$  (SD 13) while among 538 women the mean was  $25 \mathrm{mg / dl}$  (SD 15) (Dittrich et al., 1988). The difference is  $2 \mathrm{mg / dl}$ , and its standard error is  
 
-$$  
-\sqrt{\frac{13^{2}}{1551} + \frac{15^{2}}{538}} = 0.726 \mathrm{mg / dl}.  
-\sqrt{\frac{13^{2}}{1551} + \frac{15^{2}}{538}} = 0.726 \mathrm{mg / dl}.  
+$$
+\sqrt{\frac{13^{2}}{1551} + \frac{15^{2}}{538}} = 0.726 \mathrm{mg / dl}.
 $$  
 
 如果样本量足够大（参见第8.4.5节），标准误可用于构建两个独立连续变量样本均值之差的置信区间。对于小样本，则采用略有不同的方法，这将在第9章中描述。  
@@ -165,17 +163,15 @@ distribution with mean  $p$  and standard deviation  $\sqrt{p(1 - p) / n}$ . Ret
 我们可以用与8.4.2节中两个均值之差的标准误相同的方式来计算两个比例之差的标准误。如果我们从两个独立样本中得到两个观察到的比例 $p_{1}$ 和 $p_{2}$，那么它们之差 $p_{1} - p_{2}$ 的标准误由下式给出：  
 We can calculate the standard error of the difference between two proportions in the same manner as that of the difference between two means given in section 8.4.2. If we have two observed proportions,  $p_{1}$  and  $p_{2}$ , from two independent samples, then the standard error of their difference,  $p_{1} - p_{2}$ , is given by  
 
-$$  
-\begin{array}{r l} & {s e(p_{1} - p_{2}) = \sqrt{v a r(p_{1}) + v a r(p_{2})}}\\ & {\qquad = \sqrt{\{s e(p_{1})\}^{2} + \{s e(p_{2})\}^{2}}}\\ & {\qquad = \sqrt{\frac{p_{1}(1 - p_{1})}{n_{1}} + \frac{p_{2}(1 - p_{2})}{n_{2}}}.} \end{array}  
-\begin{array}{r l} & {s e(p_{1} - p_{2}) = \sqrt{v a r(p_{1}) + v a r(p_{2})}}\\ & {\qquad = \sqrt{\{s e(p_{1})\}^{2} + \{s e(p_{2})\}^{2}}}\\ & {\qquad = \sqrt{\frac{p_{1}(1 - p_{1})}{n_{1}} + \frac{p_{2}(1 - p_{2})}{n_{2}}}.} \end{array}  
+$$
+\begin{array}{r l} & {s e(p_{1} - p_{2}) = \sqrt{v a r(p_{1}) + v a r(p_{2})}}\\ & {\qquad = \sqrt{\{s e(p_{1})\}^{2} + \{s e(p_{2})\}^{2}}}\\ & {\qquad = \sqrt{\frac{p_{1}(1 - p_{1})}{n_{1}} + \frac{p_{2}(1 - p_{2})}{n_{2}}}.} \end{array}
 $$  
 
 例如，在一项针对青少年的大型研究中，712名男孩中有165人报告他们总是使用安全带，而641名女孩中有91人报告总是使用安全带（Maron et al., 1986）。这两个比例分别为0.232和0.142，因此比例之差为0.090。其差值的标准误为：  
 For example, in a large study of adolescents 165 of 712 boys reported that they always used a seat belt compared with 91 of 641 girls (Maron et al., 1986). The two proportions are 0.232 and 0.142, so the difference in proportions is 0.090. The standard error of the difference is  
 
-$$  
-\sqrt{\frac{0.232(1 - 0.232)}{712} + \frac{0.142(1 - 0.142)}{641}} = 0.0210  
-\sqrt{\frac{0.232(1 - 0.232)}{712} + \frac{0.142(1 - 0.142)}{641}} = 0.0210  
+$$
+\sqrt{\frac{0.232(1 - 0.232)}{712} + \frac{0.142(1 - 0.142)}{641}} = 0.0210
 $$  
 
 

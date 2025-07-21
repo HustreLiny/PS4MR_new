@@ -307,9 +307,8 @@ Table 11.5 Fasting blood glucose data from 24 type 1 diabetic patients (Thuesen 
 通常计算的相关系数称为皮尔逊 $r$ 或“积矩”相关系数。如果我们有两个变量 $X$ 和 $Y$，它们之间的相关性，表示为 $r(X,Y)$ 或通常简写为 $r$，由以下公式给出：  
 The correlation coefficient that is usually calculated is called Pearson's  $r$  or the 'product- moment' correlation coefficient. If we have two variables  $X$  and  $Y$ , the correlation between them, denoted by  $r(X,Y)$  or usually just  $r$ , is given by  
 
-$$  
-r = \frac{\Sigma(x_{i} - \bar{x})(y_{i} - \bar{y})}{\sqrt{\Sigma(x_{i} - \bar{x})^{2}\Sigma(y_{i} - \bar{y})^{2}}}  
-r = \frac{\Sigma(x_{i} - \bar{x})(y_{i} - \bar{y})}{\sqrt{\Sigma(x_{i} - \bar{x})^{2}\Sigma(y_{i} - \bar{y})^{2}}}  
+$$
+r = \frac{\Sigma(x_{i} - \bar{x})(y_{i} - \bar{y})}{\sqrt{\Sigma(x_{i} - \bar{x})^{2}\Sigma(y_{i} - \bar{y})^{2}}}
 $$  
 
 其中 $x_{i}$ 和 $y_{i}$ 分别是第 $i$ 个个体的 $X$ 和 $Y$ 值。$r$ 值可以粗略地看作是数据大致落入的椭圆的伸长程度的度量。该方程显然是对称的，即哪个变量是 $X$ 哪个是 $Y$ 并不重要。  
@@ -318,9 +317,8 @@ where  $x_{i}$  and  $y_{i}$  are the values of  $X$  and  $Y$  for the  $i^{\te
 为了计算目的，一个更简单的公式是  
 For the purposes of calculation a simpler formula to use is  
 
-$$  
-r = \frac{\Sigma x_{i}y_{i} - (\Sigma x_{i})(\Sigma y_{i}) / n}{\sqrt{[\Sigma x_{i}^{2} - (\Sigma x_{i})^{2} / n][\Sigma y_{i}^{2} - (\Sigma y_{i})^{2} / n]}}  
-r = \frac{\Sigma x_{i}y_{i} - (\Sigma x_{i})(\Sigma y_{i}) / n}{\sqrt{[\Sigma x_{i}^{2} - (\Sigma x_{i})^{2} / n][\Sigma y_{i}^{2} - (\Sigma y_{i})^{2} / n]}}  
+$$
+r = \frac{\Sigma x_{i}y_{i} - (\Sigma x_{i})(\Sigma y_{i}) / n}{\sqrt{[\Sigma x_{i}^{2} - (\Sigma x_{i})^{2} / n][\Sigma y_{i}^{2} - (\Sigma y_{i})^{2} / n]}}
 $$  
 
 为此，需要获得 $\Sigma x_{i}, \Sigma y_{i}, \Sigma x_{i}^{2}, \Sigma y_{i}^{2}$ 和 $\Sigma x_{i}y_{i}$。  
@@ -329,9 +327,8 @@ for which it is necessary to obtain  $\Sigma x_{i}, \Sigma y_{i}, \Sigma x_{i}^{
 如果你已经有了均值（$\bar{x}$ 和 $\bar{y}$）和标准差（$s_{x}$ 和 $s_{y}$），那么公式可以简化为  
 If you already have the means ( $\bar{x}$  and  $\bar{y}$ ) and standard deviations ( $s_{x}$  and  $s_{y}$ ) the formula simplifies to  
 
-$$  
-r = \frac{\Sigma x_{i}y_{i} - n\bar{x}\bar{y}}{(n - 1)s_{x}s_{y}}  
-r = \frac{\Sigma x_{i}y_{i} - n\bar{x}\bar{y}}{(n - 1)s_{x}s_{y}}  
+$$
+r = \frac{\Sigma x_{i}y_{i} - n\bar{x}\bar{y}}{(n - 1)s_{x}s_{y}}
 $$  
 
 因此，只需计算额外项 $\Sigma x_{i}y_{i}$ 即可。  
@@ -345,57 +342,50 @@ This formula should not be used in a computer program, however, as inaccuracy is
 Pearson's $r$ 的抽样分布不是正态的，但我们可以将 $r$ 转换得到一个称为 $z$ 的量，它具有正态抽样分布。转换公式为  
 The sampling distribution of Pearson's  $r$  is not Normal, but we can transform  $r$  to get a quantity called  $z$  which does have a Normal sampling distribution. The transformation is  
 
-$$  
-z = \frac{1}{2}\log_{\mathrm{e}}\left(\frac{1 + r}{1 - r}\right).  
-z = \frac{1}{2}\log_{\mathrm{e}}\left(\frac{1 + r}{1 - r}\right).  
+$$
+z = \frac{1}{2}\log_{\mathrm{e}}\left(\frac{1 + r}{1 - r}\right).
 $$  
 
 $z$ 的标准误大约是 $1 / \sqrt{n - 3}$，其中 $n$ 是样本量，因此我们可以构建 $z$ 的 95% 置信区间，范围为  
 The standard error of  $z$  is approximately  $1 / \sqrt{n - 3}$  where  $n$  is the sample size, so we can construct a 95% confidence interval for  $z$  as being from  
 
-$$  
-z_{1} = z - 1.96 / \sqrt{n - 3}\qquad \mathrm{to}\qquad z_{2} = z + 1.96 / \sqrt{n - 3}.  
-z_{1} = z - 1.96 / \sqrt{n - 3}\qquad \mathrm{to}\qquad z_{2} = z + 1.96 / \sqrt{n - 3}.  
+$$
+z_{1} = z - 1.96 / \sqrt{n - 3}\qquad \mathrm{to}\qquad z_{2} = z + 1.96 / \sqrt{n - 3}.
 $$  
 
 我们将上述值反向转换，以获得总体相关系数 $r$ 的置信区间，为  
 We back- transform the above values to get a confidence interval for the population correlation coefficient  $r$  as  
 
-$$  
-\frac{e^{2z_{1}} - 1}{e^{2z_{1}} + 1}\mathrm{to}\frac{e^{2z_{2}} - 1}{e^{2z_{2}} + 1}.  
-\frac{e^{2z_{1}} - 1}{e^{2z_{1}} + 1}\mathrm{to}\frac{e^{2z_{2}} - 1}{e^{2z_{2}} + 1}.  
+$$
+\frac{e^{2z_{1}} - 1}{e^{2z_{1}} + 1}\mathrm{to}\frac{e^{2z_{2}} - 1}{e^{2z_{2}} + 1}.
 $$  
 
 图 11.1 中的体脂百分比和年龄数据相关系数为 0.7921，因此我们有  
 The  $\%$  fat and age data in Figure 11.1 had a correlation of 0.7921 so we have  
 
-$$  
-z = \frac{1}{2}\log_{e}\left(\frac{1 + 0.7921}{1 - 0.7921}\right) = 1.0770.  
-z = \frac{1}{2}\log_{e}\left(\frac{1 + 0.7921}{1 - 0.7921}\right) = 1.0770.  
+$$
+z = \frac{1}{2}\log_{e}\left(\frac{1 + 0.7921}{1 - 0.7921}\right) = 1.0770.
 $$  
 
 我们可以通过计算得到 $z$ 的 $95\%$ 置信区间  
 We can get a  $95\%$  confidence interval for  $z$  by calculating  
 
-$$  
-z_{1} = 1.0770 - 1.96 / \sqrt{15}  
-z_{1} = 1.0770 - 1.96 / \sqrt{15}  
+$$
+z_{1} = 1.0770 - 1.96 / \sqrt{15}
 $$  
 
 和  
 and  
 
-$$  
-z_{2} = 1.0770 + 1.96 / \sqrt{15},  
-z_{2} = 1.0770 + 1.96 / \sqrt{15},  
+$$
+z_{2} = 1.0770 + 1.96 / \sqrt{15},
 $$  
 
 得到 0.5710 到 1.5831。我们将这些值反向转换，得到 $r$ 的 $95\%$ 置信区间为  
 giving 0.5710 to 1.5831. We back- transform these values to get a  $95\%$  confidence interval for  $r$  as  
 
-$$  
-\frac{e^{2\times 0.5710} - 1}{e^{2\times 0.5710} + 1}\mathrm{to}\frac{e^{2\times 1.5831} - 1}{e^{2\times 1.5831} + 1},  
-\frac{e^{2\times 0.5710} - 1}{e^{2\times 0.5710} + 1}\mathrm{to}\frac{e^{2\times 1.5831} - 1}{e^{2\times 1.5831} + 1},  
+$$
+\frac{e^{2\times 0.5710} - 1}{e^{2\times 0.5710} + 1}\mathrm{to}\frac{e^{2\times 1.5831} - 1}{e^{2\times 1.5831} + 1},
 $$  
 
 即 0.52 到 0.92。尽管整个置信区间远大于零，但它非常宽。  
@@ -405,9 +395,8 @@ or 0.52 to 0.92. Although the whole confidence interval is much greater than zer
 相关系数的假设检验可以非常容易地进行。在总体中没有关联（即零相关）的零假设下，可以证明量  
 The hypothesis test for the correlation coefficient may be performed very easily. Under the null hypothesis that there is no association in the population (i.e. zero correlation) it can be shown that the quantity  
 
-$$  
-r\sqrt{\frac{n - 2}{1 - r^{2}}}  
-r\sqrt{\frac{n - 2}{1 - r^{2}}}  
+$$
+r\sqrt{\frac{n - 2}{1 - r^{2}}}
 $$  
 
 服从自由度为 $n - 2$ 的 $t$ 分布。因此，可以通过查阅 $t$ 分布表（表 B4）来检验无关联的零假设。  
@@ -416,9 +405,8 @@ has a  $t$  distribution with  $n - 2$  degrees of freedom. Thus the null hypoth
 图 11.1 中体脂百分比和年龄数据的相关系数为 0.7921，因此我们有  
 The  $\%$  fat and age data in Figure 11.1 had a correlation of 0.7921 so we have  
 
-$$  
-t = 0.7921\sqrt{\frac{16}{1 - 0.7921^{2}}} = 5.19  
-t = 0.7921\sqrt{\frac{16}{1 - 0.7921^{2}}} = 5.19  
+$$
+t = 0.7921\sqrt{\frac{16}{1 - 0.7921^{2}}} = 5.19
 $$  
 
 在16个自由度下 $(\mathbf{P}< 0.001)$  
@@ -436,9 +424,8 @@ Spearman's rank correlation coefficient  $r_{s}$  is obtained by ranking in orde
 还有一种替代方法，对于手动计算更简单，但它假设数据中没有并列（ties）。对于所研究的每个 $N$ 个受试者，计算秩的差值 $d_{i}$。斯皮尔曼秩相关系数然后由以下公式给出：  
 There is an alternative approach which is simpler for hand calculation, but it assumes that there are no ties in the data. For each of the  $N$  subjects being studied the difference in the ranks,  $d_{i}$  , is calculated. Spearman's rank correlation coefficient is then given by  
 
-$$  
-r_{s} = 1 - \frac{6\sum_{i = 1}^{n}d_{i}^{2}}{N^{3} - N}  
-r_{s} = 1 - \frac{6\sum_{i = 1}^{n}d_{i}^{2}}{N^{3} - N}  
+$$
+r_{s} = 1 - \frac{6\sum_{i = 1}^{n}d_{i}^{2}}{N^{3} - N}
 $$  
 
 这个公式与皮尔逊 $r$ 的公式没有明显的相似之处，但在没有并列时给出相同的结果。  
@@ -447,9 +434,8 @@ This formula bears no obvious similarity to the formula for Pearson's  $r$  but 
 表11.4中显示了纬度和DZ双生率数据的秩。秩差的平方和为366.5，因此我们有：  
 The ranks of the data on latitude and DZ twinning rate are shown in Table 11.4. The sum of the squares of the differences in the ranks is 366.5 so we have  
 
-$$  
-r_{s} = 1 - \frac{6\times366.5}{6859 - 19} = 0.68.  
-r_{s} = 1 - \frac{6\times366.5}{6859 - 19} = 0.68.  
+$$
+r_{s} = 1 - \frac{6\times366.5}{6859 - 19} = 0.68.
 $$  
 
 尽管当数据中存在并列秩时，$r_{s}$ 的计算应进行修正，但除非并列数量相当多，否则影响很小。表11.4中的纬度和DZ双生数据有几个并列秩，但无论是否进行修正，$r_{s}$ 的值都是0.68（保留两位小数）。使用对秩计算的皮尔逊相关系数的优点是并列情况会自动处理。当然，使用标准统计软件也很容易实现。  
@@ -465,9 +451,8 @@ The distribution of  $r_{s}$  is similar to that of  $r$  for samples larger tha
 在总体中没有关联（即零相关）的零假设下，可以证明，对于大样本 $(n > 30)$，以下量  
 Under the null hypothesis that there is no association in the population (i.e. zero correlation) it can be shown that for large samples  $(n > 30)$  the quantity  
 
-$$  
-r_{s}\sqrt{\frac{n - 2}{1 - r_{s}^{2}}}  
-r_{s}\sqrt{\frac{n - 2}{1 - r_{s}^{2}}}  
+$$
+r_{s}\sqrt{\frac{n - 2}{1 - r_{s}^{2}}}
 $$  
 
 具有 $n - 2$ 个自由度的 $t$ 分布。因此，可以通过查阅 $t$ 分布表（表 B4）来检验无关联的零假设。同样地，$r_{s}$ 可以与表 B7 中的临界值进行比较。对于较小的样本，应使用表 B8。  
@@ -479,9 +464,8 @@ has a  $t$  distribution with  $n - 2$  degrees of freedom. Thus the null hypoth
 如果我们有每对变量之间的相关系数，例如 $r(AB)$、$r(AC)$ 和 $r(BC)$，我们可以计算调整了第三个变量后的两个变量之间的相关性。为了调整变量 $A$ 和 $B$ 之间的相关性以消除变量 $C$ 可能的影响，我们将 $A$ 和 $B$ 调整了 $C$ 后的偏相关性计算为  
 We can calculate the correlation between two variables after adjusting for a third if we have the correlation coefficients between each pair of variables, say  $r(AB)$ ,  $r(AC)$  and  $r(BC)$ . To adjust the correlation between variables  $A$  and  $B$  for the possible effect of variable  $C$  we calculate the partial correlation of  $A$  and  $B$  adjusted for  $C$  as  
 
-$$  
-r(AB|C) = \frac{r(AB) - r(AC)r(BC)}{\sqrt{[1 - r(AC)^2][1 - r(BC)^2]}}.  
-r(AB|C) = \frac{r(AB) - r(AC)r(BC)}{\sqrt{[1 - r(AC)^2][1 - r(BC)^2]}}.  
+$$
+r(AB|C) = \frac{r(AB) - r(AC)r(BC)}{\sqrt{[1 - r(AC)^2][1 - r(BC)^2]}}.
 $$  
 
 类似地，偏秩相关性计算为  
@@ -503,8 +487,7 @@ $$
 因此，调整牛奶消费量后，纬度与DZ双生率之间的偏秩相关系数为：  
 so that the partial rank correlation coefficient between latitude and DZ twinning rate adjusted for milk consumption is  
 
-$$  
-$r_{s}(LT|M) = \frac{0.6147 - 0.9221 \times 0.6059}{\sqrt{(1 - 0.9221^2)(1 - 0.6059^2)}} = 0.18$.  
+$$ 
 r_{s}(LT|M) = \frac{0.6147 - 0.9221 \times 0.6059}{\sqrt{(1 - 0.9221^2)(1 - 0.6059^2)}} = 0.18.  
 $$  
 
@@ -608,9 +591,8 @@ The least squares method produces the line that minimizes the sum of the squares
 如果我们观测到两个变量的值，X（血糖）和Y（Vcf），我们可以进行“Y对X的回归”，以推导一条直线，该直线能为变量X的任何值提供Y的“拟合”估计值。回归线的通用方程是  
 If we have observed values of two variables,  $X$  (blood glucose) and  $Y$  (Vcf), we can perform a 'regression of  $Y$  on  $X$ ' to derive a straight line that gives a 'fitted' estimated value of  $Y$  for any value of the variable  $X$ . The general equation of a regression line is  
 
-$$  
-Y = a + b X.  
-Y = a + b X.  
+$$
+Y = a + b X.
 $$  
 
 这里，$b$是直线的斜率，$a$被称为截距，因为它是在直线与Y轴相交时（即$X = 0$时）Y的拟合值。在大多数医学应用中，$a$的值没有实际意义，因为X变量不可能接近零；例如血压和任何身体尺寸的测量值。  
@@ -619,9 +601,8 @@ Here  $b$  is the slope of the line and  $a$  is called the intercept because it
 实践中，对于给定数据集，$a$ 和 $b$ 的计算很简单（参见第 11.13 节），尽管使用计算机进行计算无疑是更优的选择。对于糖尿病患者的数据，图 11.10 所示的回归线方程为  
 In practice the calculation of  $a$  and  $b$  for a given set of data is easy (see section 11.13) although it is definitely preferable to use a computer to do the calculations. For the data on diabetics the equation of the regression line shown in Figure 11.10 is  
 
-$$  
-\mathrm{Vcf} = 1.10 + 0.0220 \times \text{blood glucose}.  
-\mathrm{Vcf} = 1.10 + 0.0220 \times \text{blood glucose}.  
+$$
+\mathrm{Vcf} = 1.10 + 0.0220 \times \text{blood glucose}.
 $$  
 
 这个方程告诉我们什么？对于任何血糖值，从回归方程得出的 Vcf 估计值是 Vcf 的预测值，但我们需要某种衡量这种预测不确定性的方法。更根本地，我们通常会希望考虑这些受试者中两个变量之间观察到的关系是否仅仅是偶然发现的可能性，并考虑这条线与数据拟合得有多好。所有这些方面都可以结合前面介绍的残差进行研究。  
@@ -669,9 +650,8 @@ test gives  $W^{\prime} = 0.907$ $(\mathbf{P} = 0.03)$  , indicating some non- N
 图11.10中所示的最小二乘回归线方程为  
 The least squares regression line shown in Figure 11.10 has the equation  
 
-$$  
-Y = 1.10 + 0.0220X。  
-Y = 1.10 + 0.0220X.  
+$$
+Y = 1.10 + 0.0220X。
 $$  
 
 从图11.10和图11.13来看，这项分析的假设似乎是合理的—回归线周围的散布相当均匀且对称，线性关系似乎合理，并且残差的分布与正态分布相差不远。  
@@ -765,9 +745,8 @@ Figure 11.16 Quadratic curve fitted to mean birth weight by gestational age (Alt
 可以很容易地获得 $a$ 和 $b$ 的估计值。将观测数据表示为 $x_{i}$ 和 $y_{i} (i = 1, \ldots , n)$，可以证明该线必须通过数据的均值 $(\bar{x}, \bar{y})$。估计的斜率由下式给出：  
 estimates of  $a$  and  $b$  can be obtained easily. Denoting the observed data as  $x_{i}$  and  $y_{i} (i = 1, \ldots , n)$  it can be shown that the line must pass through the mean of the data  $(\bar{x}, \bar{y})$ . The estimated slope is given by  
 
-$$  
-b = \frac{\Sigma(x_{i} - \bar{x})(y_{i} - \bar{y})}{\Sigma(x_{i} - \bar{x})^{2}}.  
-b = \frac{\Sigma(x_{i} - \bar{x})(y_{i} - \bar{y})}{\Sigma(x_{i} - \bar{x})^{2}}.  
+$$
+b = \frac{\Sigma(x_{i} - \bar{x})(y_{i} - \bar{y})}{\Sigma(x_{i} - \bar{x})^{2}}.
 $$  
 
 请注意，正如我们从分析的性质中应该预期的那样，该方程是不对称的，与第 11.7 节中给出的 $r$ 的方程不同：哪个变量是 $X$ 哪个变量是 $Y$ 确实很重要。  
@@ -776,17 +755,15 @@ Note that, as we should expect from the nature of the analysis, the equation is 
 如果我们首先计算 $X$ 和 $Y$ 值相对于其均值的“平方和”以及“乘积和”，则计算可以简化：  
 The calculations can be simplified if we first obtain the 'sum of squares' of the  $X$  and  $Y$  values about their means, and the 'sum of products':  
 
-$$  
-\begin{array}{l}{{S_{x x}=\sum x_{i}^{2}-(\sum x_{i})^{2}/n}}\\ {{S_{y y}=\sum y_{i}^{2}-(\sum y_{i})^{2}/n}}\\ {{S_{x y}=\sum x_{i}y_{i}-\sum x_{i}\sum y_{i}/n.}}\end{array}  
-\begin{array}{l}{{S_{x x}=\sum x_{i}^{2}-(\sum x_{i})^{2}/n}}\\ {{S_{y y}=\sum y_{i}^{2}-(\sum y_{i})^{2}/n}}\\ {{S_{x y}=\sum x_{i}y_{i}-\sum x_{i}\sum y_{i}/n.}}\end{array}  
+$$
+\begin{array}{l}{{S_{x x}=\sum x_{i}^{2}-(\sum x_{i})^{2}/n}}\\ {{S_{y y}=\sum y_{i}^{2}-(\sum y_{i})^{2}/n}}\\ {{S_{x y}=\sum x_{i}y_{i}-\sum x_{i}\sum y_{i}/n.}}\end{array}
 $$  
 
 量 $S_{xx}$ 和 $S_{yy}$ 恰好是 $X$ 和 $Y$ 方差的 $n - 1$ 倍。计算 $b$ 的一个更简单的方法是  
 The quantities  $S_{xx}$  and  $S_{yy}$  are just  $n - 1$  times the variances of  $X$  and  $Y$ . An easier way of calculating  $b$  is as  
 
-$$  
-b = \frac{S_{xy}}{S_{xx}}.  
-b = \frac{S_{xy}}{S_{xx}}.  
+$$
+b = \frac{S_{xy}}{S_{xx}}.
 $$  
 
 然而，此公式不应在计算机程序中使用，因为舍入误差偶尔会导致不准确。为此目的，只能使用上面给出的第一个 $b$ 的方程。  
@@ -795,17 +772,15 @@ This formula should not be used in a computer program, however, as inaccuracy is
 因为我们知道回归线通过均值 $(\bar{x}, \bar{y})$，所以我们可以简单地估计 $a$ 为  
 Because we know that the regression line passes through the mean  $(\bar{x}, \bar{y})$ , we can estimate  $a$  simply as  
 
-$$  
-a = \bar{y} - b\bar{x}.  
-a = \bar{y} - b\bar{x}.  
+$$
+a = \bar{y} - b\bar{x}.
 $$  
 
 因此，对于 $X$ 的任何值，例如 $x_0$，由方程预测的 $Y$ 的拟合值为  
 So for any value of  $X$ , say  $x_0$ , the fitted value of  $Y$  predicted by the equation is  
 
-$$  
-\begin{array}{l}{{y_{\hat{H} t}=a+b x_{0}}}\\ {{\mathrm{~}=(\bar{y}-b\bar{x})+b x_{0}}}\\ {{\mathrm{~}=\bar{y}+b(x_{0}-\bar{x}).}}\end{array}  
-\begin{array}{l}{{y_{\hat{H} t}=a+b x_{0}}}\\ {{\mathrm{~}=(\bar{y}-b\bar{x})+b x_{0}}}\\ {{\mathrm{~}=\bar{y}+b(x_{0}-\bar{x}).}}\end{array}  
+$$
+\begin{array}{l}{{y_{\hat{H} t}=a+b x_{0}}}\\ {{\mathrm{~}=(\bar{y}-b\bar{x})+b x_{0}}}\\ {{\mathrm{~}=\bar{y}+b(x_{0}-\bar{x}).}}\end{array}
 $$  
 
 请注意，下面引用的所有结果都是使用完整的数值精度获得的，但中间计算已进行四舍五入以使呈现更清晰。  
@@ -814,45 +789,38 @@ Note that all the results quoted below were obtained using full numeric accuracy
 对于糖尿病患者的数据，两个变量的均值分别为 $\bar{x} = 10.37 \mathrm{mmol / l}$ 和 $\bar{y} = 1.33\% /\mathrm{sec}$，我们需要的其他量为  
 For the data on diabetics the mean values of the two variables are  $\bar{x} = 10.37 \mathrm{mmol / l}$  and  $\bar{y} = 1.33\% /\mathrm{sec}$ , and the other quantities we will need are  
 
-$$  
-\sum x = 238.60, \sum y = 30.49, \sum x^2 = 2904.92, \sum y^2 = 41.6125  
-\sum x = 238.60, \sum y = 30.49, \sum x^2 = 2904.92, \sum y^2 = 41.6125  
-$$  
-
-$$  
-\textstyle \mathrm{and}\sum x y = 325.74,  
-\textstyle \mathrm{and}\sum x y = 325.74,  
+$$
+\sum x = 238.60, \sum y = 30.49, \sum x^2 = 2904.92, \sum y^2 = 41.6125
 $$  
 
-$$  
-S_{xx} = 2904.92 - 238.60^2 / 23 = 429.704,  
-S_{xx} = 2904.92 - 238.60^2 / 23 = 429.704,  
-$$  
-
-$$  
-S_{yy} = 41.61 - 30.49^2 / 23 = 1.193,  
-S_{yy} = 41.61 - 30.49^2 / 23 = 1.193,  
+$$
+\textstyle \mathrm{and}\sum x y = 325.74,
 $$  
 
+$$
+S_{xx} = 2904.92 - 238.60^2 / 23 = 429.704,
 $$  
-S_{xy} = 325.74 - 238.60 \times 30.49 / 23 = 9.439.  
-S_{xy} = 325.74 - 238.60 \times 30.49 / 23 = 9.439.  
+
+$$
+S_{yy} = 41.61 - 30.49^2 / 23 = 1.193,
+$$  
+
+$$
+S_{xy} = 325.74 - 238.60 \times 30.49 / 23 = 9.439.
 $$  
 
 我们将斜率 $b$ 估计为  
 We estimate the slope  $b$  as  
 
-$$  
-\begin{array}{c}b = \frac{9.439}{429.704} \\ = 0.02196. \end{array}  
-\begin{array}{c}b = \frac{9.439}{429.704} \\ = 0.02196. \end{array}  
+$$
+\begin{array}{c}b = \frac{9.439}{429.704} \\ = 0.02196. \end{array}
 $$  
 
 截距 $a$ 估计为  
 The intercept  $a$  is estimated as  
 
-$$  
-\begin{array}{c}a = 1.33 - 0.02196 \times 10.37 \\ = 1.098\% /\mathrm{sec}. \end{array}  
-\begin{array}{c}a = 1.33 - 0.02196 \times 10.37 \\ = 1.098\% /\mathrm{sec}. \end{array}  
+$$
+\begin{array}{c}a = 1.33 - 0.02196 \times 10.37 \\ = 1.098\% /\mathrm{sec}. \end{array}
 $$  
 
 ### 11.13.2 残差变异  11.13.2 Residual variation  
@@ -860,25 +828,22 @@ $$
 观测值 $y_0$ 与拟合值 $y_{\hat{H}}$ 之间的差值因此为  
 The difference between an observed value  $y_0$  and fitted value  $y_{\hat{H}}$  is thus  
 
-$$  
-y_{0} - y_{\hbar t} = y_{0} - [\bar{y} +b(x_{0} - \bar{x})], \tag{y0 - yfit = y0 - [y + b(x0 - x)]},  
-y_{0} - y_{\hbar t} = y_{0} - [\bar{y} +b(x_{0} - \bar{x})], \tag{y0 - yfit = y0 - [y + b(x0 - x)]},  
+$$
+y_{0} - y_{\hbar t} = y_{0} - [\bar{y} +b(x_{0} - \bar{x})], \tag{y0 - yfit = y0 - [y + b(x0 - x)]},
 $$  
 
 而值 $y_{0} - y_{\hbar t}$ 就是该个体的残差。最小二乘法直线使残差平方和 $\Sigma (y_{i} - y_{\hbar t})^{2}$ 最小化，但我们更关注它们的方差，其计算方法如下：  
 and the value  $y_{0} - y_{\hbar t}$  is the residual for that individual. It is the sum of the squares of the residuals,  $\Sigma (y_{i} - y_{\hbar t})^{2}$ , that is minimized by the least squares line, but we are more interested in their variance, obtained as  
 
-$$  
-s_{res}^{2} = \frac{\Sigma(y_{i} - y_{\hbar t})^{2}}{n - 2}  
-s_{res}^{2} = \frac{\Sigma(y_{i} - y_{\hbar t})^{2}}{n - 2}  
+$$
+s_{res}^{2} = \frac{\Sigma(y_{i} - y_{\hbar t})^{2}}{n - 2}
 $$  
 
 或者，对于计算而言：  
 or, for calculation,  
 
-$$  
-\begin{array}{l}{{s_{r e s}^{2}=\frac{1}{n-2}\biggl[\Sigma y_{i}^{2}-\frac{(\Sigma y_{i})^{2}}{n}-b\biggl(\Sigma x_{i}y_{i}-\frac{\Sigma x_{i}\Sigma y_{i}}{n}\biggr)\biggr]}}\\ {{=\frac{1}{n-2}(S_{y y}-b S_{x y}).}}\end{array}  
-\begin{array}{l}{{s_{r e s}^{2}=\frac{1}{n-2}\biggl[\Sigma y_{i}^{2}-\frac{(\Sigma y_{i})^{2}}{n}-b\biggl(\Sigma x_{i}y_{i}-\frac{\Sigma x_{i}\Sigma y_{i}}{n}\biggr)\biggr]}}\\ {{=\frac{1}{n-2}(S_{y y}-b S_{x y}).}}\end{array}  
+$$
+\begin{array}{l}{{s_{r e s}^{2}=\frac{1}{n-2}\biggl[\Sigma y_{i}^{2}-\frac{(\Sigma y_{i})^{2}}{n}-b\biggl(\Sigma x_{i}y_{i}-\frac{\Sigma x_{i}\Sigma y_{i}}{n}\biggr)\biggr]}}\\ {{=\frac{1}{n-2}(S_{y y}-b S_{x y}).}}\end{array}
 $$  
 
 该表达式的平方根，即残差标准差 $s_{\mathrm{res}}$，用于后续计算。  
@@ -887,17 +852,15 @@ The square root of this expression, the residual standard deviation,  $s_{\mathr
 在示例中，我们可以计算残差方差如下：  
 We can calculate the residual variance in the example as  
 
-$$  
-\begin{array}{c}{{s_{r e s}^{2}=\frac{1}{21}(1.193-0.02196\times9.439)}}\\ {{{}}}\\ {{=0.04696}}\end{array}  
-\begin{array}{c}{{s_{r e s}^{2}=\frac{1}{21}(1.193-0.02196\times9.439)}}\\ {{{}}}\\ {{=0.04696}}\end{array}  
+$$
+\begin{array}{c}{{s_{r e s}^{2}=\frac{1}{21}(1.193-0.02196\times9.439)}}\\ {{{}}}\\ {{=0.04696}}\end{array}
 $$  
 
 因此残差标准差为  
 so that the residual standard deviation is  
 
-$$  
-\begin{array}{c}{{s_{r e s}=\sqrt{0.04696}}}\\ {{=0.2167.}}\end{array}  
-\begin{array}{c}{{s_{r e s}=\sqrt{0.04696}}}\\ {{=0.2167.}}\end{array}  
+$$
+\begin{array}{c}{{s_{r e s}=\sqrt{0.04696}}}\\ {{=0.2167.}}\end{array}
 $$  
 
 ### 11.13.3 置信区间  11.13.3 Confidence intervals  
@@ -907,17 +870,15 @@ $$
 斜率 $b$ 的标准误与残差标准差密切相关，即  
 The standard error of the slope,  $b$ , is strongly related to the residual standard deviation, being  
 
-$$  
-se(b) = \frac{s_{res}}{\sqrt{S_{xx}}}  
-se(b) = \frac{s_{res}}{\sqrt{S_{xx}}}  
+$$
+se(b) = \frac{s_{res}}{\sqrt{S_{xx}}}
 $$  
 
 因此 $b$ 的 $95\%$ 置信区间为  
 so that a  $95\%$  confidence interval for  $b$  is  
 
-$$  
-b\pm t_{0.975}s e(b)  
-b\pm t_{0.975}s e(b)  
+$$
+b\pm t_{0.975}s e(b)
 $$  
 
 其中 $t$ 的自由度为 $n - 2$（与残差相关的自由度）。  
@@ -926,17 +887,15 @@ where  $t$  is on  $n - 2$  degrees of freedom (the degrees of freedom associate
 斜率通常是人们最感兴趣的方面。$b$ 的标准误为  
 The slope is usually the aspect of most interest. The standard error of  $b$  is  
 
-$$  
-\begin{array}{c}{{s e(b)=\frac{0.2167}{\sqrt{429.704}}}}\\ {{=0.0105.}}\end{array}  
-\begin{array}{c}{{s e(b)=\frac{0.2167}{\sqrt{429.704}}}}\\ {{=0.0105.}}\end{array}  
+$$
+\begin{array}{c}{{s e(b)=\frac{0.2167}{\sqrt{429.704}}}}\\ {{=0.0105.}}\end{array}
 $$  
 
 根据表B4，$t_{0.975}$ 在21个自由度下的值为2.08，因此，$95\%$ 置信区间为  
 From Table B4 the value of  $t_{0.975}$  on 21 degrees of freedom is 2.08, so a  $95\%$  confidence interval is given by  
 
-$$  
-0.02196\pm 2.08\times 0.0105  
-0.02196\pm 2.08\times 0.0105  
+$$
+0.02196\pm 2.08\times 0.0105
 $$  
 
 即0.00012到0.044。因此，该置信区间从零开始延伸（零表示变量之间没有关系），直至样本中观测值的两倍。  
@@ -947,17 +906,15 @@ that is, 0.00012 to 0.044. The confidence interval thus extends from zero, repre
 对于给定的 $X$ 值，例如 $x_{0}$，估计值 $y_{\hbar t}$ 的标准误由下式给出：  
 The standard error of the estimate  $y_{\hbar t}$  for a given value of  $X$  , say  $x_{0}$  ,is given by  
 
-$$  
-s e(y_{f i t}) = s_{r e s}\sqrt{\frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{x x}}}  
-s e(y_{f i t}) = s_{r e s}\sqrt{\frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{x x}}}  
+$$
+s e(y_{f i t}) = s_{r e s}\sqrt{\frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{x x}}}
 $$  
 
 并且 $95\%$ 置信区间由下式给出：  
 and a  $95\%$  confidence interval is given by  
 
-$$  
-y_{f i t}\pm t_{0.975}s e(y_{f i t})  
-y_{f i t}\pm t_{0.975}s e(y_{f i t})  
+$$
+y_{f i t}\pm t_{0.975}s e(y_{f i t})
 $$  
 
 其中 $t$ 的自由度为 $n - 2$。  
@@ -966,33 +923,29 @@ where  $t$  is on  $n - 2$  degrees of freedom.
 我们可以得到任何血糖值下 Vcf 预测平均值的 $95\%$ 置信区间。如果 $y_{f i t}$ 是回归方程预测的 Vcf 平均值，那么 $y_{f i t}$ 的标准误是  
 We can obtain a  $95\%$  confidence interval for the predicted mean value of Vcf for any blood glucose. If  $y_{f i t}$  is the predicted mean Vcf from the regression equation, then the standard error of  $y_{f i t}$  is  
 
-$$  
-s e(y_{f i t}) = 0.2167\sqrt{\frac{1}{23} + \frac{(x_{0} - 10.37)^{2}}{429.704}}  
-s e(y_{f i t}) = 0.2167\sqrt{\frac{1}{23} + \frac{(x_{0} - 10.37)^{2}}{429.704}}  
+$$
+s e(y_{f i t}) = 0.2167\sqrt{\frac{1}{23} + \frac{(x_{0} - 10.37)^{2}}{429.704}}
 $$  
 
 其中 $x_{0}$ 是血糖值。因此，当血糖值为 $14.5\mathrm{mmol / l}$ 时，估计的 Vcf 平均值由回归方程给出，为  
 where  $x_{0}$  is the blood glucose value. So for a blood glucose of  $14.5\mathrm{mmol / l}$  the estimated mean Vcf is given by the regression equation as  
 
-$$  
-1.098 + 0.02196 × 14.5 = 1.416%/sec.  
-1.098 + 0.02196 × 14.5 = 1.416%/sec.  
+$$
+1.098 + 0.02196 × 14.5 = 1.416%/sec.
 $$  
 
 该估计值的标准误因此是  
 The standard error of this estimate is thus  
 
-$$  
-s e(y_{f i t}) = 0.2167\sqrt{\frac{1}{23} + \frac{(14.5 - 10.37)^{2}}{429.704}}  
-s e(y_{f i t}) = 0.2167\sqrt{\frac{1}{23} + \frac{(14.5 - 10.37)^{2}}{429.704}}  
+$$
+s e(y_{f i t}) = 0.2167\sqrt{\frac{1}{23} + \frac{(14.5 - 10.37)^{2}}{429.704}}
 $$  
 
 我们使用上述方程来获得 1.419 估计值的置信区间。根据表 B4，自由度为 21 的 $t_{0.975}$ 值为 2.080，因此 $95\%$ 置信区间为  
 We use the equation above to get a confidence interval for the estimate of 1.419. From Table B4 the value of  $t_{0.975}$  with 21 degrees of freedom is 2.080, so that the  $95\%$  confidence interval is given by  
 
-$$  
-1.416\pm 2.080\times 0.0625  
-1.416\pm 2.080\times 0.0625  
+$$
+1.416\pm 2.080\times 0.0625
 $$  
 
 或 1.29 到 $1.55\%$ /秒。  
@@ -1011,17 +964,15 @@ The  $95\%$  prediction interval is much wider than the  $95\%$  confidence inte
 对于任何值 $x_{0}$，预测值为 $y_{fit} = a + bx_{0}$。为了获得预测区间，我们不想要 $y_{fit}$ 的标准误，而是想要在 $X$ 的该值处 $Y - y_{fit}$ 的个体值的估计标准差。该标准差由以下公式给出：  
 For any value  $x_{0}$  the predicted value is  $y_{fit} = a + bx_{0}$ . To get the prediction interval we do not want the standard error of  $y_{fit}$ , but the estimated standard deviation of individual values of  $Y - y_{fit}$  at that value of  $X$ . This standard deviation is given by  
 
-$$  
-s_{pred} = s_{res}\sqrt{1 + \frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{xx}}}  
-s_{pred} = s_{res}\sqrt{1 + \frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{xx}}}  
+$$
+s_{pred} = s_{res}\sqrt{1 + \frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{xx}}}
 $$  
 
 因此，$95\%$ 预测区间为  
 and thus the  $95\%$  prediction interval is  
 
-$$  
-y_{fit}\pm t_{0.975}s_{pred}  
-y_{fit}\pm t_{0.975}s_{pred}  
+$$
+y_{fit}\pm t_{0.975}s_{pred}
 $$  
 
 其中 $t$ 的自由度为 $n - 2$。  
@@ -1030,17 +981,15 @@ where  $t$  is on  $n - 2$  degrees of freedom.
 血糖值为 $14.5 \mathrm{mmol / l}$ 的个体的 Vcf 值的估计标准差为  
 The estimated standard deviation of Vcf values for individuals with a blood glucose of  $14.5 \mathrm{mmol / l}$  is  
 
-$$  
-\begin{array}{l}{{s_{p r e d}=0.2167\sqrt{1+\frac{1}{23}+\frac{(14.5-10.37)^{2}}{429.704}}}}\\ {{=0.225\%/\mathrm{sec}.}}\end{array}  
-\begin{array}{l}{{s_{p r e d}=0.2167\sqrt{1+\frac{1}{23}+\frac{(14.5-10.37)^{2}}{429.704}}}}\\ {{=0.225\%/\mathrm{sec}.}}\end{array}  
+$$
+\begin{array}{l}{{s_{p r e d}=0.2167\sqrt{1+\frac{1}{23}+\frac{(14.5-10.37)^{2}}{429.704}}}}\\ {{=0.225\%/\mathrm{sec}.}}\end{array}
 $$  
 
 因此，$95\%$ 预测区间为  
 The  $95\%$  prediction interval is therefore  
 
-$$  
-1.416\pm 2.080\times 0.225  
-1.416\pm 2.080\times 0.225  
+$$
+1.416\pm 2.080\times 0.225
 $$  
 
 或 $0.95$ 至 $1.89\% /\mathrm{sec}$，这比均值的置信区间宽得多，通过比较图 11.14 和 11.15 可以看出。  
@@ -1057,9 +1006,8 @@ We can thus test the null hypothesis of no relation between Vcf and
 血糖之间无关系的零假设。我们只需将 $b$ 的估计值除以其标准误，然后将结果与 $t$ 分布的相应值进行比较。因此我们有  
 blood glucose. We simply divide the estimate of  $b$  by its standard error and compare the result with the appropriate value of the  $t$  distribution. So we have  
 
-$$  
-t = b / s e(b) = 0.02196 / 0.0105 = 2.10.  
-t = b / s e(b) = 0.02196 / 0.0105 = 2.10.  
+$$
+t = b / s e(b) = 0.02196 / 0.0105 = 2.10.
 $$  
 
 将此值与具有 21 自由度的 $t$ 分布进行比较，$t_{0.975}$ 的值为 2.08。因此，该斜率在 $5\%$ 水平上刚好显著不为零。  
@@ -1090,9 +1038,8 @@ data. Such extrapolation is unjustified as we have no evidence about the relatio
 外推危险的一个例子是根据 1954 年至 1984 年世界一英里跑纪录时间拟合的二次回归模型。Kitson (1984) 建立了以下模型：  
 An example of the danger of extrapolation is seen from a quadratic regression model fitted to the world record times to run a mile from 1954 to 1984. Kitson (1984) produced the model  
 
-$$  
-\mathrm{time} = 4.777 - 0.02039 \mathrm{Year} + 0.0001040 \mathrm{Year}^2  
-\mathrm{time} = 4.777 - 0.02039 \mathrm{Year} + 0.0001040 \mathrm{Year}^2  
+$$
+\mathrm{time} = 4.777 - 0.02039 \mathrm{Year} + 0.0001040 \mathrm{Year}^2
 $$  
 
 其中“Year”是公历年份减去 1900。他观察到，“终极一英里”将在 1998 年跑出 3 分 46.66 秒的成绩，并且根据这个模型，“我们可能已经距离终极一英里不到一秒”。然而，他未能注意到，1998 年之后，他的模型表明世界纪录时间将再次开始增加（参见图 11.17），这显然是不可能的！  
@@ -1152,9 +1099,8 @@ The standard error of the slope is useful, as is the  $\mathbf{P}$  value for th
 系数所用的精度应与原始数据的精度相关。例如，给出一个声称能将出生体重预测到最近 $\frac{1}{100000} \mathbf{g}$ 的方程是没有意义的，以下关于出生体重 $(y)$ 对胎儿腹围 $(x)$ 的二次回归方程就暗示了这一点：  
 The accuracy used for the coefficients should be related to the accuracy of the raw data. It makes no sense, for example, to give an equation that purports to predict birth weight to the nearest  $\frac{1}{100000} \mathbf{g}$ , which is what is implied by the following quadratic regression equation of birth weight  $(y)$  on fetal abdominal area  $(x)$ :  
 
-$$  
-y = 3518.42829 - 0.26395x + 0.000024x^{2}  
-y = 3518.42829 - 0.26395x + 0.000024x^{2}  
+$$
+y = 3518.42829 - 0.26395x + 0.000024x^{2}
 $$  
 
 (Campogrande 等人，1977)。$a$ 的估计值通常会大于 $b$ 的估计值，但 $a$ 和 $b$ 却经常被报告到相同的小数位数。然而，在进行预测时，斜率 $b$ 需要更高的精度，而不是更低，因此它应该至少与 $a$ 一样精确，甚至更精确。这里的精度指的是“有效数字”的数量（即忽略开头的零）。因此，在前面给出的方程 $\mathrm{Vcf} = 1.10 + 0.0220$ 血糖中，截距和斜率都给出了三位有效数字。将其与上面给出的二次方程进行对比。  

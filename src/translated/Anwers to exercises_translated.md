@@ -215,9 +215,8 @@ indicating that a non- parametric method would be suitable. An alternative, but 
 10.1 (a) 必须使用适用于配对数据的分析方法。对巴豆油和DNCB呈阴性反应的比例分别为 $44 / 173 = 25.4\%$ 和 $69 / 173 = 39.9\%$。使用第10.4节中给出的方法，这些比例差异的 $95\%$ 置信区间为 $5\%$ 到 $24\%$。检验两种皮肤试验阴性患者比例是否相同的假设，通过计算  
 10.1 (a) It is essential to use an analysis appropriate for paired data. The proportions negative to croton oil and DNCB were  $44 / 173 = 25.4\%$  and  $69 / 173 = 39.9\%$  respectively. A  $95\%$  CI for the difference between these proportions, using the method given in section 10.4, is from  $5\%$  to  $24\%$ . The hypothesis test that the proportions of patients negative to the two skin tests are the same is evaluated by calculating  
 
-$$  
-z = \frac{48 - 23}{\sqrt{48 + 23}} = 2.97  
-z = \frac{48 - 23}{\sqrt{48 + 23}} = 2.97  
+$$
+z = \frac{48 - 23}{\sqrt{48 + 23}} = 2.97
 $$  
 
 从表B2可知，这对应于 $\mathbf{P} = 0.003$。因此，有强烈的证据表明，这些患者中对巴豆油呈阴性反应的人数少于对DNCB呈阴性反应的人数。  
@@ -285,9 +284,8 @@ where  $+$  and  $-$  refer to presence or absence of exposure to loud noise at 
 (a) 报告暴露于高噪音的病例组和对照组的比例分别为0.674 (58/86) 和 0.535 (46/86)。比例差异为0.14，其 $95\%$ 置信区间为0.02至0.26。这些比例可以使用McNemar检验进行比较，结果为  
 (a) The proportions of cases and controls reporting exposure to loud noise were 0.674 (58/86) and 0.535 (46/86). The difference in proportions is 0.14, with the  $95\%$  CI of 0.02 to 0.26. The proportions can be compared using McNemar's test, which gives  
 
-$$  
-z_{c} = 11 / \sqrt{28} = 2.08 (\mathrm{P} = 0.04).  
-z_{c} = 11 / \sqrt{28} = 2.08 (\mathrm{P} = 0.04).  
+$$
+z_{c} = 11 / \sqrt{28} = 2.08 (\mathrm{P} = 0.04).
 $$  
 
 (b) 优势比估计为 $20 / 8 = 2.5$。 $95\%$ 置信区间（第10章未给出方法）为1.05至6.56。  
@@ -310,9 +308,8 @@ correlation coefficients with survival time of 0.63,  $- 0.67$  and  $- 0.42$  r
 11.2 (a) 线性回归方程为  
 11.2 (a) The linear regression equation is  
 
-$$  
-\mathbf{RMR} = 811.23 + 7.0595\times \mathrm{weight}  
-\mathbf{RMR} = 811.23 + 7.0595\times \mathrm{weight}  
+$$
+\mathbf{RMR} = 811.23 + 7.0595\times \mathrm{weight}
 $$  
 
 残差标准差为 157.91 kcal/24hr。  
@@ -324,9 +321,8 @@ and the residual SD is 157.91 kcal/24hr.
 (c) 回归线斜率的标准误为 0.9776 kcal/24 hr，因此 95% 置信区间为  
 (c) The SE of the slope of the regression line is 0.9776 kcal/24 hr, so the 95% CI is  
 
-$$  
-7.0595 - 2.018\times 0.9776\mathrm{to}7.0595 + 2.018\times 0.9776  
-7.0595 - 2.018\times 0.9776\mathrm{to}7.0595 + 2.018\times 0.9776  
+$$
+7.0595 - 2.018\times 0.9776\mathrm{to}7.0595 + 2.018\times 0.9776
 $$  
 
 或 5.09 至 9.03 kcal/24 hr。  
@@ -338,9 +334,8 @@ or 5.09 to 9.03 kcal/24 hr.
 11.3 (a) $\log_{e}Vcf$ 对血糖的回归方程为  
 11.3 (a) The regression of  $\log_{e}Vcf$  on blood glucose gives the equation  
 
-$$  
-\log_{e}Vcf = 0.115 + 0.0148\times \mathrm{blood~glucose}.  
-\log_{e}Vcf = 0.115 + 0.0148\times \mathrm{blood~glucose}.  
+$$
+\log_{e}Vcf = 0.115 + 0.0148\times \mathrm{blood~glucose}.
 $$  
 
 残差标准差为0.2167。  
@@ -384,9 +379,8 @@ The mean and SD of the differences between the diets (O- N) are 0.182 and 0.160,
 12.2 向后逐步多元回归得到以下模型  
 12.2 Backwards stepwise multiple regression yields the following model  
 
-$$  
-FRC = 286.94 - 4.1965 x age - 2.0386 x FEV1  
-FRC = 286.94 - 4.1965 x age - 2.0386 x FEV1  
+$$
+FRC = 286.94 - 4.1965 x age - 2.0386 x FEV1
 $$  
 
 残差标准差为26.7，与原始FRC的  
@@ -438,9 +432,8 @@ $l = \mathrm{logit}(p)$ $= - 2.546 + 2.251\times \mathrm{CML} + 2.496\times \mat
 或  
 or  
 
-$$  
-p = \exp {(l)} / [1 + \exp {(l)}].  
-p = \exp {(l)} / [1 + \exp {(l)}].  
+$$
+p = \exp {(l)} / [1 + \exp {(l)}].
 $$  
 
 应该记住，使用用于推导模型的相同数据对模型进行评估会给出略微乐观的结果。最好使用新数据来检验模型。  
@@ -476,9 +469,8 @@ expect the model to err by more than about 2.37 l (twice the residual SD), which
 (b) 肺容量对身高的线性回归方程为  
 (b) The linear regression equation of lung volume on height is  
 
-$$  
-\mathrm{lung~volume} = -9.869 + 0.0951\times \mathrm{height}.  
-\mathrm{lung~volume} = -9.869 + 0.0951\times \mathrm{height}.  
+$$
+\mathrm{lung~volume} = -9.869 + 0.0951\times \mathrm{height}.
 $$  
 
 斜率的标准误为0.0184，残差标准差为1.227，$R^{2} = 0.47$。这些值表明，多重回归模型拟合数据的效果仅略优于肺容量对身高的线性回归，这与第一个模型中年龄和性别系数不显著的结果一致。  
@@ -487,9 +479,8 @@ The SE of the slope is 0.0184 and the residual SD is 1.227, and  $R^{2} = 0.47$ 
 (c) 利用上述肺容量对身高的线性回归结果，肺容量处于平均水平者的$95\%$预测区间为  
 (c) Using the above results of linear regression of lung volume on height, the  $95\%$  prediction interval for someone with average lung capacity is  
 
-$$  
-6.047 \pm 2.042 \times 1.227 \sqrt{1 + 1 / 32}  
-6.047 \pm 2.042 \times 1.227 \sqrt{1 + 1 / 32}  
+$$
+6.047 \pm 2.042 \times 1.227 \sqrt{1 + 1 / 32}
 $$  
 
 或 3.50 至 8.59 升。  
@@ -507,9 +498,8 @@ However, the correct way to test the hypothesis that the slopes are the same is 
 13.1 如果我们把实验结束前被截尾的三个值视为事件，我们得到  
 13.1 If we take the three values censored before the end of the experiment as events, we get  
 
-$$  
-O_{1} = 7; \quad E_{1} = 10.2339; \quad O_{2} = 15; \quad E_{2} = 11.7661  
-O_{1} = 7; \quad E_{1} = 10.2339; \quad O_{2} = 15; \quad E_{2} = 11.7661  
+$$
+O_{1} = 7; \quad E_{1} = 10.2339; \quad O_{2} = 15; \quad E_{2} = 11.7661
 $$  
 
 得到 $X^{2} = 1.91$ , $P = 0.17$ 。差异的证据现在弱得多。  
@@ -615,17 +605,15 @@ Figure A14.3 Time (hours)
 因此，献血者中吸毒者的比例为  
 Thus the proportion of blood donors who would be drug users is  
 
-$$  
-\frac{0.24 \times 0.33 \times 0.05}{0.24 \times 0.33 \times 0.05 + 0.63 \times 0.95} = 0.007.  
-\frac{0.24 \times 0.33 \times 0.05}{0.24 \times 0.33 \times 0.05 + 0.63 \times 0.95} = 0.007.  
+$$
+\frac{0.24 \times 0.33 \times 0.05}{0.24 \times 0.33 \times 0.05 + 0.63 \times 0.95} = 0.007.
 $$  
 
 (b) 在三分之二说谎的吸毒者中，我们预计有0.76（76%）的人未能通过测谎测试。在非吸毒者中，我们预计也有0.37（37%）的人未能通过测试。因此，在未能通过测试的人中，吸毒者的预期比例是  
 (b) Among the two thirds of drug users who lied, we would expect 0.76 (76%) to fail the polygraph test. Among non-drug users we would expect 0.37 (37%) to fail the test too. Thus the expected proportion of drug users among those failing the test is  
 
-$$  
-\frac{0.76 \times 0.33 \times 0.05}{0.76 \times 0.33 \times 0.05 + 0.37 \times 0.95} = 0.035.  
-\frac{0.76 \times 0.33 \times 0.05}{0.76 \times 0.33 \times 0.05 + 0.37 \times 0.95} = 0.035.  
+$$
+\frac{0.76 \times 0.33 \times 0.05}{0.76 \times 0.33 \times 0.05 + 0.37 \times 0.95} = 0.035.
 $$  
 
 换句话说，几乎所有被测试拒绝的人（约96%）都是非吸毒者。要识别一名吸毒者，就必须错误地拒绝大约27名真正的献血者。  
@@ -708,9 +696,8 @@ significant. Confidence intervals would be very wide. It is totally wrong to sug
 15.5 (a) 如第 15.3 节所述，这里的标准化差异是  
 15.5 (a) As described in section 15.3, the standardized difference here is  
 
-$$  
-\frac{0.3 - 0.2}{\sqrt{0.25 \times 0.75}} = 0.23.  
-\frac{0.3 - 0.2}{\sqrt{0.25 \times 0.75}} = 0.23.  
+$$
+\frac{0.3 - 0.2}{\sqrt{0.25 \times 0.75}} = 0.23.
 $$  
 
 使用图15.2中的列线图，所需样本量为600（每组300）。  
@@ -722,9 +709,8 @@ Using the nomogram in Figure 15.2, the required sample size is 600 (300 per grou
 (c) 标准化差异为0.7时，样本量为65可获得 $80\%$ 的功效。假设安慰剂组高血压风险为0.3，则有  
 (c) A standardized difference of 0.7 gives  $80\%$  power with a sample of size 65. Taking the risk of hypertension in the placebo group as 0.3, we have  
 
-$$  
-\frac{0.3 - p_{\mathrm{a}}}{\sqrt{\bar{p}(1 - \bar{p})}} = 0.7  
-\frac{0.3 - p_{\mathrm{a}}}{\sqrt{\bar{p}(1 - \bar{p})}} = 0.7  
+$$
+\frac{0.3 - p_{\mathrm{a}}}{\sqrt{\bar{p}(1 - \bar{p})}} = 0.7
 $$  
 
 其中 $p_{\mathrm{a}}$ 是阿司匹林组发生高血压的比例，$\bar{p}$ 是0.3和 $p_{\mathrm{a}}$ 的平均值。该方程可以通过数学方法或试错法求解；答案是 $p_{\mathrm{a}} = 0.04$。这项试验显然规模太小，无法很好地检测出除了非常大的治疗益处之外的任何益处。  
@@ -747,9 +733,8 @@ where  $p_{\mathrm{a}}$  is the proportion developing hypertension in the aspiri
 (b) 男性身高高于  $182.9\mathrm{~cm}$  的概率是对应于  $z = (182.9 - 179.1) / 5.84 = 0.65$  的正态分布上尾面积，从表 B1 可知为 0.2578。对于女性，我们需要的尾部面积对应于  $z = (182.9 - 171.7) / 5.75 = 1.95$ ，该值为 0.0256。如果  $60\%$  的成年人是女性，那么身高高于  $182.9\mathrm{~cm}$  的成年人中女性的比例由下式给出：  
 (b) The probability of a man being taller than  $182.9\mathrm{~cm}$  is the upper tail area of the Normal distribution corresponding to  $z = (182.9 - 179.1) / 5.84 = 0.65$ , which from Table B1 is 0.2578. For women we require the tail area corresponding to  $z = (182.9 - 171.7) / 5.75 = 1.95$ , which is 0.0256. If  $60\%$  of adults are women the proportion of adults taller than  $182.9\mathrm{~cm}$  who are women is given by  
 
-$$  
-\frac{0.6 \times 0.0256}{0.4 \times 0.2578 + 0.6 \times 0.0256}  
-\frac{0.6 \times 0.0256}{0.4 \times 0.2578 + 0.6 \times 0.0256}  
+$$
+\frac{0.6 \times 0.0256}{0.4 \times 0.2578 + 0.6 \times 0.0256}
 $$  
 
 $= 0.1296$  或  $13\%$ 。  

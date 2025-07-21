@@ -39,9 +39,8 @@ Checking the data is likely to reveal some observations that, while plausible, a
 对于分类变量，检查所有记录的数据值是否合理很简单，因为预先指定的值的数量是固定的。例如，如果我们有四种血型代码，如下所示：  
 For categorical variables it is simple to check that all recorded data values are plausible because there is a fixed number of pre- specified values. For example, if we have four codes for blood group, as follows  
 
-$$  
-\begin{array}{l}1 = \mathbf{A} \\ 2 = \mathbf{B} \\ 3 = \mathbf{O} \\ 4 = \mathbf{AB} \end{array}  
-\begin{array}{l}1 = \mathbf{A} \\ 2 = \mathbf{B} \\ 3 = \mathbf{O} \\ 4 = \mathbf{AB} \end{array}  
+$$
+\begin{array}{l}1 = \mathbf{A} \\ 2 = \mathbf{B} \\ 3 = \mathbf{O} \\ 4 = \mathbf{AB} \end{array}
 $$  
 
 那么我们期望在数据中只找到值1、2、3或4，除了任何信息缺失的受试者。如果缺失值编码为9（如第6章推荐），那么我们知道任何编码为0、5、6、7或8的血型显然是错误的。  
@@ -239,9 +238,8 @@ While the Normal plot is a very useful graphical device for judging the Normalit
 衡量非正态性的一种方法是计算数据分布的所谓“高阶矩”。前两个矩已经描述过—它们是均值和方差。然而，这些值不提供关于分布形状的信息。我们可以通过基于以下量的度量来衡量形状：  
 One way of measuring non- Normality is to calculate what are called 'higher moments' of the distribution of data. The first two moments have already been described - they are the mean and variance. However, these values give no information about the shape of the distribution. We can measure shape by means of quantities based on  
 
-$$  
-\sum \frac{(x_{i} - \bar{x})^{3}}{n - 1} \qquad \text{and} \qquad \sum \frac{(x_{i} - \bar{x})^{4}}{n - 1}  
-\sum \frac{(x_{i} - \bar{x})^{3}}{n - 1} \qquad \text{and} \qquad \sum \frac{(x_{i} - \bar{x})^{4}}{n - 1}  
+$$
+\sum \frac{(x_{i} - \bar{x})^{3}}{n - 1} \qquad \text{and} \qquad \sum \frac{(x_{i} - \bar{x})^{4}}{n - 1}
 $$  
 
 这些是方差公式的明显扩展。从中我们可以推导出称为偏度（skewness）的量，它是衡量不对称性的指标；以及峰度（kurtosis），它是衡量平坦度或尖峭度的指标。然后可以将这些值与正态分布的理论值进行比较。然而，我不推荐这种方法，因为最好是对正态性进行单一评估，而不是两次评估。  
@@ -302,9 +300,8 @@ Figure 7.9 Normal plot of piglet birth weights (Royston et al., 1982).
 观测值对照对应于百分比 $P_{i}$ 的正态分数绘制，由下式给出  
 observation is plotted against the Normal score corresponding to the percentage  $P_{i}$ , given by  
 
-$$  
-P_{i} = \frac{i - 3 / 8}{n + 1 / 4} \times 100.  
-P_{i} = \frac{i - 3 / 8}{n + 1 / 4} \times 100.  
+$$
+P_{i} = \frac{i - 3 / 8}{n + 1 / 4} \times 100.
 $$  
 
 
@@ -339,9 +336,8 @@ Transforming the data is sometimes felt to be a trick used by statisticians, a b
 转换的另一个主要用途是分析比例。在0.2到0.8范围内的观测比例具有相似的不确定性，但非常小或非常大的比例具有较小的不确定性，因为它们在尺度两端（零和一）受到一定程度的限制。为了进行统计分析，我们通常希望所有比例都具有相等的不确定性，我们可以通过 logit 转换来实现这一点，其定义为  
 The other main use of transformations is in the analysis of proportions. Observed proportions in the range 0.2 to 0.8 have similar uncertainty but very small or large proportions have smaller uncertainty as they are somewhat constrained towards the ends of the scale (zero and one). For statistical analyses we often wish to have equal uncertainty attached to all proportions, and we can achieve this by the logit transformation, which is defined by  
 
-$$  
-\mathrm{logit}(p) = \mathrm{log}_{\mathrm{e}}\left(\frac{p}{1 - p}\right).  
-\mathrm{logit}(p) = \mathrm{log}_{\mathrm{e}}\left(\frac{p}{1 - p}\right).  
+$$
+\mathrm{logit}(p) = \mathrm{log}_{\mathrm{e}}\left(\frac{p}{1 - p}\right).
 $$  
 
 Logit 转换以与正态分布的百分位数在正态图中被拉伸相同的方式拉伸比例，  

@@ -33,9 +33,8 @@ Suppose a general practitioner chooses a random sample of 215 women from the pat
 正如我们在8.4.3节中看到的，比例 $p$ 的标准误是 $se(p) = \sqrt{p(1 - p) / n}$。因此，观测到的哮喘女性比例的标准误是 $\sqrt{0.18 \times 0.82 / 215} = 0.0262$。所以，总体中哮喘女性比例的95%置信区间为  
 As we saw in section 8.4.3, the standard error of a proportion  $p$  is  $se(p) = \sqrt{p(1 - p) / n}$ . So the standard error of the observed proportion of women with asthma is  $\sqrt{0.18 \times 0.82 / 215} = 0.0262$ . The 95% confidence interval for the proportion of women with asthma in the population is thus from  
 
-$$  
-0.18 - 1.96 \times 0.0262 \qquad \text{to} \qquad 0.18 + 1.96 \times 0.0262  
-0.18 - 1.96 \times 0.0262 \qquad \text{to} \qquad 0.18 + 1.96 \times 0.0262  
+$$
+0.18 - 1.96 \times 0.0262 \qquad \text{to} \qquad 0.18 + 1.96 \times 0.0262
 $$  
 
 即从0.13到0.23。如果我们能假设该全科诊所的女性代表了全国所有女性，那么根据这个样本，我们可以相当确定全国女性哮喘的患病率在13%到23%之间。  
@@ -52,33 +51,29 @@ pre- specified value. To do this we use the general test statistic given in sect
 在零假设下，该统计量将近似服从正态分布（样本量要求与上一节相同）。因此我们计算  
 which will have an approximately Normal distribution under the null hypothesis (with the same sample size requirement as in the previous section). We thus calculate  
 
-$$  
-z = \frac{p - p_{\mathrm{exp}}}{s e(p)}  
-z = \frac{p - p_{\mathrm{exp}}}{s e(p)}  
+$$
+z = \frac{p - p_{\mathrm{exp}}}{s e(p)}
 $$  
 
 其中  $p_{\mathrm{exp}}$  是预先指定或“预期”的比例。请注意，因为我们正在检验零假设，所以我们使用在零假设为真时预期的比例的标准误。换句话说，我们有  
 where  $p_{\mathrm{exp}}$  is the pre- specified or 'expected' proportion. Note that because we are testing the null hypothesis, we use the standard error of the proportion expected if the null hypothesis is true. In other words, we have  
 
-$$  
-s e(p) = \sqrt{\frac{p_{\mathrm{exp}}(1 - p_{\mathrm{exp}})}{n}}  
-s e(p) = \sqrt{\frac{p_{\mathrm{exp}}(1 - p_{\mathrm{exp}})}{n}}  
+$$
+s e(p) = \sqrt{\frac{p_{\mathrm{exp}}(1 - p_{\mathrm{exp}})}{n}}
 $$  
 
 这与用于获得置信区间的标准误会略有不同。如果我们希望检验预先指定的假设，即女性哮喘的全国患病率为  $15\%$ ，我们计算  
 which will be slightly different from the standard error used to obtain a confidence interval. If we wish to test the pre- specified hypothesis that the national prevalence of asthma in women is  $15\%$ , we calculate  
 
-$$  
-s e(p) = \sqrt{\frac{0.15 \times 0.85}{215}}  
-s e(p) = \sqrt{\frac{0.15 \times 0.85}{215}}  
+$$
+s e(p) = \sqrt{\frac{0.15 \times 0.85}{215}}
 $$  
 
 因此  
 and so  
 
-$$  
-\begin{array}{c}{{z=\frac{0.18-0.15}{0.0244}}}\\ {{{}}}\\ {{=1.23}}\end{array}  
-\begin{array}{c}{{z=\frac{0.18-0.15}{0.0244}}}\\ {{{}}}\\ {{=1.23}}\end{array}  
+$$
+\begin{array}{c}{{z=\frac{0.18-0.15}{0.0244}}}\\ {{{}}}\\ {{=1.23}}\end{array}
 $$  
 
 根据表B2，这对应于  $\mathbf{P} = 0.22$ 。我们不能拒绝女性哮喘患病率为  $15\%$  的零假设，并使用上面给出的置信区间来给出可能包含真实患病率的范围。  
@@ -96,9 +91,8 @@ Figure 10.1 Binomial distribution with  $p = 0.15$  and  $n = 215$  with the app
 经过连续性校正的检验统计量为  
 The test statistic with the continuity correction is  
 
-$$  
-z_{c} = \frac{|p - p_{\mathrm{exp}}| - \frac{1}{2n}}{se(p)}  
-z_{c} = \frac{|p - p_{\mathrm{exp}}| - \frac{1}{2n}}{se(p)}  
+$$
+z_{c} = \frac{|p - p_{\mathrm{exp}}| - \frac{1}{2n}}{se(p)}
 $$  
 
 其中符号 $|\ldots |$ 表示忽略比例之间差异的符号，$se(p)$ 保持不变。因此，连续性校正包括减小观察比例与预期比例之间的差异。显然，校正的效果随着样本量的增加而减小。  
@@ -107,9 +101,8 @@ where the symbols  $|\ldots |$  indicate that the sign of the difference between
 对于哮喘数据，经过连续性校正的检验统计量为  
 For the asthma data, the test statistic with the continuity correction is  
 
-$$  
-z_{c} = \frac{|0.18 - 0.15| - \frac{1}{2 \times 215}}{0.0244} = 1.14  
-z_{c} = \frac{|0.18 - 0.15| - \frac{1}{2 \times 215}}{0.0244} = 1.14  
+$$
+z_{c} = \frac{|0.18 - 0.15| - \frac{1}{2 \times 215}}{0.0244} = 1.14
 $$  
 
 这仅比之前略低，因为样本量相当大。  
@@ -131,41 +124,36 @@ As an example I will consider data from a randomized clinical trial comparing in
 如第8.4.4节所示，观察到的比例差 $p_{1} - p_{2}$ 的标准误由以下公式给出：  
 As shown in section 8.4.4, the standard error of the difference between the observed proportions,  $p_{1} - p_{2}$ , is given by  
 
-$$  
-\begin{array}{r}{s e(p_{1} - p_{2}) = \sqrt{v a r(p_{1}) + v a r(p_{2})}}\\ {= \sqrt{\frac{p_{1}(1 - p_{1})}{n_{1}} + \frac{p_{2}(1 - p_{2})}{n_{2}}}.} \end{array}  
-\begin{array}{r}{s e(p_{1} - p_{2}) = \sqrt{v a r(p_{1}) + v a r(p_{2})}}\\ {= \sqrt{\frac{p_{1}(1 - p_{1})}{n_{1}} + \frac{p_{2}(1 - p_{2})}{n_{2}}}.} \end{array}  
+$$
+\begin{array}{r}{s e(p_{1} - p_{2}) = \sqrt{v a r(p_{1}) + v a r(p_{2})}}\\ {= \sqrt{\frac{p_{1}(1 - p_{1})}{n_{1}} + \frac{p_{2}(1 - p_{2})}{n_{2}}}.} \end{array}
 $$  
 
 只要样本量和比例不是非常小，$p_{1} - p_{2}$ 的抽样分布将近似服从正态分布。因此，我们可以非常简单地计算95%置信区间，如下所示：  
 The sampling distribution of  $p_{1} - p_{2}$  will be approximately Normal as long as the sample size and proportions are not very small. We can thus calculate the 95% confidence interval very simply as  
 
-$$  
-p_{1} - p_{2} - 1.96 \times s e(p_{1} - p_{2}) \qquad \text{to} \qquad p_{1} - p_{2} + 1.96 \times s e(p_{1} - p_{2}).  
-p_{1} - p_{2} - 1.96 \times s e(p_{1} - p_{2}) \qquad \text{to} \qquad p_{1} - p_{2} + 1.96 \times s e(p_{1} - p_{2}).  
+$$
+p_{1} - p_{2} - 1.96 \times s e(p_{1} - p_{2}) \qquad \text{to} \qquad p_{1} - p_{2} + 1.96 \times s e(p_{1} - p_{2}).
 $$  
 
 在本例中，观察到的比例差为：  
 In the example, the difference in observed proportions is  
 
-$$  
-p_{1} - p_{2} = 0.7500 - 0.3077 = 0.4423  
-p_{1} - p_{2} = 0.7500 - 0.3077 = 0.4423  
+$$
+p_{1} - p_{2} = 0.7500 - 0.3077 = 0.4423
 $$  
 
 标准误为：  
 and the standard error is  
 
-$$  
-s e(p_{1} - p_{2}) = \sqrt{\frac{0.75 \times 0.25}{12} + \frac{0.3077 \times 0.6923}{13}} = 0.1789.  
-s e(p_{1} - p_{2}) = \sqrt{\frac{0.75 \times 0.25}{12} + \frac{0.3077 \times 0.6923}{13}} = 0.1789.  
+$$
+s e(p_{1} - p_{2}) = \sqrt{\frac{0.75 \times 0.25}{12} + \frac{0.3077 \times 0.6923}{13}} = 0.1789.
 $$  
 
 因此，疼痛缓解比例差异的95%置信区间为：  
 The 95% confidence interval for the difference in proportions with pain relief is thus  
 
-$$  
-0.4423 - 1.96 \times 0.1789 \qquad \text{to} \qquad 0.4423 + 1.96 \times 0.1789  
-0.4423 - 1.96 \times 0.1789 \qquad \text{to} \qquad 0.4423 + 1.96 \times 0.1789  
+$$
+0.4423 - 1.96 \times 0.1789 \qquad \text{to} \qquad 0.4423 + 1.96 \times 0.1789
 $$  
 
 即 0.09 至 0.79。  
@@ -176,17 +164,15 @@ or 0.09 to 0.79.
 在进行比较两个比例的假设检验时，也采用类似的方法。同样会计算比例差的标准误，但由于我们是在假设零假设为真的前提下评估数据的概率，因此我们计算的标准误略有不同。如果零假设为真，则两个样本来自具有相同目标特征真实比例（例如 $p$）的总体。我们不知道 $p$，但 $p_{1}$ 和 $p_{2}$ 都是 $p$ 的估计值。我们对 $p$ 的最佳估计是通过计算合并两个样本中所有数据后具有该特征的比例，即  
 A similar approach is adopted when performing a hypothesis test to compare two proportions. The standard error of the difference in proportions is again calculated, but because we are evaluating the probability of the data on the assumption that the null hypothesis is true we calculate a slightly different standard error. If the null hypothesis is true, the two samples come from populations having the same true proportion of individuals with the characteristic of interest, say  $p$  . We do not know  $p$  but both  $p_{1}$  and  $p_{2}$  are estimates of  $p$  . Our best estimate of  $p$  is given by calculating the proportion with the characteristic using all the data in the two samples combined, which is  
 
-$$  
-\hat{p} = \frac{r_{1} + r_{2}}{n_{1} + n_{2}}.  
-\hat{p} = \frac{r_{1} + r_{2}}{n_{1} + n_{2}}.  
+$$
+\hat{p} = \frac{r_{1} + r_{2}}{n_{1} + n_{2}}.
 $$  
 
 因此，在零假设下，$p_{1} - p_{2}$ 的标准误是基于每个组的比例均为 $\hat{p}$ 的假设计算的，所以我们有  
 The standard error of  $p_{1} - p_{2}$  under the null hypothesis is thus calculated on the assumption that the proportion in each group is  $\hat{p}$  , so that we have  
 
-$$  
-\begin{array}{r}{s e(p_{1} - p_{2}) = \sqrt{\frac{\hat{p}(1 - \hat{p})}{n_{1}} + \frac{\hat{p}(1 - \hat{p})}{n_{2}}}}\\ {= \sqrt{\hat{p}(1 - \hat{p})\biggl(\frac{1}{n_{1}} + \frac{1}{n_{2}}\biggr)}.} \end{array}  
-\begin{array}{r}{s e(p_{1} - p_{2}) = \sqrt{\frac{\hat{p}(1 - \hat{p})}{n_{1}} + \frac{\hat{p}(1 - \hat{p})}{n_{2}}}}\\ {= \sqrt{\hat{p}(1 - \hat{p})\biggl(\frac{1}{n_{1}} + \frac{1}{n_{2}}\biggr)}.} \end{array}  
+$$
+\begin{array}{r}{s e(p_{1} - p_{2}) = \sqrt{\frac{\hat{p}(1 - \hat{p})}{n_{1}} + \frac{\hat{p}(1 - \hat{p})}{n_{2}}}}\\ {= \sqrt{\hat{p}(1 - \hat{p})\biggl(\frac{1}{n_{1}} + \frac{1}{n_{2}}\biggr)}.} \end{array}
 $$  
 
 如上所述，这个标准误与前一节中计算的并不完全相同。  
@@ -195,25 +181,22 @@ As noted above, this standard error is not quite the same as that calculated in 
 $p_{1} - p_{2}$ 的抽样分布是正态的，因此我们计算标准正态离差 $z$，如下所示：  
 The sampling distribution of  $p_{1} - p_{2}$  is Normal, so we calculate a standard Normal deviate,  $z$  , as  
 
-$$  
-z = \frac{p_{1} - p_{2}}{s e(p_{1} - p_{2})}.  
-z = \frac{p_{1} - p_{2}}{s e(p_{1} - p_{2})}.  
+$$
+z = \frac{p_{1} - p_{2}}{s e(p_{1} - p_{2})}.
 $$  
 
 在本例中，观察到的比例差为 $p_{1} - p_{2} = 0.4423$，与之前相同。这两个比例分别为 9/12 和 4/13，因此，在零假设下，总体比例的合并估计值为  
 In  the  example,  the  difference  in  observed  proportions  is  $p_{1} - p_{2} = 0.4423$  as before. The two proportions were 9/12 and 4/13, so the pooled estimate of the population proportion under the null hypothesis is  
 
-$$  
-\hat{p} = \frac{9 + 4}{12 + 13} = 0.52,  
-\hat{p} = \frac{9 + 4}{12 + 13} = 0.52,  
+$$
+\hat{p} = \frac{9 + 4}{12 + 13} = 0.52,
 $$  
 
 比例差的标准误为  
 and the standard error of the difference in proportions is  
 
-$$  
-\sqrt{0.52\times0.48\times(\frac{1}{12} + \frac{1}{13})} = 0.2000.  
-\sqrt{0.52\times0.48\times(\frac{1}{12} + \frac{1}{13})} = 0.2000.  
+$$
+\sqrt{0.52\times0.48\times(\frac{1}{12} + \frac{1}{13})} = 0.2000.
 $$  
 
 因此，检验统计量为 $z = 0.4423 / 0.2000 = 2.21$，从表 B2 可知 $\mathbf{P} = 0.027$。因此，有证据表明治疗之间存在差异。然而，如前所述，由于样本量小，该差异的置信区间很宽。  
@@ -224,17 +207,15 @@ The test statistic is thus  $z = 0.4423 / 0.2000 = 2.21$  , which from Table B2 
 与单样本情况一样，在比较两个比例时，建议使用连续性校正，尤其是在样本量较小的情况下。这样做的效果是略微减小两个比例之间的观察差异。$z$ 的修正公式为  
 As with the single sample case, it is advisable to use a continuity correction when comparing two proportions, especially when the samples are small. The effect is to reduce slightly the observed difference between the two proportions. The modified formula for  $z$  is  
 
-$$  
-z_{c} = \frac{\left|p_{1} - p_{2}\right| - \frac{1}{2}\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)}{se(p_{1} - p_{2})}  
-z_{c} = \frac{\left|p_{1} - p_{2}\right| - \frac{1}{2}\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)}{se(p_{1} - p_{2})}  
+$$
+z_{c} = \frac{\left|p_{1} - p_{2}\right| - \frac{1}{2}\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)}{se(p_{1} - p_{2})}
 $$  
 
 其中 $se(p_{1} - p_{2})$ 保持不变。可以看出，分子（上方）中的额外项是基于分母（下方）中已计算出的量。在我们的例子中，经过连续性校正的检验统计量为  
 where  $se(p_{1} - p_{2})$  is unchanged. It can be seen that the extra term in the numerator (on the top) is based on a quantity already calculated in the denominator (on the bottom). In our example the continuity corrected test statistic is  
 
-$$  
-\begin{array}{r l} & {z_{c} = \frac{0.4423 - \frac{1}{2}(\frac{1}{12} + \frac{1}{13})}{\sqrt{0.52\times0.48\times(\frac{1}{12} + \frac{1}{13})}}}\\ & {\quad = 0.3622 / 0.2000}\\ & {\quad = 1.811} \end{array}  
-\begin{array}{r l} & {z_{c} = \frac{0.4423 - \frac{1}{2}(\frac{1}{12} + \frac{1}{13})}{\sqrt{0.52\times0.48\times(\frac{1}{12} + \frac{1}{13})}}}\\ & {\quad = 0.3622 / 0.2000}\\ & {\quad = 1.811} \end{array}  
+$$
+\begin{array}{r l} & {z_{c} = \frac{0.4423 - \frac{1}{2}(\frac{1}{12} + \frac{1}{13})}{\sqrt{0.52\times0.48\times(\frac{1}{12} + \frac{1}{13})}}}\\ & {\quad = 0.3622 / 0.2000}\\ & {\quad = 1.811} \end{array}
 $$  
 
 这对应于 $\mathbf{P} = 0.07$。  
@@ -268,9 +249,8 @@ We want to calculate a confidence interval for the difference between two propor
 我们可以将配对观测结果分为四组，根据每对成员中是否存在该特征进行划分，如表10.2所示。我们希望比较的两个比例是 $p_{1} = (a + b) / n$ 和 $p_{2} = (a + c) / n$。这些比例不是独立的，因为它们都包含 $a$，即“是-是”配对的数量。然而，比例的差异由以下公式给出：  
 We can divide the paired observations into four groups, according to whether the characteristic is present or not in each member of the pair, as shown in Table 10.2. The two proportions we wish to compare are  $p_{1} = (a + b) / n$  and  $p_{2} = (a + c) / n$ . These proportions are not independent as they both contain  $a$ , the number of Yes- Yes pairs. The difference in proportions is, however, given by  
 
-$$  
-\begin{array}{c}{{p_{1}-p_{2}=\frac{a+b}{n}-\frac{a+c}{n}}}\\ {{=\frac{b-c}{n}}}\end{array}  
-\begin{array}{c}{{p_{1}-p_{2}=\frac{a+b}{n}-\frac{a+c}{n}}}\\ {{=\frac{b-c}{n}}}\end{array}  
+$$
+\begin{array}{c}{{p_{1}-p_{2}=\frac{a+b}{n}-\frac{a+c}{n}}}\\ {{=\frac{b-c}{n}}}\end{array}
 $$  
 
 因此，数字 $a$ 消失了，这相当令人惊讶。尽管如此，  
@@ -285,33 +265,29 @@ Table 10.2 Frequency of each combination of paired characteristics
 我们仍在比较非独立的比例。比例差异的标准误由以下公式给出：  
 we are still comparing non- independent proportions. The standard error of the difference in proportions is given by  
 
-$$  
-se(p_{1} - p_{2}) = \frac{1}{n} \sqrt{b + c - \frac{(b - c)^{2}}{n}}.  
-se(p_{1} - p_{2}) = \frac{1}{n} \sqrt{b + c - \frac{(b - c)^{2}}{n}}.  
+$$
+se(p_{1} - p_{2}) = \frac{1}{n} \sqrt{b + c - \frac{(b - c)^{2}}{n}}.
 $$  
 
 （此公式的推导此处不予给出。）因此，$p_{1} - p_{2}$ 的 $95\%$ 置信区间如下：  
 (The derivation of this formula will not be given here.) The  $95\%$  confidence interval for  $p_{1} - p_{2}$  is thus obtained as  
 
-$$  
-p_{1} - p_{2} - 1.96 \times se(p_{1} - p_{2}) \qquad \text{to} \qquad p_{1} - p_{2} + 1.96 \times se(p_{1} - p_{2}).  
-p_{1} - p_{2} - 1.96 \times se(p_{1} - p_{2}) \qquad \text{to} \qquad p_{1} - p_{2} + 1.96 \times se(p_{1} - p_{2}).  
+$$
+p_{1} - p_{2} - 1.96 \times se(p_{1} - p_{2}) \qquad \text{to} \qquad p_{1} - p_{2} + 1.96 \times se(p_{1} - p_{2}).
 $$  
 
 在我们的例子中，我们需要知道 $a, b, c$ 和 $d$ 的值，这些值显示在表10.3中。我们有 $p_{m} = (a + b) / n = 7 / 32$ 和 $p_{c} = (a + c) / n = 13 / 32$，因此观察到的比例差异是  
 In our example, we need to know the values  $a, b, c$  and  $d$  which are shown in Table 10.3. We have  $p_{m} = (a + b) / n = 7 / 32$  and  $p_{c} = (a + c) / n = 13 / 32$ , so the observed difference in proportions is  
 
-$$  
-\begin{array}{c}p_{c} - p_{m} = \frac{13 - 7}{32} \\ = 0.1875 \end{array}  
-\begin{array}{c}p_{c} - p_{m} = \frac{13 - 7}{32} \\ = 0.1875 \end{array}  
+$$
+\begin{array}{c}p_{c} - p_{m} = \frac{13 - 7}{32} \\ = 0.1875 \end{array}
 $$  
 
 其标准误为  
 and its standard error is  
 
-$$  
-se(p_{c} - p_{m}) = \frac{1}{32} \sqrt{3 + 9 - \frac{6^{2}}{32}} \\ = 0.1031.  
-se(p_{c} - p_{m}) = \frac{1}{32} \sqrt{3 + 9 - \frac{6^{2}}{32}} \\ = 0.1031.  
+$$
+se(p_{c} - p_{m}) = \frac{1}{32} \sqrt{3 + 9 - \frac{6^{2}}{32}} \\ = 0.1031.
 $$  
 
 表10.3 大麻使用者和匹配对照组报告睡眠困难的人数（Karacan 等，1976）  
@@ -323,9 +299,8 @@ Table 10.3 Numbers of marijuana users and matched controls reporting sleeping di
 因此，经历睡眠困难的比例差异的 $95\%$ 置信区间为  
 So the  $95\%$  confidence interval for the difference in the proportions experiencing sleep difficulties is  
 
-$$  
-0.1875 - 1.96 \times 0.1031 \qquad \text{to} \qquad 0.1875 + 1.96 \times 0.1031  
-0.1875 - 1.96 \times 0.1031 \qquad \text{to} \qquad 0.1875 + 1.96 \times 0.1031  
+$$
+0.1875 - 1.96 \times 0.1031 \qquad \text{to} \qquad 0.1875 + 1.96 \times 0.1031
 $$  
 
 或 - 0.01 至 0.39。因此，有微弱证据表明大麻使用者比对照组经历更少的睡眠困难，但差异的置信区间非常宽。  
@@ -336,17 +311,15 @@ or - 0.01 to 0.39. There is thus some weak evidence that marijuana users experie
 我们还可以对配对比例之间没有差异的原假设进行显著性检验。与两个独立样本一样，我们需要在原假设为真的假设下评估差异的标准误，这意味着我们将 $b$ 和 $c$ 都替换为 $(b + c) / 2$。因此，上一节中给出的标准误公式简化为  
 We can also perform a significance test of the null hypothesis that there is no difference between the paired proportions. As with two independent samples, we need to evaluate the standard error of the difference on the assumption that the null hypothesis is true, which means that we replace both  $b$  and  $c$  by  $(b + c) / 2$  . The formula for the standard error given in the previous section thus simplifies to  
 
-$$  
-\begin{array}{c}{{s e(p_{1}-p_{2})=\frac{1}{n}\sqrt{\frac{b+c}{2}+\frac{b+c}{2}+0}}}\\ {{=\frac{1}{n}\sqrt{b+c}}}\end{array}  
-\begin{array}{c}{{s e(p_{1}-p_{2})=\frac{1}{n}\sqrt{\frac{b+c}{2}+\frac{b+c}{2}+0}}}\\ {{=\frac{1}{n}\sqrt{b+c}}}\end{array}  
+$$
+\begin{array}{c}{{s e(p_{1}-p_{2})=\frac{1}{n}\sqrt{\frac{b+c}{2}+\frac{b+c}{2}+0}}}\\ {{=\frac{1}{n}\sqrt{b+c}}}\end{array}
 $$  
 
 我们计算检验统计量为  
 and we calculate our test statistic as  
 
-$$  
-\begin{array}{c}{{z=\frac{p_{1}-p_{2}}{s e(p_{1}-p_{2})}}}\\ {{=\frac{(b-c)/n}{\sqrt{b+c}/n}}}\\ {{=\frac{b-c}{\sqrt{b+c}}}}\end{array}  
-\begin{array}{c}{{z=\frac{p_{1}-p_{2}}{s e(p_{1}-p_{2})}}}\\ {{=\frac{(b-c)/n}{\sqrt{b+c}/n}}}\\ {{=\frac{b-c}{\sqrt{b+c}}}}\end{array}  
+$$
+\begin{array}{c}{{z=\frac{p_{1}-p_{2}}{s e(p_{1}-p_{2})}}}\\ {{=\frac{(b-c)/n}{\sqrt{b+c}/n}}}\\ {{=\frac{b-c}{\sqrt{b+c}}}}\end{array}
 $$  
 
 这是统计学中最简单的公式之一。该公式的另一种推导方法见第10.4.4节。  
@@ -355,9 +328,8 @@ which is one of the simplest formulae in statistics. An alternative derivation o
 在本例中，我们得到  
 In the example we get  
 
-$$  
-z = \frac{3 - 9}{\sqrt{3 + 9}} = -1.73  
-z = \frac{3 - 9}{\sqrt{3 + 9}} = -1.73  
+$$
+z = \frac{3 - 9}{\sqrt{3 + 9}} = -1.73
 $$  
 
 得到 $\mathbf{P} = 0.08$。我们不能在 $5\%$ 的水平上拒绝零假设。注意，在公式中取 $b - c$ 或 $c - b$ 并不重要，因为 $z = +1.73$ 会给出相同的双侧 $\mathbf{P}$ 值。  
@@ -368,17 +340,15 @@ giving  $\mathbf{P} = 0.08$  . We cannot reject the null hypothesis at the  $5\%
 在比较配对比例时，我们应该使用连续性校正，尤其是在小样本中。与非配对情况一样，我们使用公式  
 We ought to use a continuity correction when comparing paired proportions, especially in small samples. As with the unpaired case we use the formula  
 
-$$  
-z_{c} = \frac{|p_{1} - p_{2}| - \frac{1}{2}\Big(\frac{1}{n_{1}} + \frac{1}{n_{2}}\Big)}{s e(p_{1} - p_{2})}  
-z_{c} = \frac{|p_{1} - p_{2}| - \frac{1}{2}\Big(\frac{1}{n_{1}} + \frac{1}{n_{2}}\Big)}{s e(p_{1} - p_{2})}  
+$$
+z_{c} = \frac{|p_{1} - p_{2}| - \frac{1}{2}\Big(\frac{1}{n_{1}} + \frac{1}{n_{2}}\Big)}{s e(p_{1} - p_{2})}
 $$  
 
 但这里两个样本大小相同，所以我们得到  
 but here the two samples are the same size, so we get  
 
-$$  
-\begin{array}{c}{{z_{c}=\frac{\frac{1}{n}\left|b-c\right|-\frac{1}{2}\left(\frac{1}{n}+\frac{1}{n}\right)}{(\sqrt{b+c})/n}}}\\ {{=\frac{\left|b-c\right|-1}{\sqrt{b+c}}.}}\end{array}  
-\begin{array}{c}{{z_{c}=\frac{\frac{1}{n}\left|b-c\right|-\frac{1}{2}\left(\frac{1}{n}+\frac{1}{n}\right)}{(\sqrt{b+c})/n}}}\\ {{=\frac{\left|b-c\right|-1}{\sqrt{b+c}}.}}\end{array}  
+$$
+\begin{array}{c}{{z_{c}=\frac{\frac{1}{n}\left|b-c\right|-\frac{1}{2}\left(\frac{1}{n}+\frac{1}{n}\right)}{(\sqrt{b+c})/n}}}\\ {{=\frac{\left|b-c\right|-1}{\sqrt{b+c}}.}}\end{array}
 $$  
 
 换句话说，为了使用连续性校正，我们先从 $b$ 和 $c$ 的绝对差中减去 1，然后除以 $\sqrt{b + c}$。  
@@ -387,9 +357,8 @@ In other words, to use the continuity correction we subtract 1 from the absolute
 在我们的例子中，我们有  
 In our example we have  
 
-$$  
-\begin{array}{c}{{z_{c}=\frac{\left|3-9\right|-1}{\sqrt{3+9}}}}\\ {{=5/\sqrt{12}=1.44}}\end{array}  
-\begin{array}{c}{{z_{c}=\frac{\left|3-9\right|-1}{\sqrt{3+9}}}}\\ {{=5/\sqrt{12}=1.44}}\end{array}  
+$$
+\begin{array}{c}{{z_{c}=\frac{\left|3-9\right|-1}{\sqrt{3+9}}}}\\ {{=5/\sqrt{12}=1.44}}\end{array}
 $$  
 
 对应于 $\mathbf{P} = 0.15$。正如我们在上一节中看到的，连续性校正对小样本的影响相当显著。它的使用总是会增加 $\mathbf{P}$ 值。  
@@ -403,17 +372,15 @@ As shown above, the hypothesis test for comparing paired proportions is based on
 因此，考虑这个问题的另一种方法是看总的不一致对数，$b + c$。在零假设下，我们预期“是-否”和“否-是”对的数量相同，所以我们可以评估在 $b + c$ 对中观察到 $b$ 对属于其中一组（或者等效地，$c$ 对属于 $b + c$ 对）的概率。数字 $b$ 将遵循参数为 $p = 0.5$ 的二项分布。因为 $p$ 是 0.5，所以二项分布的正态近似即使对于相当小的样本也非常好。$b$ 的标准误是  
 Another way of considering the problem, therefore, is to look at the total number of disagreements,  $b + c$ . Under the null hypothesis we expect the numbers of 'Yes- No' and 'No- Yes' pairs to be the same so we can evaluate the probability of observing  $b$  out of  $b + c$  to be in one of these groups (or, equivalently,  $c$  out of  $b + c$ ). The number  $b$  will follow a Binomial distribution with  $p = 0.5$ . Because  $p$  is 0.5 the Normal approximation to the Binomial distribution is very good even for quite small samples. The standard error of  $b$  is  
 
-$$  
-se(b) = \sqrt{np(1 - p)} = \sqrt{(b + c) \times \frac{1}{2} \times \frac{1}{2}} = \frac{\sqrt{b + c}}{2}.  
-se(b) = \sqrt{np(1 - p)} = \sqrt{(b + c) \times \frac{1}{2} \times \frac{1}{2}} = \frac{\sqrt{b + c}}{2}.  
+$$
+se(b) = \sqrt{np(1 - p)} = \sqrt{(b + c) \times \frac{1}{2} \times \frac{1}{2}} = \frac{\sqrt{b + c}}{2}.
 $$  
 
 统计量 $z$ 的计算方法如下：  
 The statistic  $z$  is calculated as  
 
-$$  
-\begin{array}{c}{{z=\frac{b-\frac{(b+c)}{2}}{s e(b)}}}\\ {{=\frac{(b-c)/2}{\sqrt{b+c}/2}}}\\ {{=\frac{b-c}{\sqrt{b+c}}}}\end{array}  
-\begin{array}{c}{{z=\frac{b-\frac{(b+c)}{2}}{s e(b)}}}\\ {{=\frac{(b-c)/2}{\sqrt{b+c}/2}}}\\ {{=\frac{b-c}{\sqrt{b+c}}}}\end{array}  
+$$
+\begin{array}{c}{{z=\frac{b-\frac{(b+c)}{2}}{s e(b)}}}\\ {{=\frac{(b-c)/2}{\sqrt{b+c}/2}}}\\ {{=\frac{b-c}{\sqrt{b+c}}}}\end{array}
 $$  
 
 与之前一样。这个检验与9.4.4节介绍的符号检验是相同的。这里，比较是用比例来表示的，而在之前的描述中，它是用实际频率来表示的，但两者是完全等价的。我们还会遇到其他可以简化为单个比例的简单二项检验。当数据以频率表的形式表示时，该检验通常被称为McNemar检验，在10.7.5节中将以此名称进行讨论。  
@@ -427,9 +394,8 @@ All of the formulae for analysing paired proportions seem to be based on only th
 考虑表10.4中的两组数据，它们显示了治疗前后症状的存在或缺失。在表(i)和(ii)中，$b = 15$ 且 $c = 6$，因此对于这两组数据，检验零假设（即两个特征之间没有差异）的结果由下式给出：  
 Consider the two sets of data in Table 10.4 showing presence or absence of a symptom before and after treatment. In both tables (i) and (ii)  $b = 15$  and  $c = 6$ , so for both of them a test of the null hypothesis that there is no difference between the two features is given by  
 
-$$  
-\begin{array}{c} z = \frac{15 - 6}{\sqrt{15 + 6}} \\ = 1.96 (\mathrm{P} = 0.05). \end{array}  
-\begin{array}{c} z = \frac{15 - 6}{\sqrt{15 + 6}} \\ = 1.96 (\mathrm{P} = 0.05). \end{array}  
+$$
+\begin{array}{c} z = \frac{15 - 6}{\sqrt{15 + 6}} \\ = 1.96 (\mathrm{P} = 0.05). \end{array}
 $$  
 
 （在这个说明性例子中，我将忽略连续性校正。）我们期望两个比例差异的置信区间的一端非常接近零，因为 $\mathbf{P}$ 值几乎正好是0.05—这是否与 $a$ 和 $d$ 的大小无关呢？  
@@ -444,9 +410,8 @@ Table 10.4 Two sets of paired data showing the same numbers of Yes-No and No-Yes
 两组计算并行显示如下：  
 The two sets of calculations are shown below in parallel:  
 
-$$  
-\begin{array}{l l}{{p_{1}=(10+15)/36=0.694}}&{{\qquad p_{1}=(51+15)/105=0.629}}\\ {{p_{2}=(10+6)/36=0.444}}&{{\qquad p_{2}=(51+6)/105=0.543}}\\ {{p_{1}-p_{2}=0.250}}&{{\qquad p_{1}-p_{2}=0.086}}\\ {{s e(p_{1}-p_{2})}}&{{=\frac{1}{36}\sqrt{21-9^{2}/36}}}\\ {{}}&{{=0.1203}}\end{array} \tag{ii}  
-\begin{array}{l l}{{p_{1}=(10+15)/36=0.694}}&{{\qquad p_{1}=(51+15)/105=0.629}}\\ {{p_{2}=(10+6)/36=0.444}}&{{\qquad p_{2}=(51+6)/105=0.543}}\\ {{p_{1}-p_{2}=0.250}}&{{\qquad p_{1}-p_{2}=0.086}}\\ {{s e(p_{1}-p_{2})}}&{{=\frac{1}{36}\sqrt{21-9^{2}/36}}}\\ {{}}&{{=0.1203}}\end{array} \tag{ii}  
+$$
+\begin{array}{l l}{{p_{1}=(10+15)/36=0.694}}&{{\qquad p_{1}=(51+15)/105=0.629}}\\ {{p_{2}=(10+6)/36=0.444}}&{{\qquad p_{2}=(51+6)/105=0.543}}\\ {{p_{1}-p_{2}=0.250}}&{{\qquad p_{1}-p_{2}=0.086}}\\ {{s e(p_{1}-p_{2})}}&{{=\frac{1}{36}\sqrt{21-9^{2}/36}}}\\ {{}}&{{=0.1203}}\end{array} \tag{ii}
 $$  
 
 $95\%$ 置信区间为 $0.250 \pm 1.96 \times 0.1203$ $95\%$ 置信区间为 $0.086 \pm 1.96 \times 0.0428$  
@@ -520,17 +485,15 @@ For reasons that will be explained in section 10.6.4 it turns out that the appro
 如果零假设成立且这两个变量不相关（即独立），那么个体位于特定行的概率与他们位于哪一列是独立的。因此，位于表中特定单元格的概率就是位于包含该单元格的行和列的概率的乘积。这些概率是使用观察到的比例估计的。例如，在 3888 人的样本中有 3029 名已婚女性，因此已婚女性的比例为 3029/3888。同样，不摄入咖啡因的女性比例为 906/3888。因此，如果婚姻状况和咖啡因摄入量是独立的，那么整个样本中已婚且不摄入咖啡因的预期比例是这些比例的乘积：  
 If the null hypothesis is true and the two variables are unrelated (i.e. independent) then the probability of an individual being in a particular row is independent of which column they are in. The probability of being in a particular cell of the table is thus simply the product of the probabilities of being in the row and the column containing that cell. These probabilities are estimated using the observed proportions. For example, there were 3029 married women in the sample of 3888, so that the proportion of married women was 3029/3888. Likewise the proportion of women consuming no caffeine was 906/3888. Thus if marital status and caffeine consumption are independent the expected proportion of the whole sample who are married and consume no caffeine is the product of these proportions:  
 
-$$  
-\frac{3029}{3888} \times \frac{906}{3888} = 0.182.  
-\frac{3029}{3888} \times \frac{906}{3888} = 0.182.  
+$$
+\frac{3029}{3888} \times \frac{906}{3888} = 0.182.
 $$  
 
 为了获得表中该单元格的期望频数，我们乘以样本量，得到  
 To get the expected frequency in that cell of the table we multiply by the sample size, to get  
 
-$$  
-3888 \times \frac{3029}{3888} \times \frac{906}{3888} = \frac{3029 \times 906}{3888} = 705.8.  
-3888 \times \frac{3029}{3888} \times \frac{906}{3888} = \frac{3029 \times 906}{3888} = 705.8.  
+$$
+3888 \times \frac{3029}{3888} \times \frac{906}{3888} = \frac{3029 \times 906}{3888} = 705.8.
 $$  
 
 因此，每个单元格的期望频率是相关行和列总和的乘积，再除以表中所有观测频率的总和（即样本量）。表10.7显示了整个表的期望频率。假设检验基于表10.5和表10.7中频率的差异。如第10.6.4节所述，通过计算以下值可获得适当的检验统计量：  
@@ -545,17 +508,15 @@ Table 10.7 Expected frequencies corresponding to Table 10.5
 表中所有单元格的量 $(O - E)^{2} / E$ 的总和，其中 $O$ 和 $E$ 分别表示观测频率和期望频率。因此，检验统计量 $X^{2}$ 为  
 sum of the quantities  $(O - E)^{2} / E$  for all the cells in the table, where  $0$  and  $E$  denote the observed and expected frequencies. The test statistic  $X^{2}$  is thus  
 
-$$  
-X^{2} = \sum_{i = 1}^{r}\sum_{j = 1}^{c}\frac{(O_{ij} - E_{ij})^{2}}{E_{ij}},  
-X^{2} = \sum_{i = 1}^{r}\sum_{j = 1}^{c}\frac{(O_{ij} - E_{ij})^{2}}{E_{ij}},  
+$$
+X^{2} = \sum_{i = 1}^{r}\sum_{j = 1}^{c}\frac{(O_{ij} - E_{ij})^{2}}{E_{ij}},
 $$  
 
 其中 $i$ 表示行号，$j$ 表示列号。此公式通常简写为  
 where  $i$  indicates the row number and  $j$  the column number. This formula is often written simply as  
 
-$$  
-X^{2} = \sum \frac{(O - E)^{2}}{E}.  
-X^{2} = \sum \frac{(O - E)^{2}}{E}.  
+$$
+X^{2} = \sum \frac{(O - E)^{2}}{E}.
 $$  
 
 请注意，所有差异 $O_{ij} - E_{ij}$ 的总和为零，因为观测频率和期望频率加起来都等于样本量。我们在相加之前将差异平方，这与我们计算一组观测值围绕其均值的标准差时所做的方法相同。  
@@ -607,9 +568,8 @@ There is thus only one degree of freedom, agreeing with the general formula of  
 在第10.6.2节中，我介绍了检验统计量 $X^{2}$，用于评估表示行和列的分类变量独立的零假设。我们可以假设零假设为真，计算表格中每个单元格的期望频率，然后将 $X^{2}$ 计算为  
 In section 10.6.2 I introduced the test statistic  $X^{2}$  for evaluating the null hypothesis that the categorical variables denoting the rows and columns are independent. We can calculate expected frequencies in each cell of the table on the assumption that the null hypothesis is true, and then calculate  $X^{2}$  as  
 
-$$  
-X^{2} = \sum_{i = 1}^{r} \sum_{j = 1}^{c} \frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}  
-X^{2} = \sum_{i = 1}^{r} \sum_{j = 1}^{c} \frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}  
+$$
+X^{2} = \sum_{i = 1}^{r} \sum_{j = 1}^{c} \frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}
 $$  
 
 其中 $i$ 和 $j$ 表示行号和列号。表10.8显示了表10.5中每个单元格对检验统计量的贡献，即 $X^{2} = 51.61$。根据表B5，自由度为6的卡方分布在上尾截断 $0.1\%$ 的值为22.46，因此在该女性样本中，婚姻状况与咖啡因摄入量之间存在高度显著关联 $(P < 0.001)$。在第10.9.1节中，将进一步讨论此数据集，其中考虑了其中一个变量具有有序类别的事实。  
@@ -698,17 +658,15 @@ Table 10.12 Expected frequencies and contributions to  $X^{2}$  for the data in 
 对于 $2 \times 2$ 表，$X^{2}$ 的公式可以简化。表中第一个单元格对 $X^{2} = \Sigma [(O - E)^{2} / E]$ 的贡献可以表示为  
 For a  $2 \times 2$  table the formula for  $X^{2}$  can be simplified. The contribution from the first cell in the table to  $X^{2} = \Sigma [(O - E)^{2} / E]$  can be expressed as  
 
-$$  
-\frac{\left[a - \frac{(a + b)(a + c)}{N}\right]^{2}}{\frac{(a + b)(a + c)}{N}}  
-\frac{\left[a - \frac{(a + b)(a + c)}{N}\right]^{2}}{\frac{(a + b)(a + c)}{N}}  
+$$
+\frac{\left[a - \frac{(a + b)(a + c)}{N}\right]^{2}}{\frac{(a + b)(a + c)}{N}}
 $$  
 
 我们可以为其他三个单元格得出类似的表达式。这四项之和，经过大量繁琐的推导，可以转化为  
 and we can produce similar expressions for the other three cells. The sum of the four terms, after much tedious manipulation, can be turned into  
 
-$$  
-X^{2} = \frac{N(ad - bc)^{2}}{(a + b)(a + c)(b + d)(c + d)}.  
-X^{2} = \frac{N(ad - bc)^{2}}{(a + b)(a + c)(b + d)(c + d)}.  
+$$
+X^{2} = \frac{N(ad - bc)^{2}}{(a + b)(a + c)(b + d)(c + d)}.
 $$  
 
 X² 的这个版本公式常用于 $2 \times 2$ 表，因为它避免了显式计算期望值的需要。重要的是要认识到，这个来自 $2 \times 2$ 表的 $X^{2}$ 公式与通用公式 $X^{2} = \Sigma [(O - E)^{2} / E]$ 在数学上是等价的。  
@@ -717,9 +675,8 @@ This version of the formula for  $X^{2}$  is often used for  $2 \times 2$  table
 对于表 10.10 中的数据，我们得到  
 For the data in Table 10.10 we get  
 
-$$  
-\begin{aligned} X^{2} & = \frac{294 \times (32 \times 127 - 118 \times 17)^{2}}{150 \times 49 \times 245 \times 144} \\ & = 4.802 \end{aligned}  
-\begin{aligned} X^{2} & = \frac{294 \times (32 \times 127 - 118 \times 17)^{2}}{150 \times 49 \times 245 \times 144} \\ & = 4.802 \end{aligned}  
+$$
+\begin{aligned} X^{2} & = \frac{294 \times (32 \times 127 - 118 \times 17)^{2}}{150 \times 49 \times 245 \times 144} \\ & = 4.802 \end{aligned}
 $$  
 
 这与表 10.12 一致。从表 B5 可知 $P < 0.05$，这表明  
@@ -739,9 +696,8 @@ When the sample sizes are small the use of the continuous Chi squared distributi
 该校正包括将每个 $O - E$ 向零移动 $\frac{1}{2}$。换句话说，我们用 $|O - E| - \frac{1}{2}$ 替换 $O - E$。带有 Yates 校正的简化公式变为  
 The correction consists of moving each  $O - E$  nearer to zero by  $\frac{1}{2}$ . In other words we replace  $O - E$  by  $|O - E| - \frac{1}{2}$ . The short cut formula with Yates' correction becomes  
 
-$$  
-X_{Y}^{2} = \frac{N\left(|ad - bc| - \frac{N}{2}\right)^{2}}{(a + b)(a + c)(b + d)(c + d)}.  
-X_{Y}^{2} = \frac{N\left(|ad - bc| - \frac{N}{2}\right)^{2}}{(a + b)(a + c)(b + d)(c + d)}.  
+$$
+X_{Y}^{2} = \frac{N\left(|ad - bc| - \frac{N}{2}\right)^{2}}{(a + b)(a + c)(b + d)(c + d)}.
 $$  
 
 我建议所有针对 $2 \times 2$ 表的卡方检验都使用此公式，尽管对于大样本而言，校正的影响会很小。  
@@ -750,9 +706,8 @@ I recommend that this formula is used for all Chi squared tests on  $2 \times 2$
 对于牙釉质腐蚀数据，使用连续性校正得到  
 For the dental erosion data the use of the continuity correction gives  
 
-$$  
-\begin{array}{c}{{X_{Y}^{2}=\frac{294\times\left(|32\times127-118\times17|-{\frac{294}{2}}\right)^{2}}{150\times49\times245\times144}}}\\ {{=4.140}}\end{array}  
-\begin{array}{c}{{X_{Y}^{2}=\frac{294\times\left(|32\times127-118\times17|-{\frac{294}{2}}\right)^{2}}{150\times49\times245\times144}}}\\ {{=4.140}}\end{array}  
+$$
+\begin{array}{c}{{X_{Y}^{2}=\frac{294\times\left(|32\times127-118\times17|-{\frac{294}{2}}\right)^{2}}{150\times49\times245\times144}}}\\ {{=4.140}}\end{array}
 $$  
 
 我们仍然得到 $\mathbf{P}< 0.05$  
@@ -761,9 +716,8 @@ and we still have  $\mathbf{P}< 0.05$
 然而，对于小样本， $X^{2}$ 和 $X_{Y}^{2}$ 之间的差异更为显著。之前讨论过的关于IRS $\nu$ 安慰剂治疗颈椎骨关节炎患者的试验数据将说明这一效果；结果以频数表的形式显示在表10.13中。未校正的卡方检验结果为  
 For small samples, however, the difference between  $X^{2}$  and  $X_{Y}^{2}$  is more marked. The data from the previously discussed trial of IRS  $\nu$  placebo in patients with cervical osteoarthrosis will illustrate the effect; the results are shown as a frequency table in Table 10.13. The uncorrected Chi squared test gives  
 
-$$  
-\begin{array}{c}{{X^{2}=\frac{25\times(9\times9-4\times3)^{2}}{13\times12\times12\times13}}}\\ {{=4.891\qquad(\mathrm{P}< 0.05)}}\end{array}  
-\begin{array}{c}{{X^{2}=\frac{25\times(9\times9-4\times3)^{2}}{13\times12\times12\times13}}}\\ {{=4.891\qquad(\mathrm{P}< 0.05)}}\end{array}  
+$$
+\begin{array}{c}{{X^{2}=\frac{25\times(9\times9-4\times3)^{2}}{13\times12\times12\times13}}}\\ {{=4.891\qquad(\mathrm{P}< 0.05)}}\end{array}
 $$  
 
 表10.13 比较IRS $\nu$ 安慰剂的临床试验结果（Lewith 和 Machin，1981）  
@@ -775,14 +729,12 @@ Table 10.13 Results of a clinical trial comparing IRS  $\nu$  placebo (Lewith an
 而使用 Yates 校正后得到  
 whereas the use of Yates' correction gives  
 
-$$  
-X_{Y}^{2} = \frac{25\times(|9\times9 - 4\times3| - \frac{5}{2})^{2}}{13\times12\times12\times13}  
-X_{Y}^{2} = \frac{25\times(|9\times9 - 4\times3| - \frac{5}{2})^{2}}{13\times12\times12\times13}  
+$$
+X_{Y}^{2} = \frac{25\times(|9\times9 - 4\times3| - \frac{5}{2})^{2}}{13\times12\times12\times13}
 $$  
 
-$$  
-= 3.279\qquad (\mathrm{P} > 0.05).  
-= 3.279\qquad (\mathrm{P} > 0.05).  
+$$
+= 3.279\qquad (\mathrm{P} > 0.05).
 $$  
 
 这个例子显示了给出更精确的 $\mathbf{P}$ 值（而非从表格中获得的模糊值）的优势。许多计算机程序会给出卡方检验的精确 $\mathbf{P}$ 值，本例中 $X^{2}$ 和 $X_{Y}^{2}$ 的精确 $\mathbf{P} $ 值分别为 $0.027$ 和 $\mathbf{P} = 0.070$。正如第8.5节所讨论的，我们不应该仅仅因为 $\mathbf{P}$ 值越过了0.05的界限就对我们的解释进行根本性调整，但当我们使用更合适的、带有 Yates 校正的检验版本时，关联的证据会更弱。  
@@ -858,9 +810,8 @@ Lastly, it should be noted that Fisher's exact test usually gives a value for  $
 当原假设为真且行和列总数固定时，获得单元格频数 $a,b,c$ 和 $d$ 的概率由以下公式给出  
 The probability of obtaining the cell frequencies  $a,b,c$  and  $d$  when the null hypothesis is true and the row and column totals are fixed is given by  
 
-$$  
-\frac{(a + b)!(a + c)!(b + d)!(c + d)!}{N!a!b!c!d!}  
-\frac{(a + b)!(a + c)!(b + d)!(c + d)!}{N!a!b!c!d!}  
+$$
+\frac{(a + b)!(a + c)!(b + d)!(c + d)!}{N!a!b!c!d!}
 $$  
 
 其中符号 $x!$，称为“$^{\ast}x$ 阶乘”，意味着我们将从1到 $x$ 的所有整数相乘（参见附录A）。例如，$4! = 1\times 2\times 3\times 4 = 24$。（注意，我们需要定义 $0! = 1$。）这个特殊的公式是通过计算将 $N$ 个个体排列在一个表中以得到观察到的行和列总数的所有不同方式（组合）而得出的。表10.15展示了表10.14中视力数据的七个此类表格。  
@@ -879,25 +830,22 @@ Evaluating this formula is tedious. In this example there are some 70 numbers in
 公式分子和分母中出现的序列。在这里，6! 和 9! 可以立即约去，并且我们可以省略 0! 和 1!，因为它们都等于1，这样概率就简化为  
 sequences that appear on the top and bottom of the formula. Here 6! and 9! can be deleted immediately, and we can omit 0! and 1! as they are both equal to 1, so that the probability reduces to  
 
-$$  
-\begin{array}{r l} & {\frac{7!10!}{16!} = \frac{1\times2\times3\times4\times5\times6\times7}{11\times12\times13\times14\times15\times16}}\\ & {\qquad = \frac{1}{11\times13\times8}}\\ & {\qquad = 0.0087.} \end{array}  
-\begin{array}{r l} & {\frac{7!10!}{16!} = \frac{1\times2\times3\times4\times5\times6\times7}{11\times12\times13\times14\times15\times16}}\\ & {\qquad = \frac{1}{11\times13\times8}}\\ & {\qquad = 0.0087.} \end{array}  
+$$
+\begin{array}{r l} & {\frac{7!10!}{16!} = \frac{1\times2\times3\times4\times5\times6\times7}{11\times12\times13\times14\times15\times16}}\\ & {\qquad = \frac{1}{11\times13\times8}}\\ & {\qquad = 0.0087.} \end{array}
 $$  
 
 对于表格 (ii)，对应于观察到的数据，我们得到的概率为  
 For table (ii), which corresponds to the observed data, we get a probability of  
 
-$$  
-\frac{6!9!7!10!}{16!15!8!2!}.  
-\frac{6!9!7!10!}{16!15!8!2!}.  
+$$
+\frac{6!9!7!10!}{16!15!8!2!}.
 $$  
 
 我们可以通过注意到 $9! / 8! = 9$ 等等来简化这个表达式，从而得到  
 We can simplify this expression by noting that  $9! / 8! = 9$ , and so on, to get  
 
-$$  
-\begin{array}{c}{{\frac{6\times9\times2\times3\times4\times5\times6\times7}{11\times12\times13\times14\times15\times16\times2}}}\\ {{=0.02360.}}\end{array}  
-\begin{array}{c}{{\frac{6\times9\times2\times3\times4\times5\times6\times7}{11\times12\times13\times14\times15\times16\times2}}}\\ {{=0.02360.}}\end{array}  
+$$
+\begin{array}{c}{{\frac{6\times9\times2\times3\times4\times5\times6\times7}{11\times12\times13\times14\times15\times16\times2}}}\\ {{=0.02360.}}\end{array}
 $$  
 
 为了执行费舍尔精确检验，我们对所有表格进行相同的计算，如表10.16所示。我们本可以只计算那些对概率分布的尾部有贡献的表格的概率，但提前识别这些表格并不容易。计算机程序的优势显而易见。  
@@ -911,22 +859,19 @@ To perform Fisher's exact test we carry out the same calculation for all tables,
 我曾不止一次地评论过，比较两个独立比例的方法与$2 \times 2$表格的卡方检验是相同的。这可以通过数学方式证明，即将两个比例的比较用表10.11的符号表示。我们有$p_{1} = a / (a + c)$，$p_{2} = b / (b + d)$，并且合并比例为$p = (a + b) / N$，因此用于比较两个观测比例的$z$值为  
 I have commented more than once that the method for comparing two independent proportions is identical to the Chi squared test for a  $2 \times 2$  table. This can be shown mathematically, by expressing the comparison of two proportions in the notation of Table 10.11. We have  $p_{1} = a / (a + c)$ ,  $p_{2} = b / (b + d)$ , and the pooled proportion is  $p = (a + b) / N$ , so that the value of  $z$  for comparing the two observed proportions is  
 
-$$  
-z = \frac{p_{1} - p_{2}}{\sqrt{p(1 - p)\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)}}  
-z = \frac{p_{1} - p_{2}}{\sqrt{p(1 - p)\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)}}  
+$$
+z = \frac{p_{1} - p_{2}}{\sqrt{p(1 - p)\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)}}
 $$  
 
-$$  
-z = \frac{\frac{a}{a + c} - \frac{b}{b + d}}{\sqrt{\frac{a + b}{N} \frac{c + d}{N} \left(\frac{1}{a + c} + \frac{1}{b + d}\right)}}  
-z = \frac{\frac{a}{a + c} - \frac{b}{b + d}}{\sqrt{\frac{a + b}{N} \frac{c + d}{N} \left(\frac{1}{a + c} + \frac{1}{b + d}\right)}}  
+$$
+z = \frac{\frac{a}{a + c} - \frac{b}{b + d}}{\sqrt{\frac{a + b}{N} \frac{c + d}{N} \left(\frac{1}{a + c} + \frac{1}{b + d}\right)}}
 $$  
 
 经过一些数学推导后，得到  
 which, after some manipulation, gives  
 
-$$  
-\begin{array}{c}{{z=\sqrt{\frac{N(a d-b c)^{2}}{(a+b)(a+c)(b+d)(c+d)}}}}\\ {{=\sqrt{X^{2}}.}}\end{array}  
-\begin{array}{c}{{z=\sqrt{\frac{N(a d-b c)^{2}}{(a+b)(a+c)(b+d)(c+d)}}}}\\ {{=\sqrt{X^{2}}.}}\end{array}  
+$$
+\begin{array}{c}{{z=\sqrt{\frac{N(a d-b c)^{2}}{(a+b)(a+c)(b+d)(c+d)}}}}\\ {{=\sqrt{X^{2}}.}}\end{array}
 $$  
 
 因此，$z$ 值是 $X^{2}$ 值的平方根，这两个检验是等效的，因为如第 10.6.3 节所述，具有一个自由度的卡方分布是标准正态分布的平方。  
@@ -946,17 +891,15 @@ Table 10.17 Results of Table 10.3 rearranged as a  $2\times 2$  table, showing n
 配对比例的比较是基于不同结果的配对频率，正如我们在第 10.4 节中看到的，其中描述了置信区间和假设检验。在第 10.4.3 节中，包含连续性校正的检验统计量为  
 The comparison of paired proportions is based on the frequencies of pairs with different outcomes, as we saw in section 10.4 where the confidence interval and hypothesis test were described. In section 10.4.3 the test statistic incorporating the continuity correction was given as  
 
-$$  
-z_{c} = \frac{|b - c| - 1}{\sqrt{b + c}}.  
-z_{c} = \frac{|b - c| - 1}{\sqrt{b + c}}.  
+$$
+z_{c} = \frac{|b - c| - 1}{\sqrt{b + c}}.
 $$  
 
 有时检验统计量会略有不同地计算为  
 Sometimes the test statistic is calculated slightly differently as  
 
-$$  
-X^{2} = \frac{(|b - c| - 1)^{2}}{b + c},  
-X^{2} = \frac{(|b - c| - 1)^{2}}{b + c},  
+$$
+X^{2} = \frac{(|b - c| - 1)^{2}}{b + c},
 $$  
 
 这显然等于 $z_{c}^{2}$。$X^{2}$ 的值参照具有一个自由度的卡方分布。正如我们对独立比例所见，这两个检验是完全等效的。  
@@ -990,17 +933,15 @@ Table 10.18 Eye strain reported by four groups of office workers (Reading and We
 根据之前给出的通用公式计算 $X^{2}$：$X^{2} = \Sigma [(O - E)^{2} / E]$。另一种表述如下。如果第 $i$ 组有 $n_{i}$ 名受试者，其中 $r_{i}$ 名具有感兴趣的特征，我们可以将 $X^{2}$ 计算为  
 calculation of  $X^{2}$  according to the general formula previously given:  $X^{2} = \Sigma [(O - E)^{2} / E]$  . An alternative formulation is as follows. If there are  $n_{i}$  subjects in group  $i$  , of whom  $r_{i}$  have the characteristic of interest, we can calculate  $X^{2}$  as  
 
-$$  
-X^{2} = \frac{\sum_{i = 1}^{k}(r_{i}^{2} / n_{i}) - R^{2} / N}{P(1 - P)}  
-X^{2} = \frac{\sum_{i = 1}^{k}(r_{i}^{2} / n_{i}) - R^{2} / N}{P(1 - P)}  
+$$
+X^{2} = \frac{\sum_{i = 1}^{k}(r_{i}^{2} / n_{i}) - R^{2} / N}{P(1 - P)}
 $$  
 
 其中 $R$ 是具有该特征的总数 $(R = \Sigma r_{i})$ ，$N$ 是总样本量，且 $P = R / N$。我们将 $X^{2}$ 与具有 $k - 1$ 个自由度的卡方分布进行比较。对于表 10.18 中的数据，我们得到  
 where  $R$  is the total number with the characteristic  $(R = \Sigma r_{i})$  ,  $N$  is the total sample size, and  $P = R / N$  . We compare  $X^{2}$  to the Chi squared distribution with  $k - 1$  degrees of freedom. For the data in Table 10.18, we have  
 
-$$  
-\begin{array}{r}{X^{2} = \frac{\frac{11^{2}}{53} + \frac{30^{2}}{109} + \frac{14^{2}}{78} + \frac{3^{2}}{55} - \frac{58^{2}}{295}}{\frac{58}{295}\times\frac{237}{295}}}\\ {= \frac{1.8130}{0.1580}}\\ {= 11.48} \end{array}  
-\begin{array}{r}{X^{2} = \frac{\frac{11^{2}}{53} + \frac{30^{2}}{109} + \frac{14^{2}}{78} + \frac{3^{2}}{55} - \frac{58^{2}}{295}}{\frac{58}{295}\times\frac{237}{295}}}\\ {= \frac{1.8130}{0.1580}}\\ {= 11.48} \end{array}  
+$$
+\begin{array}{r}{X^{2} = \frac{\frac{11^{2}}{53} + \frac{30^{2}}{109} + \frac{14^{2}}{78} + \frac{3^{2}}{55} - \frac{58^{2}}{295}}{\frac{58}{295}\times\frac{237}{295}}}\\ {= \frac{1.8130}{0.1580}}\\ {= 11.48} \end{array}
 $$  
 
 根据具有 3 个自由度的卡方表（表 B5），这对应于 $\mathbf{P}< 0.01$（精确值为 $\mathbf{P} = 0.0094)$。因此，有强有力的证据表明眼疲劳在这四个组中并非同样常见。  
@@ -1067,17 +1008,15 @@ The simplest way to calculate  $X_{t r e n d}^{2}$  is by means of a formula tha
 对于第 $i$ 组，我们将具有某一特征的观测频率称为 $r_{i}$，个体总数称为 $n_{i}$。此外，我们让 $x_{i}$ 是分配给第 $i$ 组的得分。然后我们定义一些简化量如下：  
 For group  $i$  we will call the observed frequency with a characteristic  $r_{i}$  and the total number of individuals  $n_{i}$ . Further, we let  $x_{i}$  be the score allocated to group  $i$ . Then we define some simplifying quantities as follows:  
 
-$$  
-N = \sum_{i = 1}^{k}n_{i},\quad R = \sum_{i = 1}^{k}r_{i},\quad p = R / N,\quad \mathrm{and} \bar{x} = \sum_{i = 1}^{k}n_{i}x_{i} / N.  
-N = \sum_{i = 1}^{k}n_{i},\quad R = \sum_{i = 1}^{k}r_{i},\quad p = R / N,\quad \mathrm{and} \bar{x} = \sum_{i = 1}^{k}n_{i}x_{i} / N.  
+$$
+N = \sum_{i = 1}^{k}n_{i},\quad R = \sum_{i = 1}^{k}r_{i},\quad p = R / N,\quad \mathrm{and} \bar{x} = \sum_{i = 1}^{k}n_{i}x_{i} / N.
 $$  
 
 检验统计量 $X_{t r e n d}^{2}$ 则通过以下公式获得  
 The test statistic  $X_{t r e n d}^{2}$  is then obtained as  
 
-$$  
-X_{t r e n d}^{2} = \frac{\left[\sum_{i = 1}^{k}r_{i}x_{i} - R\bar{x}\right]^{2}}{p(1 - p)\left[\sum_{i = 1}^{k}n_{i}x_{i}^{2} - N\bar{x}^{2}\right]}.  
-X_{t r e n d}^{2} = \frac{\left[\sum_{i = 1}^{k}r_{i}x_{i} - R\bar{x}\right]^{2}}{p(1 - p)\left[\sum_{i = 1}^{k}n_{i}x_{i}^{2} - N\bar{x}^{2}\right]}.  
+$$
+X_{t r e n d}^{2} = \frac{\left[\sum_{i = 1}^{k}r_{i}x_{i} - R\bar{x}\right]^{2}}{p(1 - p)\left[\sum_{i = 1}^{k}n_{i}x_{i}^{2} - N\bar{x}^{2}\right]}.
 $$  
 
 表10.20 表10.19中数据 $X_{t r e n d}^{2}$ 的计算  
@@ -1092,9 +1031,8 @@ $\bar{x} = 1580 / 351 = 4.5014; p = 43 / 351 = 0.1225; 1 - p = 0.8775$
 表10.20显示了剖宫产数据的基本计算。根据这些要素，我们得到  
 Table 10.20 shows the basic calculation for the Caesarean section data. From these elements we get  
 
-$$  
-\begin{array}{r l} & {X_{i r e n d}^{2} = \frac{(165 - 43\times4.5014)^{2}}{0.1225\times0.8775\times(8058 - 351\times4.5014^{2})}}\\ & {\qquad = \frac{815.6850}{101.6705}}\\ & {\qquad = 8.023 (\mathrm{P} = 0.0046).} \end{array}  
-\begin{array}{r l} & {X_{i r e n d}^{2} = \frac{(165 - 43\times4.5014)^{2}}{0.1225\times0.8775\times(8058 - 351\times4.5014^{2})}}\\ & {\qquad = \frac{815.6850}{101.6705}}\\ & {\qquad = 8.023 (\mathrm{P} = 0.0046).} \end{array}  
+$$
+\begin{array}{r l} & {X_{i r e n d}^{2} = \frac{(165 - 43\times4.5014)^{2}}{0.1225\times0.8775\times(8058 - 351\times4.5014^{2})}}\\ & {\qquad = \frac{815.6850}{101.6705}}\\ & {\qquad = 8.023 (\mathrm{P} = 0.0046).} \end{array}
 $$  
 
 #### (c) 定性有序分组  (c) Qualitatively ordered groups  
@@ -1164,9 +1102,8 @@ There is yet another way of analysing two by two tables, which involves the comp
 在前瞻性研究中，对具有不同特征的受试者组进行随访，以观察感兴趣的结局是否发生。许多临床试验都是如此，但观察性研究也是如此，在这些研究中，无法随机分配感兴趣的特征，例如血型。我们可以很容易地计算出每组中发生结局的比例，因此这两个比例的比率是衡量一组相对于另一组风险增加的指标。我们将这个比率称为相对风险。表 10.22 显示了在这种情况下出现的 $2 \times 2$ 表格的一般布局。两组的风险分别为 $a / (a + c)$ 和 $b / (b + d)$，因此相对风险为  
 In a prospective study groups of subjects with different characteristics are followed up to see whether an outcome of interest occurs. Many clinical trials are like this, but so too are observational studies where it is not possible to randomize the feature of interest, such as blood group. We can easily calculate the proportions having the outcome in each group, and so the ratio of these two proportions is a measure of the raised risk in one group compared to the other. We term this ratio the relative risk. Table 10.22 shows the general layout of the  $2\times 2$  table that arises in this situation. The risks in the two groups are  $a / (a + c)$  and  $b / (b + d)$  , and the relative risk is thus  
 
-$$  
-R R = \frac{a / (a + c)}{b / (b + d)}.  
-R R = \frac{a / (a + c)}{b / (b + d)}.  
+$$
+R R = \frac{a / (a + c)}{b / (b + d)}.
 $$  
 
 在零假设下，RR 的期望值为 1。  
@@ -1197,9 +1134,8 @@ having either 'symmetric' or 'asymmetric' growth retardation on the basis of the
 Apgar评分低于7的比例在对称性组中为2/16 (0.13)，在非对称性组中为33/91 (0.36)。因此，低Apgar评分的相对风险为  
 The proportions with an Apgar score less than 7 were 2/16 (0.13) in the symmetric group and 33/91 (0.36) in the asymmetric group. The relative risk of a low Apgar score is thus  
 
-$$  
-\frac{2 / 16}{33 / 91} = 0.345  
-\frac{2 / 16}{33 / 91} = 0.345  
+$$
+\frac{2 / 16}{33 / 91} = 0.345
 $$  
 
 也就是说，对称组的风险大约是非对称组的 $35\%$。  
@@ -1208,17 +1144,15 @@ that is, the risk in the symmetric group is about  $35\%$  of that in the asymme
 我们可以使用以下公式构建相对风险对数的标准误，从而得出相对风险的置信区间：  
 We can construct a confidence interval for the relative risk using the following formula for the standard error of its logarithm:  
 
-$$  
-SE(\log_{\mathrm{e}}RR) = \sqrt{\frac{1}{a} - \frac{1}{a + c} + \frac{1}{b} - \frac{1}{b + d}}.  
-SE(\log_{\mathrm{e}}RR) = \sqrt{\frac{1}{a} - \frac{1}{a + c} + \frac{1}{b} - \frac{1}{b + d}}.  
+$$
+SE(\log_{\mathrm{e}}RR) = \sqrt{\frac{1}{a} - \frac{1}{a + c} + \frac{1}{b} - \frac{1}{b + d}}.
 $$  
 
 $\log RR$ 的抽样分布是正态分布，因此我们可以构建，例如，相对风险对数的 $90\%$ 置信区间，如下所示：  
 The sampling distribution of  $\log RR$  is the Normal distribution, so we can construct, say, a  $90\%$  confidence interval for the log of the relative risk as  
 
-$$  
-\log_{\mathrm{e}}RR - N_{0.95} \times SE(\log_{\mathrm{e}}RR) \qquad \text{to} \qquad \log_{\mathrm{e}}RR + N_{0.95} \times SE(\log_{\mathrm{e}}RR)  
-\log_{\mathrm{e}}RR - N_{0.95} \times SE(\log_{\mathrm{e}}RR) \qquad \text{to} \qquad \log_{\mathrm{e}}RR + N_{0.95} \times SE(\log_{\mathrm{e}}RR)  
+$$
+\log_{\mathrm{e}}RR - N_{0.95} \times SE(\log_{\mathrm{e}}RR) \qquad \text{to} \qquad \log_{\mathrm{e}}RR + N_{0.95} \times SE(\log_{\mathrm{e}}RR)
 $$  
 
 其中 $N_{0.95}$ 是正态分布中的相应值。相对风险的置信区间通过对这些值取反对数获得。  
@@ -1227,17 +1161,15 @@ where  $N_{0.95}$  is the appropriate value from the Normal distribution. The co
 在本例中，相对风险为 0.345，其对数（以 e 为底）为 - 1.0651。该值的标准误是  
 In the example, the relative risk was 0.345 and its logarithm (to base e) is - 1.0651. The standard error of this value is  
 
-$$  
-\begin{array}{r}{S E(\log_{\mathsf{e}}R R) = \sqrt{\frac{1}{2} - \frac{1}{16} + \frac{1}{33} - \frac{1}{91}}}\\ {= 0.676.} \end{array}  
-\begin{array}{r}{S E(\log_{\mathsf{e}}R R) = \sqrt{\frac{1}{2} - \frac{1}{16} + \frac{1}{33} - \frac{1}{91}}}\\ {= 0.676.} \end{array}  
+$$
+\begin{array}{r}{S E(\log_{\mathsf{e}}R R) = \sqrt{\frac{1}{2} - \frac{1}{16} + \frac{1}{33} - \frac{1}{91}}}\\ {= 0.676.} \end{array}
 $$  
 
 因此，我们可以获得所有此类婴儿总体中相对风险对数的 $90\%$ 置信区间，如下：  
 Thus we can obtain the  $90\%$  confidence interval for the log of the relative risk in the population of all such babies as  
 
-$$  
--1.0651 - 1.645 \times 0.676 \qquad \text{to} \qquad -1.0651 + 1.645 \times 0.676  
--1.0651 - 1.645 \times 0.676 \qquad \text{to} \qquad -1.0651 + 1.645 \times 0.676  
+$$
+-1.0651 - 1.645 \times 0.676 \qquad \text{to} \qquad -1.0651 + 1.645 \times 0.676
 $$  
 
 或 - 2.177 到 0.047，得出相对风险的 $90\%$ 置信区间为 0.11 到 1.05。置信区间较宽，因为对称组的样本量很小。  
@@ -1259,17 +1191,15 @@ If the outcome of interest that defines the cases is rare, then a will b small a
 优势比定义为 $O R = a d / b c$。置信区间可以采用与相对风险类似的方式获得。我们使用优势比对数的标准误，其公式为  
 The odds ratio is defined as  $O R = a d / b c$  . A confidence interval can be obtained in a similar manner as for the relative risk. We use the standard error of the logarithm of the odds ratio, given by  
 
-$$  
-S E(\log_{\mathrm{e}}O R) = \sqrt{\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d}},  
-S E(\log_{\mathrm{e}}O R) = \sqrt{\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d}},  
+$$
+S E(\log_{\mathrm{e}}O R) = \sqrt{\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d}},
 $$  
 
 因此，对数优势比的 $95\%$ 置信区间为  
 so that a  $95\%$  confidence interval for the log odds ratio is obtained as  
 
-$$  
-\log_{\mathrm{e}}O R - N_{0.975}\times S E(\log_{\mathrm{e}}O R)\qquad \mathrm{to}\qquad \log_{\mathrm{e}}O R + N_{0.975}\times S E(\log_{\mathrm{e}}O R)  
-\log_{\mathrm{e}}O R - N_{0.975}\times S E(\log_{\mathrm{e}}O R)\qquad \mathrm{to}\qquad \log_{\mathrm{e}}O R + N_{0.975}\times S E(\log_{\mathrm{e}}O R)  
+$$
+\log_{\mathrm{e}}O R - N_{0.975}\times S E(\log_{\mathrm{e}}O R)\qquad \mathrm{to}\qquad \log_{\mathrm{e}}O R + N_{0.975}\times S E(\log_{\mathrm{e}}O R)
 $$  
 
 其中 $N_{0.975}$ 是正态分布中的相应值。当 $2\times 2$ 表格中的四个单元格都没有非常小时，此方法适用；否则需要更高级的方法（参见 Breslow 和 Day，1980，第 124 页）。  
@@ -1278,17 +1208,15 @@ where  $N_{0.975}$  is the appropriate value from the Normal distribution. This 
 表 10.10 显示了一项关于牙釉质腐蚀与在氯化池中游泳量之间关系的病例对照研究结果。该表的比值比为 $(32\times 127) / (118\times 17) = 2.026$，因此 $\log_{\mathrm{e}}O R = 0.706$。此外，我们有  
 Table 10.10 showed the results of a case- control study of erosion of dental enamel in relation to amount of swimming in a chlorinated pool. The odds ratio for that table is  $(32\times 127) / (118\times 17) = 2.026$  ,so  $\log_{\mathrm{e}}O R = 0.706$  . Also, we have  
 
-$$  
-\begin{array}{r}{S E(\log_{\mathrm{e}}O R) = \sqrt{\frac{1}{32} + \frac{1}{127} + \frac{1}{118} + \frac{1}{17}}}\\ {= 0.326.} \end{array}  
-\begin{array}{r}{S E(\log_{\mathrm{e}}O R) = \sqrt{\frac{1}{32} + \frac{1}{127} + \frac{1}{118} + \frac{1}{17}}}\\ {= 0.326.} \end{array}  
+$$
+\begin{array}{r}{S E(\log_{\mathrm{e}}O R) = \sqrt{\frac{1}{32} + \frac{1}{127} + \frac{1}{118} + \frac{1}{17}}}\\ {= 0.326.} \end{array}
 $$  
 
 因此，总体对数比值比的 $95\%$ 置信区间为  
 The  $95\%$  confidence interval for the population log odds ratio is thus  
 
-$$  
-0.706 - 1.96\times 0.326\qquad \mathrm{to}\qquad 0.706 + 1.96\times 0.326  
-0.706 - 1.96\times 0.326\qquad \mathrm{to}\qquad 0.706 + 1.96\times 0.326  
+$$
+0.706 - 1.96\times 0.326\qquad \mathrm{to}\qquad 0.706 + 1.96\times 0.326
 $$  
 
 或从 0.067 到 1.345。因此，比值比的 $95\%$ 置信区间是从 $\mathrm{e}^{0.067}$ 到 $\mathrm{e}^{1.345}$，即从 1.069 到 3.840。由于整个区间都大于 1（1 表示两组风险（或比值）相等），我们可以推断出每周游泳超过 6 小时的人群牙釉质腐蚀的风险增加。  

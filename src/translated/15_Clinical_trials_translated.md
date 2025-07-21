@@ -496,9 +496,8 @@ The usual way of thinking about specifying  $p_{1}$  and  $p_{2}$  is that previ
 给定 $p_{1}$ 和 $p_{2}$ 的指定值，我们可以计算标准化差异为  
 Given specified values of  $p_{1}$  and  $p_{2}$  we can calculate the standardized difference as  
 
-$$  
-\frac{p_{1} - p_{2}}{\sqrt{\bar{p}(1 - \bar{p})}}  
-\frac{p_{1} - p_{2}}{\sqrt{\bar{p}(1 - \bar{p})}}  
+$$
+\frac{p_{1} - p_{2}}{\sqrt{\bar{p}(1 - \bar{p})}}
 $$  
 
 其中  $\bar{p} = (p_{1} + p_{2}) / 2$  
@@ -510,9 +509,8 @@ For example, suppose we are planning a trial to compare two methods of helping s
 我们有 $p_{1} = 0.30$ 和 $p_{2} = 0.15$，所以 $\bar{p} = (0.30 + 0.15) / 2 = 0.225$。使用上述公式，标准化差异为  
 We have  $p_{1} = 0.30$  and  $p_{2} = 0.15$  so  $\bar{p} = (0.30 + 0.15) / 2 = 0.225$ . Using the above formula the standardized difference is given as  
 
-$$  
-\frac{0.30 - 0.15}{\sqrt{0.225(1 - 0.225)}}  
-\frac{0.30 - 0.15}{\sqrt{0.225(1 - 0.225)}}  
+$$
+\frac{0.30 - 0.15}{\sqrt{0.225(1 - 0.225)}}
 $$  
 
 即0.36。我们将标准化差异0.36与图15.2列线图中的0.85的把握度（power）连接起来，并从与0.05显著性水平对应的中心轴上读出试验所需的样本量，结果为 $N = 280$。因此，为了满足试验规定的条件，我们每组需要有140名吸烟者。  
@@ -527,9 +525,8 @@ The nomogram can be used for trials in which the sample size in the two groups w
 要使用列线图来规划样本量不等的试验，我们必须首先像使用相等样本量那样计算 $N$，然后计算修正后的样本量 $N^{\prime}$。如果 $k = n_{1} / n_{2}$ 是两组样本量之比，则所需的总样本量为  
 To use the nomogram to plan a study with unequal groups, we must first calculate  $N$  as if we were using equal groups and then calculate the modified sample size  $N^{\prime}$ . If  $k = n_{1} / n_{2}$  is the ratio of the sample sizes in the two groups, then the required total sample size is  
 
-$$  
-N^{\prime} = N(1 + k)^{2} / 4k  
-N^{\prime} = N(1 + k)^{2} / 4k  
+$$
+N^{\prime} = N(1 + k)^{2} / 4k
 $$  
 
 两组的样本量分别为 $N^{\prime} / (1 + k)$ 和 $k N^{\prime} / (1 + k)$。因此，例如，如果我们希望实验组的受试者数量是对照组的两倍，则 $k = 2$，所以 $N^{\prime} = 9N / 8$，这是一个相当小的增加；但如果 $k = 3$，则 $N^{\prime} = 16N / 12$，这比相等样本量增加了三分之一。  
@@ -544,9 +541,8 @@ The nomogram can be used to calculate the power for a given sample size. We just
 为了评估样本量不等的 $n_{1}$ 和 $n_{2}$ 研究的把握度，我们使用“有效”样本量 $N$，其计算公式为  
 To evaluate the power of a study with unequal sample sizes  $n_{1}$  and  $n_{2}$  we use the 'effective' sample size  $N$ , which is calculated as  
 
-$$  
-N = 4N^{\prime}k / (1 + k)^{2}  
-N = 4N^{\prime}k / (1 + k)^{2}  
+$$
+N = 4N^{\prime}k / (1 + k)^{2}
 $$  
 
 其中 $k = n_{1} / n_{2}$ 且 $N^{\prime} = n_{1} + n_{2}$  

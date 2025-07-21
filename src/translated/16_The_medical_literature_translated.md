@@ -213,9 +213,8 @@ One aspect of presentation that is often poor is the numerical precision used to
 以下是一些不必要的（或虚假的）精度的例子，均来自已发表的论文：  
 Some examples of unnecessary (or spurious) precision, all from published papers, are:  
 
-$$  
-\begin{array}{r l}{P}&{=10^{-54}}\\ {P}&{=0.5254}\\ {r}&{=0.99299}\\ {\chi^{2}}&{=0.7264}\\ {\mathrm{~}^{86.95\%}\mathrm{~of~cases}^{\prime}}\end{array}  
-\begin{array}{r l}{P}&{=10^{-54}}\\ {P}&{=0.5254}\\ {r}&{=0.99299}\\ {\chi^{2}}&{=0.7264}\\ {\mathrm{~}^{86.95\%}\mathrm{~of~cases}^{\prime}}\end{array}  
+$$
+\begin{array}{r l}{P}&{=10^{-54}}\\ {P}&{=0.5254}\\ {r}&{=0.99299}\\ {\chi^{2}}&{=0.7264}\\ {\mathrm{~}^{86.95\%}\mathrm{~of~cases}^{\prime}}\end{array}
 $$  
 
 回归分析的一个例子是以下方程，它描述了  
@@ -224,9 +223,8 @@ An example from a regression analysis is the following equation relating
 出生体重（kg，BWt）与胸围（cm，CC）和中臂围（cm，AC）之间的关系（Bhargava 等，1985）  
 birth weight in kg (BWt) to chest circumference (CC) and mid- arm circumference (AC) (both in cm) (Bhargava et al., 1985)  
 
-$$  
-\mathbf{BWt} = - 3.0983527 + 0.142088\mathbf{CC} + 0.158039\mathbf{AC}  
-\mathbf{BWt} = - 3.0983527 + 0.142088\mathbf{CC} + 0.158039\mathbf{AC}  
+$$
+\mathbf{BWt} = - 3.0983527 + 0.142088\mathbf{CC} + 0.158039\mathbf{AC}
 $$  
 
 该方程声称能将出生体重预测到最接近的 $\frac{1}{10000} \mathrm{~g}！$ 许多此类例子可能源于计算机输出的精确转录。  

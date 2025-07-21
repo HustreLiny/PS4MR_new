@@ -68,9 +68,8 @@ Example: For a rank sum of 8 from a sample of 11 we look along the row for  $n =
 对于 $n > 25$，秩和 $(R)$ 近似服从均值为 $M = n(n + 1) / 4$ 且标准差为  
 For  $n > 25$  the rank sum  $(R)$  has an approximately Normal distribution with mean  $M = n(n + 1) / 4$  and standard deviation  
 
-$$  
-S = \sqrt{n(n + 1)(2n + 1) / 24}.  
-S = \sqrt{n(n + 1)(2n + 1) / 24}.  
+$$
+S = \sqrt{n(n + 1)(2n + 1) / 24}.
 $$  
 
 检验统计量 $(R - M) / S$ 使用表 B2 进行评估。  
@@ -96,9 +95,8 @@ Example: For a rank sum of 29 from a sample of 6 compared with a sample of 11 we
 对于更大的样本，较小组的秩和，$\pmb{T}$，近似服从正态分布，其均值为$M = n_{1}(n_{1} + n_{2} + 1) / 2$和标准差为  
 For larger samples, the sum of the ranks in the smaller group,  $\pmb{T}$  , has an approximately Normal distribution with mean  $M = n_{1}(n_{1} + n_{2} + 1) / 2$  and standard deviation  
 
-$$  
-S = \sqrt{n_{2}M / 6}.  
-S = \sqrt{n_{2}M / 6}.  
+$$
+S = \sqrt{n_{2}M / 6}.
 $$  
 
 检验统计量$(T - M) / S$使用表 B2 进行评估。  
@@ -124,9 +122,8 @@ Example: The  $99\%$  confidence interval for the population median calculated f
 对于样本量大于100的情况，所需的秩是与以下公式最接近的整数：  
 For sample larger than 100, the required ranks are the nearest integers to  
 
-$$  
-\frac{n}{2} - \left(N_{1 - \alpha /2} \times \frac{\sqrt{n}}{2}\right) \text{and} 1 + \frac{n}{2} + \left(N_{1 - \alpha /2} \times \frac{\sqrt{n}}{2}\right),  
-\frac{n}{2} - \left(N_{1 - \alpha /2} \times \frac{\sqrt{n}}{2}\right) \text{and} 1 + \frac{n}{2} + \left(N_{1 - \alpha /2} \times \frac{\sqrt{n}}{2}\right),  
+$$
+\frac{n}{2} - \left(N_{1 - \alpha /2} \times \frac{\sqrt{n}}{2}\right) \text{and} 1 + \frac{n}{2} + \left(N_{1 - \alpha /2} \times \frac{\sqrt{n}}{2}\right),
 $$  
 
 其中 $\alpha = 0.1, 0.05$ 或 0.01。$N_{1 - \alpha /2}$ 的值见表B3。  

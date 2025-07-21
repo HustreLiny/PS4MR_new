@@ -218,9 +218,8 @@ Figure 3.12 Box-and-whisker plot of the IgM data, showing the  $2\frac{1}{2}$ , 
 观测值为$x_{i}$的个体，与均值$\bar{x}$的距离是$x_{i} - \bar{x}$，如果我们有$n$个观测值，我们就有$n$个这样的距离，每个个体一个。对于低于均值的观测值，差值将是负的。我们可以计算观测值与其均值之间的平均距离，但这些距离的总和$\Sigma (x_{i} - \bar{x})$总是零，因为均值是根据个体观测值计算的。然而，如果我们先将距离平方再求和，我们就会得到一个必须为正的量。这些平方差的平均值因此提供了个体偏离均值的度量。这个量称为方差，定义为  
 an observed value  $x_{i}$  the distance from the mean  $\bar{x}$  is  $x_{i} - \bar{x}$ , and if we have  $n$  observations we have a set of  $n$  such distances, one for each individual. For observations below the mean the difference will be negative. We can calculate the average distance between the observations and their mean, but the sum of these distances,  $\Sigma (x_{i} - \bar{x})$ , is always zero because of the way the mean is calculated from the individual observations. However, if we square the distances before we sum them we get a quantity that must be positive. The average of these squared differences thus gives a measure of individual deviations from the mean. This quantity is called the variance, and is defined as  
 
-$$  
-\frac{\sum_{i = 1}^{n}(x_{i} - \bar{x})^{2}}{n - 1}.  
-\frac{\sum_{i = 1}^{n}(x_{i} - \bar{x})^{2}}{n - 1}.  
+$$
+\frac{\sum_{i = 1}^{n}(x_{i} - \bar{x})^{2}}{n - 1}.
 $$  
 
 请注意，我们是用 $n - 1$ 而不是更显而易见的 $n$ 来进行除法。除以 $n$ 得到的是观测值围绕样本均值的方差，但我们几乎总是将数据视为来自某个更大总体的样本，并希望使用样本数据来估计总体的变异性。除以 $n - 1$ 能更好地估计总体方差，尽管对于大样本而言，这种差异显然可以忽略不计。  
@@ -232,9 +231,8 @@ The variance will turn up in later chapters, notably when discussing the techniq
 方差不是一个描述变异性的合适度量，因为它与原始数据的单位不同。例如，我们不希望用平方毫米汞柱来表示一组血压测量值的变异性。解决这个问题的显而易见的办法是，将方差的平方根作为我们的度量。我们称这个量为标准差。标准差通常缩写为 sd 或 SD 或 $s$ 或 $\sigma$（希腊字母 sigma），其定义为  
 variance is not a suitable measure for describing variability because it is not in the same units as the raw data. We do not, for example, wish to express the variability of a set of blood pressure measurements in square mm Hg. The obvious solution to this problem is to take as our measure the square root of the variance. We call this quantity the standard deviation. The standard deviation is usually abbreviated to sd or SD or  $s$  or  $\sigma$  (the Greek letter sigma), and is defined as  
 
-$$  
-\sqrt{\frac{\sum_{i = 1}^{n}(x_{i} - x)^{2}}{n - 1}}.  
-\sqrt{\frac{\sum_{i = 1}^{n}(x_{i} - x)^{2}}{n - 1}}.  
+$$
+\sqrt{\frac{\sum_{i = 1}^{n}(x_{i} - x)^{2}}{n - 1}}.
 $$  
 
 标准差这个名称对于这个统计量来说并不好，因为它没有任何“标准”之处。更合理的理解是，它大约是观测值与均值的平均偏差（或距离）。  
@@ -246,9 +244,8 @@ Many calculators can calculate the standard deviation, by means of a key marked 
 然而，如果我们希望自己进行计算，有一个更容易使用的公式，它在数学上是等价的：  
 However, should we wish to do the calculation ourselves there is a much easier formula to use, which is mathematically equivalent:  
 
-$$  
-s = \sqrt{\frac{\Sigma x^{2} - (\Sigma x)^{2} / n}{n - 1}}.  
-s = \sqrt{\frac{\Sigma x^{2} - (\Sigma x)^{2} / n}{n - 1}}.  
+$$
+s = \sqrt{\frac{\Sigma x^{2} - (\Sigma x)^{2} / n}{n - 1}}.
 $$  
 
 （请注意 $\Sigma$ 符号的简化，如附录 A 所述。）使用这个公式，我们可以从观测值的总和 $\Sigma x$ 和观测值平方的总和 $\Sigma x^{2}$ 来计算标准差。我们不需要计算每个观测值与均值的单独距离。  
@@ -257,17 +254,15 @@ $$
 例如，对于表3.1中所示的PImax数据，数据的和以及数据平方的和为  
 For example, for the PImax data shown in Table 3.1 the sum of the data and the sum of the squares of the data are  
 
-$$  
-\sum x = 2315 \qquad \text{and} \qquad \sum x^{2} = 229275  
-\sum x = 2315 \qquad \text{and} \qquad \sum x^{2} = 229275  
+$$
+\sum x = 2315 \qquad \text{and} \qquad \sum x^{2} = 229275
 $$  
 
 因此，平均PImax为 $2315 / 25 = 92.60 \text{cm} \text{H}_{2} \text{O}$，标准差为  
 so the mean PImax is  $2315 / 25 = 92.60 \text{cm} \text{H}_{2} \text{O}$  and the standard deviation is  
 
-$$  
-\begin{array}{c}{{s=\sqrt{\frac{229275-2315^{2}/25}{24}}.}}\\ {{=24.92\mathrm{cm}\mathrm{H}_{2}\mathrm{O}.}}\end{array}  
-\begin{array}{c}{{s=\sqrt{\frac{229275-2315^{2}/25}{24}}.}}\\ {{=24.92\mathrm{cm}\mathrm{H}_{2}\mathrm{O}.}}\end{array}  
+$$
+\begin{array}{c}{{s=\sqrt{\frac{229275-2315^{2}/25}{24}}.}}\\ {{=24.92\mathrm{cm}\mathrm{H}_{2}\mathrm{O}.}}\end{array}
 $$  
 
 请注意，目前我将平均值和标准差保留一位额外的小数位，因为我将进行进一步的计算。在报告这些结果时，一位小数位就足够了。  

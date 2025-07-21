@@ -210,17 +210,15 @@ Table 12.10 Ranks of the data in Table 12.9
 该分析方法与Kruskal-Wallis非参数单向方差分析（在第9.8.6节中描述）类似。如果 $R_{i}$ 是第i组的秩和，并且我们有 $k$ 个组（此处为潜水服类型）和 $n$ 个受试者，那么我们计算由以下公式定义的统计量 $H$：  
 The analysis proceeds in a similar way to the Kruskal- Wallis non- parametric one way analysis of variance (described in section 9.8.6). If  $R_{i}$  is the sum of the ranks in the ith group, and we have  $k$  groups (here types of suit) and  $n$  subjects, then we calculate the statistic  $H$  defined by  
 
-$$  
-H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}[R_{i} - n(k + 1) / 2]^{2}.  
-H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}[R_{i} - n(k + 1) / 2]^{2}.  
+$$
+H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}[R_{i} - n(k + 1) / 2]^{2}.
 $$  
 
 如果零假设为真且所有组都相同，则 $n(k + 1) / 2$ 是 $R_{i}$ 的期望值。因此，该检验基于观察到的秩和围绕期望值的变异，这是一种常见的假设检验形式。在零假设下，$H$ 服从自由度为 $k - 1$ 的 $x^{2}$ 分布。同样，有一个计算 $H$ 的更简单的公式，即  
 The quantity  $n(k + 1) / 2$  is the expected value for  $R_{i}$  if the null hypothesis is true and all groups are the same. The test is thus based on the variation of the observed sums of ranks around the expected values, a common form of hypothesis test. Under the null hypothesis  $H$  has a  $x^{2}$  distribution with  $k - 1$  degrees of freedom. Again there is a simpler version of the formula for calculating  $H$ , which is  
 
-$$  
-H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}R_{i}^{2} - 3n(k + 1).  
-H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}R_{i}^{2} - 3n(k + 1).  
+$$
+H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}R_{i}^{2} - 3n(k + 1).
 $$  
 
 这种方法不适用于二维表中每个单元格有多个观测值的数据。它假设每组数据中没有并列秩（ties），但少量并列秩对其影响不大。  
@@ -229,9 +227,8 @@ This method is not suitable for data where there is more than one observation in
 表12.10显示了每种潜水服的秩和。我们计算 $H$ 如下：  
 Table 12.10 shows the sums of the ranks for each type of diving suit. We calculate  $H$  as:  
 
-$$  
-H = \frac{12}{8\times4\times5} [24^{2} + 27^{2} + 19^{2} + 10^{2}] - 3\times 8\times 5 = 12.45.  
-H = \frac{12}{8\times4\times5} [24^{2} + 27^{2} + 19^{2} + 10^{2}] - 3\times 8\times 5 = 12.45.  
+$$
+H = \frac{12}{8\times4\times5} [24^{2} + 27^{2} + 19^{2} + 10^{2}] - 3\times 8\times 5 = 12.45.
 $$  
 
 使用自由度为三的卡方分布表B5，我们发现 $\mathrm{P}< 0.01$。（精确值为0.006。）  
@@ -255,9 +252,8 @@ Chapter 11 dealt mainly with simple linear regression, the method we use to desc
 例如，假设我们希望根据身高（厘米）和体重（千克）来预测呼吸肌力量指数PEmax（单位：cm $\mathbf{H}_{2}\mathbf{O}$）。我们将得到如下回归模型：  
 For example, suppose we wish to predict an index of respiratory muscle strength PEmax (in cm  $\mathbf{H}_{2}\mathbf{O}$  ) from height (in cm) and weight (in kg). We would obtain a regression model like the following:  
 
-$$  
-\mathrm{PEmax} = 47.35 + 0.147\times \mathrm{height} + 1.024\times \mathrm{weight}.  
-\mathrm{PEmax} = 47.35 + 0.147\times \mathrm{height} + 1.024\times \mathrm{weight}.  
+$$
+\mathrm{PEmax} = 47.35 + 0.147\times \mathrm{height} + 1.024\times \mathrm{weight}.
 $$  
 
 数字0.147和1.024分别称为身高和体重的回归系数。它们表示解释变量每增加一个单位时PEmax的预测增量，这里分别是$1\mathbf{cm}$和$1\mathbf{kg}$。47.35是常数，对应于体重和身高都为零时的PEmax。与线性回归中的截距一样，它通常不具有很大的意义。  
@@ -506,9 +502,8 @@ $R^{2}$  assesses crudely how well the model fits the data overall, but we shoul
 残差标准差是观测到的 $y$ 值与模型预测或拟合值之间平均差异的度量。多元回归模型可以写为  
 The residual standard deviation is a measure of the average difference between the observed  $y$  values and those predicted or fitted by the model. The multiple regression model can be written  
 
-$$  
-y_{f i t} = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots  
-y_{f i t} = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots  
+$$
+y_{f i t} = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots
 $$  
 
 其中 $b_{0}$ 是截距； $b_{1}, b_{2}$ 等是回归系数； $x_{2}$ 等是个体在模型中变量的值； $y_{f i t}$ 是拟合或预测值。残差由 $y_{o b s} - y_{f i t}$ 给出，其中 $y_{o b s}$ 是因变量的观测值。我们无法绘制原始的多维数据，但我们可以检查残差图，以判断模型是否合理。具体来说，我们应该检查残差是否服从正态分布，以及模型在因变量值的所有范围内是否都具有同样好的拟合度。  
@@ -542,9 +537,8 @@ Figure 12.3 Normal plot of residuals from regression model in Table 12.16.
 我们可以使用多元回归方程来获得任何囊性纤维化患者的因变量 $(y)$ 的预测值。例如，使用表12.16中的模型，个体的预测PEmax为：  
 We can use the multiple regression equation to obtain a predicted value of the dependent  $(y)$  variable for any individual with cystic fibrosis. For example, using the model in Table 12.16 the predicted PEmax for an individual is:  
 
-$$  
-y_{f i t} = 126.334 + 1.536\times \mathrm{weight} - 1.465\times \mathrm{BMP} + 1.109\times \mathrm{FEV}_{1}.  
-y_{f i t} = 126.334 + 1.536\times \mathrm{weight} - 1.465\times \mathrm{BMP} + 1.109\times \mathrm{FEV}_{1}.  
+$$
+y_{f i t} = 126.334 + 1.536\times \mathrm{weight} - 1.465\times \mathrm{BMP} + 1.109\times \mathrm{FEV}_{1}.
 $$  
 
 预测值 $y_{f i t}$ 的另一种理解方式是将其视为预后值或预后指数。如果模型解释了因变量变异的很大一部分，那么高预测值和低预测值将指示截然不同的预后。这种术语更常用于逻辑回归（第12.5节）和分析生存数据的回归模型（第13章）。  
@@ -565,9 +559,8 @@ In section 11.5 I described the calculation of the partial correlation coefficie
 示例是基于表11.2中的数据。调整血细胞比容（PCV）后，血液粘度与纤维蛋白原之间的偏相关系数，记作 $r(\mathbf{V}\mathbf{F}|\mathbf{P})$，为0.212。表12.17显示了血液粘度对PCV的线性回归以及模型中加入纤维蛋白原的多元回归的方差分析表。通过添加纤维蛋白原所解释的第一个模型中残差平方和的比例为  
 The illustrative example was based on data in Table 11.2. The partial correlation between blood viscosity and fibrinogen adjusted for haematocrit (PCV), denoted  $r(\mathbf{V}\mathbf{F}|\mathbf{P})$  , was 0.212. Table 12.17 shows analysis of variance tables for linear regression of blood viscosity on PCV, and multiple regression with fibrinogen added to the model. The proportion of the residual sum of squares from the first model that is explained by adding fibrinogen is  
 
-$$  
-\frac{2.7209 - 2.5982}{2.7209} = 0.045  
-\frac{2.7209 - 2.5982}{2.7209} = 0.045  
+$$
+\frac{2.7209 - 2.5982}{2.7209} = 0.045
 $$  
 
 表12.17 表11.2中血液粘度的回归分析 (a) 血液粘度对血细胞比容（PCV）的回归  
@@ -654,17 +647,15 @@ Before explaining the method it is useful to recall that if we have a binary var
 我们使用的转换称为 logit 转换，记作 $\mathrm{logit}(p)$。这里 $p$ 是具有该特征的个体比例。例如，如果 $p$ 是受试者发生心肌梗死的概率，那么 $1 - p$ 是他们未发生心肌梗死的概率。比率 $p / (1 - p)$ 称为优势（odds），因此  
 The transformation we use is called the logit transformation, written  $\mathrm{logit}(p)$ . Here  $p$  is the proportion of individuals with the characteristic. For example, if  $p$  is the probability of a subject having a myocardial infarction, then  $1 - p$  is the probability that they do not have one. The ratio  $p / (1 - p)$  is called the odds and thus  
 
-$$  
-\mathrm{logit}(p) = \log_{\mathrm{e}}\left(\frac{p}{1 - p}\right)  
-\mathrm{logit}(p) = \log_{\mathrm{e}}\left(\frac{p}{1 - p}\right)  
+$$
+\mathrm{logit}(p) = \log_{\mathrm{e}}\left(\frac{p}{1 - p}\right)
 $$  
 
 是对数优势（log odds）。如果，根据我们的模型，我们希望比较具有或不具有特定特征（例如年龄大于50岁）的受试者的预测，我们将为一组受试者估计 $l_{1} = \mathrm{logit}(p_{1})$，为另一组受试者估计 $l_{2} = \log \mathrm{it}(p_{2})$。那么我们有  
 is the log odds. If, from our model, we wish to compare predictions for subjects with or without a particular characteristic, such as age greater than 50, we will estimate  $l_{1} = \mathrm{logit}(p_{1})$  for one group of subjects and  $l_{2} = \log \mathrm{it}(p_{2})$  for the other. Then we have  
 
-$$  
-\begin{array}{l}{{l_{1}-l_{2}=\mathrm{logit}(p_{1})-\mathrm{logit}(p_{2})=\mathrm{log}\left(\frac{p_{1}}{1-p_{1}}\right)-\mathrm{log}\left(\frac{p_{2}}{1-p_{2}}\right)}}\\ {{\mathrm{~}=\mathrm{log}\left[\frac{p_{1}(1-p_{2})}{p_{2}(1-p_{1})}\right],}}\end{array}  
-\begin{array}{l}{{l_{1}-l_{2}=\mathrm{logit}(p_{1})-\mathrm{logit}(p_{2})=\mathrm{log}\left(\frac{p_{1}}{1-p_{1}}\right)-\mathrm{log}\left(\frac{p_{2}}{1-p_{2}}\right)}}\\ {{\mathrm{~}=\mathrm{log}\left[\frac{p_{1}(1-p_{2})}{p_{2}(1-p_{1})}\right],}}\end{array}  
+$$
+\begin{array}{l}{{l_{1}-l_{2}=\mathrm{logit}(p_{1})-\mathrm{logit}(p_{2})=\mathrm{log}\left(\frac{p_{1}}{1-p_{1}}\right)-\mathrm{log}\left(\frac{p_{2}}{1-p_{2}}\right)}}\\ {{\mathrm{~}=\mathrm{log}\left[\frac{p_{1}(1-p_{2})}{p_{2}(1-p_{1})}\right],}}\end{array}
 $$  
 
 这是优势比的对数。如第10.11.2节所述，优势比是流行病学研究中将疾病与暴露关联起来的重要方法。$p$ 的估计值可以从 $\mathrm{logit}(p)$ 推导出来，并且始终在0到1的范围内。如果 $l = \mathrm{logit}(p)$，那么我们有 $\mathrm{e}^{l} = p / (1 - p)$，因此 $p = \mathrm{e}^{l} / (1 + \mathrm{e}^{l})$。  
@@ -703,25 +694,22 @@ seem to be independently prognostic. Omission of smoking (Table 12.20b) makes a 
 包含三个变量的模型的回归方程为  
 The regression equation for the model with three variables is  
 
-$$  
-\mathrm{logit}(p) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872x_{3}.  
-\mathrm{logit}(p) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872x_{3}.  
+$$
+\mathrm{logit}(p) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872x_{3}.
 $$  
 
 高血压的估计概率可以通过吸烟、肥胖和打鼾这三个变量的任意组合计算得出。具体来说，我们可以比较不同组的预测概率，例如打鼾者和非打鼾者。将 $x_{3}$ 先设为1，然后设为0，我们得到：  
 The estimated probability of having hypertension can be calculated from any combination of the three variables smoking, obesity and snoring. Specifically, we can compare the predicted probabilities for different groups, such as snorers and non- snorers. Setting  $x_{3}$  first to 1 and then to 0 we have  
 
-$$  
-\mathrm{logit}(p_{s}) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872  
-\mathrm{logit}(p_{s}) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872  
+$$
+\mathrm{logit}(p_{s}) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872
 $$  
 
 以及  
 and  
 
-$$  
-\mathrm{logit}(p_{n s}) = -2.378 - 0.068x_{1} + 0.695x_{2}  
-\mathrm{logit}(p_{n s}) = -2.378 - 0.068x_{1} + 0.695x_{2}  
+$$
+\mathrm{logit}(p_{n s}) = -2.378 - 0.068x_{1} + 0.695x_{2}
 $$  
 
 其中 $x_{1}$ 和 $x_{2}$ 是吸烟和肥胖的编码值。因此，我们有 $\mathrm{logit}(p_{s}) - \mathrm{logit}(p_{n s}) = 0.872$。如前所述，这个表达式是对数优势比，因此与打鼾相关的高血压优势比是 $\mathbf{e}^{0.872} = 2.39$。因此，我们可以直接从回归系数获得一个变量的估计优势比。优势比的解释在第10.11.2节中讨论过。我们可以将其视为打鼾者高血压的估计概率或风险相对于非打鼾者风险的度量。  
@@ -730,9 +718,8 @@ where  $x_{1}$  and  $x_{2}$  are the coded values of smoking and obesity. Thus 
 显然，对于任何二元变量，优势比都可以从回归系数 $b$ 估计为 $O R = \mathbf{e}^{b}$。我们可以使用 $b$ 的标准误来获得 $b$ 的置信区间，进而获得 $\mathbf{e}^{b}$ 的置信区间。打鼾回归系数的标准误为0.398（表12.20a），通过假设 $b$ 具有近似正态抽样分布来获得置信区间。因此，$b$ 的 $95\%$ 置信区间由以下给出：  
 Clearly for any binary variable the odds ratio can be estimated from the regression coefficient  $b$  as  $O R = \mathbf{e}^{b}$  . We can use the standard error of  $b$  to get a confidence interval for  $b$  and thus for  $\mathbf{e}^{b}$  . The standard error of the regression coefficient for snoring was 0.398 (Table 12.20a) and a confidence interval is obtained by taking  $b$  to have an approximately Normal sampling distribution. A  $95\%$  confidence interval for  $b$  is thus given by  
 
-$$  
-0.872 - (1.96\times 0.398)\qquad \mathrm{to}\qquad 0.872 + (1.96\times 0.398)  
-0.872 - (1.96\times 0.398)\qquad \mathrm{to}\qquad 0.872 + (1.96\times 0.398)  
+$$
+0.872 - (1.96\times 0.398)\qquad \mathrm{to}\qquad 0.872 + (1.96\times 0.398)
 $$  
 
 即从0.09到1.65。因此，优势比的 $95\%$ 置信区间是从 $\mathbf{e}^{0.09}$ 到 $\mathbf{e}^{1.65}$，即从1.10到5.22。因此，我们有 $95\%$ 的把握认为打鼾者与非打鼾者相比，高血压的风险位于  
@@ -756,9 +743,8 @@ A logistic regression model enables us to predict the probability of a particula
 与多元回归（参见第12.4.8节）一样，我们可以使用逻辑回归模型作为预后或诊断指标。如果我们将$L$定义为个体具有感兴趣特征的概率$p$的logit值，那么  
 As with multiple regression (see section 12.4.8) we can use the logistic regression model as a prognostic or diagnostic index. If we define  $L$  as the logit of the probability  $p$  that an individual will have the characteristic of interest, then  
 
-$$  
-L = \log \left(\frac{p}{1 - p}\right) = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots +b_{k}x_{k}  
-L = \log \left(\frac{p}{1 - p}\right) = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots +b_{k}x_{k}  
+$$
+L = \log \left(\frac{p}{1 - p}\right) = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots +b_{k}x_{k}
 $$  
 
 其中模型中有$k$个变量。我们可以计算研究中所有受试者的$L$值，并比较具有和不具有该特征的个体之间的分布。从这些分布中，我们可以发现两组之间的分离程度，并确定最佳的截断点以最大化判别能力。如果所有解释变量都是二元的，如高血压数据中所示，那么$L$只有少数几个可能的值。例如，表12.20(b)所示的模型只允许四组，由肥胖和打鼾的存在或不存在定义。因此，$L$只有四个可能的值，每个值都对应一个高血压的估计概率。这些值与四组中高血压的观察比例一起显示在表12.21中。  
@@ -779,9 +765,8 @@ If one or more of the variables in the model is continuous the values of the sco
 Peeters 等人 (1987) 检查了乳腺钼靶筛查中阳性检测结果的预测价值。在十年期间，801 名女性的钼靶结果呈阳性，并被转诊进行临床检查。其中 302 名女性在一年内经组织学证实患有乳腺癌，10 名女性因各种原因被排除，489 名女性被归类为钼靶假阳性结果。研究人员比较了 302 例真阳性病例和 489 例假阳性病例，以查看是否可以通过纳入其他信息（包括流行病学特征）来改善诊断。检查了 15 个变量，其中 5 个—转诊时的年龄、身体质量指数、绝经状态、乳腺主诉以及对侧乳腺的 Wolfe 分类—与癌症风险显著相关 $(\mathbf{P}< 0.01)$。多元逻辑回归分析得出一个模型，其中只包含两个显著变量：转诊时的年龄（以年为单位）和乳腺主诉（否或是；这指的是既往疼痛、皮肤问题等病史）。他们预测 $p$（真阳性概率）的回归模型为：  
 Peeters et al. (1987) examined the predictive values of a positive test result in screening for breast cancer by mammography. Over a ten year period 801 women had positive mammography results and were referred for clinical examination. Breast cancer was histologically confirmed within one year in 302 women, 10 women were excluded for various reasons, and 489 women were classified as having had a false positive mammography result. The researchers compared the 302 true positives with the 489 false positives to see if they could improve the diagnosis by incorporating other information including epidemiological characteristics. Fifteen variables were examined of which five - age at referral, body mass index, menopausal status, breast complaints, and Wolfe classification of the contralateral breast - were significantly related to risk of cancer  $(\mathbf{P}< 0.01)$  . Multiple logistic regression analysis yielded a model containing just two significant variables, age at referral (in years) and breast complaints (No or Yes; this refers to previous history of pain, skin problems, and so on). Their regression model to predict  $p$  , the probability of being a true positive, was  
 
-$$  
-\mathrm{logit}(p) = 4.005 + 0.0606x_{1} + 0.8398x_{2}  
-\mathrm{logit}(p) = 4.005 + 0.0606x_{1} + 0.8398x_{2}  
+$$
+\mathrm{logit}(p) = 4.005 + 0.0606x_{1} + 0.8398x_{2}
 $$  
 
 其中 $x_{1}$ 是年龄，$x_{2}$ 是乳腺主诉 $(\mathbf{No} = 0$, $\mathbf{Y}\mathbf{e}\mathbf{s} = 1)$。研究人员为每位女性评估了 $p$，即她们模型预测的被诊断为乳腺癌的概率。他们将这些概率  

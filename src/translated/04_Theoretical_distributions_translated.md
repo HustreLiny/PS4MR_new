@@ -160,9 +160,8 @@ The probability of being within two standard deviations of the mean is just over
 回到血清白蛋白数据，我们可以计算一个值高于 42.0 的概率，假设真实分布是正态分布。血清白蛋白的平均水平是 $34.46\mathrm{g / l}$，标准差是 $5.84\mathrm{g / l}$。我们首先计算 $42\mathrm{g / l}$ 这个值距离平均值有多少个标准差，计算方法如下：  
 Returning to the serum albumin data, we can calculate the probability of a value being above 42.0 on the assumption that the true distribution is Normal. The mean serum albumin level was  $34.46\mathrm{g / l}$  and the standard deviation was  $5.84\mathrm{g / l}$ . We first calculate how many standard deviations from the mean the value of  $42\mathrm{g / l}$  is, which is given by  
 
-$$  
-\frac{42 - 34.46}{5.84} = 1.29.  
-\frac{42 - 34.46}{5.84} = 1.29.  
+$$
+\frac{42 - 34.46}{5.84} = 1.29.
 $$  
 
 从表 B1 中我们发现大于 1.29 的概率是 0.0985，因此，一个值高于 $42\mathrm{g / l}$ 的概率是 $10\%$。  
@@ -180,9 +179,8 @@ $99\%$  within mean  $\pm 2.576\mathrm{SD}$ . For the serum albumin data we get 
 因此，我们可以使用正态分布来估计总体中变量分布的百分位数。我们本可以计算样本数据的观察百分位数，并使用这些值作为总体百分位数的估计值，但当数据接近正态分布时，使用正态分布更可靠，尤其是在分布的尾部。它也更简单，只需要两个值和一张正态分布表，而不是完整的原始数据值集。图 4.5 显示，216 个血清白蛋白值的分布与具有相同均值和标准差的正态分布非常相似。我们可以使用刚刚描述的程序，从正态分布中计算直方图中每个区间内期望的值的数量。例如，在 26.0 到 $28.0 \mathrm{g / l}$ 区间内期望的数量是该区间概率乘以 216。26.0 和 28.0 的标准正态离差为  
 We can thus use the Normal distribution to estimate the centiles of the distribution of the variable in the population. We could have calculated the observed centiles of the sample data and used these values as estimates of the population centiles, but when the data are near to Normal the use of the Normal distribution is more reliable, especially in the tails of the distribution. It is also easier, requiring just two values and a table of the Normal distribution rather than the complete set of raw data values. Figure 4.5 showed that the distribution of the 216 serum albumin values was very similar to the Normal distribution with the same mean and standard deviation. We can use the procedure just described to calculate from the Normal distribution the number of values expected in each interval of the histogram. For example, the number expected in the interval 26.0 to  $28.0 \mathrm{g / l}$  is the probability of being in that interval multiplied by 216. The standard Normal deviates for 26.0 and 28.0 are  
 
-$$  
-\begin{array}{c}\frac{26.0 - 34.46}{5.84} = -1.45 \\ \frac{28.0 - 34.46}{5.84} = -1.11 \end{array}  
-\begin{array}{c}\frac{26.0 - 34.46}{5.84} = -1.45 \\ \frac{28.0 - 34.46}{5.84} = -1.11 \end{array}  
+$$
+\begin{array}{c}\frac{26.0 - 34.46}{5.84} = -1.45 \\ \frac{28.0 - 34.46}{5.84} = -1.11 \end{array}
 $$  
 
 从表 B1 中，我们得到下尾面积分别为 0.0735 和 0.1335，得到在 26.0 和 28.0 之间概率为 $0.1335 - 0.0735 = 0.0600$。因此，该区间内期望的观测数量是 $216 \times 0.0600 = 13.0$。表 4.1 显示了对整个值范围进行类似（但更精确）计算的结果，给出了观察频率和在血清白蛋白总体分布为具有相同均值 $(34.46 \mathrm{g / l})$ 和标准差 $(5.84 \mathrm{g / l})$ 的正态分布时的期望频率。请注意，期望数量通常以小数形式引用，即使观察频率必须是整数。  
@@ -232,9 +230,8 @@ biliary cirrhosis (PBC). The mean and standard deviation are 60.7 and  $77.9 \mu
 对于像血清胆红素测量值这样的偏态数据，对数变换通常会产生近似正态性。然后我们可以在对数数据上进行计算，并将结果转换回原始尺度。例如，我们可能希望使用我们的数据来估计所有PBC患者血清胆红素水平中包含 $95\%$ 的值。假设是对数正态分布，我们可以从均值为3.547、标准差为1.030的正态分布进行计算（这些值比上面显示的值更精确）。在对数单位中， $95\%$ 的分布预计将介于均值 $- 1.96 \mathrm{SD}$ 和均值 $+1.96 \mathrm{SD}$ 之间。这些值是  
 With skewed data like the serum bilirubin measurements log transformation will often produce approximate Normality. We can then perform our calculations on the log data and transform the answers back to the original scale. For example, we may wish to use our data to estimate the values enclosing  $95\%$  of serum bilirubin levels for all patients with PBC. Assuming a Lognormal distribution, we can make our calculations from the Normal distribution with mean 3.547 and standard deviation 1.030 (these being more accurate values than those shown above). In log units,  $95\%$  of the distribution will be expected to be between mean  $- 1.96 \mathrm{SD}$  and mean  $+1.96 \mathrm{SD}$ . These values are  
 
-$$  
-3.547 + (1.96 \times 1.030) = 5.566.  
-3.547 + (1.96 \times 1.030) = 5.566.  
+$$
+3.547 + (1.96 \times 1.030) = 5.566.
 $$  
 
 ![](../images/04_Theoretical_distributions/img11.jpg)  
@@ -353,9 +350,8 @@ To take an example, suppose we wish to calculate the probability of different nu
 通常，假设我们有 $n$ 个“事件”，并希望计算其中0、1、2直到 $n$ 个事件属于特定类型的概率，其中 $p$ 是这种类型结果的总概率。那么， $r$ 个此类事件的二项概率由以下公式给出：  
 In general, suppose we have  $n$  'events' and wish to calculate the probability of 0, 1, 2, up to  $n$  of them being a specific type, where  $p$  is the overall probability of this type of outcome. Then the Binomial probability of  $r$  such events is given by  
 
-$$  
-{\binom{n}{r}}p^{r}(1-p)^{n-r}  
-{\binom{n}{r}}p^{r}(1-p)^{n-r}  
+$$
+{\binom{n}{r}}p^{r}(1-p)^{n-r}
 $$  
 
 其中 $\binom{n}{r}$ 是从 $n$ 个项目中选择 $r$ 个项目的方法数，这是一个我们需要计算的数值。  
@@ -364,9 +360,8 @@ where  $\binom{n}{r}$  is the number of ways of choosing  $r$  items from  $n$ ,
 我们可以通过使用以下关系式简单地计算 $\binom{n}{r}$：  
 We can evaluate  $\binom{n}{r}$  simply by using the following relations:  
 
-$$  
-\begin{array}{l}{{\binom{n}{0}=1;}}\\ {{\binom{n}{r}=\binom{n}{r-1}\times(n-r+1)/r;}}\end{array}  
-\begin{array}{l}{{\binom{n}{0}=1;}}\\ {{\binom{n}{r}=\binom{n}{r-1}\times(n-r+1)/r;}}\end{array}  
+$$
+\begin{array}{l}{{\binom{n}{0}=1;}}\\ {{\binom{n}{r}=\binom{n}{r-1}\times(n-r+1)/r;}}\end{array}
 $$  
 
 以及  
@@ -386,9 +381,8 @@ $$
 因此，10人中有4人是B血型的概率为  
 The probability that 4 of the 10 people are blood group B is thus  
 
-$$  
-210(0.08)^{4}(0.92)^{6} = 0.00522  
-210(0.08)^{4}(0.92)^{6} = 0.00522  
+$$
+210(0.08)^{4}(0.92)^{6} = 0.00522
 $$  
 
 或 $0.5\%$。图4.13展示了完整的分布。  
@@ -400,9 +394,8 @@ The general formula for the coefficients  $\binom{n}{r}$  is
 70 理论分布  
 70 Theoretical distributions  
 
-$$  
-{\binom{n}{r}}={\frac{n!}{r!(n-r)!}}  
-{\binom{n}{r}}={\frac{n!}{r!(n-r)!}}  
+$$
+{\binom{n}{r}}={\frac{n!}{r!(n-r)!}}
 $$  
 
 其中 $n!$ （读作n的阶乘）等于 $1\times 2\times 3\times \ldots \times n$ （参见附录A）。注意 $0! = 1$ （参见附录A）。系数 $\binom{n}{r}$ 可以从 $\log{\binom{n}{r}}$ 的表格中获取（Lentner, 1982, pp. 74-81），或者通过上述方法计算。  
@@ -420,17 +413,15 @@ The general Poisson formula for the probability of  $k$  events is  $\mathrm{e}^
 如果泊松分布的条件成立，某天没有新病例的概率是  
 If the conditions for a Poisson distribution hold, the probability of getting no new cases on a day is  
 
-$$  
-P(0) = \mathrm{e}^{-\mu}.  
-P(0) = \mathrm{e}^{-\mu}.  
+$$
+P(0) = \mathrm{e}^{-\mu}.
 $$  
 
 最能拟合数据的泊松分布，其均值与观测值的均值相同：2.2。因此，这里的 $P(0)$ 是 $\mathrm{e}^{- 2.2} = 0.111$。我们不必使用上面复杂的公式，而是可以根据关系 $P(i) = mP(i - 1) / i$ 来计算 $P(1)$、$P(2)$ 等，其中 $m$ 是样本均值。所以我们有  
 The Poisson distribution that will fit the data best has the same mean as that of the observations: 2.2. So here  $P(0)$  is  $\mathrm{e}^{- 2.2} = 0.111$ . Rather than use the complicated formula above we can calculate  $P(1)$ ,  $P(2)$ , etc. from the relation  $P(i) = mP(i - 1) / i$ , where  $m$  is the sample mean. So we have  
 
-$$  
-\begin{array}{r l} & {P(1) = 2.2\times 0.111 / 1 = 0.244}\\ & {P(2) = 2.2\times 0.244 / 2 = 0.258}\\ & {P(3) = 2.2\times 0.268 / 3 = 0.197}\\ & {P(4) = 2.2\times 0.197 / 4 = 0.108}\\ & {P(5) = 2.2\times 0.108 / 5 = 0.048}\\ & {P(6) = 2.2\times 0.048 / 6 = 0.017}\\ & {P(7) = 2.2\times 0.017 / 7 = 0.005}\\ & {P(8) = 2.2\times 0.005 / 8 = 0.002} \end{array}  
-\begin{array}{r l} & {P(1) = 2.2\times 0.111 / 1 = 0.244}\\ & {P(2) = 2.2\times 0.244 / 2 = 0.258}\\ & {P(3) = 2.2\times 0.268 / 3 = 0.197}\\ & {P(4) = 2.2\times 0.197 / 4 = 0.108}\\ & {P(5) = 2.2\times 0.108 / 5 = 0.048}\\ & {P(6) = 2.2\times 0.048 / 6 = 0.017}\\ & {P(7) = 2.2\times 0.017 / 7 = 0.005}\\ & {P(8) = 2.2\times 0.005 / 8 = 0.002} \end{array}  
+$$
+\begin{array}{r l} & {P(1) = 2.2\times 0.111 / 1 = 0.244}\\ & {P(2) = 2.2\times 0.244 / 2 = 0.258}\\ & {P(3) = 2.2\times 0.268 / 3 = 0.197}\\ & {P(4) = 2.2\times 0.197 / 4 = 0.108}\\ & {P(5) = 2.2\times 0.108 / 5 = 0.048}\\ & {P(6) = 2.2\times 0.048 / 6 = 0.017}\\ & {P(7) = 2.2\times 0.017 / 7 = 0.005}\\ & {P(8) = 2.2\times 0.005 / 8 = 0.002} \end{array}
 $$  
 
 依此类推。该分布如图4.15所示。  

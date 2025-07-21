@@ -16,9 +16,8 @@ The next three sections discuss basic ideas and the use of symbols and functions
 当我们使用数学公式时，需要一种简单的方法来指代变量的值。例如，如果我们希望用公式表达计算一个人死亡年龄的方法，即用其死亡年份减去出生年份，我们就会用一个字母来代替每个变量。传统上，我们常用 $X, Y$ 和 $Z$ 来表示变量，因此上述计算可以写成\[ X = Y - Z \]其中 $X$ 代表死亡年龄，$Y$ 代表死亡年份，而 $Z$ 代表出生年份。通常（但并非总是）用大写字母表示变量，用小写字母表示该变量的一个值。为了表示变量的特定值，我们通常使用下标。因此，为了表示变量 $X$ 对于某个群体中第四个人的值，  
 When we use a mathematical formula we need a simple way to refer to the values of a variable. For example, if we wish to express as a formula the idea that we calculate a person's age at death by subtracting their year of birth from the year in which they died, we replace each variable by a letter. Traditionally we often use  $X, Y$  and  $Z$  to indicate variables, so we could write the above calculation as\[ X = Y - Z \]where  $X$  represents age at death,  $Y$  represents year of death, and  $Z$  represents year of birth. It is common, but not universal, to use a capital letter to indicate a variable, and a small letter to indicate a value of that variable.To denote a particular value of a variable we usually use a subscript. Thus to indicate the value of the variable  $X$  for the fourth person in a  
 
-$$  
-X = Y - Z  
-X = Y - Z  
+$$
+X = Y - Z
 $$  
 
 其中 $X$ 代表死亡年龄，$Y$ 代表死亡年份，而 $z$ 代表出生年份。通常（但并非总是）用大写字母表示变量，用小写字母表示该变量的一个值。  
@@ -51,9 +50,8 @@ Multiplication features in a high proportion of the formulae used in this book. 
 因此，例如，我们有  
 Thus, for example, we have  
 
-$$  
-2 \times (a + b) = 2 \cdot (a + b) = 2(a + b).  
-2 \times (a + b) = 2 \cdot (a + b) = 2(a + b).  
+$$
+2 \times (a + b) = 2 \cdot (a + b) = 2(a + b).
 $$  
 
 最后一种用法，即不使用符号表示乘法，是最常见的方法。因此，当我们相乘两个量如 $a$ 和 $b$ 时，我们将乘积写为 $ab$。这就是我们使用单个字母来表示变量的原因。  
@@ -68,9 +66,8 @@ Brackets are used for grouping expressions, usually involving addition or subtra
 公式的一部分。前一节给出了一个简单的例子；一个更复杂的例子是  
 formula. A simple example was given in the preceding section; a more complicated example is  
 
-$$  
-(a + b)(a + c)(b + d)(c + d)  
-(a + b)(a + c)(b + d)(c + d)  
+$$
+(a + b)(a + c)(b + d)(c + d)
 $$  
 
 一个在第10章计算的量，其中四个两频率之和相乘。  
@@ -79,25 +76,22 @@ a quantity calculated in Chapter 10 in which four sums of two frequencies are mu
 括号内的量应在计算的其他部分之前进行计算。因此，如果我们希望计算  
 Quantities within brackets should be calculated before other parts of the calculation. Thus if we wish to evaluate  
 
-$$  
-y = 2(a + b)  
-y = 2(a + b)  
+$$
+y = 2(a + b)
 $$  
 
 其中 $a = 13.5$ 且 $b = 7.1$ ，我们得到  
 where  $a = 13.5$  and  $b = 7.1$ , we have  
 
-$$  
-y = 2(13.5 + 7.1) = 2(20.6) = 41.2.  
-y = 2(13.5 + 7.1) = 2(20.6) = 41.2.  
+$$
+y = 2(13.5 + 7.1) = 2(20.6) = 41.2.
 $$  
 
 对于复杂的公式，我们通常需要在一个括号内嵌套另一个括号。为了使它们更容易阅读，我们使用不同类型的括号，通常是圆括号在方括号内，方括号在花括号内。一个例子是  
 For complicated formulae we often need to have one set of brackets within another. To make these easier to read we use different types of brackets, and usually have round brackets within square brackets within curly brackets. An example is  
 
-$$  
-[p_{1}(1 - p_{1}) + p_{2}(1 - p_{2})] / 2.  
-[p_{1}(1 - p_{1}) + p_{2}(1 - p_{2})] / 2.  
+$$
+[p_{1}(1 - p_{1}) + p_{2}(1 - p_{2})] / 2.
 $$  
 
 
@@ -127,9 +121,8 @@ The square root involves the reverse process. The square root of a number is the
 一个结合了迄今为止讨论的各种特征的例子是  
 An example that combines the various features discussed so far is  
 
-$$  
-\sqrt{\left[p(1 - p)\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)\right]}.  
-\sqrt{\left[p(1 - p)\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)\right]}.  
+$$
+\sqrt{\left[p(1 - p)\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)\right]}.
 $$  
 
 
@@ -138,25 +131,22 @@ $$
 统计公式的一个常见特点是需要表示多个项目的总和。例如，一组观测值的均值是通过所有观测值的总和除以观测值的数量来计算的。如果我们有 $n$ 个观测值，表示为 $x_{1}, x_{2}, x_{3}, \ldots , x_{n}$，那么，如第3章所述，我们可以计算均值 $\bar{x}$ 为  
 A common feature of statistical formulae is the need to indicate the sum of a number of items. For example, the mean of a set of observations is calculated from the sum of all the observations divided by the number of observations. If we have  $n$  observations denoted by  $x_{1}, x_{2}, x_{3}, \ldots , x_{n}$  then, as described in Chapter 3, we can calculate the mean,  $\bar{x}$ , as  
 
-$$  
-\bar{x} = (x_{1} + x_{2} + x_{3} + \ldots + x_{n}) / n  
-\bar{x} = (x_{1} + x_{2} + x_{3} + \ldots + x_{n}) / n  
+$$
+\bar{x} = (x_{1} + x_{2} + x_{3} + \ldots + x_{n}) / n
 $$  
 
 但这过于冗长。我们使用“求和符号” $\Sigma$（希腊大写字母西格玛）来表示“总和”，可以将表达式缩写为  
 but this is long- winded. We use the 'summation sign'  $\Sigma$  (the Greek capital sigma) to indicate 'sum of', and can abbreviate the expression to  
 
-$$  
-\bar{x} = \frac{1}{n}\sum_{i = 1}^{n}x_{i}  
-\bar{x} = \frac{1}{n}\sum_{i = 1}^{n}x_{i}  
+$$
+\bar{x} = \frac{1}{n}\sum_{i = 1}^{n}x_{i}
 $$  
 
 其中西格玛符号下方和上方的符号表示被加值的范围。实际上，这些值通常是显而易见的，因此我们使用简写 $\Sigma x_{i}$ 或 $\Sigma x$。与已经讨论过的其他例子一样，我们使用括号来明确正在求和的内容。因此  
 where the symbols below and above the sigma indicate the range of values being added. In practice, it is usually obvious what these values are, so we use the shorthand  $\Sigma x_{i}$  or  $\Sigma x$ . As with other examples already discussed, we use brackets to clarify what is being summed. Thus  
 
-$$  
-\sum (y_{i} - a - b x_{i})^{2}  
-\sum (y_{i} - a - b x_{i})^{2}  
+$$
+\sum (y_{i} - a - b x_{i})^{2}
 $$  
 
 表示我们对每个 $i$ 值计算 $y_{i} - a - b x_{i}$，然后将它们平方，并对所有 $i$ 值求和。  
@@ -168,9 +158,8 @@ Note that  $(\Sigma x)^{2} = (\Sigma x) \times (\Sigma x)$  and is not the same 
 有时我们使用两个 $\Sigma$ 符号来表示双重求和。例如，表达式  
 Sometimes we use two  $\Sigma$  signs to indicate double summation. For example, the expression  
 
-$$  
-\sum_{i = 1}^{r}\sum_{j = 1}^{c}\frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}  
-\sum_{i = 1}^{r}\sum_{j = 1}^{c}\frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}  
+$$
+\sum_{i = 1}^{r}\sum_{j = 1}^{c}\frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}
 $$  
 
 意味着右侧的表达式对 $i$ 从 1 到 $r$ 和 $j$ 从 1 到 $c$ 的每种组合进行累加。注意双下标的相应使用。此公式出现在第 10.6.6 节中。  
@@ -182,17 +171,15 @@ means that the expression on the right is added for every combination of values 
 有时我们需要表示多个项的乘积；也就是说，我们需要将它们全部相乘。如果我们有 $n$ 个观测值，表示为 $x_{1}, x_{2}, x_{3}, \ldots , x_{n}$，那么我们可以计算它们的连乘积为  
 We sometimes need to indicate the product of a number of items; that is, we need to multiply them all together. If we have  $n$  observations denoted as  $x_{1}, x_{2}, x_{3}, \ldots , x_{n}$ , then we can calculate their multiple product as  
 
-$$  
-x_{1} \times x_{2} \times x_{3} \times \ldots \times x_{n}  
-x_{1} \times x_{2} \times x_{3} \times \ldots \times x_{n}  
+$$
+x_{1} \times x_{2} \times x_{3} \times \ldots \times x_{n}
 $$  
 
 但这很冗长。我们使用 $\Pi$（希腊大写字母 pi）来表示“乘积”，并且可以将表达式缩写为  
 but this is long- winded. We use  $\Pi$  (the Greek capital pi) to indicate 'product of', and can abbreviate the expression to  
 
-$$  
-\prod_{i = 1}^{n} x_{i}  
-\prod_{i = 1}^{n} x_{i}  
+$$
+\prod_{i = 1}^{n} x_{i}
 $$  
 
 其中 pi 字母下方和上方的符号表示被乘值的范围。在实践中，与求和一样，这些值通常是显而易见的，所以我们使用简写 $\Pi x_{i}$ 或 $\Pi x$。  
@@ -222,8 +209,7 @@ Hat (e.g.  $\hat{p}$ ) indicates an estimate of the quantity denoted by the lett
 $<$ 和 $>$ 用于表示不等式：  
 $<$  and  $>$  are used to indicate inequalities:  
 
-$$  
-a< b\colon a\mathrm{~小于~}b  
+$$
 a< b\colon a\mathrm{~is~less~than~}b  
 $$  
 

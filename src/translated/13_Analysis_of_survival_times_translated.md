@@ -61,9 +61,8 @@ such people who would survive a given length of time in the same circumstances. 
 生存特定时长的概率可以通过将时间划分为许多小间隔来计算。例如，肝移植患者生存两天的概率可以视为生存一天的概率，乘以在患者生存第一天的情况下生存第二天的概率。这第二个概率被称为条件概率。如果我们将 $p_{100}$ 写为在已经生存了前99天的情况下生存第一百天的概率，那么肝移植后生存100天的总概率由以下公式给出：  
 The probability of surviving a given length of time can be calculated by considering time in many small intervals. For example, the probability of a patient surviving two days after a liver transplant can be considered to be the probability of surviving one day, multiplied by the probability of surviving the second day given that the patient survived the first day. This second probability is known as a conditional probability. If we write  $p_{100}$  as the probability of surviving the hundredth day conditional on having already survived the first 99 days, then the overall probability of surviving 100 days after a liver transplant is given by  
 
-$$  
-p_{1}\times p_{2}\times p_{3}\times \ldots p_{99}\times p_{100}  
-p_{1}\times p_{2}\times p_{3}\times \ldots p_{99}\times p_{100}  
+$$
+p_{1}\times p_{2}\times p_{3}\times \ldots p_{99}\times p_{100}
 $$  
 
 生存第100天的概率简单地估计为在99天后仍已知存活的样本中，当天存活的比例。因此，在没有人死亡的日子里，概率 $p$ 为1，这使得计算得以简化，因为只需计算至少有一人死亡的日子的概率。  
@@ -106,9 +105,8 @@ will need to make a modification to allow for the censoring. Section 13.4.1 give
 从标准误差我们可以计算置信区间，假设在大型样本中生存比例服从正态抽样分布。例如，90分钟内未呕吐的生存比例为0.801，标准误差为0.089。因此，$95\%$置信区间为  
 From the standard error we can calculate a confidence interval, assuming a Normal sampling distribution for the survival proportion in large samples. For example, the proportion surviving 90 minutes without vomiting was 0.801 with a standard error of 0.089. The  $95\%$  confidence interval is thus  
 
-$$  
-0.801 - 1.96\times 0.089\qquad \mathrm{to}\qquad 0.801 + 1.96\times 0.089  
-0.801 - 1.96\times 0.089\qquad \mathrm{to}\qquad 0.801 + 1.96\times 0.089  
+$$
+0.801 - 1.96\times 0.089\qquad \mathrm{to}\qquad 0.801 + 1.96\times 0.089
 $$  
 
 或0.63至0.98。与往常一样，小样本的置信区间较宽。请注意，当生存比例接近1或0时，计算出的置信区间可能包含不可能的值，即大于1或小于0。如果发生这种情况，我们可以将1作为上限或将0作为下限。然而，这种情况表明正态近似并不真正适用，可能更倾向于采用其他方法。存在更好的计算标准误差的方法，但它们也更复杂。  
@@ -175,17 +173,15 @@ The logrank test to compare  $k$  groups produces for each group an observed  $(
 运动病数据给出  
 The motion sickness data give  
 
-$$  
-O_{1} = 5, E_{1} = 8.8607, O_{2} = 14 \text{and} E_{2} = 10.1393  
-O_{1} = 5, E_{1} = 8.8607, O_{2} = 14 \text{and} E_{2} = 10.1393  
+$$
+O_{1} = 5, E_{1} = 8.8607, O_{2} = 14 \text{and} E_{2} = 10.1393
 $$  
 
 因此对数秩统计量为  
 so that the logrank statistic is  
 
-$$  
-X^{2} = \frac{(5 - 8.8607)^{2}}{8.8607} + \frac{(14 - 10.1393)^{2}}{10.1393} = 3.152.  
-X^{2} = \frac{(5 - 8.8607)^{2}}{8.8607} + \frac{(14 - 10.1393)^{2}}{10.1393} = 3.152.  
+$$
+X^{2} = \frac{(5 - 8.8607)^{2}}{8.8607} + \frac{(14 - 10.1393)^{2}}{10.1393} = 3.152.
 $$  
 
 将此值与具有一个自由度的 $\chi^{2}$ 分布进行比较，得到 $\mathbf{P} = 0.08$，因此有证据表明两次实验的结果之间存在差异。图 13.5 显示，在实验 1 中，无呕吐生存期更佳。  
@@ -223,17 +219,15 @@ The logrank test is very widely used for comparing survival in two or more group
 衡量两组相对生存率的一种方法是比较观察到的事件数与预期事件数。比率 $O_{1} / E_{1}$ 给出了第一组中观察到的事件率，作为在零假设为真时预期事件率的比例，因此比率  
 One way to measure the relative survival in two groups is to compare the observed number of events with the expected numbers. The ratio  $O_{1} / E_{1}$  gives the observed event rate in the first group as a proportion of that expected if the null hypothesis were true, and so the ratio  
 
-$$  
-R = \frac{O_{1} / E_{1}}{O_{2} / E_{2}}  
-R = \frac{O_{1} / E_{1}}{O_{2} / E_{2}}  
+$$
+R = \frac{O_{1} / E_{1}}{O_{2} / E_{2}}
 $$  
 
 给出了两组相对事件率的估计值。这个比率也称为风险比（hazard ratio）。对于晕动病数据，我们有  
 gives an estimate of the relative event rates in the two groups. This ratio is also called the hazard ratio. For the motion sickness data we have  
 
-$$  
-R = \frac{5 / 8.8607}{14 / 10.1393} = 0.4087  
-R = \frac{5 / 8.8607}{14 / 10.1393} = 0.4087  
+$$
+R = \frac{5 / 8.8607}{14 / 10.1393} = 0.4087
 $$  
 
 因此，在实验1条件下呕吐的估计相对风险或风险是实验2的0.41倍（41%）。  
@@ -272,9 +266,8 @@ Most statistical computer programs do not include methods for analysing survival
 生存概率计算的原理在第13.2节中概述。计算在给定时间长度（例如100天）内存活的比例，是通过将直至该时间点每天的生存概率相乘来完成的。我们只需要考虑发生事件或“失败”（例如死亡）的天数。如果在第100天发生死亡，那么我们估计100天生存的比例为：99天生存的比例乘以在99天生存者中也生存100天的比例。如果 $p_{k}$ 是生存 $k$ 天的概率，$r_{k}$ 是在第 $k$ 天之前立即处于风险（即仍在随访中）的受试者数量，并且 $f_{k}$ 是在第 $k$ 天观察到的失败数量，那么我们有  
 The principle behind the calculation of survival probabilities was outlined in section 13.2. The proportion surviving a given length of time, say 100 days, is calculated by multiplying the probabilities of surviving each day up to that time. We need only consider days on which there is an event or 'failure' (e.g. death). If there is a death at 100 days, then we estimate the proportion surviving 100 days as the proportion surviving 99 days multiplied by the proportion of those surviving 99 days who also survive 100 days. If  $p_{k}$  is the probability of surviving  $k$  days,  $r_{k}$  is the number of subjects still at risk (i.e. still being followed up) immediately before the  $k$ th day, and  $f_{k}$  is the number of observed failures on day  $k$ , then we have  
 
-$$  
-p_{k} = p_{k - 1} \times \frac{r_{k} - f_{k}}{r_{k}}.  
-p_{k} = p_{k - 1} \times \frac{r_{k} - f_{k}}{r_{k}}.  
+$$
+p_{k} = p_{k - 1} \times \frac{r_{k} - f_{k}}{r_{k}}.
 $$  
 
 这是前一句陈述的数学表示。  
@@ -283,17 +276,15 @@ This is a mathematical representation of the statement in the previous sentence.
 对于表13.2中的数据，时间单位是分钟，“失败”是呕吐。在29分钟内没有呕吐的生存比例是1。因此我们有 $p_{29} = 1$，并且 $r_{30} = 21$，因为所有受试者在30分钟时仍处于风险中。在30分钟时有一次失败，所以 $f_{30} = 1$，我们可以计算30分钟的生存比例为  
 For the data in Table 13.2 the time unit is minutes, and a 'failure' was vomiting. The proportion surviving without vomiting is 1 up to 29 minutes. We therefore have  $p_{29} = 1$ , and  $r_{30} = 21$  because all subjects are still at risk at 30 minutes. There was one failure at 30 minutes, so  $f_{30} = 1$  and we can calculate the proportion surviving 30 minutes as  
 
-$$  
-p_{30} = p_{29} \times \frac{(21 - 1)}{21} = 0.952  
-p_{30} = p_{29} \times \frac{(21 - 1)}{21} = 0.952  
+$$
+p_{30} = p_{29} \times \frac{(21 - 1)}{21} = 0.952
 $$  
 
 如表13.2所示。估计的生存比例保持不变，直到下一个失败时间，即50分钟。我们假设在同一分钟被删失的受试者3在受试者2“失败”时仍处于风险中，因此我们有  
 as shown in Table 13.2. The estimated proportion surviving stays the same until the next failure time, which is 50 minutes. We assume that subject 3 who was censored at the same minute was still at risk at the time when subject 2 'failed', so we have  
 
-$$  
-p_{50} = p_{30} \times \frac{(20 - 1)}{20} = 0.905  
-p_{50} = p_{30} \times \frac{(20 - 1)}{20} = 0.905  
+$$
+p_{50} = p_{30} \times \frac{(20 - 1)}{20} = 0.905
 $$  
 
 因为在50分钟时，只有20名受试者仍处于风险中。一名受试者在50分钟时退出，因此他们的时间被删失，而在  
@@ -314,17 +305,15 @@ at 51 minutes was thus only 18. The calculations for the complete set of data ar
 生存比例的标准误可以通过多种方式计算，尽管不同的公式给出的结果非常相似。一个简单的公式是  
 The standard error of the survival proportion can be calculated in various ways, although the different formulae give very similar results. A simple formula is  
 
-$$  
-S E(p_{k}) = p_{k}\sqrt{(1 - p_{k}) / r_{k}}  
-S E(p_{k}) = p_{k}\sqrt{(1 - p_{k}) / r_{k}}  
+$$
+S E(p_{k}) = p_{k}\sqrt{(1 - p_{k}) / r_{k}}
 $$  
 
 其中  $p_{k}$  是时间  $k$  时估计的生存比例。表13.2和表13.3中的标准误就是使用此公式计算的。假设  $p_{k}$  将具有近似正态抽样分布，我们可以计算  $p_{k}$  的  $95\%$  置信区间为  
 where  $p_{k}$  is the estimated proportion surviving at time  $k$ . The standard errors in Tables 13.2 and 13.3 were calculated using this formula. On the assumption that  $p_{k}$  will have an approximately Normal sampling distribution we can calculate a  $95\%$  confidence interval for  $p_{k}$  as  
 
-$$  
-p_{k} - 1.96SE(p_{k}) \qquad \text{to} \qquad p_{k} + 1.96SE(p_{k}).  
-p_{k} - 1.96SE(p_{k}) \qquad \text{to} \qquad p_{k} + 1.96SE(p_{k}).  
+$$
+p_{k} - 1.96SE(p_{k}) \qquad \text{to} \qquad p_{k} + 1.96SE(p_{k}).
 $$  
 
 对于小样本量或非常大/非常小的概率（例如超出0.2到0.8的范围），这并不是一个好的近似，在这种情况下，置信区间可能会超出0到1的范围。虽然置信区间可以在极限处截断（例如，将范围  
@@ -333,9 +322,8 @@ This is not a good approximation for small sample sizes or for very large or sma
 '0.75到1.10'更改为'0.75到1.0'），但这表明数据量不足。有许多替代公式可以计算估计生存概率的标准误，其中最著名的是Greenwood公式：  
 '0.75 to 1.10' to '0.75 to 1.0') this is an indication of an inadequate amount of data. There are many alternative formulae for the standard error of an estimated survival probability, the best known being due to Greenwood:  
 
-$$  
-S E(p_{k}) = p_{k}\sqrt{\sum_{j = 1}^{k}\left[\frac{f_{j}}{r_{j}(r_{j} - f_{j})}\right]}.  
-S E(p_{k}) = p_{k}\sqrt{\sum_{j = 1}^{k}\left[\frac{f_{j}}{r_{j}(r_{j} - f_{j})}\right]}.  
+$$
+S E(p_{k}) = p_{k}\sqrt{\sum_{j = 1}^{k}\left[\frac{f_{j}}{r_{j}(r_{j} - f_{j})}\right]}.
 $$  
 
 计算机程序可能会使用比示例中更精确的公式。表13.2和13.3显示，正如我们通常预期的那样，随着仍处于风险中的人数减少，运动病数据的标准误会增加。  
@@ -356,25 +344,22 @@ As shown in Figure 13.4, the time span of the study is divided into time interva
 我们按照第10章的方法计算预期的失败人数，因此$e_{1} = r_{1}f / r$和$e_{2} = r_{2}f / r$。然后，我们将整个表格的观察值和预期值求和，得到$O_{1} = \Sigma f_{1}$，$E_{1} = \Sigma e_{1}$等。请注意，$O_{1} + O_{2} = E_{1} + E_{2}$，这是一个在手动计算时应验证的等式。计算logrank检验统计量最简单的方法是  
 We calculate expected numbers of failures as in Chapter 10, so that  $e_{1} = r_{1}f / r$  and  $e_{2} = r_{2}f / r$  . We then sum the observed and expected values for the whole table to get  $O_{1} = \Sigma f_{1}$  ,  $E_{1} = \Sigma e_{1}$  , etc. Note that  $O_{1} + O_{2} = E_{1} + E_{2}$  , an equivalence that should be verified for hand calculations. The simplest way to calculate the logrank test statistic is by  
 
-$$  
-X^{2} = \frac{(O_{1} - E_{1})^{2}}{E_{1}} +\frac{(O_{2} - E_{2})^{2}}{E_{2}}.  
-X^{2} = \frac{(O_{1} - E_{1})^{2}}{E_{1}} +\frac{(O_{2} - E_{2})^{2}}{E_{2}}.  
+$$
+X^{2} = \frac{(O_{1} - E_{1})^{2}}{E_{1}} +\frac{(O_{2} - E_{2})^{2}}{E_{2}}.
 $$  
 
 然而，通过在每个时间点计算 $f_{1} - e_{1}$ 的方差，可以得到一个稍好的结果，计算公式如下：  
 However, a slightly better answer can be obtained by calculating the variance of  $f_{1} - e_{1}$  at each time as  
 
-$$  
-v = \frac{r_{1}r_{2}f(r - f)}{r^{2}(r - 1)}  
-v = \frac{r_{1}r_{2}f(r - f)}{r^{2}(r - 1)}  
+$$
+v = \frac{r_{1}r_{2}f(r - f)}{r^{2}(r - 1)}
 $$  
 
 并将这些值求和得到 $V = \Sigma v$。检验统计量的另一种形式由下式给出：  
 and summing these values overall to get  $V = \Sigma v$ . The alternative form of the test statistic is given by  
 
-$$  
-X^{2} = \frac{(O_{1} - E_{1})^{2}}{V}.  
-X^{2} = \frac{(O_{1} - E_{1})^{2}}{V}.  
+$$
+X^{2} = \frac{(O_{1} - E_{1})^{2}}{V}.
 $$  
 
 在实践中，这两种方法通常会给出相似的结果。  
@@ -383,9 +368,8 @@ In practice the two methods usually give similar answers.
 晕动病数据的计算结果如表13.5所示。在11分钟和69分钟时各有两次失败，在82分钟时有三次失败，因此使用两种版本的对数秩检验将不会得到相同的结果。第一种方法给出：  
 The calculations for the motion sickness data are shown in Table 13.5. There were two failures at 11 and 69 minutes and three at 82 minutes, so we will not get the same answer using the two versions of the logrank test. The first method gives  
 
-$$  
-X^{2} = \frac{(-3.8607)^{2}}{8.8607} +\frac{(3.8607)^{2}}{10.1393} = 3.152  
-X^{2} = \frac{(-3.8607)^{2}}{8.8607} +\frac{(3.8607)^{2}}{10.1393} = 3.152  
+$$
+X^{2} = \frac{(-3.8607)^{2}}{8.8607} +\frac{(3.8607)^{2}}{10.1393} = 3.152
 $$  
 
 表13.5 晕动病数据对数秩检验统计量的计算。下标指实验1和实验2  
@@ -400,9 +384,8 @@ NB:  $E_{2} = O_{1} + O_{2} - E_{1} = 10.1393$
 而第二种更精确的方法得出  
 while the second, more precise, method gives  
 
-$$  
-X^{2} = \frac{(-3.8607)^{2}}{4.6478} = 3.207.  
-X^{2} = \frac{(-3.8607)^{2}}{4.6478} = 3.207.  
+$$
+X^{2} = \frac{(-3.8607)^{2}}{4.6478} = 3.207.
 $$  
 
 此处差异显然可以忽略不计，并且通常统计量$X^{2}$的第一个公式将是令人满意的。它的优点是不需要计算相当复杂的方差。  
@@ -414,9 +397,8 @@ Under the null hypothesis the statistic  $X^{2}$  has a  $x^{2}$  distribution w
 Log-rank检验可以对两组以上的数据进行。统计量$X^{2}$是使用上述第一个方程的扩展形式计算的，其中包含每个组的项。如果我们有$m$个组，则有  
 The logrank test can be carried out with more than two sets of data. The statistic  $X^{2}$  is calculated using an extension of the first equation above with a term for each group. If we have  $m$  groups we have  
 
-$$  
-X^{2} = \sum_{i = 1}^{m}\frac{(O_{i} - E_{i})^{2}}{E_{i}}.  
-X^{2} = \sum_{i = 1}^{m}\frac{(O_{i} - E_{i})^{2}}{E_{i}}.  
+$$
+X^{2} = \sum_{i = 1}^{m}\frac{(O_{i} - E_{i})^{2}}{E_{i}}.
 $$  
 
 将$X^{2}$的值与$m - 1$个自由度的$x^{2}$分布进行比较。然而，如果组之间存在自然顺序，则应进行趋势检验，如下所述。  
@@ -431,25 +413,22 @@ With three or more ordered groups, a more appropriate test is to consider the po
 使用上一节中给出的方法，我们可以获得每个组的 $O_{g}$ 和 $E_{g}$，其中 $g$ 表示组的编号 $(g = 1,2,\ldots ,m)$。如果我们给每个组一个代码 $h_{g}$（不一定等距），那么我们可以为每个组计算：  
 Using the method given in the previous section, we can obtain  $O_{g}$  and  $E_{g}$  for each group where  $g$  denotes the group's number  $(g = 1,2,\ldots ,m)$  If we give a code  $h_{g}$  to each group (not necessarily equally spaced), then we can calculate for each group  
 
-$$  
-A_{g} = h_{g}(O_{g} - E_{g});\qquad B_{g} = h_{g}E_{g};\qquad C_{g} = h_{g}^{2}E_{g}.  
-A_{g} = h_{g}(O_{g} - E_{g});\qquad B_{g} = h_{g}E_{g};\qquad C_{g} = h_{g}^{2}E_{g}.  
+$$
+A_{g} = h_{g}(O_{g} - E_{g});\qquad B_{g} = h_{g}E_{g};\qquad C_{g} = h_{g}^{2}E_{g}.
 $$  
 
 趋势检验统计量计算如下：  
 The test statistic for trend is obtained as  
 
-$$  
-X_{t r e n d}^{2} = \left(\sum A_{g}\right)^{2} / V_{T}  
-X_{t r e n d}^{2} = \left(\sum A_{g}\right)^{2} / V_{T}  
+$$
+X_{t r e n d}^{2} = \left(\sum A_{g}\right)^{2} / V_{T}
 $$  
 
 其中  
 where  
 
-$$  
-V_{T} = \sum C_{g} - \left(\sum B_{g}\right)^{2} / \sum E_{g}.  
-V_{T} = \sum C_{g} - \left(\sum B_{g}\right)^{2} / \sum E_{g}.  
+$$
+V_{T} = \sum C_{g} - \left(\sum B_{g}\right)^{2} / \sum E_{g}.
 $$  
 
 检验统计量 $X_{t r e n d}^{2}$ 与自由度为1的 $x^{2}$ 分布进行比较，无论分析了多少组。请注意，统计量 $X_{t r e n d}^{2}$ 必须介于零和用于评估组间一般异质性的常用对数秩统计量 $X^{2}$ 之间。同样，该方法纯粹是一种假设检验。  
@@ -485,9 +464,8 @@ numbers of high risk subjects differ between the groups. The effect of stratific
 分层对数秩检验非常简单。如果我们有两组受试者，那么对于每个感兴趣的亚组（层），我们计算 $O_{1}, E_{1}, O_{2}$ 和 $E_{2}$ 。然后将这些值在所有层中求和，并按如下方式计算对数秩统计量  
 The stratified logrank test is very simple. If we have two groups of subjects, then for each subgroup (stratum) of interest we calculate  $O_{1}, E_{1}, O_{2}$  and  $E_{2}$ . These are then summed over all strata and the logrank statistic calculated as  
 
-$$  
-X^{2} = \frac{(\Sigma O_{1} - \Sigma E_{1})^{2}}{\Sigma E_{1}} +\frac{(\Sigma O_{2} - \Sigma E_{2})^{2}}{\Sigma E_{2}}.  
-X^{2} = \frac{(\Sigma O_{1} - \Sigma E_{1})^{2}}{\Sigma E_{1}} +\frac{(\Sigma O_{2} - \Sigma E_{2})^{2}}{\Sigma E_{2}}.  
+$$
+X^{2} = \frac{(\Sigma O_{1} - \Sigma E_{1})^{2}}{\Sigma E_{1}} +\frac{(\Sigma O_{2} - \Sigma E_{2})^{2}}{\Sigma E_{2}}.
 $$  
 
 如果零假设成立，统计量 $X^{2}$ 服从具有 $m - 1$ 自由度的 $\chi^{2}$ 分布，其中有 $m$ 组。  
@@ -499,17 +477,15 @@ If the null hypothesis is true the statistic  $X^{2}$  has a  $\chi^{2}$  distri
 如第13.3.2节所述，两组的相对生存经验可以表示为  
 As noted in section 13.3.2, the relative survival experience of two groups can be expressed as  
 
-$$  
-R = \frac{O_{1} / E_{1}}{O_{2} / E_{2}}  
-R = \frac{O_{1} / E_{1}}{O_{2} / E_{2}}  
+$$
+R = \frac{O_{1} / E_{1}}{O_{2} / E_{2}}
 $$  
 
 这被称为风险比。我们可以计算 $\log_{e}R$ 的近似置信区间，从而获得 $R$ 的置信区间（Simon, 1986）。我们使用第13.4.2节中给出的第二个公式推导出的方差进行计算  
 which is termed the hazard ratio. We can calculate an approximate confidence interval for  $\log_{e}R$  and so obtain a confidence interval for  $R$  (Simon, 1986). We use the variance derived from the second formula given in section 13.4.2 and calculate  
 
-$$  
-K = \frac{O_{1} - E_{1}}{V}  
-K = \frac{O_{1} - E_{1}}{V}  
+$$
+K = \frac{O_{1} - E_{1}}{V}
 $$  
 
 这是对对数风险比的估计值（并且将与观察到的风险比的对数相似）。该估计值的标准误近似为 $1 / \sqrt{V}$，因此 $\log_{e}R$ 的 $95\%$ 置信区间由 $K - 1.96 / \sqrt{V}$ 到 $K + 1.96 / \sqrt{V}$ 给出。因此，通过对这些值取反对数，可以很容易地获得 $R$ 的 $95\%$ 置信区间。  
@@ -524,14 +500,12 @@ $O_{1} = 5, E_{1} = 8.8607, O_{2} = 14, E_{2} = 10.1393$  and  $V = 4.6478$
 所以我们有  
 so we have  
 
-$$  
-\begin{array}{l}{{R=\frac{5/8.8607}{14/10.1393}=0.41;}}\\ {{K=\frac{5-8.8607}{4.6478}=-0.8307;}}\end{array}  
-\begin{array}{l}{{R=\frac{5/8.8607}{14/10.1393}=0.41;}}\\ {{K=\frac{5-8.8607}{4.6478}=-0.8307;}}\end{array}  
+$$
+\begin{array}{l}{{R=\frac{5/8.8607}{14/10.1393}=0.41;}}\\ {{K=\frac{5-8.8607}{4.6478}=-0.8307;}}\end{array}
 $$  
 
-$$  
-\begin{array}{l}{{K-1.96/\sqrt{4.6478}=-1.7398;}}\\ {{K+1.96/\sqrt{4.6478}=0.0785.}}\end{array}  
-\begin{array}{l}{{K-1.96/\sqrt{4.6478}=-1.7398;}}\\ {{K+1.96/\sqrt{4.6478}=0.0785.}}\end{array}  
+$$
+\begin{array}{l}{{K-1.96/\sqrt{4.6478}=-1.7398;}}\\ {{K+1.96/\sqrt{4.6478}=0.0785.}}\end{array}
 $$  
 
 因此，风险比 $R$ 的 $95\%$ 置信区间为 $e^{- 1.7398}$ 到 $e^{0.0785}$，即从 0.18 到 1.08。  
@@ -543,49 +517,43 @@ The  $95\%$  confidence interval for the hazard ratio  $R$  is thus from  $e^{- 
 使用第 13.4.1 节中给出的方法，我们可以分别估计两个独立个体组（例如 $p_{1}$、$SE(p_{1})$、$p_{2}$ 和 $SE(p_{2})$）在某个时间点的生存概率及其标准误。$p_{1} - p_{2}$ 的标准误，照常，由以下公式给出：  
 Using the method given in section 13.4.1 we can estimate the survival probability and its standard error at some time point separately for two independent groups of individuals, say  $p_{1}$ ,  $SE(p_{1})$ ,  $p_{2}$  and  $SE(p_{2})$ . The standard error of  $p_{1} - p_{2}$  is, as usual, given by  
 
-$$  
-SE(p_{1} - p_{2}) = \sqrt{SE(p_{1})^{2} + SE(p_{2})^{2}}.  
-SE(p_{1} - p_{2}) = \sqrt{SE(p_{1})^{2} + SE(p_{2})^{2}}.  
+$$
+SE(p_{1} - p_{2}) = \sqrt{SE(p_{1})^{2} + SE(p_{2})^{2}}.
 $$  
 
 因此，生存比例差异的 $95\%$ 置信区间由以下公式给出：  
 A  $95\%$  confidence interval for the difference in survival proportions is thus given by  
 
-$$  
-(p_{1} - p_{2}) - 1.96SE(p_{1} - p_{2}) \qquad \text{to} \qquad (p_{1} - p_{2}) + 1.96SE(p_{1} - p_{2}).  
-(p_{1} - p_{2}) - 1.96SE(p_{1} - p_{2}) \qquad \text{to} \qquad (p_{1} - p_{2}) + 1.96SE(p_{1} - p_{2}).  
+$$
+(p_{1} - p_{2}) - 1.96SE(p_{1} - p_{2}) \qquad \text{to} \qquad (p_{1} - p_{2}) + 1.96SE(p_{1} - p_{2}).
 $$  
 
 例如，我们可以比较两次晕动病实验中 60 分钟时的生存比例。我们有：  
 For example, we can compare the survival proportion at 60 minutes in the two motion sickness experiments. We have  
 
-$$  
-p_{1} = 0.855, SE(p_{1}) = 0.078, p_{2} = 0.816 \text{and} SE(p_{2}) = 0.074  
-p_{1} = 0.855, SE(p_{1}) = 0.078, p_{2} = 0.816 \text{and} SE(p_{2}) = 0.074  
+$$
+p_{1} = 0.855, SE(p_{1}) = 0.078, p_{2} = 0.816 \text{and} SE(p_{2}) = 0.074
 $$  
 
 所以  
 SO  
 
-$$  
-p_{1} - p_{2} = 0.855 - 0.816 = 0.039  
-p_{1} - p_{2} = 0.855 - 0.816 = 0.039  
+$$
+p_{1} - p_{2} = 0.855 - 0.816 = 0.039
 $$  
 
 以及  
 and  
 
-$$  
-SE(p_{1} - p_{2}) = \sqrt{0.078^{2} + 0.074^{2}} = 0.1075,  
-SE(p_{1} - p_{2}) = \sqrt{0.078^{2} + 0.074^{2}} = 0.1075,  
+$$
+SE(p_{1} - p_{2}) = \sqrt{0.078^{2} + 0.074^{2}} = 0.1075,
 $$  
 
 因此，在 60 分钟时 $p_{1} - p_{2}$ 的 $95\%$ 置信区间为  
 and thus the  $95\%$  confidence interval for  $p_{1} - p_{2}$  at 60 minutes is  
 
-$$  
-0.039 - 1.96 \times 0.1075 \qquad \text{to} \qquad 0.039 + 1.96 \times 0.1075,  
-0.039 - 1.96 \times 0.1075 \qquad \text{to} \qquad 0.039 + 1.96 \times 0.1075,  
+$$
+0.039 - 1.96 \times 0.1075 \qquad \text{to} \qquad 0.039 + 1.96 \times 0.1075,
 $$  
 
 即，从 $- 0.17$ 到 0.25。在 60 分钟时，两组数据之间没有明显的差异，尽管 logrank 检验显示总体上存在一些差异的证据。  
@@ -606,17 +574,15 @@ If  $m_{1}$  and  $m_{2}$  are the median survival times of two independent samp
 近似 $95\%$ 置信区间为  
 the approximate  $95\%$  confidence interval is  
 
-$$  
-\frac{m_{1}}{m_{2}} -\mathbf{e}^{-1.96s}\qquad \mathrm{to}\qquad \frac{m_{1}}{m_{2}} +\mathbf{e}^{-1.96s}  
-\frac{m_{1}}{m_{2}} -\mathbf{e}^{-1.96s}\qquad \mathrm{to}\qquad \frac{m_{1}}{m_{2}} +\mathbf{e}^{-1.96s}  
+$$
+\frac{m_{1}}{m_{2}} -\mathbf{e}^{-1.96s}\qquad \mathrm{to}\qquad \frac{m_{1}}{m_{2}} +\mathbf{e}^{-1.96s}
 $$  
 
 其中  
 where  
 
-$$  
-s = \sqrt{\frac{1}{O_{1}} + \frac{1}{O_{2}}}.  
-s = \sqrt{\frac{1}{O_{1}} + \frac{1}{O_{2}}}.  
+$$
+s = \sqrt{\frac{1}{O_{1}} + \frac{1}{O_{2}}}.
 $$  
 
 该方法假设失效时间服从指数分布；快速检验此假设的方法是查看每个计算出的中位数是否与假设成立时所期望的值相似，即生存时间（无论是否截尾）的总和除以事件数的$\sqrt{2}$倍。例如，表13.3中数据的观测中位数为115分钟，而如果分布为指数分布，则期望值为$2356 / (14\sqrt{2}) = 119$分钟。然而，我们无法比较两次晕动病实验的中位数，因为我们没有表13.2中数据的估计中位数。  
@@ -691,17 +657,15 @@ Cox's method is a 'semi- parametric' approach - no particular type of distributi
 风险函数与生存曲线密切相关，表示在给定时间点之后极短时间间隔内死亡的风险，假设到目前为止仍然存活。因此，它可以解释为在时间 $t$ 死亡的风险。Cox的方法在能力上等同于12.4节中描述的多元回归分析，不同之处在于回归模型定义了给定时间点的风险。如果我们有几个感兴趣的自变量，例如 $X_{1}$ 到 $X_{p}$，我们可以将时间 $t$ 的风险 $h(t)$ 表示为：  
 The hazard function is closely related to the survival curve, representing the risk of dying in a very short time interval after a given time, assuming survival thus far. It can therefore be interpreted as the risk of dying at time  $t$ . Cox's method is equivalent in its capability to multiple regression analysis as described in section 12.4, except that the regression model defines the hazard at a given time. If we have several independent variables of interest, say  $X_{1}$  to  $X_{p}$ , we can express the hazard at time  $t$ ,  $h(t)$ , as  
 
-$$  
-h(t) = h_{0}(t) \times \exp (b_{1}X_{1} + b_{2}X_{2} + \ldots + b_{p}X_{p}).  
-h(t) = h_{0}(t) \times \exp (b_{1}X_{1} + b_{2}X_{2} + \ldots + b_{p}X_{p}).  
+$$
+h(t) = h_{0}(t) \times \exp (b_{1}X_{1} + b_{2}X_{2} + \ldots + b_{p}X_{p}).
 $$  
 
 方程中的量 $h_{0}(t)$ 是从数据中估计出来的，并且清楚地对应于所有变量为零时的风险（因为 $e^{0} = 1$）。它被称为基线或潜在风险函数。回归系数 $b_{1}$ 到 $b_{p}$ 也必须进行估计。如果我们只有一个感兴趣的变量，例如年龄，那么我们有：  
 The quantity  $h_{0}(t)$  in the equation is estimated from the data, and clearly corresponds to the hazard when all the variables are zero (because  $e^{0} = 1$ ). It is called the baseline or underlying hazard function. The regression coefficients,  $b_{1}$  to  $b_{p}$ , also have to be estimated. If we have just one variable of interest, such as age, then we have  
 
-$$  
-h(t) = h_{0}(t) \times \exp (b_{age} \times age).  
-h(t) = h_{0}(t) \times \exp (b_{age} \times age).  
+$$
+h(t) = h_{0}(t) \times \exp (b_{age} \times age).
 $$  
 
 在该模型下，年龄的比例变化，例如从40岁增加到60岁（即增加$50\%$），会导致风险对数（log of the hazard）的比例变化。在实践中，比例风险回归模型通常被发现非常适合建模生存数据，但比例风险的假设可以而且应该进行检验。  
@@ -710,9 +674,8 @@ Under this model a proportional change in age, such as a  $50\%$  increase from 
 风险（hazard）表示在时间$t$死亡的风险，因此我们可以将所有直到时间$t$的风险累加起来，以获得在时间0到时间$t$之间死亡的风险。这被称为累积风险（cumulative hazard），记作$H(t)$。其定义为  
 The hazard gives the risk of dying at time  $t$ , so we can add all the hazards up to time  $t$  to get the risk of dying between time 0 and time  $t$ . This is called the cumulative hazard,  $H(t)$ . It is defined as  
 
-$$  
-H(t) = H_{0}(t) \times \exp (b_{1}X_{1} + b_{2}X_{2} + \ldots + b_{p}X_{p})  
-H(t) = H_{0}(t) \times \exp (b_{1}X_{1} + b_{2}X_{2} + \ldots + b_{p}X_{p})  
+$$
+H(t) = H_{0}(t) \times \exp (b_{1}X_{1} + b_{2}X_{2} + \ldots + b_{p}X_{p})
 $$  
 
 其中$H_{0}(t)$是累积基础风险函数。由于$H(t)$的计算方式，可以证明，生存到时间$t$的概率$S(t)$可以通过$\exp [- H(t)]$来估计。因此，我们可以为模型中具有特定变量值的任何个体估计生存概率。  
@@ -751,9 +714,8 @@ The first feature to note in such a table is the sign of the regression coeffici
 单个回归系数的解释相当容易。对于协变量 $X$ 的两个不同值，例如 $x_{1}$ 和 $x_{2}$，其回归系数为 $^b$，估计风险之比由下式给出：  
 An individual regression coefficient is interpreted quite easily. The ratio of the estimated hazards for two different values of a covariate  $X$  , say  $x_{1}$  and  $x_{2}$  , with regression coefficient  $^b$  , is given by  
 
-$$  
-\frac{h_{1}(t)}{h_{2}(t)} = \frac{h_{0}(t) \times \exp(b x_{1})}{h_{0}(t) \times \exp(b x_{2})} = \exp (b x_{1} - b x_{2}) = \exp [b(x_{1} - x_{2})].  
-\frac{h_{1}(t)}{h_{2}(t)} = \frac{h_{0}(t) \times \exp(b x_{1})}{h_{0}(t) \times \exp(b x_{2})} = \exp (b x_{1} - b x_{2}) = \exp [b(x_{1} - x_{2})].  
+$$
+\frac{h_{1}(t)}{h_{2}(t)} = \frac{h_{0}(t) \times \exp(b x_{1})}{h_{0}(t) \times \exp(b x_{2})} = \exp (b x_{1} - b x_{2}) = \exp [b(x_{1} - x_{2})].
 $$  
 
 请注意，由于模型中的假设，此结果不依赖于时间 $t$ 的选择。另请注意，我们不需要知道基线风险函数 $h_{0}(t)$ 的值。在我们将二元变量编码为0或1的特殊情况下，风险比等于 $\exp (b)$ (参见表13.7)。因此，安慰剂组的估计风险是硫唑嘌呤组的 $\exp (0.52) = 1.68$ (或 $168\%$ )。等效地，硫唑嘌呤的作用是将风险降低到安慰剂组的 $\exp (- 0.52) = 0.59$ (或 $59\%$ )。然而，对生存概率的影响不能简单描述，因为它取决于患者模型中其他变量的值，如下所述。对于连续协变量，回归系数指的是协变量值增加1时对数风险的增加。由于线性效应的假设，这意味着白蛋白从30增加到 $31 \mathrm{g} / \mathrm{l}$ 的估计风险变化与从40增加到 $41 \mathrm{g} / \mathrm{l}$ 的变化相同，并且等于 $\exp (- 0.050) = 0.95$ ，即减少 $5\%$ 。对于血清胆红素， $\exp (2.51)$ 的值对应于对数尺度增加1时的风险变化。因此，如果胆红素高出10倍，估计风险会增加12.3倍。请注意，估计风险比 $\exp (b)$ 与第13.3.2节中描述的类似。不同之处在于，此风险比已根据模型中其他变量的影响进行了调整。  
@@ -762,25 +724,22 @@ Note that because of the assumption in the model this result is not dependent up
 与普通多元线性回归和逻辑回归（两者均在第12章讨论）一样，回归系数和变量值的组合可以用作预后指数。风险函数方程中括号内的部分给出了预后指数（PI），如下所示：  
 As with ordinary multiple linear regression and logistic regression (both discussed in Chapter 12), the combination of regression coefficients and values of variables can be used as a prognostic index. The part of the equation for the hazard function within brackets gives a prognostic index (PI) as  
 
-$$  
-\mathbf{PI} = b_{1}X_{1} + b_{2}X_{2} + \ldots +b_{p}X_{p}.  
-\mathbf{PI} = b_{1}X_{1} + b_{2}X_{2} + \ldots +b_{p}X_{p}.  
+$$
+\mathbf{PI} = b_{1}X_{1} + b_{2}X_{2} + \ldots +b_{p}X_{p}.
 $$  
 
 任何时间的风险和估计生存概率仅取决于PI，而不取决于单个变量的值。由于时间 $t$ 的生存概率是 $S(t) = \exp [- H(t)]$ ，我们有  
 The hazard and the estimated survival probability at any time depend only upon PI, not upon the values of the individual variables. Because the survival probability at time  $t$  is  $S(t) = \exp [- H(t)]$  we have  
 
-$$  
-S(t) = \exp [-H_{0}(t)\times \exp (\mathrm{PI})].  
-S(t) = \exp [-H_{0}(t)\times \exp (\mathrm{PI})].  
+$$
+S(t) = \exp [-H_{0}(t)\times \exp (\mathrm{PI})].
 $$  
 
 累积基线风险函数，$H_{0}(t)$，是一个随时间变化的阶梯函数，并且应该在计算机程序的输出中给出。因此，我们也可以将$S(t)$表达为一个阶梯函数。有些程序可能会转而给出与$H_{0}(t)$对应的生存函数，即$S_{0}(t) = \exp [- H_{0}(t)]$。任何协变量集合的生存函数由以下公式给出  
 The cumulative underlying hazard function,  $H_{0}(t)$ , is a step function over time, and should be given in the output of the computer program. We can thus express  $S(t)$  as a step function too. Some programs may instead give the survival function corresponding to  $H_{0}(t)$ , i.e.  $S_{0}(t) = \exp [- H_{0}(t)]$ . The survival function for any set of covariates is given by  
 
-$$  
-S(t) = S_{0}(t)^{\exp (\mathrm{PI})}.  
-S(t) = S_{0}(t)^{\exp (\mathrm{PI})}.  
+$$
+S(t) = S_{0}(t)^{\exp (\mathrm{PI})}.
 $$  
 
 图13.7显示了接受硫唑嘌呤和安慰剂治疗患者的估计生存曲线，基于表13.7所示模型，并将所有其他变量设置为其平均值。生存概率与预后之间的关系可以通过将上一个方程中的$t$固定在几个感兴趣的值来检验。图13.8显示了从PBC试验中得出的PI函数，估计的2年、5年和8年生存概率。对于任何新患者，估计在给定时间内生存的概率都很容易。不幸的是，计算估计生存概率的置信区间很困难。  
