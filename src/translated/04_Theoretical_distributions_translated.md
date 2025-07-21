@@ -373,9 +373,15 @@ and
 因此我们有  
 So we have  
 
-$$  
-\begin{array}{r l}&{\left(\begin{array}{l}{10}\\ {0}\end{array}\right)=1}\\ &{\left(\begin{array}{l}{10}\\ {1}\end{array}\right)=\left(\begin{array}{l}{10}\\ {0}\end{array}\right)\times10/1=\begin{array}{l}{10=\left(\begin{array}{l}{10}\\ {9}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {2}\end{array}\right)=\left(\begin{array}{l}{10}\\ {1}\end{array}\right)\times\begin{array}{l}{9/2=\begin{array}{l}{45=\left(\begin{array}{l}{10}\\ {8}\end{array}\right)}\\ {\left(\begin{array}{l}{10}\\ {3}\end{array}\right)=\left(\begin{array}{l}{10}\\ {2}\end{array}\right)\times\begin{array}{l}{8/3=120=\left(\begin{array}{l}{10}\\ {7}\right)}\\ {\left(\begin{array}{l}{10}\\ {4}\end{array}\right)=\left(\begin{array}{l}{10}\\ {3}\end{array}\right)\times\begin{array}{l}{7/4=210=\left(\begin{array}{l}{10}\\ {6}\end{array}\right)}\\ {\left(\begin{array}{l}{10}\\ {5}\end{array}\right)=\left(\begin{array}{l}{10}\\ {4}\end{array}\right)\times\begin{array}{l}{6/5=252}\end{array}}\end{array}  
-\begin{array}{r l}&{\left(\begin{array}{l}{10}\\ {0}\end{array}\right)=1}\\ &{\left(\begin{array}{l}{10}\\ {1}\end{array}\right)=\left(\begin{array}{l}{10}\\ {0}\end{array}\right)\times10/1=\begin{array}{l}{10=\left(\begin{array}{l}{10}\\ {9}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {2}\end{array}\right)=\left(\begin{array}{l}{10}\\ {1}\end{array}\right)\times\begin{array}{l}{9/2=\begin{array}{l}{45=\left(\begin{array}{l}{10}\\ {8}\end{array}\right)}\\ {\left(\begin{array}{l}{10}\\ {3}\end{array}\right)=\left(\begin{array}{l}{10}\\ {2}\end{array}\right)\times\begin{array}{l}{8/3=120=\left(\begin{array}{l}{10}\\ {7}\end{array}\right)}\\ {\left(\begin{array}{l}{10}\\ {4}\end{array}\right)=\left(\begin{array}{l}{10}\\ {3}\end{array}\right)\times\begin{array}{l}{7/4=210=\left(\begin{array}{l}{10}\\ {6}\end{array}\right)}\\ {\left(\begin{array}{l}{10}\\ {5}\end{array}\right)=\left(\begin{array}{l}{10}\\ {4}\end{array}\right)\times\begin{array}{l}{6/5=252}\end{array}}\end{array}  
+$$ 
+\begin{array}{r l}
+  \binom{10}{0} &= 1 \\
+  \binom{10}{1} &= \binom{10}{0} \times \frac{10}{1} = 1 \times 10 = 10 = \binom{10}{9} \\
+  \binom{10}{2} &= \binom{10}{1} \times \frac{9}{2} = 10 \times \frac{9}{2} = 45 = \binom{10}{8} \\
+  \binom{10}{3} &= \binom{10}{2} \times \frac{8}{3} = 45 \times \frac{8}{3} = 120 = \binom{10}{7} \\
+  \binom{10}{4} &= \binom{10}{3} \times \frac{7}{4} = 120 \times \frac{7}{4} = 210 = \binom{10}{6} \\
+  \binom{10}{5} &= \binom{10}{4} \times \frac{6}{5} = 210 \times \frac{6}{5} = 252
+\end{array}
 $$  
 
 因此，10人中有4人是B血型的概率为  

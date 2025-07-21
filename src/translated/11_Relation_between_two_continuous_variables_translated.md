@@ -471,16 +471,14 @@ $$
 类似地，偏秩相关性计算为  
 Similarly the partial rank correlation is calculated as  
 
-$$  
-$r_{s}(AB|C) = \frac{r_{s}(AB) - r_{s}(AC)r_{s}(BC)}{\sqrt{[1 - r_{s}(AC)^2][1 - r_{s}(BC)^2]}}$.  
+$$   
 r_{s}(AB|C) = \frac{r_{s}(AB) - r_{s}(AC)r_{s}(BC)}{\sqrt{[1 - r_{s}(AC)^2][1 - r_{s}(BC)^2]}}.  
 $$  
 
 偏相关系数的假设检验与普通相关系数的检验方式相同，只是自由度为 $N - 3$。表11.4中变量对之间的相关性（省略了四个没有牛奶消费率的国家）为：  
 The hypothesis test for the partial correlation coefficient is performed in the same way as for the ordinary correlation coefficient, except that there are  $N - 3$  degrees of freedom. The correlations between pairs of variables in Table 11.4, omitting the four countries without milk consumption rates, were  
 
-$$  
-$r_{s}(LT) = 0.6147, r_{s}(LM) = 0.9221, \text{and} r_{s}(TM) = 0.6059$  
+$$
 r_{s}(LT) = 0.6147, r_{s}(LM) = 0.9221, \text{and} r_{s}(TM) = 0.6059  
 $$  
 
