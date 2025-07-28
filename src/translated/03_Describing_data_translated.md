@@ -40,11 +40,8 @@ The most common of these is the arithmetic mean, usually just called the mean, w
 表3.1 25名囊性纤维化患者的年龄和PImax (O'Neill 等人，1983)  
 Table 3.1 Age and PImax in 25 patients with cystic fibrosis (O'Neill et al., 1983)  
 
-<table><tr><td>Subject</td><td>Age   
-<table><tr><td>Subject</td><td>Age   
-(years)</td><td>PImax   
-(years)</td><td>PImax   
-(cm H2O)</td></tr><tr><td>1</td><td>7</td><td>80</td></tr><tr><td>2</td><td>7</td><td>85</td></tr><tr><td>3</td><td>8</td><td>110</td></tr><tr><td>4</td><td>8</td><td>95</td></tr><tr><td>5</td><td>8</td><td>95</td></tr><tr><td>6</td><td>9</td><td>100</td></tr><tr><td>7</td><td>11</td><td>45</td></tr><tr><td>8</td><td>12</td><td>95</td></tr><tr><td>9</td><td>12</td><td>130</td></tr><tr><td>10</td><td>13</td><td>75</td></tr><tr><td>11</td><td>13</td><td>80</td></tr><tr><td>12</td><td>14</td><td>70</td></tr><tr><td>13</td><td>14</td><td>80</td></tr><tr><td>14</td><td>15</td><td>100</td></tr><tr><td>15</td><td>16</td><td>120</td></tr><tr><td>16</td><td>17</td><td>110</td></tr><tr><td>17</td><td>17</td><td>125</td></tr><tr><td>18</td><td>17</td><td>75</td></tr><tr><td>19</td><td>17</td><td>100</td></tr><tr><td>20</td><td>19</td><td>40</td></tr><tr><td>21</td><td>19</td><td>75</td></tr><tr><td>22</td><td>20</td><td>110</td></tr><tr><td>23</td><td>23</td><td>150</td></tr><tr><td>24</td><td>23</td><td>75</td></tr><tr><td>25</td><td>23</td><td>95</td></tr></table>  
+<table><tr><td>Subject</td><td>Age      
+(years)</td><td>PImax  
 (cm H2O)</td></tr><tr><td>1</td><td>7</td><td>80</td></tr><tr><td>2</td><td>7</td><td>85</td></tr><tr><td>3</td><td>8</td><td>110</td></tr><tr><td>4</td><td>8</td><td>95</td></tr><tr><td>5</td><td>8</td><td>95</td></tr><tr><td>6</td><td>9</td><td>100</td></tr><tr><td>7</td><td>11</td><td>45</td></tr><tr><td>8</td><td>12</td><td>95</td></tr><tr><td>9</td><td>12</td><td>130</td></tr><tr><td>10</td><td>13</td><td>75</td></tr><tr><td>11</td><td>13</td><td>80</td></tr><tr><td>12</td><td>14</td><td>70</td></tr><tr><td>13</td><td>14</td><td>80</td></tr><tr><td>14</td><td>15</td><td>100</td></tr><tr><td>15</td><td>16</td><td>120</td></tr><tr><td>16</td><td>17</td><td>110</td></tr><tr><td>17</td><td>17</td><td>125</td></tr><tr><td>18</td><td>17</td><td>75</td></tr><tr><td>19</td><td>17</td><td>100</td></tr><tr><td>20</td><td>19</td><td>40</td></tr><tr><td>21</td><td>19</td><td>75</td></tr><tr><td>22</td><td>20</td><td>110</td></tr><tr><td>23</td><td>23</td><td>150</td></tr><tr><td>24</td><td>23</td><td>75</td></tr><tr><td>25</td><td>23</td><td>95</td></tr></table>  
 
 压力 (PImax)，并且是呼吸肌力量的一个指标。PImax值的总和是2315，所以均值是 $2315 / 25 = 92.6 \mathrm{~cm} \mathrm{H}_{2} \mathrm{O}$ 。均值是通常所说的“平均数”时所指的值。均值有时用 $\bar{x}$ 表示（读作“x bar”），但除了在公式中，最好避免使用这种速记符号。  
