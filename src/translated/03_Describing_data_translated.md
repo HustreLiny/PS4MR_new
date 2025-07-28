@@ -51,7 +51,6 @@ pressure (PImax) and is an index of respiratory muscle strength. The sum of the 
 The other frequently used measure is the median. This is the value that comes half- way when the data are ranked in order. For the PImax data in Table 3.1 there are 25 observations, so the median is the 13th value in order. If we rank the PImax values in ascending order we get  
 
 <table><tr><td>Rank</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>PImax</td><td>40</td><td>45</td><td>70</td><td>75</td><td>75</td><td>75</td><td>75</td><td>80</td><td>80</td><td>80</td><td>85</td><td>95</td><td>95</td></tr><tr><td>Rank</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td></td></tr><tr><td>PImax</td><td>95</td><td>95</td><td>100</td><td>100</td><td>100</td><td>110</td><td>110</td><td>110</td><td>120</td><td>125</td><td>130</td><td>150</td><td></td></tr></table>  
-<table><tr><td>Rank</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>PImax</td><td>40</td><td>45</td><td>70</td><td>75</td><td>75</td><td>75</td><td>75</td><td>80</td><td>80</td><td>80</td><td>85</td><td>95</td><td>95</td></tr><tr><td>Rank</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td></td></tr><tr><td>PImax</td><td>95</td><td>95</td><td>100</td><td>100</td><td>100</td><td>110</td><td>110</td><td>110</td><td>120</td><td>125</td><td>130</td><td>150</td><td></td></tr></table>  
 
 我们可以看到中位数是 $95 \mathrm{~cm} \mathrm{H}_{2} \mathrm{O}$。更简单地，我们可以立即从表3.1中看出，这些患者的中位年龄是14岁。当观察值数量为偶数时，中位数定义为两个中心值的平均值：如果我们有24个观察值，中位数将是按顺序排列的观察值中第12个和第13个值的平均值。通常中位数上下两侧的观察值数量相等。然而，当有多个观察值等于中位数时，如PImax数据所示，这可能不完全准确。  
 and we can see that the median is  $95 \mathrm{~cm} \mathrm{H}_{2} \mathrm{O}$ . More easily, we can see immediately from Table 3.1 that the median age of these patients was 14 years. When there is an even number of observations the median is defined as the average of the two central values: if we had 24 observations the median would be the average of the 12th and 13th values in an ordered listing of the observations. There are usually equal numbers of observations above and below the median. However, when there is more than one observation equal to the median, as for the PImax data, this may not be exactly true.  
@@ -84,9 +83,7 @@ A simple graphical way of depicting a complete set of observations is by means o
 Table 3.2 Concentrations of serum IgM in 298 children aged 6 months to 6 years (Isaacs et al., 1983)  
 
 <table><tr><td>IgM   
-<table><tr><td>IgM   
 (g/l)</td><td>儿童数量</td></tr><tr><td>0.1</td><td>3</td></tr><tr><td>0.2</td><td>7</td></tr><tr><td>0.3</td><td>19</td></tr><tr><td>0.4</td><td>27</td></tr><tr><td>0.5</td><td>32</td></tr><tr><td>0.6</td><td>35</td></tr><tr><td>0.7</td><td>38</td></tr><tr><td>0.8</td><td>38</td></tr><tr><td>0.9</td><td>22</td></tr><tr><td>1.0</td><td>16</td></tr><tr><td>1.1</td><td>16</td></tr><tr><td>1.2</td><td>6</td></tr><tr><td>1.3</td><td>7</td></tr><tr><td>1.4</td><td>9</td></tr><tr><td>1.5</td><td>6</td></tr><tr><td>1.6</td><td>2</td></tr><tr><td>1.7</td><td>3</td></tr><tr><td>1.8</td><td>3</td></tr><tr><td>2.0</td><td>3</td></tr><tr><td>2.1</td><td>2</td></tr><tr><td>2.2</td><td>1</td></tr><tr><td>2.5</td><td>1</td></tr><tr><td>2.7</td><td>1</td></tr><tr><td>4.5</td><td>1</td></tr></table>  
-(g/l)</td><td>Number of Children</td></tr><tr><td>0.1</td><td>3</td></tr><tr><td>0.2</td><td>7</td></tr><tr><td>0.3</td><td>19</td></tr><tr><td>0.4</td><td>27</td></tr><tr><td>0.5</td><td>32</td></tr><tr><td>0.6</td><td>35</td></tr><tr><td>0.7</td><td>38</td></tr><tr><td>0.8</td><td>38</td></tr><tr><td>0.9</td><td>22</td></tr><tr><td>1.0</td><td>16</td></tr><tr><td>1.1</td><td>16</td></tr><tr><td>1.2</td><td>6</td></tr><tr><td>1.3</td><td>7</td></tr><tr><td>1.4</td><td>9</td></tr><tr><td>1.5</td><td>6</td></tr><tr><td>1.6</td><td>2</td></tr><tr><td>1.7</td><td>3</td></tr><tr><td>1.8</td><td>3</td></tr><tr><td>2.0</td><td>3</td></tr><tr><td>2.1</td><td>2</td></tr><tr><td>2.2</td><td>1</td></tr><tr><td>2.5</td><td>1</td></tr><tr><td>2.7</td><td>1</td></tr><tr><td>4.5</td><td>1</td></tr></table>  
 
 ![](../images/03_Describing_data/img3.jpg)  
 图3.3 298名6个月至6岁儿童IgM浓度频率直方图（Isaacs等，1983）。  
@@ -141,18 +138,21 @@ The vertical axis of a histogram must start at zero, and there should not be any
 直方图的一种巧妙修改，称为茎叶图，也允许显示所有实际观测值。图 3.8 显示了表 3.1 中的 PImax 数据，重新绘制为茎叶图。原始数据可以通过将左侧的数字（茎）与同一行右侧的每个数字（叶）连接起来进行重构。这是一种非常经济地再现原始数据的方法，并且比简单的数据列表更有用。  
 A clever modification of the histogram called a stem- and- leaf diagram allows all the actual observations to be shown too. Figure 3.8 shows the PImax data from Table 3.1 redrawn as a stem- and- leaf diagram. The raw data can be reconstructed by joining the numbers on the left (the stems) to each of the numbers on the right (the leaves) on the same row. This is a very economical way of reproducing the raw data, and is more useful than a simple list of the data.  
 
-4 05 5 6 7 05555 8 0005 9 5555 10 000 11 000 12 05 13 0 14 15 0  
+![](../images/03_Describing_data/simg1.png)  
+图3.8 表3.1中PImax数据的茎叶图。  
+Figure 3.8 Stem-and-leaf diagram of PImax data in Table 3.1.  
 
 茎叶图在许多情况下都适用，尤其是在有许多不同值的情况下，但最佳格式取决于数据的性质和样本量。表 3.2 中的 IgM 数据无法使用五个“茎”（0, 1, 2, 3, 4）成功制作成茎叶图，但我们可以拆分每个组以获得一个有用的图表，如 图 3.9 所示。  
 The stem- and- leaf diagram works well in many circumstances, especially where there are many different values, but the best format depends on the nature of the data and the sample size. The IgM data in Table 3.2 cannot be made into a successful stem- and- leaf diagram using five 'stems' (0, 1, 2, 3, 4), but we can split each group to get a useful diagram, as in Figure 3.9.  
 
 ![](../images/03_Describing_data/img8.jpg)  
-
+图3.9 表3.2中IgM数据的茎叶图。  
+Figure 3.9 Stem-and-leaf diagram of IgM data in Table 3.2.  
 
 ### 3.3.3 累积频率  3.3.3 Cumulative frequencies  
 
-3.3.3 累积频率我们之前看到，样本观测值的分布可以表示为样本中每个小范围内值的百分比。这在图3.7的相对频率直方图中有所展示。我们可以将这个想法进一步推演，考虑每个组中该组或更低组的受试者比例。因此，我们计算每个水平的累积频率—即小于或等于每个值的观测值比例。计算结果如表3.4所示。累积相对频率可以绘制成直方图，如图3.10(a)所示。然而，对于累积频率，没有必要像这样对数据进行分组，因为我们可以直接绘制累积频率，如图3.10(b)所示。这种图可以用来查看百分之多少的  
-3.3.3 Cumulative frequenciesWe saw earlier how the distribution of a sample of observations can be shown as the percentage of the sample with values in each of several small ranges. This was shown in the relative frequency histogram in Figure 3.7. We can take this idea a stage further by considering for each group the proportion of subjects in that group or a lower one. Thus we calculate the cumulative frequency at each level - the proportion of observations less than or equal to each value. The calculations are shown in Table 3.4. The cumulative relative frequencies can be plotted in a histogram, as in Figure 3.10(a). However, for cumulative frequencies there is no need to group the data like this because we can plot the cumulative frequencies directly, as in Figure 3.10(b). This plot can be used either to see what percentage of  
+我们之前看到，样本观测值的分布可以表示为样本中每个小范围内值的百分比。这在图3.7的相对频率直方图中有所展示。我们可以将这个想法进一步推演，考虑每个组中该组或更低组的受试者比例。因此，我们计算每个水平的累积频率—即小于或等于每个值的观测值比例。计算结果如表3.4所示。累积相对频率可以绘制成直方图，如图3.10(a)所示。然而，对于累积频率，没有必要像这样对数据进行分组，因为我们可以直接绘制累积频率，如图3.10(b)所示。这种图可以用来查看百分之多少的  
+We saw earlier how the distribution of a sample of observations can be shown as the percentage of the sample with values in each of several small ranges. This was shown in the relative frequency histogram in Figure 3.7. We can take this idea a stage further by considering for each group the proportion of subjects in that group or a lower one. Thus we calculate the cumulative frequency at each level - the proportion of observations less than or equal to each value. The calculations are shown in Table 3.4. The cumulative relative frequencies can be plotted in a histogram, as in Figure 3.10(a). However, for cumulative frequencies there is no need to group the data like this because we can plot the cumulative frequencies directly, as in Figure 3.10(b). This plot can be used either to see what percentage of  
 
 表3.4 298个IgM值的累积频率分布  
 Table 3.4 Cumulative frequency distribution of 298 IgM values  
@@ -166,6 +166,10 @@ Figure 3.10 IgM data shown as (a) Cumulative relative frequency histogram, (b) C
 
 观测值高于或低于任何选定水平的百分比，或者找出给定百分比的儿童IgM值高于或低于的数值。例如，我们可以很容易地看到中位IgM浓度为 $0.7 \text{g / l}$ 。如果数值已被分组，则无法从直方图或累积直方图中获取此信息。  
 observations lie above or below any chosen level, or to find the values which a given percentage of children's IgM values lie above or below. For example, we can easily see that the median IgM concentration was  $0.7 \text{g / l}$ . This information cannot be obtained from a histogram or cumulative histogram if values have been grouped.  
+
+![](../images/03_Describing_data/img10.jpg)  
+图3.11 吸烟者（——）和非吸烟者（-----）所生儿童第一颗牙齿萌出的年龄（Rantakallio 和 Makinen, 1984）：(a) 相对频率直方图；(b) 累积相对频率直方图；(c) 累积相对频率多边形。  
+Figure 3.11 Age at first tooth eruption of children born to smokers (——) and non-smokers (-----) (Rantakallio and Makinen, 1984): (a) Relative frequecy  histogram; (b) Cumulative relative frequency histogram; (c) Cumulative re a frequency polygon.  
 
 累积频率对于比较两个或多个不同个体组中值的分布特别有用。图3.11(a)显示了1568名吸烟者子女和1576名非吸烟者子女首次出牙年龄的相对频率直方图。图3.11(b)显示了相同数据的累积直方图。图3.11(c)显示了相同数据的累积频率多边形。因为我们考虑的是累积频率，所以我们连接的是垂直条形的右端点，而不是像图3.7(b)中那样连接中点。该图显示，组间差异不如图3.11(b)中所示的那么大—在之前的图中，两组并排显示，这可能导致误导性的视觉印象。从图3.11(c)中我们可以很容易地看出，吸烟者子女首次出牙的中位年龄大约早了一周。  
 Cumulative frequencies are especially useful for comparing the distribution of values in two or more different groups of individuals. Figure 3.11(a) shows relative frequency histograms for the age at first tooth eruption of 1568 children of smokers and 1576 non- smokers. Figure 3.11(b) shows cumulative histograms of the same data. Figure 3.11(c) shows cumulative frequency polygons of the same data. Because we are considering cumulative frequencies we join the right- hand points of the vertical bars rather than the mid- points as in Figure 3.7(b). This plot shows that the difference between the groups is not as great as was suggested in Figure 3.11(b) – the two groups were side by side in the previous plot, which can lead to a misleading visual impression. We can easily see from Figure 3.11(c) that the median age at first tooth eruption was about one week earlier in the children of smokers.  
@@ -187,8 +191,6 @@ The simplest way to describe the spread of a set of data is to quote the lowest 
 
 通过指定包含大部分而非全部数据值的两个值，我们可以解决大部分困难。例如，我们可以计算出90%的观测值所处的范围。低于给定百分比值的值称为百分位数，它对应于具有指定累积相对频率的值。  
 By specifying two values that encompass most rather than all of the data values we get round much of the difficulty. For example, we could calculate the values between which  $90\%$  of the observations lie. The value below which a given percentage of the values occur is called a centile or percentile, and corresponds to a value with a specified cumulative relative frequency.  
-
-![](../images/03_Describing_data/img10.jpg)  
 
 我们需要IgM值分布的第5和第95百分位数。从表3.4的最后一列可以看出，累积相对频率在IgM值为$0.3 \mathrm{g / l}$的组中某个位置超过5%，并在$1.6 \mathrm{g / l}$处达到95%。  
 We require the 5th and 95th centiles of the distribution of IgM values. From the last column of Table 3.4 we can see that the cumulative relative frequency passes  $5\%$  somewhere in the group of IgM values of  $0.3 \mathrm{g / l}$ , and  $95\%$  is reached at the value of  $1.6 \mathrm{g / l}$ .  
