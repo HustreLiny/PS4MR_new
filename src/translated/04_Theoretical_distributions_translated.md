@@ -20,7 +20,8 @@ By definition a probability lies between 0 and 1; something that cannot happen h
 关于概率，我们在此阶段需要考虑两条简单规则：  
 There are two simple rules regarding probabilities that we need to consider at this stage:  
 
-1. 对于给定事件，对于可能发生的任意两种结果，其中任一结果发生的概率是各自概率之和。  
+1. 对于给定事件，对于可能发生的任意两种结果，其中"任一结果发生"的概率是两者概率之和。  
+
 1. For a given event, for any two outcomes that might happen the probability of either occurring is the sum of the individual probabilities.  
 
 例如，如果一个个体是A血型的概率是0.43，是B血型的概率是0.08，那么是A型或B型的概率就是0.51。由此可知，所有可能结果的概率之和必须为1，因为这些可能性中必然会发生一种。例如，不同血型的概率近似为  
@@ -33,6 +34,7 @@ O:0.46;A:0.43;B:0.08;AB:0.03.
 We assume here that all outcomes are mutually exclusive.  
 
 2. 如果我们考虑两个或多个相互独立的事件，那么要获得这些事件中每个事件的特定结果组合的概率，我们必须将这些结果的各个概率相乘。  
+
 2. If we consider two or more different events which are independent of each other, then to get the probability of a combination of specific outcomes for each of the events we must multiply the individual probabilities of those outcomes.  
 
 独立性是统计学中一个重要的概念。独立意味着，如果我们知道一个事件的结果，这无法提供关于另一个事件的任何信息。更正式地说，无论第一个事件的结果如何，第二个事件的每个可能结果的概率都相同，依此类推。例如，如果全科医生诊室的候诊室里有三个人，他们都是O型血的概率是 $0.46\times 0.46\times 0.46 = 0.097$ ，也就是说，不到十分之一的几率。在这种情况下，独立性要求这三个人是无亲缘关系的。  
@@ -83,8 +85,8 @@ The Normal distribution is by far the most important probability distribution in
 在上一章中，我展示了如何使用直方图来描绘一组连续变量观测值的分布。如果观测值有数千个，并且IgM的记录更精确，那么IgM值可以被划分为许多微小的区间，数据的直方图就会更像一条平滑曲线。因此，不难  
 In the previous chapter I showed how a histogram can be used to depict the distribution of a set of observations of a continuous variable. If there had been thousands of observations, and IgM had been recorded more precisely, the IgM values could be divided into many tiny intervals, and a histogram of the data would appear more like a smooth curve. So it is not  
 
-想象某些观测数据的直方图或频率多边形是对某种“潜在”平滑频率分布的近似。例如，图4.1显示了216名原发性胆汁性肝硬化患者血清白蛋白值的直方图，图4.2显示了  
-difficult to imagine that the histogram or frequency polygon of some observed data is an approximation to some 'underlying' smooth frequency distribution. For example, Figure 4.1 shows a histogram of serum albumin values in 216 patients with primary biliary cirrhosis, and Figure 4.2 shows a  
+想象某些观测数据的直方图或频率多边形是对某种“潜在”平滑频率分布的近似。例如，图4.1显示了216名原发性胆汁性肝硬化患者血清白蛋白值的直方图，图4.2显示了同一数据的频率多边图，其效果更为清晰。  
+difficult to imagine that the histogram or frequency polygon of some observed data is an approximation to some 'underlying' smooth frequency distribution. For example, Figure 4.1 shows a histogram of serum albumin values in 216 patients with primary biliary cirrhosis, and Figure 4.2 shows a frequency polygon of the same data, in which the effect is rather clearer. 
 
 ![](../images/04_Theoretical_distributions/img1.jpg)  
 图4.1 216例原发性胆汁性肝硬化患者血清白蛋白值的直方图（引自Christensen等，1985年的研究）  
@@ -93,9 +95,6 @@ Figure 4.1 Histogram of serum albumin values in 216 patients with primary biliar
 ![](../images/04_Theoretical_distributions/img2.jpg)  
 图4.2 216例原发性胆汁性肝硬化患者血清白蛋白值的频率多边图。  
 Figure 4.2 Frequency polygon of serum albumin values in 216 patients with primary biliary cirrhosis.  
-
-同一数据的频率多边图，其效果更为清晰。  
-frequency polygon of the same data, in which the effect is rather clearer.  
 
 连续测量值的频率分布，如图4.2所示，通常只有一个峰值：它们被称为单峰分布。它们可能像这里一样相当对称，也可能像第3章中讨论的IgM数据那样不对称。正态分布是一种单峰且对称的概率分布；其形状如图4.3所示。偶尔也会出现具有两个峰值的频率分布。这些被称为双峰分布，通常是由于混合了具有不同均值的亚组所致。  
 frequency distributions for continuous measurements, such as in Figure 4.2, tend to have a single peak: they are called unimodal. They may be fairly symmetric, as here, or asymmetric, as with the IgM data discussed in Chapter 3. The Normal distribution is a probability distribution which is unimodal and symmetric; its shape is shown in Figure 4.3. Frequency distributions with two peaks are occasionally seen. These are called bimodal, and are usually the result of mixing subgroups with different means.  
@@ -176,8 +175,8 @@ $99\%$  within mean  $\pm 2.576\mathrm{SD}$ . For the serum albumin data we get 
 <table><tr><td>中心范围</td><td>血清白蛋白 (g/l)</td></tr><tr><td>90%</td><td>24.85 到 44.07</td></tr><tr><td>95%</td><td>23.01 到 45.91</td></tr><tr><td>99%</td><td>19.39 到 49.53</td></tr></table>  
 <table><tr><td>Central range</td><td>Serum albumin (g/l)</td></tr><tr><td>90%</td><td>24.85 to 44.07</td></tr><tr><td>95%</td><td>23.01 to 45.91</td></tr><tr><td>99%</td><td>19.39 to 49.53</td></tr></table>  
 
-因此，我们可以使用正态分布来估计总体中变量分布的百分位数。我们本可以计算样本数据的观察百分位数，并使用这些值作为总体百分位数的估计值，但当数据接近正态分布时，使用正态分布更可靠，尤其是在分布的尾部。它也更简单，只需要两个值和一张正态分布表，而不是完整的原始数据值集。图 4.5 显示，216 个血清白蛋白值的分布与具有相同均值和标准差的正态分布非常相似。我们可以使用刚刚描述的程序，从正态分布中计算直方图中每个区间内期望的值的数量。例如，在 26.0 到 $28.0 \mathrm{g / l}$ 区间内期望的数量是该区间概率乘以 216。26.0 和 28.0 的标准正态离差为  
-We can thus use the Normal distribution to estimate the centiles of the distribution of the variable in the population. We could have calculated the observed centiles of the sample data and used these values as estimates of the population centiles, but when the data are near to Normal the use of the Normal distribution is more reliable, especially in the tails of the distribution. It is also easier, requiring just two values and a table of the Normal distribution rather than the complete set of raw data values. Figure 4.5 showed that the distribution of the 216 serum albumin values was very similar to the Normal distribution with the same mean and standard deviation. We can use the procedure just described to calculate from the Normal distribution the number of values expected in each interval of the histogram. For example, the number expected in the interval 26.0 to  $28.0 \mathrm{g / l}$  is the probability of being in that interval multiplied by 216. The standard Normal deviates for 26.0 and 28.0 are  
+因此，我们可以使用正态分布来估计总体中变量分布的百分位数。我们本可以计算样本数据的观察百分位数，并使用这些值作为总体百分位数的估计值，但当数据接近正态分布时，使用正态分布更可靠，尤其是在分布的尾部。它也更简单，只需要两个值和一张正态分布表，而不是完整的原始数据值集。图 4.5 显示，216 个血清白蛋白值的分布与具有相同均值和标准差的正态分布非常相似。我们可以使用刚刚描述的程序，从正态分布中计算直方图中每个区间内期望的值的数量。例如，在 $26.0$ 到 $28.0 \mathrm{g / l}$ 区间内期望的数量是该区间概率乘以 216。26.0 和 28.0 的标准正态离差为  
+We can thus use the Normal distribution to estimate the centiles of the distribution of the variable in the population. We could have calculated the observed centiles of the sample data and used these values as estimates of the population centiles, but when the data are near to Normal the use of the Normal distribution is more reliable, especially in the tails of the distribution. It is also easier, requiring just two values and a table of the Normal distribution rather than the complete set of raw data values. Figure 4.5 showed that the distribution of the 216 serum albumin values was very similar to the Normal distribution with the same mean and standard deviation. We can use the procedure just described to calculate from the Normal distribution the number of values expected in each interval of the histogram. For example, the number expected in the interval $26.0$ to  $28.0 \mathrm{g / l}$  is the probability of being in that interval multiplied by 216. The standard Normal deviates for 26.0 and 28.0 are  
 
 $$
 \begin{array}{c}\frac{26.0 - 34.46}{5.84} = -1.45 \\ \frac{28.0 - 34.46}{5.84} = -1.11 \end{array}
@@ -186,26 +185,20 @@ $$
 从表 B1 中，我们得到下尾面积分别为 0.0735 和 0.1335，得到在 26.0 和 28.0 之间概率为 $0.1335 - 0.0735 = 0.0600$。因此，该区间内期望的观测数量是 $216 \times 0.0600 = 13.0$。表 4.1 显示了对整个值范围进行类似（但更精确）计算的结果，给出了观察频率和在血清白蛋白总体分布为具有相同均值 $(34.46 \mathrm{g / l})$ 和标准差 $(5.84 \mathrm{g / l})$ 的正态分布时的期望频率。请注意，期望数量通常以小数形式引用，即使观察频率必须是整数。  
 From Table B1 we get lower tail areas of 0.0735 and 0.1335, giving a probability of  $0.1335 - 0.0735 = 0.0600$  of being between 26.0 and 28.0. The expected number of observations in this interval is thus  $216 \times 0.0600 = 13.0$ . Table 4.1 shows the results of similar (but more precise) calculations for the whole range of values, giving observed frequencies and the frequencies expected if the population distribution of serum albumin was a Normal distribution with the same mean  $(34.46 \mathrm{g / l})$  and standard deviation  $(5.84 \mathrm{g / l})$ . Note that expected numbers are usually quoted as fractions even though the observed frequencies must be whole numbers.  
 
-我在 4.4 节中观察到，广泛使用的参数统计分析方法包含了关于数据分布的重要假设。在大多数情况下，所涉及的分布是正态分布。这也是它成为最重要的分布之一的原因，在  
-I observed in section 4.4 that the widely- used parametric methods of statistical analysis incorporate important assumptions about the distribution of data. In most cases the distribution involved is the Normal distribution. which is one of the reasons why it is the most important distribution in  
-
 表 4.1 216 例原发性胆汁性肝硬化患者血清白蛋白分布，以及基于相同均值和标准差的正态分布的预期频率  
 Table 4.1 Distribution of serum albumin in 216 patients with primary biliary cirrhosis together with expected frequencies based on a Normal distribution with the same mean and standard deviation  
 
 <table><tr><td>血清白蛋白 (g/l)</td><td>观察频率</td><td>预期频率</td></tr><tr><td>&amp;lt; 20</td><td>0</td><td>1.4</td></tr><tr><td>20-</td><td>2</td><td>2.1</td></tr><tr><td>22-</td><td>6</td><td>4.4</td></tr><tr><td>24-</td><td>7</td><td>8.0</td></tr><tr><td>26-</td><td>9</td><td>13.1</td></tr><tr><td>28-</td><td>21</td><td>19.1</td></tr><tr><td>30-</td><td>20</td><td>24.7</td></tr><tr><td>32-</td><td>28</td><td>28.5</td></tr><tr><td>34-</td><td>39</td><td>29.2</td></tr><tr><td>36-</td><td>28</td><td>26.7</td></tr><tr><td>38-</td><td>22</td><td>21.8</td></tr><tr><td>40-</td><td>12</td><td>15.8</td></tr><tr><td>42-</td><td>11</td><td>10.2</td></tr><tr><td>44-</td><td>4</td><td>5.9</td></tr><tr><td>46-</td><td>3</td><td>3.0</td></tr><tr><td>48-</td><td>1</td><td>1.4</td></tr><tr><td>50-</td><td>1</td><td>0.6</td></tr><tr><td>52-</td><td>1</td><td>0.2</td></tr><tr><td>54-</td><td>0</td><td>0.1</td></tr><tr><td>56-</td><td>1</td><td>0.0</td></tr><tr><td>总计</td><td>216</td><td>216.2</td></tr></table>  
 <table><tr><td>Serum albumin (g/l)</td><td>Observed frequency</td><td>Expected frequency</td></tr><tr><td>&amp;lt; 20</td><td>0</td><td>1.4</td></tr><tr><td>20-</td><td>2</td><td>2.1</td></tr><tr><td>22-</td><td>6</td><td>4.4</td></tr><tr><td>24-</td><td>7</td><td>8.0</td></tr><tr><td>26-</td><td>9</td><td>13.1</td></tr><tr><td>28-</td><td>21</td><td>19.1</td></tr><tr><td>30-</td><td>20</td><td>24.7</td></tr><tr><td>32-</td><td>28</td><td>28.5</td></tr><tr><td>34-</td><td>39</td><td>29.2</td></tr><tr><td>36-</td><td>28</td><td>26.7</td></tr><tr><td>38-</td><td>22</td><td>21.8</td></tr><tr><td>40-</td><td>12</td><td>15.8</td></tr><tr><td>42-</td><td>11</td><td>10.2</td></tr><tr><td>44-</td><td>4</td><td>5.9</td></tr><tr><td>46-</td><td>3</td><td>3.0</td></tr><tr><td>48-</td><td>1</td><td>1.4</td></tr><tr><td>50-</td><td>1</td><td>0.6</td></tr><tr><td>52-</td><td>1</td><td>0.2</td></tr><tr><td>54-</td><td>0</td><td>0.1</td></tr><tr><td>56-</td><td>1</td><td>0.0</td></tr><tr><td>Total</td><td>216</td><td>216.2</td></tr></table>  
 
-统计学。尽管许多测量值确实具有相当正态的分布，例如人体身高，但许多则不然，例如人体体重或血清胆固醇。数据可能以各种方式偏离正态性，特别是通过不对称或偏斜。图 3.3 所示的 IgM 数据说明了正偏态。不应假定一组观测值近似正态—这必须经过证实。一种与正态分布密切相关的常见偏态分布是对数正态分布，这将在下一节中讨论。  
-statistics. Although many measurements do have a reasonably Normal distribution, such as human height, many do not, such as human weight or serum cholesterol. There are various ways in which data may deviate from Normality, notably by being asymmetric or skewed. The IgM data shown in Figure 3.3 illustrated positive skewness. It should not be assumed that a set of observations is approximately Normal - this must be established. One common type of skewed distribution closely related to the Normal distribution is the Lognormal distribution, which is discussed in the next section.  
+我在 4.4 节中观察到，广泛使用的参数统计分析方法包含了关于数据分布的重要假设。在大多数情况下，所涉及的分布是正态分布。这也是它成为统计学中最重要的分布之一的原因。尽管许多测量值确实具有相当正态的分布，例如人体身高，但许多则不然，例如人体体重或血清胆固醇。数据可能以各种方式偏离正态性，特别是通过不对称或偏斜。图 3.3 所示的 IgM 数据说明了正偏态。不应假定一组观测值近似正态—这必须经过证实。一种与正态分布密切相关的常见偏态分布是对数正态分布，这将在下一节中讨论。  
+I observed in section 4.4 that the widely- used parametric methods of statistical analysis incorporate important assumptions about the distribution of data. In most cases the distribution involved is the Normal distribution. which is one of the reasons why it is the most important distribution in statistics. Although many measurements do have a reasonably Normal distribution, such as human height, many do not, such as human weight or serum cholesterol. There are various ways in which data may deviate from Normality, notably by being asymmetric or skewed. The IgM data shown in Figure 3.3 illustrated positive skewness. It should not be assumed that a set of observations is approximately Normal - this must be established. One common type of skewed distribution closely related to the Normal distribution is the Lognormal distribution, which is discussed in the next section.  
 
 
 ### 4.5.3 抽样变异  4.5.3 Sampling variation  
 
-图 4.5 显示了血清白蛋白一组观测值与具有相同均值和标准差的正态分布的视觉比较。数据是否足够接近正态  
-Figure 4.5 showed a visual comparison of a set of observations of serum albumin and the Normal distribution having the same mean and standard deviation. The question of whether data are close enough to a Normal  
-
-分布很重要，将在后续章节的各个点进行讨论。  
-distribution is important, and will be considered at various points in the following chapters.  
+图 4.5 显示了血清白蛋白一组观测值与具有相同均值和标准差的正态分布的视觉比较。数据是否足够接近正态分布很重要，将在后续章节的各个地方进行讨论。  
+Figure 4.5 showed a visual comparison of a set of observations of serum albumin and the Normal distribution having the same mean and standard deviation. The question of whether data are close enough to a Normal distribution is important, and will be considered at various points in the following chapters.  
 
 尽管可以使用正式方法（在第 7 章中描述），但一组观测值是否合理地呈正态分布通常是一个判断问题，通常通过直方图的目视检查。查看通过从正态分布中随机抽样获得的分布，以提供一个参考来判断一组观测数据，这是很有启发性的。图 4.7 显示了从标准正态分布中随机抽取的 16 个样本（每个样本 50 个观测值）的频率直方图。每个样本都相当于考虑从已知其感兴趣变量呈正态分布的总体中抽取的 50 个个体。这些样本的分布存在相当大的不规则性，单峰性和对称性等关键特性通常缺失。在考虑观测数据是否可能来自正态分布时，尤其是在样本量较小时，应牢记此图。  
 Although formal methods can be used (described in Chapter 7), whether a set of observations are reasonably Normal is often a matter of judge­ ment, usually by visual inspection of a histogram. It is instructive to look at distributions obtained by taking random samples from a Normal distribu­ tion to give a reference against which to judge a set of observed data. Figure 4.7 shows frequency histograms of 16 samples of 50 observations sampled at random from the standard Normal distribution. Each sample is equivalent to considering 50 individuals sampled from a population known to have a Normal distribution for the variable of interest. There is considerable irregularity in the distributions of these samples, with the key properties of unimodality and symmetry generally absent. This figure should be borne in mind when considering whether observed data might have come from a Normal distribution, especially when the sample size is small.  
@@ -217,15 +210,15 @@ Figure 4.7 Distributions of 16 samples of size 50 from the Normal distribution.
 
 ## 4.6 对数正态分布  4.6 THE LOGNORMAL DISTRIBUTION  
 
-在 3.4 节中，我们看到在某些情况下，通过取对数，可以将具有正偏态分布的数据集转换为对称分布。对偏态分布的数据取对数通常会得到接近正态的分布。图 4.8 显示了相同 216 例原发性胆汁性肝硬化患者的血清胆红素水平直方图。  
-In section 3.4 we saw that in some circumstances a set of data with a positively skewed distribution can be transformed into a symmetric distribution by taking logarithms. Taking logs of data with a skewed distribution will often give a distribution that is near to Normal. Figure 4.8 shows a histogram of serum bilirubin levels in the same 216 patients with primary  
+在 3.4 节中，我们看到在某些情况下，通过取对数，可以将具有正偏态分布的数据集转换为对称分布。对偏态分布的数据取对数通常会得到接近正态的分布。图 4.8 显示了相同 216 例原发性胆汁性肝硬化（PBC）患者的血清胆红素水平直方图。  
+In section 3.4 we saw that in some circumstances a set of data with a positively skewed distribution can be transformed into a symmetric distribution by taking logarithms. Taking logs of data with a skewed distribution will often give a distribution that is near to Normal. Figure 4.8 shows a histogram of serum bilirubin levels in the same 216 patients with primarybiliary cirrhosis (PBC).   
 
 ![](../images/04_Theoretical_distributions/img10.jpg)  
 图4.8 216例原发性胆汁性肝硬化患者血清胆红素值的直方图，并拟合了正态分布（摘自Christensen等，1985年的研究）。  
 Figure 4.8 Histogram of serum bilirubin values in 216 patients with primary biliary cirrhosis with fitted Normal distribution (from the study by Christensen et al., 1985).  
 
-胆汁性肝硬化（PBC）。其均值和标准差分别为60.7和 $77.9 \mu \mathrm{mol} / \mathrm{l}$。叠加的最佳拟合正态分布（具有相同的均值和标准差）与数据拟合效果极差，因为数据存在极端偏度。如果我们将数据取对数（以e为底），我们会得到一个更对称的分布，均值为3.55，标准差为 $1.03 \log \mu \mathrm{mol} / \mathrm{l}$。图4.9显示了 $\log_{e}$ 血清胆红素的直方图，并拟合了正态分布，其拟合效果好得多。图4.10显示了原始数据与拟合正态分布函数的“反向变换”。拟合曲线是对数正态分布函数的一个例子。具有对数正态分布的数据可以通过取对数转换为正态分布。  
-biliary cirrhosis (PBC). The mean and standard deviation are 60.7 and  $77.9 \mu \mathrm{mol} / \mathrm{l}$  respectively. The superimposed best- fitting Normal distribution (with the same mean and standard deviation) is a terrible fit to the data because of the extreme skewness. If we take logs (to base e) of the data we get a much more symmetric distribution with a mean of 3.55 and a standard deviation of  $1.03 \log \mu \mathrm{mol} / \mathrm{l}$ . Figure 4.9 shows a histogram of  $\log_{e}$  serum bilirubin with the fitted Normal distribution, which is a much better fit. Figure 4.10 shows the raw data with the 'back- transformation' of the fitted Normal distribution function. The fitted curve is an example of the Lognormal distribution function. Data with a Lognormal distribution can be transformed to Normality by taking logarithms.  
+其均值和标准差分别为60.7和 $77.9 \mu \mathrm{mol} / \mathrm{l}$。叠加的最佳拟合正态分布（具有相同的均值和标准差）与数据拟合效果极差，因为数据存在极端偏度。如果我们将数据取对数（以e为底），我们会得到一个更对称的分布，均值为3.55，标准差为 $1.03 \log \mu \mathrm{mol} / \mathrm{l}$。图4.9显示了 $\log_{e}$ 血清胆红素的直方图，并拟合了正态分布，其拟合效果好得多。图4.10显示了原始数据与拟合正态分布函数的“反向变换”。拟合曲线是对数正态分布函数的一个例子。具有对数正态分布的数据可以通过取对数转换为正态分布。  
+The mean and standard deviation are 60.7 and  $77.9 \mu \mathrm{mol} / \mathrm{l}$  respectively. The superimposed best- fitting Normal distribution (with the same mean and standard deviation) is a terrible fit to the data because of the extreme skewness. If we take logs (to base e) of the data we get a much more symmetric distribution with a mean of 3.55 and a standard deviation of  $1.03 \log \mu \mathrm{mol} / \mathrm{l}$ . Figure 4.9 shows a histogram of  $\log_{e}$  serum bilirubin with the fitted Normal distribution, which is a much better fit. Figure 4.10 shows the raw data with the 'back- transformation' of the fitted Normal distribution function. The fitted curve is an example of the Lognormal distribution function. Data with a Lognormal distribution can be transformed to Normality by taking logarithms.  
 
 对于像血清胆红素测量值这样的偏态数据，对数变换通常会产生近似正态性。然后我们可以在对数数据上进行计算，并将结果转换回原始尺度。例如，我们可能希望使用我们的数据来估计所有PBC患者血清胆红素水平中包含 $95\%$ 的值。假设是对数正态分布，我们可以从均值为3.547、标准差为1.030的正态分布进行计算（这些值比上面显示的值更精确）。在对数单位中， $95\%$ 的分布预计将介于均值 $- 1.96 \mathrm{SD}$ 和均值 $+1.96 \mathrm{SD}$ 之间。这些值是  
 With skewed data like the serum bilirubin measurements log transformation will often produce approximate Normality. We can then perform our calculations on the log data and transform the answers back to the original scale. For example, we may wish to use our data to estimate the values enclosing  $95\%$  of serum bilirubin levels for all patients with PBC. Assuming a Lognormal distribution, we can make our calculations from the Normal distribution with mean 3.547 and standard deviation 1.030 (these being more accurate values than those shown above). In log units,  $95\%$  of the distribution will be expected to be between mean  $- 1.96 \mathrm{SD}$  and mean  $+1.96 \mathrm{SD}$ . These values are  
@@ -268,15 +261,12 @@ We can summarize the possibilities as follows:
 图4.12显示了两人中B血型人数的概率分布。这种分布是二项分布的一个简单例子。为了得到所示的三个概率，我们必须进行三次简单的计算。然而，如果我们将这种简单计算扩展到考虑四人中的人数，就不那么容易了。每个人要么是B血型，要么不是B血型，因此有 $2 \times 2 \times 2 \times 2$ 种可能的排列，即16种。对于 $n$ 个人，可能的排列数为 $2^{n}$ ，因此，例如如果我们有七个人，就有128种可能的排列。  
 Figure 4.12 shows the probability distribution of the number of people out of two in blood group B. This distribution is a simple example of the Binomial distribution. To get the three probabilities shown we had to make three simple calculations. However, if we extend this simple calculation to consider the number of people out of four it is not so easy. Each person is either group B or not group B so there are  $2 \times 2 \times 2 \times 2$  possible orderings, which is 16. The number of possible orderings for  $n$  people is  $2^{n}$ , so if we have seven people for example, there are 128 possible orderings.  
 
-幸运的是，我们可以通过使用一个通用公式来绕过大部分计算。由于它相当复杂，详细内容在4.9节中给出。使用该公式，可以根据某一特定结果的概率，计算出一系列事件中不同数量的该类型结果的概率。例如，图4.13显示了概率  
-Fortunately, we can bypass most of the calculations by using a general formula. As it is rather complicated, the details are given in section 4.9. Using the formula one can calculate the probability of different numbers of outcomes of a particular type in a series of events from the probability of one such outcome. For example, Figure 4.13 shows the probability  
-
 ![](../images/04_Theoretical_distributions/img15.jpg)  
 图4.12 两人中B血型人数的二项分布。  
 Figure 4.12 Binomial distribution of number of people out of two in blood group B.  
 
-10人中B血型个体数量的分布。（计算方法见4.9节。）该分布是不对称的，但随着样本量的增加，二项分布变得  
-distribution for the number of individuals out of 10 being of blood group B. (The calculations are shown in section 4.9. ) The distribution is asymmetric, but as the sample size increases the Binomial distribution becomes  
+幸运的是，我们可以通过使用一个通用公式来绕过大部分计算。由于它相当复杂，详细内容在4.9节中给出。使用该公式，可以根据某一特定结果的概率，计算出一系列事件中不同数量的该类型结果的概率。例如，图4.13显示了10人中B血型个体数量的概率分布。（计算方法见4.9节。）该分布是不对称的，但随着样本量的增加，二项分布变得更对称，并逐渐开始看起来像正态分布。图4.14显示，在100人的样本中，B血型人数的二项分布几乎是对称的。  
+Fortunately, we can bypass most of the calculations by using a general formula. As it is rather complicated, the details are given in section 4.9. Using the formula one can calculate the probability of different numbers of outcomes of a particular type in a series of events from the probability of one such outcome. For example, Figure 4.13 shows the probability distribution for the number of individuals out of 10 being of blood group B. (The calculations are shown in section 4.9. ) The distribution is asymmetric, but as the sample size increases the Binomial distribution becomes more symmetric and gradually begins to look like a Normal distribution. Figure 4.14 shows that the Binomial distribution for the number of people in blood group B in a sample of 100 is almost symmetric.  
 
 ![](../images/04_Theoretical_distributions/img16.jpg)  
 图4.13 基于B血型概率为0.08的10人中B血型受试者数量的二项分布。  
@@ -286,8 +276,6 @@ Figure 4.13 Binomial distribution showing the number of subjects out of ten in b
 图4.14 基于B血型概率为0.08的100人中B血型受试者数量的二项分布。  
 Figure 4.14 Binomial distribution showing the number of subjects out of 100 in blood group B based on the probability of being in blood group B of 0.08.  
 
-更对称，并逐渐开始看起来像正态分布。图4.14显示，在100人的样本中，B血型人数的二项分布几乎是对称的。  
-more symmetric and gradually begins to look like a Normal distribution. Figure 4.14 shows that the Binomial distribution for the number of people in blood group B in a sample of 100 is almost symmetric.  
 
 二项分布有时用于将观察到的数据集与预期分布进行比较。然而，其主要用途是分析只有两种可能性的数据，例如某人是否患有哮喘。在这里，我们关注的是患有哮喘的受试者比例。这类数据在医学研究中频繁出现，我们常常希望比较不同受试者组中某种类型事件发生的比例。各组的样本量通常足够大，使得二项分布非常接近具有相同均值和标准差的正态分布，这简化了分析（参见第10章）。  
 The Binomial distribution is sometimes used to compare an observed set of data with the expected distribution. Its main use, however, is in the analysis of data where there are only two possibilities, such as whether or not someone suffers from asthma. Here we are interested in the proportion of subjects with asthma. Data of this type occur frequently in medical research, and we often wish to compare the proportion of events of a certain type occurring in different groups of subjects. The sample sizes in the groups are often large enough for the Binomial distribution to be very like a Normal distribution with the same mean and standard deviation, which simplifies analysis (see Chapter 10).  
@@ -320,17 +308,14 @@ Table 4.2 Number of crimes per day in three areas of India during 1978 to 1982 (
 <table><tr><td rowspan="2">犯罪数量</td><td colspan="2">满月日</td><td colspan="2">新月日</td></tr><tr><td>观察值</td><td>预期值</td><td>观察值</td><td>预期值</td></tr><tr><td>0</td><td>40</td><td>45.2</td><td>114</td><td>112.8</td></tr><tr><td>1</td><td>64</td><td>63.1</td><td>56</td><td>56.4</td></tr><tr><td>2</td><td>56</td><td>44.3</td><td>11</td><td>14.1</td></tr><tr><td>3</td><td>19</td><td>20.7</td><td>4</td><td>2.4</td></tr><tr><td>4</td><td>1</td><td>7.1</td><td>1</td><td>0.3</td></tr><tr><td>5</td><td>2</td><td>2.0</td><td>0</td><td>0.0</td></tr><tr><td>6</td><td>0</td><td>0.5</td><td>0</td><td>0.0</td></tr><tr><td>7</td><td>0</td><td>0.1</td><td>0</td><td>0.0</td></tr><tr><td>8</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td></tr><tr><td>9</td><td>1</td><td>0.0</td><td>0</td><td>0.0</td></tr><tr><td>总计</td><td>183</td><td>183.0</td><td>186</td><td>186.0</td></tr><tr><td>均值</td><td></td><td>1.40</td><td></td><td>0.50</td></tr><tr><td>标准差</td><td></td><td>1.16</td><td></td><td>0.75</td></tr></table>  
 <table><tr><td rowspan="2">Number of crimes</td><td colspan="2">Full moon days</td><td colspan="2">New moon days</td></tr><tr><td>Obs</td><td>Exp</td><td>Obs</td><td>Exp</td></tr><tr><td>0</td><td>40</td><td>45.2</td><td>114</td><td>112.8</td></tr><tr><td>1</td><td>64</td><td>63.1</td><td>56</td><td>56.4</td></tr><tr><td>2</td><td>56</td><td>44.3</td><td>11</td><td>14.1</td></tr><tr><td>3</td><td>19</td><td>20.7</td><td>4</td><td>2.4</td></tr><tr><td>4</td><td>1</td><td>7.1</td><td>1</td><td>0.3</td></tr><tr><td>5</td><td>2</td><td>2.0</td><td>0</td><td>0.0</td></tr><tr><td>6</td><td>0</td><td>0.5</td><td>0</td><td>0.0</td></tr><tr><td>7</td><td>0</td><td>0.1</td><td>0</td><td>0.0</td></tr><tr><td>8</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td></tr><tr><td>9</td><td>1</td><td>0.0</td><td>0</td><td>0.0</td></tr><tr><td>Total</td><td>183</td><td>183.0</td><td>186</td><td>186.0</td></tr><tr><td>Mean</td><td></td><td>1.40</td><td></td><td>0.50</td></tr><tr><td>SD</td><td></td><td>1.16</td><td></td><td>0.75</td></tr></table>  
 
-均值，如第4.9节所示，因为泊松分布的方差与均值相同。因此，如果来自不同来源的数据都可以被  
-the mean, as is shown in section 4.9, because the variance of the Poisson distribution turns out to be the same as the mean. It follows that data from different sources will have very similar distributions if they can both be  
-
 表4.3 印度新月日犯罪分布（Thakur和Sharma，1984）与1971年蒙特利尔某医院每日死亡人数分布（Zweig和Csank，1978）比较  
 Table 4.3 Comparison of distributions of crimes on new moon days (Thakur and Sharma, 1984) and number of deaths per day in a Montreal hospital in 1971 (Zweig and Csank, 1978)  
 
 <table><tr><td rowspan="2">n</td><td colspan="2">印度新月日犯罪数</td><td colspan="2">蒙特利尔某医院每日死亡人数</td><td>泊松分布预期值 (0.51)</td></tr><tr><td>%</td><td>频数</td><td>%</td><td>频数</td><td>%</td></tr><tr><td>0</td><td>61.3</td><td>114</td><td>60.3</td><td>220</td><td>60.0</td></tr><tr><td>1</td><td>30.1</td><td>56</td><td>31.0</td><td>113</td><td>30.6</td></tr><tr><td>2</td><td>5.9</td><td>11</td><td>6.3</td><td>23</td><td>7.8</td></tr><tr><td>3</td><td>2.2</td><td>4</td><td>2.2</td><td>8</td><td>1.3</td></tr><tr><td>4+</td><td>0.5</td><td>1</td><td>0.3</td><td>1</td><td>0.2</td></tr><tr><td>Total</td><td>100.0</td><td>186</td><td>100.0</td><td>365</td><td>99.9%</td></tr><tr><td>Mean</td><td></td><td>0.505</td><td></td><td>0.512</td><td></td></tr><tr><td>SD</td><td></td><td>0.752</td><td></td><td>0.736</td><td></td></tr></table>  
 <table><tr><td rowspan="2">n</td><td colspan="2">Crimes on new moon days in India</td><td colspan="2">Deaths per day in a hospital in Montreal</td><td>Expected distribution Poisson (0.51)</td></tr><tr><td>%</td><td>Frequency</td><td>%</td><td>Frequency</td><td>%</td></tr><tr><td>0</td><td>61.3</td><td>114</td><td>60.3</td><td>220</td><td>60.0</td></tr><tr><td>1</td><td>30.1</td><td>56</td><td>31.0</td><td>113</td><td>30.6</td></tr><tr><td>2</td><td>5.9</td><td>11</td><td>6.3</td><td>23</td><td>7.8</td></tr><tr><td>3</td><td>2.2</td><td>4</td><td>2.2</td><td>8</td><td>1.3</td></tr><tr><td>4+</td><td>0.5</td><td>1</td><td>0.3</td><td>1</td><td>0.2</td></tr><tr><td>Total</td><td>100.0</td><td>186</td><td>100.0</td><td>365</td><td>99.9%</td></tr><tr><td>Mean</td><td></td><td>0.505</td><td></td><td>0.512</td><td></td></tr><tr><td>SD</td><td></td><td>0.752</td><td></td><td>0.736</td><td></td></tr></table>  
 
-视为接近泊松分布且具有相同均值，则它们将具有非常相似的分布。表4.3显示，印度新月日犯罪数量的相对频率分布与蒙特利尔某医院每日死亡人数的分布几乎相同。两组观测数据都非常接近均值为0.51的泊松分布。  
-considered to be close to Poisson and have the same mean. Table 4.3 shows that the relative frequency distribution of the number of crimes on new moon days in India is virtually identical to the distribution of the number of deaths per day in a hospital in Montreal. Both observed sets of data are very close to a Poisson distribution with a mean of 0.51.  
+均值，如第4.9节所示，因为泊松分布的方差与均值相同。因此，如果来自不同来源的数据都可以被视为接近泊松分布且具有相同均值，则它们将具有非常相似的分布。表4.3显示，印度新月日犯罪数量的相对频率分布与蒙特利尔某医院每日死亡人数的分布几乎相同。两组观测数据都非常接近均值为0.51的泊松分布。  
+the mean, as is shown in section 4.9, because the variance of the Poisson distribution turns out to be the same as the mean. It follows that data from different sources will have very similar distributions if they can both be considered to be close to Poisson and have the same mean. Table 4.3 shows that the relative frequency distribution of the number of crimes on new moon days in India is virtually identical to the distribution of the number of deaths per day in a hospital in Montreal. Both observed sets of data are very close to a Poisson distribution with a mean of 0.51.  
 
 泊松分布适用于研究罕见事件。我们可以将此问题视为与二项分布相同，即感兴趣结果的概率非常小，但事件数量很大。泊松分布在医学研究中不常用，但与二项分布一样，它在某些其他类型的统计分析中被隐式使用。  
 The Poisson distribution is appropriate for studying rare events. We can consider the problem as being the same as that of the Binomial distribution where the probability of the outcome of interest is very small but there are a large number of events. The Poisson distribution is not used greatly in medical research although, like the Binomial distribution, it is used implicitly in some other types of statistical analysis.  
@@ -367,7 +352,6 @@ $$
 以及  
 and  
 
-(iii) $\binom{n}{n- r}=\binom{n}{r}$。  
 (iii)  $\binom{n}{n- r}=\binom{n}{r}$ .  
 
 因此我们有  
@@ -396,9 +380,6 @@ or  $0.5\%$ . Figure 4.13 shows the complete distribution.
 
 系数 $\binom{n}{r}$ 的一般公式是  
 The general formula for the coefficients  $\binom{n}{r}$  is  
-
-70 理论分布  
-70 Theoretical distributions  
 
 $$
 {\binom{n}{r}}={\frac{n!}{r!(n-r)!}}
@@ -466,8 +447,7 @@ There are many other probability distributions not discussed in this chapter. Mo
 4.3 婴儿是男孩的概率是0.52。对于同一天在同一产房连续分娩的六位女性，以下哪种确切的男孩和女孩序列最有可能，哪种最不可能？  
 4.3 The probability of a baby being a boy is 0.52. For six women delivering consecutively in the same labour ward on one day, which of the following exact sequences of boys and girls is most likely and which least likely？  
 
-**GBGBGB BBBGGG GBBBBB**  
-**GBGBGB BBBGGG GBBBBB**  
+**GBGBGB BBBGGG GBBBBB**    
 
 4.4 当 $p = 0.15$ 且 $n = 10$ 时，二项分布如下：  
 4.4 The Binomial distribution with  $p = 0.15$  and  $n = 10$  is as follows:  
@@ -493,11 +473,8 @@ There are many other probability distributions not discussed in this chapter. Mo
 4.6 在25年期间，成年男性的平均身高从 $175.8 \mathrm{cm}$ 增加到 $179.1 \mathrm{cm}$，但标准差保持在 $5.84 \mathrm{cm}$。男性加入警察部队的最低身高要求是 $172 \mathrm{cm}$。假设成年男性的身高服从正态分布，在这25年期间的开始和结束时，有多少比例的男性因身高过矮而无法成为警察？  
 4.6 Over a 25 year period the mean height of adult males increased from  $175.8 \mathrm{cm}$  to  $179.1 \mathrm{cm}$ , but the standard deviation stayed at  $5.84 \mathrm{cm}$ . The minimum height requirement for men to join the police force is  $172 \mathrm{cm}$ . What proportion of men would be too short to become policemen at the beginning and end of the 25 year period, assuming that the height of adult males has a Normal distribution？  
 
-4.7 一名研究人员计划测量多名受试者的血压。他建议进行三次测量，但打算舍弃  
-4.7 A researcher plans to measure blood pressure in a number of subjects. He proposes to take three measurements, but intends to discard the  
-
-第三次测量值，如果它不落在前两次测量值之间，则认为其不可靠。假设受试者的血压在测量期间保持恒定，对于给定受试者，第三个测量值不落在其他两个测量值之间的概率是多少？（提示：答案不取决于血压测量值的变异性。）评论一下研究人员的提议。  
-third measurement as unreliable if it does not fall between the first two measurements. Assuming that the subjects' blood pressure stays constant during the measuring, what is the probability that for a given subject the third value will not lie between the other two？ (Hint: the answer does not depend upon the variability of blood pressure measurements.) Comment on the researcher's proposal.  
+4.7 一名研究人员计划测量多名受试者的血压。他建议进行三次测量，但打算舍弃第三次测量值，如果它不落在前两次测量值之间，则认为其不可靠。假设受试者的血压在测量期间保持恒定，对于给定受试者，第三个测量值不落在其他两个测量值之间的概率是多少？（提示：答案不取决于血压测量值的变异性。）评论一下研究人员的提议。    
+4.7 A researcher plans to measure blood pressure in a number of subjects. He proposes to take three measurements, but intends to discard the third measurement as unreliable if it does not fall between the first two measurements. Assuming that the subjects' blood pressure stays constant during the measuring, what is the probability that for a given subject the third value will not lie between the other two？ (Hint: the answer does not depend upon the variability of blood pressure measurements.) Comment on the researcher's proposal.  
 
 4.8 在英国，最常见的常染色体隐性遗传病是囊性纤维化，大约每2000名活产儿中有一名受影响。如果父母双方都是异常基因的杂合子，他们的孩子患囊性纤维化的几率为1/4。  
 4.8 In Britain the commonest autosomal recessive disorder is cystic fibrosis, with about one in 2000 live births being affected. If both parents are heterozygous for the abnormal gene there is a 1 in 4 chance of their child having cystic fibrosis.  

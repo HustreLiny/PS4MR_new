@@ -183,7 +183,7 @@ Graphical methods are important for examining the variability of data, but it is
 
 ### 3.4.1 范围  3.4.1 Range  
 
-描述一组数据离散程度最简单的方法是引用最低值和最高值。这些值被称为范围。IgM数据的范围是0.1到 $4.5 \mathrm{g} / \mathrm{l}$ 。这不是一个令人满意的总结，因为它只考虑了数据两端最极端（也许是最特殊）的值，而中间值的分布方式不会影响范围。因此，对于IgM数据，我们不知道4.5远高于第二高值 $2.7 \mathrm{g} / \mathrm{l}$ 。主要由于这个原因，范围不被广泛使用。  
+描述一组数据离散程度最简单的方法是引用最低值和最高值。这些值被称为范围。IgM数据的范围是$0.1$到 $4.5 \mathrm{g} / \mathrm{L}$ 。这不是一个令人满意的总结，因为它只考虑了数据两端最极端（也许是最特殊）的值，而中间值的分布方式不会影响范围。因此，对于IgM数据，我们不知道4.5远高于第二高值 $2.7 \mathrm{g} / \mathrm{L}$ 。主要由于这个原因，范围不被广泛使用。  
 The simplest way to describe the spread of a set of data is to quote the lowest and highest values. These values are known as the range. The range of the IgM data was 0.1 to  $4.5 \mathrm{g} / \mathrm{l}$ . This is not a satisfactory summary, because it takes account of only the most extreme (and perhaps most peculiar) values at each end of the data, and the way the intermediate values are distributed will not influence the range. Thus for the IgM data we have no idea that 4.5 was considerably more than the second highest value of  $2.7 \mathrm{g} / \mathrm{l}$ . Mainly for this reason the range is not widely used.  
 
 
@@ -195,7 +195,7 @@ By specifying two values that encompass most rather than all of the data values 
 我们需要IgM值分布的第5和第95百分位数。从表3.4的最后一列可以看出，累积相对频率在IgM值为$0.3 \mathrm{g / l}$的组中某个位置超过5%，并在$1.6 \mathrm{g / l}$处达到95%。  
 We require the 5th and 95th centiles of the distribution of IgM values. From the last column of Table 3.4 we can see that the cumulative relative frequency passes  $5\%$  somewhere in the group of IgM values of  $0.3 \mathrm{g / l}$ , and  $95\%$  is reached at the value of  $1.6 \mathrm{g / l}$ .  
 
-更正确的通用方法是计算所需观测值的秩，我们通过将样本量加一的必要百分比来计算。这里我们需要秩为$0.05 \times 299 = 14.95$和$0.95 \times 299 = 284.05$的值。这种计算通常会导致非整数值，因此我们可能需要进行插值。例如，我们想要IgM值在秩次序中第14和第15个观测值之间0.95处的值。根据表3.4，这两个值都等于$0.3 \mathrm{g / l}$，因此第5百分位数是$0.3 \mathrm{g / l}$，同样地，第95百分位数是$1.7 \mathrm{g / l}$。然而，如果我们想要第10百分位数，我们需要对应于秩为$0.10 \times 299 = 29.9$的IgM值。秩为29和30的观测值分别是0.3和$0.4 \mathrm{g / l}$，我们通过计算$0.3 + 0.9 (0.4 - 0.3) = 0.39 \mathrm{g / l}$来取这两个值之间十分之九处的值。因此，0.3和1.7是这个儿童样本中IgM观测分布的第5和第95百分位数，这两个值因此指定了我们可以称之为90%中心范围—即中心90%的值所处的范围（即排除分布两端各5%的值）。  
+更正确的通用方法是计算所需观测值的秩，我们通过将样本量加一的必要百分比来计算。这里我们需要秩为$0.05 \times 299 = 14.95$和$0.95 \times 299 = 284.05$的值。这种计算通常会导致非整数值，因此我们可能需要进行插值。例如，我们想要IgM值在秩次序中第14和第15个观测值之间0.95处的值。根据表3.4，这两个值都等于$0.3 \mathrm{g / l}$，因此第5百分位数是$0.3 \mathrm{g / l}$，同样地，第95百分位数是$1.7 \mathrm{g / l}$。然而，如果我们想要第10百分位数，我们需要对应于秩为$0.10 \times 299 = 29.9$的IgM值。秩为29和30的观测值分别是0.3和$0.4 \mathrm{g / l}$，我们通过计算$0.3 + 0.9 (0.4 - 0.3) = 0.39 \mathrm{g / l}$来取这两个值之间十分之九处的值。因此，0.3和1.7是这个儿童样本中IgM观测分布的第5和第95百分位数，这两个值因此指定了我们所说的“90%中心范围”—即中心90%的值所处的范围（即排除分布两端各5%的值）。  
 A more correct general approach is to calculate the ranks of the required observations, which we do by taking the necessary percentages of the sample size plus one. Here we need the values with ranks  $0.05 \times 299 = 14.95$  and  $0.95 \times 299 = 284.05$ . This calculation usually leads to non- integer values, so we may need to interpolate. For example we want the value of IgM 0.95 of the way between the 14th and 15th observations in rank order. As these are, from Table 3.4, both equal to  $0.3 \mathrm{g / l}$  the 5th centile is  $0.3 \mathrm{g / l}$ , and likewise the 95th centile is  $1.7 \mathrm{g / l}$ . However, if we want the 10th centile, we would need the IgM value corresponding to a rank of  $0.10 \times 299 = 29.9$ . The observations with ranks 29 and 30 are 0.3 and  $0.4 \mathrm{g / l}$  and we take the value nine- tenths of the way between these values, by calculating  $0.3 + 0.9 (0.4 - 0.3) = 0.39 \mathrm{g / l}$ . The values 0.3 and 1.7 are thus the 5th and 95th centiles of the observed distribution of IgM in this sample of children and these two values thus specify what we can call a  $90\%$  central range—the range within which the central  $90\%$  of values lie (i.e. excluding  $5\%$  at each end of the distribution).  
 
 除了第5和第95百分位数，还可以引用其他百分位数。最常见的替代方案是引用95%中心范围（$2\frac{1}{2}$和$97\frac{1}{2}$百分位数），但有时也使用80%中心范围（第10和第90百分位数）。第50百分位数是中位数的另一个名称，因为一半的观测值小于（且大于）此值。第25和第75百分位数被称为四分位数；这些值与中位数一起将数据分为四个等人口的子组。第25和第75百分位数之间的数值差是四分位距，偶尔用于描述变异性。  
@@ -204,18 +204,14 @@ Other centiles can be quoted rather than the 5th and 95th. The most common alter
 一种简单但有用的使用百分位数总结数据的半图形方法是箱线图。图3.12显示了IgM数据的箱线图。箱体表示下四分位数和上四分位数，中心线是中位数。“须”末端的点是$2\frac{1}{2}\%$和$97\frac{1}{2}\%$的值，尽管须有时表示极端值。对于单个数据集，直方图信息量更大，但多个数据集可以使用箱线图经济地总结。有时，超出须范围的任何值都会单独绘制。  
 A simple but useful semi- graphical way of summarizing data using centiles is the box- and- whisker plot. Figure 3.12 shows a box- and- whisker plot for the IgM data. The box indicates the lower and upper quartiles and the central line is the median. The points at the ends of the 'whiskers' are the  $2\frac{1}{2}\%$  and  $97\frac{1}{2}\%$  values, although the whiskers sometimes indicate the extreme values. For a single set of data a histogram is more informative, but several sets of data can be summarized economically using the box- and- whisker plot. Sometimes any values outside the range of the whiskers are plotted individually.  
 
-
-### 3.4.3 标准差  3.4.3 Standard deviation  
-
-量化变异性的另一种方法是基于对每个值与均值之间距离进行平均的想法。对于一个  
-The alternative approach to quantifying variability is based on the idea of averaging the distance each value is from the mean. For an individual with  
-
 ![](../images/03_Describing_data/img11.jpg)  
 图3.12 IgM数据的箱线图，显示了$2\frac{1}{2}$、25、50、75和$97\frac{1}{2}\%$的累积相对频率（百分位数）。  
 Figure 3.12 Box-and-whisker plot of the IgM data, showing the  $2\frac{1}{2}$ , 25, 50, 75 and  $97\frac{1}{2}\%$  cumulative relative frequencies (centiles).  
 
-观测值为$x_{i}$的个体，与均值$\bar{x}$的距离是$x_{i} - \bar{x}$，如果我们有$n$个观测值，我们就有$n$个这样的距离，每个个体一个。对于低于均值的观测值，差值将是负的。我们可以计算观测值与其均值之间的平均距离，但这些距离的总和$\Sigma (x_{i} - \bar{x})$总是零，因为均值是根据个体观测值计算的。然而，如果我们先将距离平方再求和，我们就会得到一个必须为正的量。这些平方差的平均值因此提供了个体偏离均值的度量。这个量称为方差，定义为  
-an observed value  $x_{i}$  the distance from the mean  $\bar{x}$  is  $x_{i} - \bar{x}$ , and if we have  $n$  observations we have a set of  $n$  such distances, one for each individual. For observations below the mean the difference will be negative. We can calculate the average distance between the observations and their mean, but the sum of these distances,  $\Sigma (x_{i} - \bar{x})$ , is always zero because of the way the mean is calculated from the individual observations. However, if we square the distances before we sum them we get a quantity that must be positive. The average of these squared differences thus gives a measure of individual deviations from the mean. This quantity is called the variance, and is defined as  
+### 3.4.3 标准差  3.4.3 Standard deviation  
+
+量化变异性的另一种方法是基于对每个值与均值之间距离进行平均的想法。对于一个观测值为$x_{i}$的个体，与均值$\bar{x}$的距离是$x_{i} - \bar{x}$，如果我们有$n$个观测值，我们就有$n$个这样的距离，每个个体一个。对于低于均值的观测值，差值将是负的。我们可以计算观测值与其均值之间的平均距离，但这些距离的总和$\Sigma (x_{i} - \bar{x})$总是零，因为均值是根据个体观测值计算的。然而，如果我们先将距离平方再求和，我们就会得到一个必须为正的量。这些平方差的平均值因此提供了个体偏离均值的度量。这个量称为方差，定义为  
+The alternative approach to quantifying variability is based on the idea of averaging the distance each value is from the mean. For an individual with an observed value  $x_{i}$  the distance from the mean  $\bar{x}$  is  $x_{i} - \bar{x}$ , and if we have  $n$  observations we have a set of  $n$  such distances, one for each individual. For observations below the mean the difference will be negative. We can calculate the average distance between the observations and their mean, but the sum of these distances,  $\Sigma (x_{i} - \bar{x})$ , is always zero because of the way the mean is calculated from the individual observations. However, if we square the distances before we sum them we get a quantity that must be positive. The average of these squared differences thus gives a measure of individual deviations from the mean. This quantity is called the variance, and is defined as  
 
 $$
 \frac{\sum_{i = 1}^{n}(x_{i} - \bar{x})^{2}}{n - 1}.
@@ -288,17 +284,17 @@ In general, when we have data with a skewed distribution we use other ways of de
 第7章中讨论。然而，从图3.13（显示了 $\log_{10} \mathrm{IgM}$ 值的直方图）中我们可以看出它在这里效果很好。对数数据的均值和标准差分别为 $- 0.158$ 和 $0.238$，因此均值 $\pm 2 \mathrm{SD}$ 的值为 $- 0.63$ 和 $+0.32$。这些值已在图3.13中标示。它们在分布的下尾截去了10个值，在上尾截去了6个值，因此给出的值范围包含了 $282 / 298$ 即 $94.6\%$ 的观测值。截断值可以“反变换”回原始尺度，得到 $0.23$ 和 $2.08$，参考表3.2可知有16个值超出这些限制。如果我们将对数数据的均值反变换（或“反对数”），我们得到一个称为几何均值的量。因此，IgM数据的几何均值为 $10^{- 0.158} = 0.695 \mathrm{g} / \mathrm{l}$。当对数变换成功消除偏态时，几何均值将与中位数相似，并且小于原始数据的均值。对数数据的标准差不能有意义地反变换。  
 discussed in Chapter 7. We can see that it works well here, however, from Figure 3.13 which shows a histogram of  $\log_{10} \mathrm{IgM}$  values. The mean and SD of the log data are  $- 0.158$  and  $0.238$  respectively, so that the values mean  $\pm 2 \mathrm{SD}$  are  $- 0.63$  and  $+0.32$ . These values are indicated in Figure 3.13. They cut off 10 values in the lower tail of the distribution and 6 in the upper tail, and thus give a range of values encompassing  $282 / 298$  or  $94.6\%$  of the observations. The cut- off values can be 'back- transformed' to the original scale giving  $0.23$  and  $2.08$ , and reference to Table 3.2 shows the 16 values outside these limits. If we back- transform (or 'antilog') the mean of the log data we get a quantity known as the geometric mean. The geometric mean of the  $\mathrm{IgM}$  data is thus  $10^{- 0.158} = 0.695 \mathrm{g} / \mathrm{l}$ . Where log transformation successfully removes skewness the geometric mean will be similar to the median, and will be less than the mean of the raw data. The standard deviation of the log data cannot be meaningfully back- transformed.  
 
+![](../images/03_Describing_data/img12.jpg)  
+图3.13 $\log_{10} \mathrm{IgM}$ 的频率直方图，显示均值 $\pm 2 \mathrm{SD}$ 的值。  
+Figure 3.13 Frequency histogram of  $\log_{10} \mathrm{IgM}$  showing the values of mean  $\pm 2 \mathrm{SD}$ . 
+
 请注意，对数数据可以是负数，并且使用以e为底的对数还是以10为底的对数并不重要。在本例中，使用了以10为底的对数，并使用函数 $10^{x}$ 进行反变换。对数变换仅对消除正偏态有用。  
 Note that log data can be negative, and that it does not matter whether logs to base e or base 10 are used. In this example, logs to base 10 were used, with the function  $10^{x}$  used for the back- transformation. Log transformation is only useful for removing positive skewness.  
 
 描述偏态数据分布的另一种方法是计算对应于所选中心范围的百分位数。例如，要获得包含 $95\%$ 观测值的值，我们需要计算第 $2\frac{1}{2}$ 和第 $97\frac{1}{2}$ 百分位数。使用  
 The alternative approach to describing the distribution of skewed data is to calculate the centiles corresponding to a chosen central range. For example, to get the values that enclose  $95\%$  of the observations we need to calculate the  $2\frac{1}{2}$ th and  $97\frac{1}{2}$ th centiles. Using the method described in the  
-
-![](../images/03_Describing_data/img12.jpg)  
-图3.13 $\log_{10} \mathrm{IgM}$ 的频率直方图，显示均值 $\pm 2 \mathrm{SD}$ 的值。  
-Figure 3.13 Frequency histogram of  $\log_{10} \mathrm{IgM}$  showing the values of mean  $\pm 2 \mathrm{SD}$ .  
-
-上一节中描述的方法，这些值通过插值得到0.2和 $2.0 \mathrm{g / l}$。这些0.2和 $2.0 \mathrm{g / l}$ 的值被称为经验百分位数，与早期的0.23和2.08（从对数数据的均值 $\pm 2 \mathrm{SD}$ 获得）的估计百分位数相对。这两种方法对于这些数据吻合良好。同样，IgM中位数为 $0.7 \mathrm{g / l}$，非常接近几何均值。  
+ 
+上一节中描述的方法，这些值通过插值得到 $0.2$ 和 $2.0 \mathrm{g / l}$。这些 $0.2$ 和 $2.0 \mathrm{g / l}$ 的值被称为经验百分位数，与早期的0.23和2.08（从对数数据的均值 $\pm 2 \mathrm{SD}$ 获得）的估计百分位数相对。这两种方法对于这些数据吻合良好。同样，IgM中位数为 $0.7 \mathrm{g / l}$，非常接近几何均值。  
 previous section, these values are obtained by interpolation as 0.2 and  $2.0 \mathrm{g / l}$ . These values of 0.2 and  $2.0 \mathrm{g / l}$  are called empirical centiles as opposed to the earlier values of 0.23 and 2.08 (obtained from the mean  $\pm 2 \mathrm{SD}$  of the log data), which are estimated centiles. The two methods agree well for these data. Likewise the median IgM value is  $0.7 \mathrm{g / l}$ , which is very close to the geometric mean.  
 
 
@@ -437,104 +433,103 @@ An excellent book on graphical methods in general is that by Tufte (1983), and g
 (g) Do the data support the idea that patients experiencing adverse reactions were on average older than those without adverse reactions？  
 
 <table>  
-<table>  
   <tr>  
-<tr>  
     <td rowspan="2"></td>   
-<td rowspan="2"></td>   
     <td colspan="3">无不良反应</td>  
-<td colspan="3">Without adverse reactions</td>  
     <td rowspan="2"></td>   
-<td rowspan="2"></td>   
     <td colspan="3">有不良反应</td>  
-<td colspan="3">With adverse reactions</td>  
   </tr>  
-</tr>  
   <tr>  
-<tr>  
     <td>年龄</td><td>SA总剂量 (mg)</td><td>SI</td>   
-<td>Age</td><td>Total dose of SA (mg)</td><td>SI</td>   
     <td>年龄</td><td>SA总剂量 (mg)</td><td>SI</td>   
-<td>Age</td><td>Total dose of SA (mg)</td><td>SI</td>   
   </tr>  
-</tr>  
   <tr><td>1</td><td>44</td><td>1560</td><td>1.0</td><td>1</td><td>53</td><td>360</td><td>2.0</td></tr>  
-<tr><td>1</td><td>44</td><td>1560</td><td>1.0</td><td>1</td><td>53</td><td>360</td><td>2.0</td></tr>  
   <tr><td>2</td><td>65</td><td>1310</td><td>1.2</td><td>2</td><td>74</td><td>2010</td><td>2.0</td></tr>  
-<tr><td>2</td><td>65</td><td>1310</td><td>1.2</td><td>2</td><td>74</td><td>2010</td><td>2.0</td></tr>  
   <tr><td>3</td><td>58</td><td>850</td><td>1.2</td><td>3</td><td>29</td><td>1390</td><td>2.0</td></tr>  
-<tr><td>3</td><td>58</td><td>850</td><td>1.2</td><td>3</td><td>29</td><td>1390</td><td>2.0</td></tr>  
   <tr><td>4</td><td>57</td><td>1250</td><td>1.7</td><td>4</td><td>53</td><td>660</td><td>3.0</td></tr>  
-<tr><td>4</td><td>57</td><td>1250</td><td>1.7</td><td>4</td><td>53</td><td>660</td><td>3.0</td></tr>  
   <tr><td>5</td><td>51</td><td>950</td><td>1.8</td><td>5</td><td>67</td><td>1135</td><td>3.5</td></tr>  
-<tr><td>5</td><td>51</td><td>950</td><td>1.8</td><td>5</td><td>67</td><td>1135</td><td>3.5</td></tr>  
   <tr><td>6</td><td>64</td><td>850</td><td>1.8</td><td>6</td><td>67</td><td>510</td><td>5.3</td></tr>  
-<tr><td>6</td><td>64</td><td>850</td><td>1.8</td><td>6</td><td>67</td><td>510</td><td>5.3</td></tr>  
   <tr><td>7</td><td>33</td><td>1200</td><td>1.9</td><td>7</td><td>54</td><td>410</td><td>5.7</td></tr>  
-<tr><td>7</td><td>33</td><td>1200</td><td>1.9</td><td>7</td><td>54</td><td>410</td><td>5.7</td></tr>  
   <tr><td>8</td><td>61</td><td>1390</td><td>2.0</td><td>8</td><td>51</td><td>910</td><td>6.5</td></tr>  
-<tr><td>8</td><td>61</td><td>1390</td><td>2.0</td><td>8</td><td>51</td><td>910</td><td>6.5</td></tr>  
   <tr><td>9</td><td>49</td><td>1450</td><td>2.3</td><td>9</td><td>57</td><td>360</td><td>13.0</td></tr>  
-<tr><td>9</td><td>49</td><td>1450</td><td>2.3</td><td>9</td><td>57</td><td>360</td><td>13.0</td></tr>  
   <tr><td>10</td><td>67</td><td>3300</td><td>2.8</td><td>10</td><td>62</td><td>1260</td><td>13.0</td></tr>  
-<tr><td>10</td><td>67</td><td>3300</td><td>2.8</td><td>10</td><td>62</td><td>1260</td><td>13.0</td></tr>  
   <tr><td>11</td><td>39</td><td>2760</td><td>2.8</td><td>11</td><td>51</td><td>560</td><td>13.9</td></tr>  
-<tr><td>11</td><td>39</td><td>2760</td><td>2.8</td><td>11</td><td>51</td><td>560</td><td>13.9</td></tr>  
   <tr><td>12</td><td>42</td><td>860</td><td>3.4</td><td>12</td><td>68</td><td>1135</td><td>14.7</td></tr>  
-<tr><td>12</td><td>42</td><td>860</td><td>3.4</td><td>12</td><td>68</td><td>1135</td><td>14.7</td></tr>  
   <tr><td>13</td><td>35</td><td>1810</td><td>3.4</td><td>13</td><td>50</td><td>1410</td><td>15.4</td></tr>  
-<tr><td>13</td><td>35</td><td>1810</td><td>3.4</td><td>13</td><td>50</td><td>1410</td><td>15.4</td></tr>  
   <tr><td>14</td><td>31</td><td>1310</td><td>3.8</td><td>14</td><td>38</td><td>1110</td><td>15.7</td></tr>  
-<tr><td>14</td><td>31</td><td>1310</td><td>3.8</td><td>14</td><td>38</td><td>1110</td><td>15.7</td></tr>  
   <tr><td>15</td><td>37</td><td>1250</td><td>3.8</td><td>15</td><td>61</td><td>960</td><td>16.6</td></tr>  
-<tr><td>15</td><td>37</td><td>1250</td><td>3.8</td><td>15</td><td>61</td><td>960</td><td>16.6</td></tr>  
   <tr><td>16</td><td>43</td><td>1210</td><td>4.2</td><td>16</td><td>59</td><td>1310</td><td>16.6</td></tr>  
-<tr><td>16</td><td>43</td><td>1210</td><td>4.2</td><td>16</td><td>59</td><td>1310</td><td>16.6</td></tr>  
   <tr><td>17</td><td>39</td><td>1460</td><td>4.9</td><td>17</td><td>68</td><td>910</td><td>16.6</td></tr>  
-<tr><td>17</td><td>39</td><td>1460</td><td>4.9</td><td>17</td><td>68</td><td>910</td><td>16.6</td></tr>  
   <tr><td>18</td><td>53</td><td>2310</td><td>5.4</td><td>18</td><td>44</td><td>1235</td><td>22.0</td></tr>  
-<tr><td>18</td><td>53</td><td>2310</td><td>5.4</td><td>18</td><td>44</td><td>1235</td><td>22.0</td></tr>  
   <tr><td>19</td><td>44</td><td>1360</td><td>5.9</td><td>19</td><td>57</td><td>2950</td><td>22.3</td></tr>  
-<tr><td>19</td><td>44</td><td>1360</td><td>5.9</td><td>19</td><td>57</td><td>2950</td><td>22.3</td></tr>  
   <tr><td>20</td><td>41</td><td>1910</td><td>6.2</td><td>20</td><td>49</td><td>360</td><td>33.2</td></tr>  
-<tr><td>20</td><td>41</td><td>1910</td><td>6.2</td><td>20</td><td>49</td><td>360</td><td>33.2</td></tr>  
   <tr><td>21</td><td>72</td><td>910</td><td>12.0</td><td>21</td><td>49</td><td>1935</td><td>47.0</td></tr>  
-<tr><td>21</td><td>72</td><td>910</td><td>12.0</td><td>21</td><td>49</td><td>1935</td><td>47.0</td></tr>  
   <tr><td>22</td><td>61</td><td>1410</td><td>18.8</td><td>22</td><td>63</td><td>1660</td><td>61.0</td></tr>  
-<tr><td>22</td><td>61</td><td>1410</td><td>18.8</td><td>22</td><td>63</td><td>1660</td><td>61.0</td></tr>  
   <tr><td>23</td><td>48</td><td>2460</td><td>47.0</td><td>23</td><td>29</td><td>435</td><td>65.0</td></tr>  
-<tr><td>23</td><td>48</td><td>2460</td><td>47.0</td><td>23</td><td>29</td><td>435</td><td>65.0</td></tr>  
   <tr><td>24</td><td>59</td><td>1350</td><td>70.0</td><td>24</td><td>53</td><td>310</td><td>65.0</td></tr>  
-<tr><td>24</td><td>59</td><td>1350</td><td>70.0</td><td>24</td><td>53</td><td>310</td><td>65.0</td></tr>  
   <tr><td>25</td><td>72</td><td>810</td><td>&gt;80.0</td><td>25</td><td>53</td><td>310</td><td>&gt;80.0</td></tr>  
-<tr><td>25</td><td>72</td><td>810</td><td>&gt;80.0</td><td>25</td><td>53</td><td>310</td><td>&gt;80.0</td></tr>  
   <tr><td>26</td><td>59</td><td>1460</td><td>&gt;80.0</td><td>26</td><td>49</td><td>410</td><td>&gt;80.0</td></tr>  
-<tr><td>26</td><td>59</td><td>1460</td><td>&gt;80.0</td><td>26</td><td>49</td><td>410</td><td>&gt;80.0</td></tr>  
   <tr><td>27</td><td>71</td><td>760</td><td>&gt;80.0</td><td>27</td><td>42</td><td>690</td><td>&gt;80.0</td></tr>  
-<tr><td>27</td><td>71</td><td>760</td><td>&gt;80.0</td><td>27</td><td>42</td><td>690</td><td>&gt;80.0</td></tr>  
   <tr><td>28</td><td>53</td><td>910</td><td>&gt;80.0</td><td>28</td><td>44</td><td>910</td><td>&gt;80.0</td></tr>  
-<tr><td>28</td><td>53</td><td>910</td><td>&gt;80.0</td><td>28</td><td>44</td><td>910</td><td>&gt;80.0</td></tr>  
   <tr><td></td><td></td><td></td><td></td><td>29</td><td>59</td><td>1260</td><td>&gt;80.0</td></tr>  
-<tr><td></td><td></td><td></td><td></td><td>29</td><td>59</td><td>1260</td><td>&gt;80.0</td></tr>  
   <tr><td></td><td></td><td></td><td></td><td>30</td><td>51</td><td>1260</td><td>&gt;80.0</td></tr>  
-<tr><td></td><td></td><td></td><td></td><td>30</td><td>51</td><td>1260</td><td>&gt;80.0</td></tr>  
   <tr><td></td><td></td><td></td><td></td><td>31</td><td>46</td><td>1310</td><td>&gt;80.0</td></tr>  
-<tr><td></td><td></td><td></td><td></td><td>31</td><td>46</td><td>1310</td><td>&gt;80.0</td></tr>  
   <tr><td></td><td></td><td></td><td></td><td>32</td><td>46</td><td>1350</td><td>&gt;80.0</td></tr>  
-<tr><td></td><td></td><td></td><td></td><td>32</td><td>46</td><td>1350</td><td>&gt;80.0</td></tr>  
   <tr><td></td><td></td><td></td><td></td><td>33</td><td>41</td><td>1410</td><td>&gt;80.0</td></tr>  
-<tr><td></td><td></td><td></td><td></td><td>33</td><td>41</td><td>1410</td><td>&gt;80.0</td></tr>  
   <tr><td></td><td></td><td></td><td></td><td>34</td><td>39</td><td>1460</td><td>&gt;80.0</td></tr>  
-<tr><td></td><td></td><td></td><td></td><td>34</td><td>39</td><td>1460</td><td>&gt;80.0</td></tr>  
   <tr><td></td><td></td><td></td><td></td><td>35</td><td>62</td><td>1535</td><td>&gt;80.0</td></tr>  
-<tr><td></td><td></td><td></td><td></td><td>35</td><td>62</td><td>1535</td><td>&gt;80.0</td></tr>  
   <tr><td></td><td></td><td></td><td></td><td>36</td><td>49</td><td>1560</td><td>&gt;80.0</td></tr>  
-<tr><td></td><td></td><td></td><td></td><td>36</td><td>49</td><td>1560</td><td>&gt;80.0</td></tr>  
   <tr><td></td><td></td><td></td><td></td><td>37</td><td>53</td><td>2050</td><td>&gt;80.0</td></tr>  
+</table>  
+<table>  
+<tr>  
+<td rowspan="2"></td>   
+<td colspan="3">Without adverse reactions</td>  
+<td rowspan="2"></td>   
+<td colspan="3">With adverse reactions</td>  
+</tr>  
+<tr>  
+<td>Age</td><td>Total dose of SA (mg)</td><td>SI</td>   
+<td>Age</td><td>Total dose of SA (mg)</td><td>SI</td>   
+</tr>  
+<tr><td>1</td><td>44</td><td>1560</td><td>1.0</td><td>1</td><td>53</td><td>360</td><td>2.0</td></tr>  
+<tr><td>2</td><td>65</td><td>1310</td><td>1.2</td><td>2</td><td>74</td><td>2010</td><td>2.0</td></tr>  
+<tr><td>3</td><td>58</td><td>850</td><td>1.2</td><td>3</td><td>29</td><td>1390</td><td>2.0</td></tr>  
+<tr><td>4</td><td>57</td><td>1250</td><td>1.7</td><td>4</td><td>53</td><td>660</td><td>3.0</td></tr>  
+<tr><td>5</td><td>51</td><td>950</td><td>1.8</td><td>5</td><td>67</td><td>1135</td><td>3.5</td></tr>  
+<tr><td>6</td><td>64</td><td>850</td><td>1.8</td><td>6</td><td>67</td><td>510</td><td>5.3</td></tr>  
+<tr><td>7</td><td>33</td><td>1200</td><td>1.9</td><td>7</td><td>54</td><td>410</td><td>5.7</td></tr>  
+<tr><td>8</td><td>61</td><td>1390</td><td>2.0</td><td>8</td><td>51</td><td>910</td><td>6.5</td></tr>  
+<tr><td>9</td><td>49</td><td>1450</td><td>2.3</td><td>9</td><td>57</td><td>360</td><td>13.0</td></tr>  
+<tr><td>10</td><td>67</td><td>3300</td><td>2.8</td><td>10</td><td>62</td><td>1260</td><td>13.0</td></tr>  
+<tr><td>11</td><td>39</td><td>2760</td><td>2.8</td><td>11</td><td>51</td><td>560</td><td>13.9</td></tr>  
+<tr><td>12</td><td>42</td><td>860</td><td>3.4</td><td>12</td><td>68</td><td>1135</td><td>14.7</td></tr>  
+<tr><td>13</td><td>35</td><td>1810</td><td>3.4</td><td>13</td><td>50</td><td>1410</td><td>15.4</td></tr>  
+<tr><td>14</td><td>31</td><td>1310</td><td>3.8</td><td>14</td><td>38</td><td>1110</td><td>15.7</td></tr>  
+<tr><td>15</td><td>37</td><td>1250</td><td>3.8</td><td>15</td><td>61</td><td>960</td><td>16.6</td></tr>  
+<tr><td>16</td><td>43</td><td>1210</td><td>4.2</td><td>16</td><td>59</td><td>1310</td><td>16.6</td></tr>  
+<tr><td>17</td><td>39</td><td>1460</td><td>4.9</td><td>17</td><td>68</td><td>910</td><td>16.6</td></tr>  
+<tr><td>18</td><td>53</td><td>2310</td><td>5.4</td><td>18</td><td>44</td><td>1235</td><td>22.0</td></tr>  
+<tr><td>19</td><td>44</td><td>1360</td><td>5.9</td><td>19</td><td>57</td><td>2950</td><td>22.3</td></tr>  
+<tr><td>20</td><td>41</td><td>1910</td><td>6.2</td><td>20</td><td>49</td><td>360</td><td>33.2</td></tr>  
+<tr><td>21</td><td>72</td><td>910</td><td>12.0</td><td>21</td><td>49</td><td>1935</td><td>47.0</td></tr>  
+<tr><td>22</td><td>61</td><td>1410</td><td>18.8</td><td>22</td><td>63</td><td>1660</td><td>61.0</td></tr>  
+<tr><td>23</td><td>48</td><td>2460</td><td>47.0</td><td>23</td><td>29</td><td>435</td><td>65.0</td></tr>  
+<tr><td>24</td><td>59</td><td>1350</td><td>70.0</td><td>24</td><td>53</td><td>310</td><td>65.0</td></tr>  
+<tr><td>25</td><td>72</td><td>810</td><td>&gt;80.0</td><td>25</td><td>53</td><td>310</td><td>&gt;80.0</td></tr>  
+<tr><td>26</td><td>59</td><td>1460</td><td>&gt;80.0</td><td>26</td><td>49</td><td>410</td><td>&gt;80.0</td></tr>  
+<tr><td>27</td><td>71</td><td>760</td><td>&gt;80.0</td><td>27</td><td>42</td><td>690</td><td>&gt;80.0</td></tr>  
+<tr><td>28</td><td>53</td><td>910</td><td>&gt;80.0</td><td>28</td><td>44</td><td>910</td><td>&gt;80.0</td></tr>  
+<tr><td></td><td></td><td></td><td></td><td>29</td><td>59</td><td>1260</td><td>&gt;80.0</td></tr>  
+<tr><td></td><td></td><td></td><td></td><td>30</td><td>51</td><td>1260</td><td>&gt;80.0</td></tr>  
+<tr><td></td><td></td><td></td><td></td><td>31</td><td>46</td><td>1310</td><td>&gt;80.0</td></tr>  
+<tr><td></td><td></td><td></td><td></td><td>32</td><td>46</td><td>1350</td><td>&gt;80.0</td></tr>  
+<tr><td></td><td></td><td></td><td></td><td>33</td><td>41</td><td>1410</td><td>&gt;80.0</td></tr>  
+<tr><td></td><td></td><td></td><td></td><td>34</td><td>39</td><td>1460</td><td>&gt;80.0</td></tr>  
+<tr><td></td><td></td><td></td><td></td><td>35</td><td>62</td><td>1535</td><td>&gt;80.0</td></tr>  
+<tr><td></td><td></td><td></td><td></td><td>36</td><td>49</td><td>1560</td><td>&gt;80.0</td></tr>  
 <tr><td></td><td></td><td></td><td></td><td>37</td><td>53</td><td>2050</td><td>&gt;80.0</td></tr>  
 </table>  
-</table>  
-
 
 3.2 (a) 图3.1是否表明职业飞行员比其他群体更可能发生航空事故？  
 3.2 (a) Does Figure 3.1 indicate that professional pilots are more likely to have an aviation accident than other groups？  
