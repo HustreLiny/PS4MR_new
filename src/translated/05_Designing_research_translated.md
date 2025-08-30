@@ -1,7 +1,7 @@
 # 5 研究设计  5 Designing research  
 
-临床研究中，可能没有哪个方面像研究设计一样被忽视了。热切的年轻研究者们参加医学统计课程，学会了计算 $\mathbf{\nabla}^{\bullet}\mathbf{P}^{\bullet}$ 值的各种方法，但却很少学习如何正确地组织一个临床研究项目。然而，严谨的研究设计是高质量临床研究的基础。  
-Probably no aspect of clinical research is as neglected as study design. Eager young investigators attend classes on medical statistics, find dozens of ways to compute  $\mathbf{\nabla}^{\bullet}\mathbf{P}^{\bullet}$  values, but rarely learn how to organize a clinical research project properly. Yet careful study design is the foundation of quality clinical research.  
+临床研究中，可能没有哪个方面像研究设计一样被忽视了。热切的年轻研究者们参加医学统计课程，学会了计算 $\mathbf{P}$ 值的各种方法，但却很少学习如何正确地组织一个临床研究项目。然而，严谨的研究设计是高质量临床研究的基础。  
+Probably no aspect of clinical research is as neglected as study design. Eager young investigators attend classes on medical statistics, find dozens of ways to compute  $\mathbf{P}$  values, but rarely learn how to organize a clinical research project properly. Yet careful study design is the foundation of quality clinical research.  
 
 Noller 和 Melton (1985)  
 Noller and Melton (1985)  
@@ -21,11 +21,8 @@ All medical research is carried out in relation to one or more objectives, which
 研究可以粗略地分为观察性研究和实验性研究。在观察性研究中，我们收集一个或多个受试者群体的信息，但不采取任何措施影响他们。观察性研究可以是前瞻性的，即招募受试者并收集后续事件的数据；也可以是回顾性的，即收集过去事件的信息。观察性研究包括普查、调查、病例对照研究和队列研究；这些将在5.9至5.12节中讨论。  
 Research can be crudely divided into observational and experimental studies. In observational studies we collect information about one or more groups of subjects, but do nothing to affect them. Observational studies can be prospective, where subjects are recruited and data are collected about subsequent events, or retrospective, where information is collected about past events. Observational studies include censuses, surveys, casecontrol studies and cohort studies; they are considered in sections 5.9 to 5.12.  
 
-实验性研究是指研究者影响（控制）所有或部分个体所发生事件的研究。在人类、动物和实验室样本的研究中也会出现类似的问题，尽管本章的重点  
-Experimental studies are those in which the researcher affects (controls) what happens to all or some of the individuals. Similar problems arise in studies of humans, animals and laboratory samples, although the emphasis  
-
-是临床研究。5.4至5.8节将讨论实验性研究的设计。  
-in this chapter is on clinical studies. Sections 5.4 to 5.8 consider the design of experimental studies.  
+实验性研究是指研究者影响（控制）所有或部分个体所发生事件的研究。在人类、动物和实验室样本的研究中也会出现类似的问题，尽管本章的重点是临床研究。5.4至5.8节将讨论实验性研究的设计。  
+Experimental studies are those in which the researcher affects (controls) what happens to all or some of the individuals. Similar problems arise in studies of humans, animals and laboratory samples, although the emphasis in this chapter is on clinical studies. Sections 5.4 to 5.8 consider the design of experimental studies.  
 
 大多数研究旨在回答相当简单的问题，但这并不意味着它们只需要相当简单的设计。关键在于根据研究目标量身定制研究设计。如果没有充分的规划，研究者就不能指望得出有意义的结论。本章后面将讨论一些重要的通用设计原则。  
 Most studies aim to answer fairly simple questions but it does not necessarily follow that they require fairly simple designs. The key point is to tailor the research design to the study objective(s). Without adequate planning the researcher cannot expect to be able to make meaningful conclusions. Some important general principles of design are discussed later in this chapter.  
@@ -55,11 +52,8 @@ These terms are explained below. The first classification relates to the purpose
 
 ### 5.2.1 观察性或实验性  5.2.1 Observational or experimental  
 
-在观察性研究中，研究者收集感兴趣的属性或测量信息，但不影响事件。例如，一项旨在发现小儿听力障碍患病率的研究。观察性研究包括调查和大多数流行病学研究。相比之下，在实验性研究中，研究者  
-In an observational study the researcher collects information on the attributes or measurements of interest, but does not influence events. An example would be a study to discover the prevalence of hearing difficulties in small children. Observational studies include surveys and most epidemiological studies. By contrast, in an experimental study the researcher  
-
-有意影响事件并调查干预措施的效果。实验性研究包括临床试验和许多动物及实验室研究。一般来说，实验性研究比观察性研究能得出更强的推论。实验性研究通常用于组间比较；观察性研究也可以是比较性的，但它们通常本质上是描述性的。  
-deliberately influences events and investigates the effects of the intervention. Experimental studies include clinical trials and many animal and laboratory studies. In general stronger inferences can be made from experimental studies than from observational studies. Experimental studies are usually carried out to make comparisons between groups; observational studies may also be comparative, but they are often essentially descriptive.  
+在观察性研究中，研究者收集感兴趣的属性或测量信息，但不影响事件。例如，一项旨在发现小儿听力障碍患病率的研究。观察性研究包括调查和大多数流行病学研究。相比之下，在实验性研究中，研究者有意影响事件并调查干预措施的效果。实验性研究包括临床试验和许多动物及实验室研究。一般来说，实验性研究比观察性研究能得出更强的推论。实验性研究通常用于组间比较；观察性研究也可以是比较性的，但它们通常本质上是描述性的。  
+In an observational study the researcher collects information on the attributes or measurements of interest, but does not influence events. An example would be a study to discover the prevalence of hearing difficulties in small children. Observational studies include surveys and most epidemiological studies. By contrast, in an experimental study the researcher deliberately influences events and investigates the effects of the intervention. Experimental studies include clinical trials and many animal and laboratory studies. In general stronger inferences can be made from experimental studies than from observational studies. Experimental studies are usually carried out to make comparisons between groups; observational studies may also be comparative, but they are often essentially descriptive.  
 
 
 ### 5.2.2 前瞻性或回顾性  5.2.2 Prospective or retrospective  
@@ -79,15 +73,12 @@ There is also the 'pseudo- longitudinal' study in which each subject is seen at 
 
 ### 5.2.4 相互关系总结  5.2.4 Summary of inter-relationships  
 
-图5.1总结了设计特征最可能组合。实验性研究和观察性研究之间有明显的区别：实验性研究几乎都是前瞻性和纵向的，而观察性研究可以是回顾性的或前瞻性的，也可以是横断面的或  
-Figure 5.1 summarizes the most likely possible combinations of design features. There is a clear distinction between experimental studies which are nearly all prospective and longitudinal, and observational studies which can be either retrospective or prospective and also either cross- sectional or  
+图5.1总结了设计特征最可能组合。实验性研究和观察性研究之间有明显的区别：实验性研究几乎都是前瞻性和纵向的，而观察性研究可以是回顾性的或前瞻性的，也可以是横断面的或纵向研究。因此，本章后面将分别讨论实验研究和观察性研究。  
+Figure 5.1 summarizes the most likely possible combinations of design features. There is a clear distinction between experimental studies which are nearly all prospective and longitudinal, and observational studies which can be either retrospective or prospective and also either cross- sectional or longitudinal. For this reason experiments and observational studies are considered separately later in this chapter.  
 
 ![](../images/05_Designing_research/img1.jpg)  
 图5.1 研究设计类型。  
 Figure 5.1 Types of research design.  
-
-纵向研究。因此，本章后面将分别讨论实验研究和观察性研究。  
-longitudinal. For this reason experiments and observational studies are considered separately later in this chapter.  
 
 虽然可以构建更复杂的科研设计分类（Bailar et al., 1984），但图5.1描述了大多数研究的主要特征。  
 It is possible to construct more complex categorizations of research designs (Bailar et al., 1984), but Figure 5.1 describes the main features of most research studies.  
@@ -124,7 +115,7 @@ Further, individuals will exhibit similar variation in other characteristics not
 此外，我们需要记住，当感兴趣的测量指标变异性很高时，需要大样本才能获得可靠结果。  
 In addition, we need to bear in mind that when the measurement of interest is highly variable, large samples are needed to get reliable results.  
 
-这些问题将在下文讨论，首先是实验性研究，然后是观察性研究。然而，比较研究中计算合适样本量的方法在第15章给出，因为它们最常用于设计临床试验。  
+这些问题将在下文讨论，首先是实验性研究，然后是观察性研究。然而，为比较研究计算合适样本量的方法在第15章给出，因为它们最常用于设计临床试验。  
 These issues are discussed below, firstly for experimental studies and then for observational studies. However, methods for calculating the appropriate sample size for comparative studies are given in Chapter 15. as they are most often used when designing clinical trials.  
 
 在详细探讨不同类型的实验设计之前，考虑一个能说明许多问题的真实研究案例会有所帮助。  
@@ -149,32 +140,29 @@ The study was carried out on 91 subjects with essential hypertension.
 上述设计旨在尽可能纯粹地比较左右臂的血压。此外，还记录了每只手臂的周长，并记录了每个受试者测量时的顺序。这项研究阐释了实验设计的许多特点，其中一些将在5.5节中更详细地讨论：  
 The above design was used to try to get as pure a comparison as possible of the blood pressure in the left and right arms. In addition the circumference of each arm was recorded, and a record was kept of the order in which the measurements were taken for each subject. This study illustrates many features of the design of an experiment, some of which will be discussed in more detail in section 5.5:  
 
-观察者数量 每位受试者需要有两名观察者，但即使并非必要，拥有多于一名观察者通常也是个好主意，因为它允许量化观察者之间的差异（参见14.2节）。  
+*观察者数量* 每位受试者需要有两名观察者，但即使并非必要，拥有多于一名观察者通常也是个好主意，因为它允许量化观察者之间的差异（参见14.2节）。  
 Number of observers It was necessary to have two observers per subject, but it is often a good idea to have more than one observer even when it is not necessary, as it allows the differences between observers to be quantified (see section 14.2).  
 
-重复测量 在每种实验条件组合下进行不止一次读数是可取的，因为它能为估计感兴趣的效应提供更高的精确度。然而，重复测量需要是独立的读数。在手臂比较研究中，它们是独立的，因为所使用的机器类型意味着观察者不知道他们之前的测量结果。  
+*重复测量* 在每种实验条件组合下进行不止一次读数是可取的，因为它能为估计感兴趣的效应提供更高的精确度。然而，重复测量需要是独立的读数。在手臂比较研究中，它们是独立的，因为所使用的机器类型意味着观察者不知道他们之前的测量结果。  
 Replicated measurements It is desirable to take more than one reading in each combination of experimental conditions as it gives greater precision for estimating the effects of interest. The replicates need to be independent readings, however. They were independent in the arm comparison study because the type of machine used meant that the observers did not know what their previous measurement was.  
 
-平衡设计 并非必须对每种实验因素组合进行相同数量的观察，但如果一切都平衡，如上述研究所示，分析将大大简化。  
+*平衡设计* 并非必须对每种实验因素组合进行相同数量的观察，但如果一切都平衡，如上述研究所示，分析将大大简化。  
 Balanced design It is not essential that the same number of observations is taken for each combination of experimental factors, but if everything is balanced, as in the above study, the analysis is very much simpler.  
 
-随机化 针对每位患者，观察者和袖带分配到两只手臂的顺序是随机确定的。随机化是实验设计的关键要素之一。  
+*随机化* 针对每位患者，观察者和袖带分配到两只手臂的顺序是随机确定的。随机化是实验设计的关键要素之一。  
 Randomization The order in which the observers and cuffs were allocated to the two arms for each patient was determined at random. Randomiza­ tion is one of the key elements of experimental design.  
 
-协变量 有时需要记录非实验性特征（协变量），因为它们可能影响结果。它们可能随观察而变化，例如环境温度，也可能仅随受试者而变化，例如年龄。在这项研究中，手臂周长被认为是一个可能的协变量，因为它影响袖带的贴合度。手臂周长介于所给的两个例子之间，在受试者内部（即手臂之间）变化，但不会随观察而变化。另一个潜在的协变量是观察顺序。该设计是随机化和平衡的，因为预计记录的血压会随着重复测量而下降。然而，在分析中可以考虑测量的顺序以提高精确度。  
+*协变量* 有时需要记录非实验性特征（协变量），因为它们可能影响结果。它们可能随观察而变化，例如环境温度，也可能仅随受试者而变化，例如年龄。在这项研究中，手臂周长被认为是一个可能的协变量，因为它影响袖带的贴合度。手臂周长介于所给的两个例子之间，在受试者内部（即手臂之间）变化，但不会随观察而变化。另一个潜在的协变量是观察顺序。该设计是随机化和平衡的，因为预计记录的血压会随着重复测量而下降。然而，在分析中可以考虑测量的顺序以提高精确度。  
 Covariates Sometimes there are non- experimental features (covariates) that need to be recorded as they might have affected the results. While they may vary from observation to observation, such as ambient tem­ perature, they may vary only from subject to subject, such as age. In this study arm circumference was considered to be a possible covariate as it affects the fit of the cuff. Arm circumference is intermediate between the two examples given, varying within subject (i.e. between arms) but not from observation to observation. Another potential covariate was the order of observations. The design was randomized and balanced because it was anticipated that recorded blood pressure would fall over repeated measure­ ments. However, it is possible to take account of the order of measure­ ments in the analysis to improve precision.  
 
-样本量 采用了大样本量，以提供左右臂之间差异的精确估计。  
+*样本量* 采用了大样本量，以提供左右臂之间差异的精确估计。  
 Sample size A large sample was taken to provide a precise estimate of the difference between the arms.  
 
 
 ## 5.5 实验设计  5.5 THE DESIGN OF EXPERIMENTS  
 
-实验应设计得尽可能简单明了，以回答感兴趣的问题。在设计实验时，考虑数据  
-An experiment should be designed to answer the question of interest as simply and clearly as possible. It is important to consider the way the data  
-
-将如何分析非常重要，因为这可以避免后续的复杂性。本章概述了实验。第15章深入探讨了临床试验，因为其中涉及许多特殊问题。  
-will be analysed when designing an experiment as this can save complications later. This chapter considers experiments in general. Chapter 15 considers clinical trials in depth, as there are many special issues involved.  
+实验应设计得尽可能简单明了，以回答感兴趣的问题。在设计实验时，考虑数据将如何分析非常重要，因为这可以避免后续的复杂性。本章概述了实验。第15章深入探讨了临床试验，因为其中涉及许多特殊问题。  
+An experiment should be designed to answer the question of interest as simply and clearly as possible. It is important to consider the way the data will be analysed when designing an experiment as this can save complications later. This chapter considers experiments in general. Chapter 15 considers clinical trials in depth, as there are many special issues involved.  
 
 在本节中，我将讨论在实验设计时需要考虑的一些更重要的方面。  
 In this section I discuss some of the more important aspects to consider when designing an experiment.  
@@ -194,7 +182,7 @@ Bias can occur through structural deficiencies in a study. For example, if one o
 一个重要的潜在偏倚来源是受试者在非设计特征上的变异。例如，如果我们只在一组患者中测量左臂的血压，而在另一组中只测量右臂的血压，那么观察到的左右臂之间的平均差异可能会受到组间在任何与血压相关的变量（如年龄）上的差异的影响。显然，在同一患者身上使用双臂更好，但在大多数研究中，程序或治疗不能施用于同一个人。这里常用的方法是随机分配治疗给患者。如第5.7节所述，随机一词具有特定的统计学含义。随机分配是实验设计的基本原则之一。另一种方法是找到特征非常相似的受试者对，然后随机分配治疗给匹配的配对。匹配将在第5.8节中讨论。  
 An important possible source of bias is the way in which subjects vary in features that are not part of the design. For example, if we had measured blood pressure in the left arm only in one group of patients and in the right arm only in another group, then the average difference observed between left and right arms could be affected by differences between the groups with respect to any variable related to blood pressure, such as age. Clearly it is better to use both arms in the same patients, but in most studies the procedures or treatments cannot be given to the same individuals. The usual approach here is to allocate treatments to patients at random. As described in section 5.7, the word random has a specific statistical meaning. Random allocation is one of the fundamental principles of experimental design. Another device is to find pairs of subjects with closely similar characteristics and allocate treatments to the matched pair at random. Matching is discussed in section 5.8.  
 
-在手臂比较研究中，观察者测量左右臂的顺序以及使用两个袖带的顺序都进行了随机化。没有特定的理由预期会产生偏倚，例如，观察者1总是从左臂开始，但使用随机排序是为了防止可能出现的微妙未知效应。  
+在手臂比较研究中，观察者测量左右臂的顺序以及使用两个袖带的顺序都进行了随机化。没有特定的理由预期（不随机化）会产生偏倚，例如观察者1总是从左臂开始，但使用随机排序是为了防止可能出现的微妙未知效应。  
 In the arm comparison study the order in which the observers measured the left and right arms and the order of use of the two cuffs were randomized. There was no specific reason to expect a bias from, for example, observer 1 always starting on the left arm, but random ordering was used as a safeguard against possible subtle unknown effects.  
 
 
@@ -236,15 +224,12 @@ Another way of combating variability is to increase the sample size. Larger samp
 在像手臂比较研究这样的设计实验中，研究者可能会控制几个条件（称为因素）。绘制图表来展示设计结构可能会有所帮助。除了澄清设计之外，图表还将显示数据应如何分析。  
 In a designed experiment such as the arm comparison study there may be several conditions (called factors) being controlled by the investigator. It may be helpful to draw a diagram to show the structure of the design. As well as clarifying the design the diagram will show how the data should be analysed.  
 
-一个简单的例子是比较三组受试者分别接受不同镇痛剂治疗偏头痛的实验。图5.2展示了这种设计的简单结构。每个x代表一个观察值。在这种设计中，三组受试者无需大小相等，但在更复杂的设计中，相等的大小是高度理想的。如果研究设计  
-A simple example is an experiment to compare three separate groups of subjects given different analgesics to combat migraine. Figure 5.2 shows the simple structure of this design. Each x denotes an observation. In this design there is no need for the three groups to be of equal size but in more complicated designs equal sizes are highly desirable. If the study design  
+一个简单的例子是比较三组受试者分别接受不同镇痛剂治疗偏头痛的实验。图5.2展示了这种设计的简单结构。每个x代表一个观察值。在这种设计中，三组受试者无需大小相等，但在更复杂的设计中，相等的大小是高度理想的。如果研究设计改为每个受试者以随机顺序接受所有三种镇痛剂，则设计将如图5.3所示。这里，同一受试者的观察值之间用线连接。  
+A simple example is an experiment to compare three separate groups of subjects given different analgesics to combat migraine. Figure 5.2 shows the simple structure of this design. Each x denotes an observation. In this design there is no need for the three groups to be of equal size but in more complicated designs equal sizes are highly desirable. If the study design were changed so that each subject received all three analgesics in random order, the design would be as shown in Figure 5.3. Here observations on the same subject are connected.  
 
 ![](../images/05_Designing_research/img2.jpg)  
 图5.2 比较接受镇痛剂A、B或C的三组受试者的研究结构。每个x表示一名受试者。  
 Figure 5.2 Structure of a study to compare three groups of subjects receiving analgesics A, B or C. Each x indicates one subject.  
-
-如果研究设计改为每个受试者以随机顺序接受所有三种镇痛剂，则设计将如图5.3所示。这里，同一受试者的观察值之间用线连接。  
-were changed so that each subject received all three analgesics in random order, the design would be as shown in Figure 5.3. Here observations on the same subject are connected.  
 
 一项研究可能结合这两种特征，即受试者被检查不止一次，但不同组的受试者接受不同的治疗。例如，我们可能希望比较受试者在不同饮食前后的体重；图5.4显示了相应的设计。图5.2至图5.4说明了受试者内比较（within subject comparison）和受试者间比较（between subject comparison）之间的重要区别。  
 A study may combine both these features, so that subjects are examined more than once but different groups of subjects are treated differently. For example, we may wish to compare subjects' weights before and after different diets; Figure 5.4 shows the appropriate design. Figures 5.2 to 5.4 illustrate the important distinction between within subject and between subject comparisons.  
