@@ -21,10 +21,7 @@ However, patients are nearly always followed for varying lengths of time. In any
 Figure 13.1 illustrates the different ways in which patients can proceed through a study. It shows a six month period during which patients are recruited to the study, and a further 12 months of observation. The patients are thus observed for between 12 and 18 months, the most recently accrued patients being observed for the shortest time. Figure 13.1 shows that four patients died and four were still alive at the end of the study. Two other patients withdrew from the study before the end. We thus have four firm survival times and six censored times, as shown in Table 13.1, where the asterisk denotes a censored survival time. We ignore the different starting times when analysing survival data, and it helps to order the observations by survival time. Figure 13.2 shows the effect of these changes.  
 
 对于这类数据，我们通常希望估计个体在给定时间段（例如一年）内生存的概率。如果有两个或更多组，我们还会对比较它们的生存经验感兴趣。本章介绍了回答这些以及其他与生存数据相关问题的方法。为方便起见，我将假定数据已经按生存时间升序排列。（计算机程序可能需要这样做。）  
-With data of this type we often wish to estimate the probability of an individual surviving for a given time period such as one year. With two or more groups we will also be interested in comparing their survival experience. This chapter introduces methods to answer these and other questions relating to survival data. For convenience, I shall assume that the data have already been sorted into ascending order of survival times. (Computer programs may require this.)  
-
-医学生存数据的分析自  
-The analysis of medical survival data has become widespread since the  
+With data of this type we often wish to estimate the probability of an individual surviving for a given time period such as one year. With two or more groups we will also be interested in comparing their survival experience. This chapter introduces methods to answer these and other questions relating to survival data. For convenience, I shall assume that the data have already been sorted into ascending order of survival times. (Computer programs may require this.)   
 
 ![](../images/13_Analysis_of_survival_times/img1.jpg)  
 图 13.1 示意图，显示患者在不同时间进入研究，以及已知生存时间（$\bullet$）和删失生存时间（$\circ$）的观察。  
@@ -44,7 +41,7 @@ Table 13.1 Survival times for patients shown in Figure 13.1
 Figure 13.2 Figure 13.1 reorganized to correspond to method of analysis.  
 
 自 20 世纪 70 年代初新方法问世以来，医学生存数据分析已变得广泛。本章描述的大多数方法在 Peto 等人（1976 和 1977）的两篇优秀论文中进行了更详细的讨论，尤其是在第二篇论文中。这些论文还包含了关于生存时间研究设计和执行的丰富实用建议。  
-early 1970s when new methods were developed. Most of the methods described in this chapter are discussed in much more detail in two excellent papers by Peto et al. (1976 and 1977), especially in the second paper. These papers also contain a wealth of practical advice about the design and execution of studies of survival times.  
+The analysis of medical survival data has become widespread since the early 1970s when new methods were developed. Most of the methods described in this chapter are discussed in much more detail in two excellent papers by Peto et al. (1976 and 1977), especially in the second paper. These papers also contain a wealth of practical advice about the design and execution of studies of survival times.  
 
 
 ## 13.2 生存概率  13.2 SURVIVAL PROBABILITIES  
@@ -71,14 +68,28 @@ The probability of surviving the 100th day is estimated simply as the proportion
 生存曲线的计算将通过一个小型数据集进行说明，该数据集来源于一项旨在预测海上晕动病的研究项目（Burns, 1984）。受试者被置于一个安装在液压活塞上的立方舱内，并经受垂直运动（称为“升沉”！）两小时。感兴趣的终点是受试者首次呕吐的时间（称为“明显呕吐”）。一些受试者在未呕吐的情况下要求提前停止实验，这产生了截尾观测值，而另一些受试者则成功生存了两小时。研究了21名受试者，频率为 $0.167 \mathrm{~Hz}$，加速度为 $0.111 \mathrm{G}$，其中14名在两小时内未呕吐。其余七名受试者的生存时间（分钟）为  
 The survival curve calculations will be illustrated on a small data set arising from a research programme aimed at the prediction of motion sickness at sea (Burns, 1984). Subjects were placed in a cubical cabin mounted on a hydraulic piston and subjected to vertical motion (known as 'heave'!) for two hours. The endpoint of interest was the time when the subject first vomited (known as 'frank emesis'). Some subjects requested an early stop to the experiment although they had not vomited, yielding censored observations, while others successfully survived two hours. Twenty- one subjects were studied with a frequency of  $0.167 \mathrm{~Hz}$  and acceleration of  $0.111 \mathrm{~G}$ , 14 of whom survived two hours without vomiting. The survival times (in minutes) of the other seven subjects were  
 
+30, 50, 50*, 51, 66*, 82 and 92  
+
 其中标有*的两项观测值是截尾的。其余14项观测值在120分钟时被截尾。  
 where the two observations marked * were censored. The other 14 observations were censored at 120 minutes.  
 
 表13.2 垂直运动频率为 $0.167\mathrm{Hz}$、加速度为0.111 G的实验（Burns, 1984）的晕动病数据生命表（实验1）  
 Table 13.2 Life table for motion sickness data from an experiment with vertical movement at a frequency of  $0.167\mathrm{Hz}$  and acceleration 0.111 G (Burns, 1984) (Experiment 1)  
 
-<table><tr><td>Subject number</td><td>Survival time (min)</td><td>Survival proportion</td><td>Standard error</td></tr><tr><td>1</td><td>30</td><td>0.952</td><td>0.045</td></tr><tr><td>2</td><td>50</td><td>0.905</td><td>0.062</td></tr><tr><td>3</td><td>50*</td><td></td><td></td></tr><tr><td>4</td><td>51</td><td>0.855</td><td>0.077</td></tr><tr><td>5</td><td>66*</td><td></td><td></td></tr><tr><td>6</td><td>82</td><td>0.801</td><td>0.089</td></tr><tr><td>7</td><td>92</td><td>0.748</td><td>0.097</td></tr><tr><td>8</td><td>120*</td><td></td><td></td></tr><tr><td>9</td><td>120*</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></table>  
-<table><tr><td>Subject number</td><td>Survival time (min)</td><td>Survival proportion</td><td>Standard error</td></tr><tr><td>1</td><td>30</td><td>0.952</td><td>0.045</td></tr><tr><td>2</td><td>50</td><td>0.905</td><td>0.062</td></tr><tr><td>3</td><td>50*</td><td></td><td></td></tr><tr><td>4</td><td>51</td><td>0.855</td><td>0.077</td></tr><tr><td>5</td><td>66*</td><td></td><td></td></tr><tr><td>6</td><td>82</td><td>0.801</td><td>0.089</td></tr><tr><td>7</td><td>92</td><td>0.748</td><td>0.097</td></tr><tr><td>8</td><td>120*</td><td></td><td></td></tr><tr><td>9</td><td>120*</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></table>  
+| Subject number | Survival time (min) | Survival proportion | Standard error |
+| :---: | :---: | :---: | :---: |
+| 1 | 30 | 0.952 | 0.045 |
+| 2 | 50 | 0.905 | 0.062 |
+| 3 | 50\* | | |
+| 4 | 51 | 0.855 | 0.077 |
+| 5 | 66\* | | |
+| 6 | 82 | 0.801 | 0.089 |
+| 7 | 92 | 0.748 | 0.097 |
+| 8 | 120\* | | |
+| 9 | 120\* | | |
+| . | . | | |
+| . | . | | |
+| 21 | 120\* | | |
 
 \* 截尾观测值  
 \* censored observation  
@@ -148,8 +159,8 @@ regards survival experience. The method is based on a simple idea which avoids t
 表13.3显示了第二次晕动病实验的数据（和生命表），该实验使用了不同的受试者，并且与第一次实验相比，频率和加速度都增加了一倍。时序检验可用于比较两次实验的数据。  
 Table 13.3 shows the data (and the life table) from a second motion sickness experiment using different subjects in which both the frequency and acceleration were doubled in comparison with the first experiment. The logrank test can be used to compare the data from the two experiments.  
 
-时序检验的原理是根据观察到的不同生存时间（忽略删失生存时间）将生存时间刻度划分为多个区间。第一次实验中有五次明确的事件（呕吐），分别发生在30、50、51、82和92分钟。第二次实验中有14次事件，分别在5、13、24、63、65、79、102和115分钟各一次，在11、69和82分钟各两次。两次实验合并后，共有15个不同的记录生存时间。图13.4显示了将时间刻度划分为15个时间区间，每个区间都包含  
-The principle of the logrank test is to divide the survival time scale into intervals according to the distinct observed survival times, ignoring censored survival times. There were five definite events (vomiting) in the first experiment at 30, 50, 51, 82 and 92 minutes. In the second experiment there were 14 events, one each at 5, 13, 24, 63, 65, 79, 102 and 115 minutes, and 2 each at 11, 69 and 82 minutes. For the two experiments combined there were 15 distinct recorded survival times. Figure 13.4 shows the time scale divided into 15 time intervals, each of which includes the  
+时序检验的原理是根据观察到的不同生存时间（忽略删失生存时间）将生存时间刻度划分为多个区间。第一次实验中有五次明确的事件（呕吐），分别发生在30、50、51、82和92分钟。第二次实验中有14次事件，分别在5、13、24、63、65、79、102和115分钟各一次，在11、69和82分钟各两次。两次实验合并后，共有15个不同的记录生存时间。图13.4显示了将时间刻度划分为15个时间区间，每个区间的上限都是一次事件发生的时间。第一个区间是0到5分钟，第二个是6到11分钟，依此类推。对于每个时间段，我们将观察到的数据与在零假设（即实验之间没有真实差异）成立的情况下所期望的数据进行比较。  
+The principle of the logrank test is to divide the survival time scale into intervals according to the distinct observed survival times, ignoring censored survival times. There were five definite events (vomiting) in the first experiment at 30, 50, 51, 82 and 92 minutes. In the second experiment there were 14 events, one each at 5, 13, 24, 63, 65, 79, 102 and 115 minutes, and 2 each at 11, 69 and 82 minutes. For the two experiments combined there were 15 distinct recorded survival times. Figure 13.4 shows the time scale divided into 15 time intervals, each of which includes the time of an event at the upper limit. The first interval is from 0 to 5 minutes, the second is from 6 to 11 minutes, and so on. For each time period we compare the observed data with what we would expect if the null hypothesis that there is no real difference between the experiments is true. 
 
 表13.3 垂直运动频率为 $0.333\mathrm{Hz}$、加速度为 $0.222\mathrm{G}$ 的运动病实验（Burns，1984）的寿命表数据（实验2）  
 Table 13.3 Life table for motion sickness data from an experiment with vertical movement at a frequency of  $0.333\mathrm{Hz}$  and acceleration  $0.222\mathrm{G}$  (Burns, 1984) (Experiment 2)  
@@ -157,24 +168,21 @@ Table 13.3 Life table for motion sickness data from an experiment with vertical 
 <table><tr><td>受试者编号</td><td>生存时间（分钟）</td><td>生存比例</td><td>标准误</td></tr><tr><td>1</td><td>5</td><td>0.964</td><td>0.034</td></tr><tr><td>2</td><td>6*</td><td></td><td></td></tr><tr><td>3</td><td>11</td><td></td><td></td></tr><tr><td>4</td><td>11</td><td>0.890</td><td>0.058</td></tr><tr><td>5</td><td>13</td><td>0.853</td><td>0.067</td></tr><tr><td>6</td><td>24</td><td>0.816</td><td>0.073</td></tr><tr><td>7</td><td>63</td><td>0.779</td><td>0.078</td></tr><tr><td>8</td><td>65</td><td>0.742</td><td>0.082</td></tr><tr><td>9</td><td>69</td><td></td><td></td></tr><tr><td>10</td><td>69</td><td>0.668</td><td>0.086</td></tr><tr><td>11</td><td>79</td><td>0.631</td><td>0.090</td></tr><tr><td>12</td><td>82</td><td></td><td></td></tr><tr><td>13</td><td>82</td><td>0.556</td><td>0.090</td></tr><tr><td>14</td><td>102</td><td>0.519</td><td>0.093</td></tr><tr><td>15</td><td>115</td><td>0.482</td><td>0.093</td></tr><tr><td>16</td><td>120*</td><td></td><td></td></tr><tr><td>17</td><td>120*</td><td></td><td></td></tr><tr><td>.</td><td>.</td><td></td><td></td></tr><tr><td>28</td><td>120*</td><td></td><td></td></tr></table>  
 <table><tr><td>Subject number</td><td>Survival time (min)</td><td>Survival proportion</td><td>Standard error</td></tr><tr><td>1</td><td>5</td><td>0.964</td><td>0.034</td></tr><tr><td>2</td><td>6*</td><td></td><td></td></tr><tr><td>3</td><td>11</td><td></td><td></td></tr><tr><td>4</td><td>11</td><td>0.890</td><td>0.058</td></tr><tr><td>5</td><td>13</td><td>0.853</td><td>0.067</td></tr><tr><td>6</td><td>24</td><td>0.816</td><td>0.073</td></tr><tr><td>7</td><td>63</td><td>0.779</td><td>0.078</td></tr><tr><td>8</td><td>65</td><td>0.742</td><td>0.082</td></tr><tr><td>9</td><td>69</td><td></td><td></td></tr><tr><td>10</td><td>69</td><td>0.668</td><td>0.086</td></tr><tr><td>11</td><td>79</td><td>0.631</td><td>0.090</td></tr><tr><td>12</td><td>82</td><td></td><td></td></tr><tr><td>13</td><td>82</td><td>0.556</td><td>0.090</td></tr><tr><td>14</td><td>102</td><td>0.519</td><td>0.093</td></tr><tr><td>15</td><td>115</td><td>0.482</td><td>0.093</td></tr><tr><td>16</td><td>120*</td><td></td><td></td></tr><tr><td>17</td><td>120*</td><td></td><td></td></tr><tr><td>.</td><td>.</td><td></td><td></td></tr><tr><td>28</td><td>120*</td><td></td><td></td></tr></table>  
 
-* 截尾观察  
+\* 截尾观察  
 \* censored observation  
 
 ![](../images/13_Analysis_of_survival_times/img4.jpg)  
-图13.4 两次不同运动病实验的事件发生时间（$\bullet$）和截尾时间（$\circ$），显示了用于计算对数秩检验的时间间隔。实验1在表13.2中描述，实验2在表13.3中描述。  
-Figure 13.4 Times of events  $(\bullet)$  and censoring  $(\circ)$  for two different motion sickness experiments, showing the time intervals used for calculating the logrank test. Experiment 1 was described in Table 13.2 and Experiment 2 in Table 13.3.  
+图13.4 两次不同运动病实验的事件发生时间（$\bullet$）和截尾时间（$\circ$），显示了用于计算时序检验的时间间隔。实验1在表13.2中描述，实验2在表13.3中描述。  
+Figure 13.4 Times of events  $(\bullet)$  and censoring  $(\circ)$  for two different motion sickness experiments, showing the time intervals used for calculating the logrank test. Experiment 1 was described in Table 13.2 and Experiment 2 in Table 13.3.   
 
-事件发生时间在上限。第一个区间是0到5分钟，第二个是6到11分钟，依此类推。对于每个时间段，我们将观察到的数据与在零假设（即实验之间没有真实差异）成立的情况下所期望的数据进行比较。  
-time of an event at the upper limit. The first interval is from 0 to 5 minutes, the second is from 6 to 11 minutes, and so on. For each time period we compare the observed data with what we would expect if the null hypothesis that there is no real difference between the experiments is true.  
-
-用于比较 $k$ 组的对数秩检验为每组产生一个观察到的事件数 $(O)$ 和一个期望的事件数 $(E)$。这些通过计算 $(O - E)^{2} / E$ 的总和（称为 $X^{2}$）以熟悉的方式进行比较，并将结果与具有 $k - 1$ 自由度的 $\chi^{2}$ 分布进行比较。  
+用于比较 $k$ 组的时序检验为每组产生一个观察到的事件数 $(O)$ 和一个期望的事件数 $(E)$。这些通过计算 $(O - E)^{2} / E$ 的总和（称为 $X^{2}$）以熟悉的方式进行比较，并将结果与具有 $k - 1$ 自由度的 $\chi^{2}$ 分布进行比较。  
 The logrank test to compare  $k$  groups produces for each group an observed  $(O)$  and an expected  $(E)$  number of events. These are compared in a familiar way by calculating the sum of  $(O - E)^{2} / E$ , called  $X^{2}$ , comparing the result to a  $\chi^{2}$  distribution with  $k - 1$  degrees of freedom.  
 
 运动病数据给出  
 The motion sickness data give  
 
 $$
-O_{1} = 5, E_{1} = 8.8607, O_{2} = 14 \text{and} E_{2} = 10.1393
+O_{1} = 5, E_{1} = 8.8607, O_{2} = 14 and E_{2} = 10.1393
 $$  
 
 因此对数秩统计量为  
@@ -190,30 +198,30 @@ Comparing this value to a  $\chi^{2}$  distribution with one degree of freedom g
 请注意，观察数和期望数的总和是相同的：手动进行计算时，检查这一点很重要。另请注意，量 $E$ 最好被视为衡量受试者暴露程度的指标，而不是期望事件数。原因是，在某些不寻常的情况下，$E$ 可能大于样本量。  
 Note that the sum of the observed and expected numbers is the same: it is important to check this when performing the calculation by hand. Note too that the quantity  $E$  is better thought of as a measure of the extent of exposure of the subjects rather than the expected number of events. The reason is that under some unusual circumstances  $E$  can be larger than the sample size.  
 
-对数秩检验可用于比较几组受试者。  
+时序检验可用于比较几组受试者。  
 The logrank test can be used to compare several groups of subjects.  
 
 ![](../images/13_Analysis_of_survival_times/img5.jpg)  
 图 13.5 表 13.2 和表 13.3 所示数据的生存曲线。  
 Figure 13.5 Survival curves for data shown in Table 13.2 and Table 13.3.  
 
-然而，通常定义这些组的类别会有一个自然的顺序，我们应该考察生存率在各组之间呈现趋势的更具体可能性。例如，我们可能希望比较不同年龄组的生存率，或与疾病分期相关的生存率，或与某些可疑环境危害（如吸烟）暴露量相关的生存率。该方法是标准对数秩检验的简单扩展。  
+然而，通常定义这些组的类别会有一个自然的顺序，我们应该考察生存率在各组之间呈现趋势的更具体可能性。例如，我们可能希望比较不同年龄组的生存率，或与疾病分期相关的生存率，或与某些可疑环境危害（如吸烟）暴露量相关的生存率。该方法是标准时序检验的简单扩展。  
 Often, however, the categories defining those groups will have a natural ordering, and we should examine the more specific possibility of a trend in survival across the groups. We might, for example, wish to compare survival in several age groups, or in relation to stage of disease, or in relation to amount of exposure of some suspected environmental hazard (such as smoking). The method is a simple extension of the standard logrank test.  
 
 ![](../images/13_Analysis_of_survival_times/img6.jpg)  
 图 13.6 乳腺癌患者的 Kaplan-Meier 曲线，按阳性淋巴结数量分类：无 ($n = 102$)、1-3 个 ($n = 58$) 或超过 3 个 ($n = 35$)（数据来自 Barnes 等人，1988）。  
 Figure 13.6 Kaplan-Meier curves for patients with breast cancer with none  $(n = 102)$ , 1-3  $(n = 58)$ , or more than 3  $(n = 35)$  positive nodes (data from Barnes et al., 1988).  
 
-图 13.6 显示了三组乳腺癌手术女性的生存曲线，按发现的阳性淋巴结数量分类。普通对数秩检验得到 $X^{2} = 5.59$，自由度为 2 ($\mathbf{P} = 0.06$)。然而，由于这些组是有序的，应使用趋势检验，该检验得到 $X_{t r e n d}^{2} = 5.26$，自由度为 1 ($\mathbf{P} = 0.02$)。因此，生存率与阳性淋巴结数量之间存在显著（负向）关联。  
+图 13.6 显示了三组乳腺癌手术女性的生存曲线，按发现的阳性淋巴结数量分类。普通时序检验得到 $X^{2} = 5.59$，自由度为 2 ($\mathbf{P} = 0.06$)。然而，由于这些组是有序的，应使用趋势检验，该检验得到 $X_{t r e n d}^{2} = 5.26$，自由度为 1 ($\mathbf{P} = 0.02$)。因此，生存率与阳性淋巴结数量之间存在显著（负向）关联。  
 Figure 13.6 shows survival curves for three groups of women operated on for breast cancer, classified by the number of positive nodes found. An ordinary logrank test gives  $X^{2} = 5.59$  on 2 degrees of freedom  $(\mathbf{P} = 0.06)$ . Because the groups are ordered, however, the trend test should be used, which gives  $X_{t r e n d}^{2} = 5.26$  on 1 degree of freedom  $(\mathbf{P} = 0.02)$ . There is thus a significant (negative) association between survival and number of positive nodes.  
 
-对数秩检验还可以扩展，以允许对其他变量进行调整。例如，在一个比较不同类型手术治疗乳腺癌患者生存率的随机试验中，我们可能希望在分析中考虑乳腺癌的分期，或考虑其他一些预后变量。在这种分层分析中，受试者根据预后变量（癌症分期）被划分为亚组，并为每个层（亚组）内的每个治疗组计算 $O$ 和 $E$ 值。对于每个治疗组，将每个层中的 $O$ 和 $E$ 值相加，然后使用通常的对数秩公式比较这些总和以获得 $X^{2}$。如果偶然地，一个治疗组包含更多预后不良的受试者，这种分层分析将调整这种不平衡。同样的方法可用于在多中心研究中合并来自不同中心的数据。关于进行调整比较的必要性，第 15 章有进一步的讨论。执行对数秩检验的方法在第 13.4 节中详细说明，该节还给出了一个更准确的对数秩统计量 $X^{2}$ 的公式。趋势检验和分层分析也在此处描述。有几种计算机程序可以执行对数秩分析，除了非常小的数据集外，手动操作非常繁琐，但它们的输出结果并非都能提供足够的信息（参见第 13.8 节）。Peto 等人（1977）详细讨论了本节中讨论的所有方法，以及许多其他内容—他们的论文是必读的。  
+时序检验还可以扩展，以允许对其他变量进行调整。例如，在一个比较不同类型手术治疗乳腺癌患者生存率的随机试验中，我们可能希望在分析中考虑乳腺癌的分期，或考虑其他一些预后变量。在这种分层分析中，受试者根据预后变量（癌症分期）被划分为亚组，并为每个层（亚组）内的每个治疗组计算 $O$ 和 $E$ 值。对于每个治疗组，将每个层中的 $O$ 和 $E$ 值相加，然后使用通常的对数秩公式比较这些总和以获得 $X^{2}$。如果偶然地，一个治疗组包含更多预后不良的受试者，这种分层分析将调整这种不平衡。同样的方法可用于在多中心研究中合并来自不同中心的数据。关于进行调整比较的必要性，第 15 章有进一步的讨论。执行时序检验的方法在第 13.4 节中详细说明，该节还给出了一个更准确的对数秩统计量 $X^{2}$ 的公式。趋势检验和分层分析也在此处描述。有几种计算机程序可以执行对数秩分析，除了非常小的数据集外，手动操作非常繁琐，但它们的输出结果并非都能提供足够的信息（参见第 13.8 节）。Peto 等人（1977）详细讨论了本节中讨论的所有方法，以及许多其他内容—他们的论文是必读的。  
 The logrank test can also be extended to allow an adjustment to be made for other variables. For example, in a randomized trial to compare survival in groups of breast cancer patients given different types of surgery we may wish to allow for the stage of breast cancer in the analysis, or for some other prognostic variable. In this stratified analysis, the subjects are divided into subgroups according to the prognostic variable (stage of cancer) and the values of  $O$  and  $E$  calculated for each treatment group within each stratum (subgroup). For each treatment group the values of  $O$  and  $E$  from each stratum are added up and then these sums are compared using the usual logrank formula to get  $X^{2}$ . If, by chance, one treatment group includes more subjects with a poor prognosis this stratified analysis will adjust for the imbalance. The same method can be used to combine data from different centres in a multicentre study. There is further discussion of the need to make adjusted comparisons in Chapter 15. The method for performing the logrank test is shown in detail in section 13.4, which also gives a rather more accurate formula for the logrank statistic  $X^{2}$ . The test for trend and stratified analysis are also described. Several computer programs can perform the logrank analysis, which is tedious by hand except for very small data sets, but they do not all give enough information in their output of results (see section 13.8). Peto et al. (1977) give detailed discussion of all the methods discussed in this section, and much else besides - their paper is essential reading.  
 
 
 ### 13.3.2 风险比  13.3.2 The hazard ratio  
 
-对数秩检验广泛用于比较两个或多个组的生存率，但它仅仅是一种假设检验。它不提供关于各组差异程度的直接信息。  
+时序检验广泛用于比较两个或多个组的生存率，但它仅仅是一种假设检验。它不提供关于各组差异程度的直接信息。  
 The logrank test is very widely used for comparing survival in two or more groups, but it is solely a hypothesis test. It provides no direct information of how different the groups were.  
 
 衡量两组相对生存率的一种方法是比较观察到的事件数与预期事件数。比率 $O_{1} / E_{1}$ 给出了第一组中观察到的事件率，作为在零假设为真时预期事件率的比例，因此比率  
@@ -242,7 +250,7 @@ The calculation of the relative hazard in the two groups is based on the complet
 
 ### 13.3.3 生存概率的比较  13.3.3 Comparison of survival probabilities  
 
-正如我们可以为从单个个体组计算的生存概率获得置信区间一样，我们也可以为从两组个体计算的生存概率之间的差异计算置信区间。计算这种置信区间的方法在第13.4.6节中给出。  
+正如我们可以为从单组个体计算的生存概率获得置信区间一样，我们也可以为从两组个体计算的生存概率之间的差异计算置信区间。计算这种置信区间的方法在第13.4.6节中给出。  
 Just as we can obtain a confidence interval for a survival probability calculated from a single group of individuals, so we can calculate a confidence interval for the difference between the survival probabilities calculated from two groups of individuals. The method for calculating such a confidence interval is given in section 13.4.6.  
 
 例如，我们可以计算已描述的两次实验中，在60分钟内不生病的估计生存概率之间差异的置信区间。如表13.2和表13.3所示，这两个生存概率分别为0.855和0.816。差异为 $0.855 - 0.816 = 0.039$，95%置信区间为 $- 0.17$ 至0.25。  
@@ -365,14 +373,14 @@ $$
 在实践中，这两种方法通常会给出相似的结果。  
 In practice the two methods usually give similar answers.  
 
-晕动病数据的计算结果如表13.5所示。在11分钟和69分钟时各有两次失败，在82分钟时有三次失败，因此使用两种版本的对数秩检验将不会得到相同的结果。第一种方法给出：  
+晕动病数据的计算结果如表13.5所示。在11分钟和69分钟时各有两次失败，在82分钟时有三次失败，因此使用两种版本的时序检验将不会得到相同的结果。第一种方法给出：  
 The calculations for the motion sickness data are shown in Table 13.5. There were two failures at 11 and 69 minutes and three at 82 minutes, so we will not get the same answer using the two versions of the logrank test. The first method gives  
 
 $$
 X^{2} = \frac{(-3.8607)^{2}}{8.8607} +\frac{(3.8607)^{2}}{10.1393} = 3.152
 $$  
 
-表13.5 晕动病数据对数秩检验统计量的计算。下标指实验1和实验2  
+表13.5 晕动病数据时序检验统计量的计算。下标指实验1和实验2  
 Table 13.5 Calculating the logrank test statistic for the motion sickness data. The subscripts refer to Experiments 1 and 2  
 
 <table><tr><td>Time (mins)</td><td>r1</td><td>r2</td><td>r</td><td>f1</td><td>f2</td><td>f</td><td>e1 = r1f/r</td><td>f1 - e1</td><td>v = r1r2f(r - f)/r2(r - 1)</td></tr><tr><td>5</td><td>21</td><td>28</td><td>49</td><td>0</td><td>1</td><td>1</td><td>0.4286</td><td>-0.4286</td><td>0.2449</td></tr><tr><td>6*</td><td>21</td><td>27</td><td>48</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>11</td><td>21</td><td>26</td><td>47</td><td>0</td><td>2</td><td>2</td><td>0.8936</td><td>-0.8936</td><td>0.4836</td></tr><tr><td>13</td><td>21</td><td>24</td><td>45</td><td>0</td><td>1</td><td>1</td><td>0.4667</td><td>-0.4667</td><td>0.2489</td></tr><tr><td>24</td><td>21</td><td>23</td><td>44</td><td>0</td><td>1</td><td>1</td><td>0.4773</td><td>-0.4773</td><td>0.2495</td></tr><tr><td>30</td><td>21</td><td>22</td><td>43</td><td>1</td><td>0</td><td>1</td><td>0.4884</td><td>0.5116</td><td>0.2499</td></tr><tr><td>50</td><td>20</td><td>22</td><td>42</td><td>1</td><td>0</td><td>1</td><td>0.4762</td><td>0.5238</td><td>0.2494</td></tr><tr><td>50*</td><td>19</td><td>22</td><td>41</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>51</td><td>18</td><td>22</td><td>40</td><td>1</td><td>0</td><td>1</td><td>0.4500</td><td>0.5500</td><td>0.2475</td></tr><tr><td>63</td><td>17</td><td>22</td><td>39</td><td>0</td><td>1</td><td>1</td><td>0.4359</td><td>-0.4359</td><td>0.2459</td></tr><tr><td>65</td><td>17</td><td>21</td><td>38</td><td>0</td><td>1</td><td>1</td><td>0.4474</td><td>-0.4474</td><td>0.2472</td></tr><tr><td>66*</td><td>16</td><td>21</td><td>37</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>69</td><td>16</td><td>20</td><td>36</td><td>0</td><td>2</td><td>2</td><td>0.8889</td><td>-0.8889</td><td>0.4797</td></tr><tr><td>79</td><td>16</td><td>18</td><td>34</td><td>0</td><td>1</td><td>1</td><td>0.4706</td><td>-0.4706</td><td>0.2491</td></tr><tr><td>82</td><td>16</td><td>17</td><td>33</td><td>1</td><td>2</td><td>3</td><td>1.4545</td><td>-0.4545</td><td>0.7025</td></tr><tr><td>92</td><td>15</td><td>15</td><td>30</td><td>1</td><td>0</td><td>1</td><td>0.5000</td><td>0.5000</td><td>0.2500</td></tr><tr><td>102</td><td>14</td><td>15</td><td>29</td><td>0</td><td>1</td><td>1</td><td>0.4828</td><td>-0.4828</td><td>0.2497</td></tr><tr><td>115</td><td>14</td><td>14</td><td>28</td><td>0</td><td>1</td><td>1</td><td>0.5000</td><td>-0.5000</td><td>0.2500</td></tr><tr><td>Total</td><td></td><td></td><td></td><td>5</td><td>14</td><td>19</td><td>8.8607</td><td>-3.8607</td><td>4.6478</td></tr><tr><td></td><td></td><td></td><td></td><td>O1</td><td>O2</td><td></td><td>E1</td><td>O1 - E1</td><td>V</td></tr></table>  
@@ -437,10 +445,10 @@ The test statistic  $X_{t r e n d}^{2}$  is compared with the  $x^{2}$  distribu
 图13.6显示了195名乳腺癌女性的生存数据，可作为示例。女性根据淋巴结是否阳性分为三组：无阳性淋巴结、少数（1-3个）或许多（多于3个）。每组的 $o$ 和 $E$ 值如下：  
 An example is given by the survival data from 195 women with breast cancer shown in Figure 13.6. Women were divided into three groups according to whether they had no positive nodes, a few (1- 3) or many (more than 3). The values of  $o$  and  $E$  for each group were as follows:  
 
-<table><tr><td>阳性淋巴结</td><td>女性人数</td><td>死亡人数 (Og)</td><td>预期 (Eg)</td><td>Og - Eg</td></tr><tr><td>无</td><td>102</td><td>38</td><td>46.41</td><td>-8.41</td></tr><tr><td>少数 (1-3)</td><td>58</td><td>26</td><td>25.21</td><td>0.79</td></tr><tr><td>许多 (&amp;gt; 3)</td><td>35</td><td>22</td><td>14.38</td><td>7.62</td></tr></table>  
-<table><tr><td>Positive nodes</td><td>Number of women</td><td>Number of deaths (Og)</td><td>Expected (Eg)</td><td>Og - Eg</td></tr><tr><td>none</td><td>102</td><td>38</td><td>46.41</td><td>-8.41</td></tr><tr><td>few (1-3)</td><td>58</td><td>26</td><td>25.21</td><td>0.79</td></tr><tr><td>many (&amp;gt; 3)</td><td>35</td><td>22</td><td>14.38</td><td>7.62</td></tr></table>  
+<table><tr><td>阳性淋巴结</td><td>女性人数</td><td>死亡人数 (Og)</td><td>预期 (Eg)</td><td>Og - Eg</td></tr><tr><td>无</td><td>102</td><td>38</td><td>46.41</td><td>-8.41</td></tr><tr><td>少数 (1-3)</td><td>58</td><td>26</td><td>25.21</td><td>0.79</td></tr><tr><td>许多 (>3)</td><td>35</td><td>22</td><td>14.38</td><td>7.62</td></tr></table>  
+<table><tr><td>Positive nodes</td><td>Number of women</td><td>Number of deaths (Og)</td><td>Expected (Eg)</td><td>Og - Eg</td></tr><tr><td>none</td><td>102</td><td>38</td><td>46.41</td><td>-8.41</td></tr><tr><td>few (1-3)</td><td>58</td><td>26</td><td>25.21</td><td>0.79</td></tr><tr><td>many (>3)</td><td>35</td><td>22</td><td>14.38</td><td>7.62</td></tr></table>  
 
-对这些数据进行常规对数秩检验，得到 $X^{2} = 5.59$，自由度为2 $(\mathbf{P} = \mathbf{0.06})$。然而，这些组是有序的，因此应使用趋势对数秩检验。如果我们给这些组的代码为 $- 1, 0$ 和 $1$，我们得到以下结果：  
+对这些数据进行常规时序检验，得到 $X^{2} = 5.59$，自由度为2 $(\mathbf{P} = \mathbf{0.06})$。然而，这些组是有序的，因此应使用趋势时序检验。如果我们给这些组的代码为 $- 1, 0$ 和 $1$，我们得到以下结果：  
 The usual logrank test on these data yields  $X^{2} = 5.59$  on 2 degrees of freedom  $(\mathbf{P} = \mathbf{0.06})$  . However, the groups are ordered so the logrank test for trend should be used. If we give the groups codes of  $- 1, 0$  and  $1$ , we get the following:  
 
 <table><tr><td>阳性淋巴结</td><td>Ag</td><td>Bg</td><td>Cg</td></tr><tr><td>无</td><td>8.41</td><td>-46.41</td><td>46.41</td></tr><tr><td>少量</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>大量</td><td>7.62</td><td>14.38</td><td>14.38</td></tr><tr><td>总计</td><td>16.03</td><td>-32.03</td><td>60.77</td></tr></table>  
@@ -453,7 +461,7 @@ The usual logrank test on these data yields  $X^{2} = 5.59$  on 2 degrees of fre
 From these values we can calculate  $V_{T} = 60.77 - (- 32.03)^{2} / 86 = 48.84$  and  $X_{t r e n d}^{2} = 5.26$  . Thus almost all of the variation among the groups can be attributed to a trend; the statistic  $X_{t r e n d}^{2}$  is compared with the Chi squared distribution with one degree of freedom, giving  $\mathbf{P} = 0.02$  
 
 
-### 13.4.4 分层对数秩检验  13.4.4 Stratified logrank test  
+### 13.4.4 分层时序检验  13.4.4 Stratified logrank test  
 
 我们可以合并受试者子集的数据，以对主要感兴趣的组进行更敏感的比较。例如，如果我们有兴趣比较接受不同治疗的两组，我们可能希望按年龄或其他预后变量进行分层，特别是如果  
 We can combine data for subsets of subjects to get a more sensitive comparison of the groups of main interest. For example, if we are interested in comparing two groups given different treatments we may wish to stratify by age or some other prognostic variable, especially if the  
@@ -461,7 +469,7 @@ We can combine data for subsets of subjects to get a more sensitive comparison o
 高风险受试者的数量在各组之间存在差异。此处分层的效果与多元回归分析中调整其他变量的效果大致相同（参见第12.4节）。同样的方法也可用于合并来自相同治疗的独立试验的数据。在这两种情况下，分层分析都将比简单地合并所有数据的分析更可靠。  
 numbers of high risk subjects differ between the groups. The effect of stratification here is much the same as adjusting for other variables in a multiple regression analysis (see section 12.4). The same method can be used to combine data from independent trials of the same treatments. In either case the stratified analysis will be more reliable than an analysis simply pooling all the data.  
 
-分层对数秩检验非常简单。如果我们有两组受试者，那么对于每个感兴趣的亚组（层），我们计算 $O_{1}, E_{1}, O_{2}$ 和 $E_{2}$ 。然后将这些值在所有层中求和，并按如下方式计算对数秩统计量  
+分层时序检验非常简单。如果我们有两组受试者，那么对于每个感兴趣的亚组（层），我们计算 $O_{1}, E_{1}, O_{2}$ 和 $E_{2}$ 。然后将这些值在所有层中求和，并按如下方式计算对数秩统计量  
 The stratified logrank test is very simple. If we have two groups of subjects, then for each subgroup (stratum) of interest we calculate  $O_{1}, E_{1}, O_{2}$  and  $E_{2}$ . These are then summed over all strata and the logrank statistic calculated as  
 
 $$
@@ -585,13 +593,13 @@ $$
 s = \sqrt{\frac{1}{O_{1}} + \frac{1}{O_{2}}}.
 $$  
 
-该方法假设失效时间服从指数分布；快速检验此假设的方法是查看每个计算出的中位数是否与假设成立时所期望的值相似，即生存时间（无论是否截尾）的总和除以事件数的$\sqrt{2}$倍。例如，表13.3中数据的观测中位数为115分钟，而如果分布为指数分布，则期望值为$2356 / (14\sqrt{2}) = 119$分钟。然而，我们无法比较两次晕动病实验的中位数，因为我们没有表13.2中数据的估计中位数。  
+该方法假设失败时间服从指数分布；快速检验此假设的方法是查看每个计算出的中位数是否与假设成立时所期望的值相似，即生存时间（无论是否截尾）的总和除以事件数的$\sqrt{2}$倍。例如，表13.3中数据的观测中位数为115分钟，而如果分布为指数分布，则期望值为$2356 / (14\sqrt{2}) = 119$分钟。然而，我们无法比较两次晕动病实验的中位数，因为我们没有表13.2中数据的估计中位数。  
 The method assumes that the failure times have an exponential distribution; a quick check of this assumption is to see if each calculated median is similar to that expected if the assumption is true, namely the sum of the survival times (whether censored or not) divided by  $\sqrt{2}$  times the number of events. For example, the observed median for the data in Table 13.3 is 115 minutes whereas the expected value if the distribution was exponential is  $2356 / (14\sqrt{2}) = 119$  minutes. We cannot compare the medians for the two motion sickness experiments, however, as we have no estimated median for the data in Table 13.2.  
 
 
 ### 13.4.8 评论  13.4.8 Comment  
 
-生存分析最重要的部分是为每个感兴趣的组绘制生存曲线图，但对可能差异的评估应基于统计分析。对数秩检验是最常见的统计分析形式，但它是一种假设检验，不能提供相对生存的估计值。所提出的估计值无一例外都存在问题，但只要曲线表明相对生存率随时间变化不大，风险比就是最吸引人的。例如，对于交叉的生存曲线，情况就不是这样了。风险比还与13.6节中描述的更复杂的生存数据分析回归方法建立了联系，其中一个重要假设是风险比在时间上是恒定的。  
+生存分析最重要的部分是为每个感兴趣的组绘制生存曲线图，但对可能差异的评估应基于统计分析。时序检验是最常见的统计分析形式，但它是一种假设检验，不能提供相对生存的估计值。所提出的估计值无一例外都存在问题，但只要曲线表明相对生存率随时间变化不大，风险比就是最吸引人的。例如，对于交叉的生存曲线，情况就不是这样了。风险比还与13.6节中描述的更复杂的生存数据分析回归方法建立了联系，其中一个重要假设是风险比在时间上是恒定的。  
 The most important part of survival analysis is to produce a plot of the survival curves for each group of interest, but assessment of possible differences should be based on statistical analysis. The logrank test is the most common form of statistical analysis, but it is a hypothesis test and yields no estimate of relative survival. None of the estimates proposed is without problems, but the hazard ratio is the most appealing as long as the curves suggest that the relative survival rates do not vary greatly over time. This would not be so, for example, for survival curves that crossed. The hazard ratio also gives a link with the more complex regression approach to the analysis of survival data, described in section 13.6, where an important assumption is that the hazard ratio is constant over time.  
 
 所有生存分析的一个假设是，截尾观测的时间中不包含任何信息。在晕动病示例中，我们可能会质疑那些要求提前停止实验的个体是否已经接近生病。在这种情况下，将提前停止视为失效而非截尾观测是有道理的。  
@@ -618,7 +626,7 @@ The calculation of the median survival time is sensible, but it must be derived 
 生存曲线应绘制成“阶梯函数”，如图13.3至13.6所示；简单地用倾斜的线连接每个死亡时间点的估计生存概率是错误的。  
 The survival curve should be drawn as a 'step function' as in Figures 13.3 to 13.6; it is incorrect simply to join the estimated survival probabilities at each time of death with sloping lines.  
 
-对生存曲线的错误解读通常涉及对曲线右侧部分的过度解读。生存曲线在一段时间后趋于平坦是很常见的，因为事件发生频率降低。除非仍有大量受试者处于风险中，否则将这种平坦化解读为有意义是不明智的。相反，如果最后一次死亡发生在最后一次截尾时间之后（这种情况并不少见），生存曲线将急剧下降到零。我们不应将此视为没有人会存活超过该时间的迹象。当比较两条生存曲线时，研究期结束时曲线之间的差距通常比开始时更大。这本身不应被视为曲线发散的迹象。所有这些情况通常仅仅是因为曲线的尾部由于处于风险中的人数较少而非常不稳定。有两种简单的补救措施：始终显示定期时间间隔（例如，每月或每年，视情况而定）处于风险中的人数，并在例如只剩下五名受试者处于风险中时截断生存曲线。两条生存曲线的比较应基于已描述的方法，特别是使用所有数据的对数秩检验，而不是基于视觉印象。  
+对生存曲线的错误解读通常涉及对曲线右侧部分的过度解读。生存曲线在一段时间后趋于平坦是很常见的，因为事件发生频率降低。除非仍有大量受试者处于风险中，否则将这种平坦化解读为有意义是不明智的。相反，如果最后一次死亡发生在最后一次截尾时间之后（这种情况并不少见），生存曲线将急剧下降到零。我们不应将此视为没有人会存活超过该时间的迹象。当比较两条生存曲线时，研究期结束时曲线之间的差距通常比开始时更大。这本身不应被视为曲线发散的迹象。所有这些情况通常仅仅是因为曲线的尾部由于处于风险中的人数较少而非常不稳定。有两种简单的补救措施：始终显示定期时间间隔（例如，每月或每年，视情况而定）处于风险中的人数，并在例如只剩下五名受试者处于风险中时截断生存曲线。两条生存曲线的比较应基于已描述的方法，特别是使用所有数据的时序检验，而不是基于视觉印象。  
 Mistaken interpretation of survival curves often involves over- interpretation of the right- hand part of the curve. It is common for survival curves to flatten out after a while, as events become less frequent. It is unwise to interpret this flattening as meaningful unless there are many subjects still at risk. In contrast, if the last death occurs after the last censored time, not a rare occurrence, the survival curve will plunge to zero. We should not take this as an indication that nobody will survive beyond that time. When two survival curves are compared there is frequently a larger gap between the curves at the end of the period under study than at the beginning. This should not of itself be taken as an indication that the curves diverge. All of these situations often occur simply because the tail of the curve is very unstable due to small numbers at risk. There are two simple remedies: always show the numbers at risk at regular time intervals (e.g. every month or year, as appropriate) and curtail the survival curve when there are, say. only five subjects still at risk. The comparison of two survival curves should be based upon the methods already described, especially the logrank test using all the data, not upon visual impression.  
 
 在此重申先前的警告是恰当的：当比较的时间点是通过检查生存曲线选择时，不要比较在特定时期内存活的比例。只有当时间点是在收集数据之前选择的，这种比较才是有效的。  
@@ -636,7 +644,7 @@ A better approach is to compare the survival of non- responders from the start o
 
 ### 13.5.4 多重比较  13.5.4 Multiple comparisons  
 
-与其他简单分析（如 $t$ 检验和相关性分析）一样，当我们希望探索众多变量与生存期的关系时，应谨慎使用秩和检验。虽然了解哪些变量似乎与更好的预后相关很有用，但这些变量之间也可能相互关联。此外，20个变量中有一个变量会仅仅由于偶然性而变得显著，从而显得很重要。因此，更好的方法是类似于多元回归分析的方法；这种方法将在下一节中描述。  
+与其他简单分析（如 $t$ 检验和相关性分析）一样，当我们希望探索众多变量与生存期的关系时，应谨慎使用时序检验。虽然了解哪些变量似乎与更好的预后相关很有用，但这些变量之间也可能相互关联。此外，20个变量中有一个变量会仅仅由于偶然性而变得显著，从而显得很重要。因此，更好的方法是类似于多元回归分析的方法；这种方法将在下一节中描述。  
 As with other simple analyses (such as the  $t$  test and correlation) the logrank test should be used with care when we wish to explore the relation of numerous variables to survival. While it is useful to see which variables seem to be associated with a better prognosis, these variables are likely to be correlated with each other too. Also, one variable in 20 will be significant and thus appear important just by chance. A better approach, therefore, is one that is analogous to multiple regression analysis; such an approach is described in the next section.  
 
 
@@ -645,7 +653,7 @@ As with other simple analyses (such as the  $t$  test and correlation) the logra
 （本节比本书其他章节更复杂。）  
 (This section is more complex than the others in the book.)  
 
-秩和检验是一种非参数方法，用于比较两个或多个组的生存经验。它不能用于探索多个变量对生存期的影响。Cox（1972）引入的回归方法在需要同时研究多个变量时被广泛使用。  
+时序检验是一种非参数方法，用于比较两个或多个组的生存经验。它不能用于探索多个变量对生存期的影响。Cox（1972）引入的回归方法在需要同时研究多个变量时被广泛使用。  
 The logrank test is a non- parametric method for comparing the survival experience of two or more groups. It cannot be used to explore the effects of several variables on survival. The regression method introduced by Cox  
 
 它也被称为比例风险回归分析。  
@@ -654,7 +662,7 @@ The logrank test is a non- parametric method for comparing the survival experien
 Cox的方法是一种“半参数”方法—它不假设生存时间服从任何特定类型的分布，但它做了一个强假设，即不同变量对生存期的影响随时间保持不变，并且在特定尺度上是可加的。实际的方法对于本书来说过于复杂，无法详细讨论；本节旨在介绍该方法的思想，这应该有助于阅读此类分析的结果。执行Cox回归时存在许多潜在的困难，我不建议非统计学家使用该方法。  
 Cox's method is a 'semi- parametric' approach - no particular type of distribution is assumed for the survival times, but a strong assumption is made that the effects of the different variables on survival are constant over time and are additive in a particular scale. The actual method is too complex for detailed discussion in this book; this section is intended to give an introduction to the ideas of the method, which should help when reading the results of such analyses. There are many potential difficulties when performing Cox regression, and I do not recommend that the method is used by non- statisticians.  
 
-风险函数与生存曲线密切相关，表示在给定时间点之后极短时间间隔内死亡的风险，假设到目前为止仍然存活。因此，它可以解释为在时间 $t$ 死亡的风险。Cox的方法在能力上等同于12.4节中描述的多元回归分析，不同之处在于回归模型定义了给定时间点的风险。如果我们有几个感兴趣的自变量，例如 $X_{1}$ 到 $X_{p}$，我们可以将时间 $t$ 的风险 $h(t)$ 表示为：  
+风险函数与生存曲线密切相关，表示在给定时间点之后极短时间间隔内死亡的风险，假设到目前为止仍然存活。因此，它可以解释为在时间 $t$ 死亡的风险。Cox的方法在能力上等同于12.4节中描述的多元回归分析，不同之处在于Cox回归模型定义了给定时间点的风险。如果我们有几个感兴趣的自变量，例如 $X_{1}$ 到 $X_{p}$，我们可以将时间 $t$ 的风险 $h(t)$ 表示为：  
 The hazard function is closely related to the survival curve, representing the risk of dying in a very short time interval after a given time, assuming survival thus far. It can therefore be interpreted as the risk of dying at time  $t$ . Cox's method is equivalent in its capability to multiple regression analysis as described in section 12.4, except that the regression model defines the hazard at a given time. If we have several independent variables of interest, say  $X_{1}$  to  $X_{p}$ , we can express the hazard at time  $t$ ,  $h(t)$ , as  
 
 $$
@@ -718,7 +726,7 @@ $$
 \frac{h_{1}(t)}{h_{2}(t)} = \frac{h_{0}(t) \times \exp(b x_{1})}{h_{0}(t) \times \exp(b x_{2})} = \exp (b x_{1} - b x_{2}) = \exp [b(x_{1} - x_{2})].
 $$  
 
-请注意，由于模型中的假设，此结果不依赖于时间 $t$ 的选择。另请注意，我们不需要知道基线风险函数 $h_{0}(t)$ 的值。在我们将二元变量编码为0或1的特殊情况下，风险比等于 $\exp (b)$ (参见表13.7)。因此，安慰剂组的估计风险是硫唑嘌呤组的 $\exp (0.52) = 1.68$ (或 $168\%$ )。等效地，硫唑嘌呤的作用是将风险降低到安慰剂组的 $\exp (- 0.52) = 0.59$ (或 $59\%$ )。然而，对生存概率的影响不能简单描述，因为它取决于患者模型中其他变量的值，如下所述。对于连续协变量，回归系数指的是协变量值增加1时对数风险的增加。由于线性效应的假设，这意味着白蛋白从30增加到 $31 \mathrm{g} / \mathrm{l}$ 的估计风险变化与从40增加到 $41 \mathrm{g} / \mathrm{l}$ 的变化相同，并且等于 $\exp (- 0.050) = 0.95$ ，即减少 $5\%$ 。对于血清胆红素， $\exp (2.51)$ 的值对应于对数尺度增加1时的风险变化。因此，如果胆红素高出10倍，估计风险会增加12.3倍。请注意，估计风险比 $\exp (b)$ 与第13.3.2节中描述的类似。不同之处在于，此风险比已根据模型中其他变量的影响进行了调整。  
+请注意，由于模型中的假设，此结果不依赖于时间 $t$ 的选择。另请注意，我们不需要知道基线风险函数 $h_{0}(t)$ 的值。在我们将二元变量编码为0或1的特殊情况下，风险比等于 $\exp (b)$ (参见表13.7)。因此，安慰剂组的估计风险是硫唑嘌呤组的 $\exp (0.52) = 1.68$ (或 $168\%$ )。等效地，硫唑嘌呤的作用是将风险降低到安慰剂组的 $\exp (- 0.52) = 0.59$ (或 $59\%$ )。然而，对生存概率的影响不能简单描述，因为它取决于患者模型中其他变量的值，如下所述。对于连续协变量，回归系数指的是协变量值增加1时对数风险的增加。由于线性效应的假设，这意味着白蛋白从30增加到 $31 \mathrm{g} / \mathrm{l}$ 的估计风险变化与从40增加到 $41 \mathrm{g} / \mathrm{l}$ 的变化相同，并且等于 $\exp (- 0.050) = 0.95$ ，即减少 $5\%$ 。对于血清胆红素， $\exp (2.51)$ 的值对应于对数尺度增加1时的风险变化。因此，如果胆红素上升到10倍，估计风险会增加12.3倍。请注意，估计风险比 $\exp (b)$ 与第13.3.2节中描述的类似。不同之处在于，此风险比已根据模型中其他变量的影响进行了调整。  
 Note that because of the assumption in the model this result is not dependent upon the choice of time t. Notice too that we do not need to know the value of the baseline hazard function,  $h_{0}(t)$  . In the special case where we have a binary variable coded 0 or 1 the hazard ratio is equal to  $\exp (b)$  (see Table 13.7). Thus the estimated hazard with placebo is  $\exp (0.52) = 1.68$  (or  $168\%$  ) of that with azathioprine. Equivalently, the effect of azathioprine is to reduce the hazard to  $\exp (- 0.52) = 0.59$  (or  $59\%$  ) of that with placebo. The effect on the survival probability, however, cannot be described simply as it depends on the patient's values of the other variables in the model, as described below. For continuous covariates the regression coefficient refers to the increase in log hazard for an increase of 1 in the value of the covariate. Because of the assumption of a linear effect this means that the estimated change in hazard of albumin increasing from 30 to  $31 \mathrm{g} / \mathrm{l}$  is the same as a change from 40 to  $41 \mathrm{g} / \mathrm{l}$  , and is equal to  $\exp (- 0.050) = 0.95$  , i.e. a reduction of  $5\%$  . For serum bilirubin the value of  $\exp (2.51)$  corresponds to the change in hazard for an increase of 1 in the log scale. Thus the estimated hazard increases 12.3 times if bilirubin is higher by a factor of 10. Notice that the estimated hazard ratio  $\exp (b)$  is analogous to that described in section 13.3.2. The difference is that this hazard ratio is adjusted for the effects of the other variables in the model.  
 
 与普通多元线性回归和逻辑回归（两者均在第12章讨论）一样，回归系数和变量值的组合可以用作预后指数。风险函数方程中括号内的部分给出了预后指数（PI），如下所示：  

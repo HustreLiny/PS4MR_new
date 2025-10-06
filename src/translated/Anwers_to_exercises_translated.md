@@ -492,8 +492,7 @@ or 3.50 to 8.59 l.
 然而，检验斜率是否相同的正确方法是拟合一个包含交互项的多元回归模型。正如我们从刚刚给出的相似斜率所预期的那样，该交互作用远未达到统计学显著性水平。由于我们还在多元回归模型中看到性别没有显著影响，我们可以合理地得出结论，男性和女性的肺容量与身高之间的关系是相同的。  
 However, the correct way to test the hypothesis that the slopes are the same is by fitting a multiple regression model including an interaction term. As we would expect from the similar slopes just given, the interaction is nowhere near to being statistically significant. As we have also seen that there was no significant effect of sex in the multiple regression model, we can reasonably conclude that the relation between lung volume and height is the same for males and females.  
 
-##第13章  
-##CHAPTER 13  
+## 第13章  CHAPTER 13  
 
 13.1 如果我们把实验结束前被截尾的三个值视为事件，我们得到  
 13.1 If we take the three values censored before the end of the experiment as events, we get  
@@ -526,8 +525,11 @@ For each variable the trend is statistically significant, and most of the variat
 (c) 将三个变量作为连续变量处理或像前述分析中那样分为三组的 Cox 回归模型总结在下表中：  
 (c) Cox regression models of each of the three variables treated either as continuous or split into three groups as in the previous analysis are summarized in the following table:  
 
-<table><tr><td rowspan="2"></td><td rowspan="2">b</td><td colspan="2">连续</td><td rowspan="2">P</td><td rowspan="2">b</td><td colspan="2">分组</td><td rowspan="2">P</td></tr><tr><td>SE(b)</td><td></td><td>SE(b)</td><td></td></tr><tr><td>乳酸</td><td>-0.071</td><td>0.019</td><td>0.001</td><td>-0.061</td><td>0.022</td><td>0.01</td><td></td><td></td></tr><tr><td>碳酸氢盐</td><td>0.186</td><td>0.051</td><td>0.001</td><td>0.087</td><td>0.022</td><td>0.0001</td><td></td><td></td></tr><tr><td>pH</td><td>3.921</td><td>1.704</td><td>0.03</td><td>0.965</td><td>0.395</td><td>0.02</td><td></td><td></td></tr></table>  
-<table><tr><td rowspan="2"></td><td rowspan="2">b</td><td colspan="2">Continuous</td><td rowspan="2">P</td><td rowspan="2">b</td><td colspan="2">Grouped</td><td rowspan="2">P</td></tr><tr><td>SE(b)</td><td></td><td>SE(b)</td><td></td></tr><tr><td>Lactate</td><td>-0.071</td><td>0.019</td><td>0.001</td><td>-0.061</td><td>0.022</td><td>0.01</td><td></td><td></td></tr><tr><td>Bicarbonate</td><td>0.186</td><td>0.051</td><td>0.001</td><td>0.087</td><td>0.022</td><td>0.0001</td><td></td><td></td></tr><tr><td>pH</td><td>3.921</td><td>1.704</td><td>0.03</td><td>0.965</td><td>0.395</td><td>0.02</td><td></td><td></td></tr></table>  
+| Variable | Continuous $b$ | Continuous $SE(b)$ | Continuous $P$ | Grouped $b$ | Grouped $SE(b)$ | Grouped $P$ |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Lactate | -0.071 | 0.019 | 0.001 | -0.061 | 0.022 | 0.01 |
+| Bicarbonate | 0.186 | 0.051 | 0.001 | 0.087 | 0.022 | 0.0001 |
+| pH | 3.921 | 1.704 | 0.03 | 0.965 | 0.395 | 0.02 |    
 
 两种分析的回归系数 $b$ 不应直接比较。所有三个变量通过任一方法都与生存显著相关，但显著性水平不同。通常，分组分析会给出与趋势对数秩检验非常相似的结果。  
 The regression coefficients,  $b$ , should not be directly compared for the two types of analysis. All three variables are significantly associated with survival by either method, but the level of significance differs. In general, the grouped analysis will give a very similar answer to the logrank test for trend.  
@@ -556,7 +558,7 @@ non- GvHD CML 0.08 GvHD non- CML 10.03 GvHD CML 0.82
 (d) 基于如此小样本的 Cox 模型将极其不可靠，如上面给出的宽置信区间所示。决定 Cox 分析效能的是“事件”（此处为死亡）的数量，而不是受试者数量。  
 (d) A Cox model based on such a small sample would be extremely unreliable, as is indicated by the wide CI given above. It is the number of 'events', here deaths, that determines the power of a Cox analysis, not the number of subjects.  
 
-## 第 14 章  CHAPTER 14  
+## 第14章  CHAPTER 14  
 
 14.1 (a) Wilcoxon 检验（或 $t$ 检验）评估两种方法获得的值平均而言是否存在差异。同时，也必须考虑它们对个体患者的一致性如何，这无法通过假设检验来完成。  
 14.1 (a) The Wilcoxon test (or the  $t$  test) assesses whether the values obtained by the two methods differ on average. It is essential also to consider how well they agree for individual patients, which cannot be done by a hypothesis test.  
